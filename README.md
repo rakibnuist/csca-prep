@@ -5,7 +5,7 @@
 [![Prisma](https://img.shields.io/badge/Prisma-ORM-2D3748?style=for-the-badge&logo=prisma)](https://www.prisma.io/)
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Data-336791?style=for-the-badge&logo=postgresql)](https://www.postgresql.org/)
 
-A comprehensive, high-performance web application designed to help international students prepare for the **Chinese Government Scholarship (CSCA) Admission Exam**. Featuring a realistic exam engine, advanced analytics, and a robust administrative dashboard.
+A comprehensive, high-performance web application designed to help international students prepare for the **Chinese Government Scholarship (CSCA) Undergraduate Admission Exam**. As part of a nationwide initiative, by **2028**, all Chinese universities will require the **CSCA Test Result** for undergraduate applicants. This platform provides a realistic exam engine, advanced analytics, and a robust administrative dashboard to ensure student success.
 
 ---
 
