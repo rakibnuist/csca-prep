@@ -1,4 +1,4 @@
-# 🎓 CSCA Prep - Ultimate CSC Exam Preparation Platform
+# 🎓 CSCA Prep - Ultimate CSCA Exam Preparation Platform
 
 [![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen?style=for-the-badge)](https://csca-prep-seven.vercel.app/)
 [![Next.js](https://img.shields.io/badge/Next.js-15-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
