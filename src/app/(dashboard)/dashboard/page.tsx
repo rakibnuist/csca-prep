@@ -86,9 +86,13 @@ async function getDashboardStats() {
             return { title: config.title, score: 0, color: config.color, attempts: 0 };
         }
 
-        const totalScore = subjectAttempts.reduce((acc: number, curr: any) => acc + curr.score, 0);
-        const totalMax = subjectAttempts.reduce((acc: number, curr: any) => acc + curr.test.totalMarks, 0);
-        const percentage = totalMax > 0 ? Math.round((totalScore / totalMax) * 100) : 0;
+        let subjectTotalScore = 0;
+        let subjectTotalMax = 0;
+        subjectAttempts.forEach(a => {
+            subjectTotalScore += a.score;
+            subjectTotalMax += a.test.totalMarks;
+        });
+        const percentage = subjectTotalMax > 0 ? Math.round((subjectTotalScore / subjectTotalMax) * 100) : 0;
 
         return {
             title: config.title,
@@ -143,8 +147,12 @@ async function getDashboardStats() {
 
     // Overall Stats
     const attemptsCount = attempts.length;
-    const overallTotalScore = attempts.reduce((acc: number, a: any) => acc + a.score, 0);
-    const overallTotalMax = attempts.reduce((acc: number, a: any) => acc + a.test.totalMarks, 0);
+    let overallTotalScore = 0;
+    let overallTotalMax = 0;
+    attempts.forEach(a => {
+        overallTotalScore += a.score;
+        overallTotalMax += a.test.totalMarks;
+    });
     const avgScore = overallTotalMax > 0 ? Math.round((overallTotalScore / overallTotalMax) * 100) : 0;
 
     // Calculate days until exam (assuming exam is in April 2026)

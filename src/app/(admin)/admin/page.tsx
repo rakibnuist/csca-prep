@@ -32,9 +32,13 @@ async function getAdminStats() {
         select: { score: true, test: { select: { totalMarks: true } } }
     });
 
-    const avgScore = attempts.length > 0
-        ? Math.round(attempts.reduce((sum: number, a: any) => sum + (a.score / a.test.totalMarks) * 100, 0) / attempts.length)
-        : 0;
+    let totalScoreAll = 0;
+    let totalMarksAll = 0;
+    attempts.forEach(a => {
+        totalScoreAll += (a.score / a.test.totalMarks) * 100;
+        totalMarksAll += 1;
+    });
+    const avgScore = totalMarksAll > 0 ? Math.round(totalScoreAll / totalMarksAll) : 0;
 
     // Get scholarship leads (students with >80% average)
     const users = await prisma.user.findMany({
@@ -48,7 +52,11 @@ async function getAdminStats() {
 
     const scholarshipLeads = users.filter(user => {
         if (user.attempts.length === 0) return false;
-        const userAvg = user.attempts.reduce((sum: number, a: any) => sum + (a.score / a.test.totalMarks) * 100, 0) / user.attempts.length;
+        let userTotal = 0;
+        user.attempts.forEach(a => {
+            userTotal += (a.score / a.test.totalMarks) * 100;
+        });
+        const userAvg = userTotal / user.attempts.length;
         return userAvg >= 80;
     }).length;
 
@@ -66,9 +74,11 @@ async function getAdminStats() {
 
     const studentsWithStats = recentStudents.map(user => {
         const testsTaken = user.attempts.length;
-        const avgScore = testsTaken > 0
-            ? Math.round(user.attempts.reduce((sum: number, a: any) => sum + (a.score / a.test.totalMarks) * 100, 0) / testsTaken)
-            : 0;
+        let studentTotal = 0;
+        user.attempts.forEach(a => {
+            studentTotal += (a.score / a.test.totalMarks) * 100;
+        });
+        const avgScore = testsTaken > 0 ? Math.round(studentTotal / testsTaken) : 0;
 
         return {
             id: user.id,
