@@ -67,7 +67,7 @@ async function getDashboardStats() {
 
     // Process data for Performance Trend Chart (limit to last 10 for readability)
     const recentAttempts = attempts.slice(-10);
-    const performanceData = recentAttempts.map((a, i) => ({
+    const performanceData = recentAttempts.map((a: any, i) => ({
         name: `Test ${attempts.length - recentAttempts.length + i + 1}`,
         score: Math.round((a.score / a.test.totalMarks) * 100)
     }));
@@ -79,8 +79,8 @@ async function getDashboardStats() {
         { title: "Chemistry", color: "bg-emerald-600" }
     ];
 
-    const subjectMastery = subjectConfigs.map(config => {
-        const subjectAttempts = attempts.filter(a => a.test.subject === config.title);
+    const subjectMastery = subjectConfigs.map((config: any) => {
+        const subjectAttempts = attempts.filter((a: any) => a.test.subject === config.title);
 
         if (subjectAttempts.length === 0) {
             return { title: config.title, score: 0, color: config.color, attempts: 0 };
@@ -88,7 +88,7 @@ async function getDashboardStats() {
 
         let subjectTotalScore = 0;
         let subjectTotalMax = 0;
-        subjectAttempts.forEach(a => {
+        subjectAttempts.forEach((a: any) => {
             subjectTotalScore += a.score;
             subjectTotalMax += a.test.totalMarks;
         });
@@ -105,7 +105,7 @@ async function getDashboardStats() {
     // Calculate Topic-wise Analysis grouped by subject
     const topicBySubjectMap: Record<string, Record<string, { correct: number; total: number; attempted: number }>> = {};
 
-    attempts.forEach(attempt => {
+    attempts.forEach((attempt: any) => {
         const userAnswers = attempt.answers as Record<string, number>;
         const subject = attempt.test.subject;
 
@@ -113,7 +113,7 @@ async function getDashboardStats() {
             topicBySubjectMap[subject] = {};
         }
 
-        attempt.test.questions.forEach(q => {
+        attempt.test.questions.forEach((q: any) => {
             const topic = q.topic || "General";
             if (!topicBySubjectMap[subject][topic]) {
                 topicBySubjectMap[subject][topic] = { correct: 0, total: 0, attempted: 0 };
@@ -149,7 +149,7 @@ async function getDashboardStats() {
     const attemptsCount = attempts.length;
     let overallTotalScore = 0;
     let overallTotalMax = 0;
-    attempts.forEach(a => {
+    attempts.forEach((a: any) => {
         overallTotalScore += a.score;
         overallTotalMax += a.test.totalMarks;
     });

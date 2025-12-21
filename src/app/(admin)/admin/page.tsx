@@ -34,7 +34,7 @@ async function getAdminStats() {
 
     let totalScoreAll = 0;
     let totalMarksAll = 0;
-    attempts.forEach(a => {
+    attempts.forEach((a: any) => {
         totalScoreAll += (a.score / a.test.totalMarks) * 100;
         totalMarksAll += 1;
     });
@@ -50,10 +50,10 @@ async function getAdminStats() {
         }
     });
 
-    const scholarshipLeads = users.filter(user => {
+    const scholarshipLeads = users.filter((user: any) => {
         if (user.attempts.length === 0) return false;
         let userTotal = 0;
-        user.attempts.forEach(a => {
+        user.attempts.forEach((a: any) => {
             userTotal += (a.score / a.test.totalMarks) * 100;
         });
         const userAvg = userTotal / user.attempts.length;
@@ -72,10 +72,10 @@ async function getAdminStats() {
         take: 20
     });
 
-    const studentsWithStats = recentStudents.map(user => {
+    const studentsWithStats = recentStudents.map((user: any) => {
         const testsTaken = user.attempts.length;
         let studentTotal = 0;
-        user.attempts.forEach(a => {
+        user.attempts.forEach((a: any) => {
             studentTotal += (a.score / a.test.totalMarks) * 100;
         });
         const avgScore = testsTaken > 0 ? Math.round(studentTotal / testsTaken) : 0;

@@ -37,7 +37,7 @@ export async function GET() {
         });
 
         // 2. Process data for Performance Trend Chart
-        const performanceData = attempts.map((a, i) => ({
+        const performanceData = attempts.map((a: any, i) => ({
             name: `Test ${i + 1}`,
             score: Math.round((a.score / a.test.totalMarks) * 100)
         }));
@@ -51,8 +51,8 @@ export async function GET() {
             { title: "Professional Chinese (Science)", color: "bg-red-600" }
         ];
 
-        const subjectMastery = subjectConfigs.map(config => {
-            const subjectAttempts = attempts.filter(a => a.test.subject === config.title);
+        const subjectMastery = subjectConfigs.map((config: any) => {
+            const subjectAttempts = attempts.filter((a: any) => a.test.subject === config.title);
 
             if (subjectAttempts.length === 0) {
                 return { title: config.title, score: 0, color: config.color };
@@ -60,7 +60,7 @@ export async function GET() {
 
             let subjectTotalScore = 0;
             let subjectTotalMax = 0;
-            subjectAttempts.forEach(a => {
+            subjectAttempts.forEach((a: any) => {
                 subjectTotalScore += a.score;
                 subjectTotalMax += a.test.totalMarks;
             });
@@ -77,7 +77,7 @@ export async function GET() {
         const attemptsCount = attempts.length;
         let overallTotalScore = 0;
         let overallTotalMax = 0;
-        attempts.forEach(a => {
+        attempts.forEach((a: any) => {
             overallTotalScore += a.score;
             overallTotalMax += a.test.totalMarks;
         });
