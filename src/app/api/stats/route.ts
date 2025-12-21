@@ -58,8 +58,8 @@ export async function GET() {
                 return { title: config.title, score: 0, color: config.color };
             }
 
-            const totalScore = subjectAttempts.reduce((acc, curr) => acc + curr.score, 0);
-            const totalMax = subjectAttempts.reduce((acc, curr) => acc + curr.test.totalMarks, 0);
+            const totalScore = subjectAttempts.reduce((acc: number, curr: any) => acc + curr.score, 0);
+            const totalMax = subjectAttempts.reduce((acc: number, curr: any) => acc + curr.test.totalMarks, 0);
             const percentage = totalMax > 0 ? Math.round((totalScore / totalMax) * 100) : 0;
 
             return {
@@ -71,8 +71,8 @@ export async function GET() {
 
         // 4. Overall Stats
         const attemptsCount = attempts.length;
-        const overallTotalScore = attempts.reduce((acc, a) => acc + a.score, 0);
-        const overallTotalMax = attempts.reduce((acc, a) => acc + a.test.totalMarks, 0);
+        const overallTotalScore = attempts.reduce((acc: number, a: any) => acc + a.score, 0);
+        const overallTotalMax = attempts.reduce((acc: number, a: any) => acc + a.test.totalMarks, 0);
         const avgScore = overallTotalMax > 0 ? Math.round((overallTotalScore / overallTotalMax) * 100) : 0;
 
         return NextResponse.json({
