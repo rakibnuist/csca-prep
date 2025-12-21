@@ -33,7 +33,7 @@ async function getAdminStats() {
     });
 
     const avgScore = attempts.length > 0
-        ? Math.round(attempts.reduce((sum, a) => sum + (a.score / a.test.totalMarks) * 100, 0) / attempts.length)
+        ? Math.round(attempts.reduce((sum: number, a) => sum + (a.score / a.test.totalMarks) * 100, 0) / attempts.length)
         : 0;
 
     // Get scholarship leads (students with >80% average)
@@ -48,7 +48,7 @@ async function getAdminStats() {
 
     const scholarshipLeads = users.filter(user => {
         if (user.attempts.length === 0) return false;
-        const userAvg = user.attempts.reduce((sum, a) => sum + (a.score / a.test.totalMarks) * 100, 0) / user.attempts.length;
+        const userAvg = user.attempts.reduce((sum: number, a) => sum + (a.score / a.test.totalMarks) * 100, 0) / user.attempts.length;
         return userAvg >= 80;
     }).length;
 
@@ -67,7 +67,7 @@ async function getAdminStats() {
     const studentsWithStats = recentStudents.map(user => {
         const testsTaken = user.attempts.length;
         const avgScore = testsTaken > 0
-            ? Math.round(user.attempts.reduce((sum, a) => sum + (a.score / a.test.totalMarks) * 100, 0) / testsTaken)
+            ? Math.round(user.attempts.reduce((sum: number, a) => sum + (a.score / a.test.totalMarks) * 100, 0) / testsTaken)
             : 0;
 
         return {
