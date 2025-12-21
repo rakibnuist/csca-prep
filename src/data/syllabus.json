@@ -1,0 +1,22 @@
+[
+    {
+        "category": "Mathematics",
+        "topics": [
+            "Algebra & Functions (Quadratics, Polynomials, Inequalities)",
+            "Coordinate Geometry (Lines, Circles, Conics)",
+            "Calculus (Limits, Differentiation, Integration, Applications)",
+            "Vectors & Three-Dimensional Geometry",
+            "Probability & Statistics"
+        ]
+    },
+    {
+        "category": "Physics",
+        "topics": [
+            "Mechanics (Kinematics, Newton's Laws, Energy)",
+            "Electricity & Magnetism",
+            "Waves & Optics",
+            "Modern Physics (Quantum, Nuclear)",
+            "Thermodynamics"
+        ]
+    }
+]

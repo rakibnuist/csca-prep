@@ -1,0 +1,242 @@
+[
+    {
+        "id": 5001,
+        "set_id": "generated_chinese_science_set_1",
+        "set_name": "Generated Chinese Science Set 1",
+        "topic": "Mathematics Terminology",
+        "question": "在数学中，“Derivative” 的中文翻译是：(What is the Chinese translation for 'Derivative' in Mathematics?)",
+        "options": [
+            "积分 (Integral)",
+            "导数 (Derivative)",
+            "函数 (Function)",
+            "极限 (Limit)"
+        ],
+        "correct_answer": "导数 (Derivative)",
+        "explanation": "Derivative = 导数; Integral = 积分; Function = 函数; Limit = 极限。",
+        "difficulty": "Easy"
+    },
+    {
+        "id": 5002,
+        "set_id": "generated_chinese_science_set_1",
+        "set_name": "Generated Chinese Science Set 1",
+        "topic": "Physics Terminology",
+        "question": "物理学中，“加速度”的意思是：(In Physics, what does '加速度' mean?)",
+        "options": [
+            "Velocity",
+            "Gravity",
+            "Acceleration",
+            "Force"
+        ],
+        "correct_answer": "Acceleration",
+        "explanation": "加速度 (jiā sù dù) = Acceleration. 速度 (sù dù) = Velocity. 力 (lì) = Force.",
+        "difficulty": "Easy"
+    },
+    {
+        "id": 5003,
+        "set_id": "generated_chinese_science_set_1",
+        "set_name": "Generated Chinese Science Set 1",
+        "topic": "Chemistry Terminology",
+        "question": "化学实验中，用来加热液体的玻璃仪器通常是：(In chemical experiments, the glass instrument usually used for heating liquids is:)",
+        "options": [
+            "试管 (Test tube)",
+            "量筒 (Graduated cylinder)",
+            "温度计 (Thermometer)",
+            "天平 (Balance)"
+        ],
+        "correct_answer": "试管 (Test tube)",
+        "explanation": "试管 (Test tube) can be heated. 量筒 (Graduated cylinder) cannot be heated.",
+        "difficulty": "Medium"
+    },
+    {
+        "id": 5004,
+        "set_id": "generated_chinese_science_set_1",
+        "set_name": "Generated Chinese Science Set 1",
+        "topic": "Computer Science",
+        "question": "在计算机编程中，“Loop” 的中文术语是：(In computer programming, what is the Chinese term for 'Loop'?)",
+        "options": [
+            "变量 (Variable)",
+            "循环 (Loop)",
+            "函数 (Function)",
+            "数组 (Array)"
+        ],
+        "correct_answer": "循环 (Loop)",
+        "explanation": "Loop = 循环; Variable = 变量; Array = 数组。",
+        "difficulty": "Easy"
+    },
+    {
+        "id": 5005,
+        "set_id": "generated_chinese_science_set_1",
+        "set_name": "Generated Chinese Science Set 1",
+        "topic": "Academic Reading",
+        "question": "请阅读句子：'实验结果表明，温度升高，反应速率加快。'\n这句话的意思是：(Read the sentence: 'The experimental results show that as temperature rises, reaction rate increases.')\nWhat does this sentence mean?)",
+        "options": [
+            "Temperature has no effect on reaction rate.",
+            "Reaction rate decreases as temperature rises.",
+            "Reaction rate increases as temperature rises.",
+            "Temperature decreases as reaction rate increases."
+        ],
+        "correct_answer": "Reaction rate increases as temperature rises.",
+        "explanation": "温度升高 (Temperature rises), 反应速率加快 (Reaction rate speeds up).",
+        "difficulty": "Medium"
+    },
+    {
+        "id": 5006,
+        "set_id": "generated_chinese_science_set_1",
+        "set_name": "Generated Chinese Science Set 1",
+        "topic": "Mathematics Terminology",
+        "question": "“直角三角形”的定义是：(The definition of 'Right-angled triangle' is:)",
+        "options": [
+            "A triangle with three equal sides.",
+            "A triangle with one 90-degree angle.",
+            "A triangle with two equal sides.",
+            "A triangle with no equal sides."
+        ],
+        "correct_answer": "A triangle with one 90-degree angle.",
+        "explanation": "直角 (Zhí jiǎo) means Right Angle (90 degrees).",
+        "difficulty": "Easy"
+    },
+    {
+        "id": 5007,
+        "set_id": "generated_chinese_science_set_1",
+        "set_name": "Generated Chinese Science Set 1",
+        "topic": "Lab Safety",
+        "question": "进入化学实验室时，为了安全，必须佩戴：(When entering a chemical lab, for safety, one must wear:)",
+        "options": [
+            "太阳镜 (Sunglasses)",
+            "护目镜 (Safety Goggles)",
+            "耳机 (Headphones)",
+            "手表 (Watch)"
+        ],
+        "correct_answer": "护目镜 (Safety Goggles)",
+        "explanation": "护目镜 (Safety Goggles) protect eyes from chemicals.",
+        "difficulty": "Easy"
+    },
+    {
+        "id": 5008,
+        "set_id": "generated_chinese_science_set_1",
+        "set_name": "Generated Chinese Science Set 1",
+        "topic": "Physics Terminology",
+        "question": "“能量守恒定律” 是指：(The 'Law of Conservation of Energy' refers to:)",
+        "options": [
+            "Energy can be created.",
+            "Energy can be destroyed.",
+            "Energy cannot be created or destroyed, only transformed.",
+            "Energy disappears over time."
+        ],
+        "correct_answer": "Energy cannot be created or destroyed, only transformed.",
+        "explanation": "能量 (Energy) 守恒 (Conservation).",
+        "difficulty": "Medium"
+    },
+    {
+        "id": 5009,
+        "set_id": "generated_chinese_science_set_1",
+        "set_name": "Generated Chinese Science Set 1",
+        "topic": "Data Charts",
+        "question": "在描述图表时，“呈上升趋势”的意思是：(When describing a chart, '呈上升趋势' means:)",
+        "options": [
+            "Shows a downward trend",
+            "Shows an upward trend",
+            "Remains stable",
+            "Fluctuates wildy"
+        ],
+        "correct_answer": "Shows an upward trend",
+        "explanation": "上升 (Shàng shēng) = Upward/Rise. 趋势 (Qū shì) = Trend.",
+        "difficulty": "Medium"
+    },
+    {
+        "id": 5010,
+        "set_id": "generated_chinese_science_set_1",
+        "set_name": "Generated Chinese Science Set 1",
+        "topic": "Computer Science",
+        "question": "“算法”的中文意思是：(What is the meaning of '算法'?)",
+        "options": [
+            "Database",
+            "Hardware",
+            "Algorithm",
+            "Network"
+        ],
+        "correct_answer": "Algorithm",
+        "explanation": "算法 (Suàn fǎ) = Algorithm. 数据库 (Database). 硬件 (Hardware).",
+        "difficulty": "Medium"
+    },
+    {
+        "id": 5011,
+        "set_id": "generated_chinese_science_set_1",
+        "set_name": "Generated Chinese Science Set 1",
+        "topic": "Mathematics Terminology",
+        "question": "填空：在直角坐标系中，x轴通常被称为______。(Fill in the blank: In a Cartesian coordinate system, the x-axis is usually called ______.)",
+        "options": [
+            "纵轴 (Vertical axis/Ordinate)",
+            "横轴 (Horizontal axis/Abscissa)",
+            "原点 (Origin)",
+            "斜率 (Slope)"
+        ],
+        "correct_answer": "横轴 (Horizontal axis/Abscissa)",
+        "explanation": "In Chinese math, x-axis is 横轴 (Horizontal), y-axis is 纵轴 (Vertical).",
+        "difficulty": "Medium"
+    },
+    {
+        "id": 5012,
+        "set_id": "generated_chinese_science_set_1",
+        "set_name": "Generated Chinese Science Set 1",
+        "topic": "Chemistry Terminology",
+        "question": "“有机化合物” 是指含______元素的化合物。( 'Organic compounds' refer to compounds containing ______ element.)",
+        "options": [
+            "氧 (Oxygen)",
+            "碳 (Carbon)",
+            "氮 (Nitrogen)",
+            "铁 (Iron)"
+        ],
+        "correct_answer": "碳 (Carbon)",
+        "explanation": "Organic compounds are based on Carbon (碳).",
+        "difficulty": "Medium"
+    },
+    {
+        "id": 5013,
+        "set_id": "generated_chinese_science_set_1",
+        "set_name": "Generated Chinese Science Set 1",
+        "topic": "Academic Reading",
+        "question": "阅读理解：'本研究旨在探讨人工智能在医学影像诊断中的应用。' \n这篇文章的主题是什么？(Reading Comprehension: 'This study aims to explore the application of AI in medical image diagnosis.')\nWhat is the topic of this article?)",
+        "options": [
+            "AI in Medical Diagnosis",
+            "History of Computers",
+            "How to build a robot",
+            "Chemical composition of drugs"
+        ],
+        "correct_answer": "AI in Medical Diagnosis",
+        "explanation": "人工智能 (AI), 医学影像诊断 (Medical image diagnosis).",
+        "difficulty": "Medium"
+    },
+    {
+        "id": 5014,
+        "set_id": "generated_chinese_science_set_1",
+        "set_name": "Generated Chinese Science Set 1",
+        "topic": "Computer Science",
+        "question": "“数据库” 的中文翻译是：(Translation of 'Database' is:)",
+        "options": [
+            "数据表 (Data Table)",
+            "数据库 (Database)",
+            "数据结构 (Data Structure)",
+            "大数据 (Big Data)"
+        ],
+        "correct_answer": "数据库 (Database)",
+        "explanation": "Database = 数据库. Warehouse = 库.",
+        "difficulty": "Easy"
+    },
+    {
+        "id": 5015,
+        "set_id": "generated_chinese_science_set_1",
+        "set_name": "Generated Chinese Science Set 1",
+        "topic": "General Science",
+        "question": "“假设” 在科学研究中的意思是：(What does '假设' mean in scientific research?)",
+        "options": [
+            "Hypothesis",
+            "Conclusion",
+            "Observation",
+            "Experiment"
+        ],
+        "correct_answer": "Hypothesis",
+        "explanation": "假设 (Jiǎ shè) = Hypothesis. 结论 (Conclusion). 实验 (Experiment).",
+        "difficulty": "Medium"
+    }
+]

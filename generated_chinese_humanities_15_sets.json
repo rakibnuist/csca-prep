@@ -1,0 +1,632 @@
+[
+    {
+        "set_id": "humanities_set_01",
+        "set_name": "Set 1",
+        "topic": "Literature",
+        "question": "哪个朝代被称为所谓‘诗的王朝’？(Which dynasty is known as the 'Dynasty of Poetry'?)",
+        "options": [
+            "清朝 (Qing)",
+            "唐朝 (Tang)",
+            "汉朝 (Han)",
+            "元朝 (Yuan)"
+        ],
+        "correct_answer": "唐朝 (Tang)",
+        "difficulty": "Easy"
+    },
+    {
+        "set_id": "humanities_set_01",
+        "set_name": "Set 1",
+        "topic": "Philosophy",
+        "question": "‘道法自然’是哪个学派的观点？(Which school's view is 'Tao follows nature'?)",
+        "options": [
+            "儒家 (Confucianism)",
+            "道家 (Taoism)",
+            "墨家 (Mohism)",
+            "法家 (Legalism)"
+        ],
+        "correct_answer": "道家 (Taoism)",
+        "difficulty": "Medium"
+    },
+    {
+        "set_id": "humanities_set_01",
+        "set_name": "Set 1",
+        "topic": "History",
+        "question": "中国的最后一位皇帝是？(Who was the last emperor of China?)",
+        "options": [
+            "康熙 (Kangxi)",
+            "乾隆 (Qianlong)",
+            "溥仪 (Puyi)",
+            "李世民 (Li Shimin)"
+        ],
+        "correct_answer": "溥仪 (Puyi)",
+        "difficulty": "Easy"
+    },
+    {
+        "set_id": "humanities_set_02",
+        "set_name": "Set 2",
+        "topic": "Arts",
+        "question": "京剧中的‘生’角是指？(What does the 'Sheng' role in Peking Opera refer to?)",
+        "options": [
+            "Male role",
+            "Female role",
+            "Painted face",
+            "Clown"
+        ],
+        "correct_answer": "Male role",
+        "difficulty": "Medium"
+    },
+    {
+        "set_id": "humanities_set_02",
+        "set_name": "Set 2",
+        "topic": "Law",
+        "question": "中国的最高立法机关是？(What is the highest legislative body in China?)",
+        "options": [
+            "国务院 (State Council)",
+            "最高法院 (Supreme Court)",
+            "全国人民代表大会 (NPC)",
+            "政协 (CPPCC)"
+        ],
+        "correct_answer": "全国人民代表大会 (NPC)",
+        "difficulty": "Hard"
+    },
+    {
+        "set_id": "humanities_set_02",
+        "set_name": "Set 2",
+        "topic": "Literature",
+        "question": "《三国演义》描写的是哪个时期的历史？(Which period does 'Romance of the Three Kingdoms' depict?)",
+        "options": [
+            "Three Kingdoms",
+            "Spring and Autumn",
+            "Warring States",
+            "Tang Dynasty"
+        ],
+        "correct_answer": "Three Kingdoms",
+        "difficulty": "Easy"
+    },
+    {
+        "set_id": "humanities_set_03",
+        "set_name": "Set 3",
+        "topic": "Geography",
+        "question": "中国的首都是？(What is the capital of China?)",
+        "options": [
+            "Shanghai",
+            "Beijing",
+            "Guangzhou",
+            "Shenzhen"
+        ],
+        "correct_answer": "Beijing",
+        "difficulty": "Easy"
+    },
+    {
+        "set_id": "humanities_set_03",
+        "set_name": "Set 3",
+        "topic": "Politics",
+        "question": "‘一国两制’最早是为了解决什么问题提出的？(What issue was 'One Country, Two Systems' originally proposed to solve?)",
+        "options": [
+            "Taiwan",
+            "Hong Kong",
+            "Macau",
+            "Tibet"
+        ],
+        "correct_answer": "Taiwan",
+        "difficulty": "Hard"
+    },
+    {
+        "set_id": "humanities_set_03",
+        "set_name": "Set 3",
+        "topic": "Culture",
+        "question": "端午节的主要习俗是？(What is the main custom of Dragon Boat Festival?)",
+        "options": [
+            "Eating Mooncakes",
+            "Eating Zongzi (Sticky Rice Dumplings)",
+            "Eating Dumplings",
+            "Climbing Mountains"
+        ],
+        "correct_answer": "Eating Zongzi (Sticky Rice Dumplings)",
+        "difficulty": "Easy"
+    },
+    {
+        "set_id": "humanities_set_04",
+        "set_name": "Set 4",
+        "topic": "Literature",
+        "question": "鲁迅的《呐喊》是一部？(What is Lu Xun's 'Call to Arms'?)",
+        "options": [
+            "Novel collection",
+            "Short story collection",
+            "Essay collection",
+            "Poetry collection"
+        ],
+        "correct_answer": "Short story collection",
+        "difficulty": "Medium"
+    },
+    {
+        "set_id": "humanities_set_04",
+        "set_name": "Set 4",
+        "topic": "Philosophy",
+        "question": "‘兼爱’、‘非攻’是哪个学派的思想？('Universal Love' and 'Non-Aggression' belong to which school?)",
+        "options": [
+            "Confucianism",
+            "Taoism",
+            "Mohism",
+            "Legalism"
+        ],
+        "correct_answer": "Mohism",
+        "difficulty": "Hard"
+    },
+    {
+        "set_id": "humanities_set_04",
+        "set_name": "Set 4",
+        "topic": "History",
+        "question": "长城的修建主要是为了防御？(The Great Wall was built mainly to defend against?)",
+        "options": [
+            "Nomadic tribes from the North",
+            "Japanese pirates",
+            "Western powers",
+            "Internal rebels"
+        ],
+        "correct_answer": "Nomadic tribes from the North",
+        "difficulty": "Easy"
+    },
+    {
+        "set_id": "humanities_set_05",
+        "set_name": "Set 5",
+        "topic": "Arts",
+        "question": "中国画主要分为哪两大类？(What are the two main categories of Chinese painting?)",
+        "options": [
+            "Oil & Watercolor",
+            "Gongbi & Xieyi",
+            "Abstract & Realism",
+            "Sketch & Portrait"
+        ],
+        "correct_answer": "Gongbi & Xieyi",
+        "difficulty": "Medium"
+    },
+    {
+        "set_id": "humanities_set_05",
+        "set_name": "Set 5",
+        "topic": "Economics",
+        "question": "人民币的货币代码是？(What is the currency code for Renminbi?)",
+        "options": [
+            "USD",
+            "CNY",
+            "JPY",
+            "EUR"
+        ],
+        "correct_answer": "CNY",
+        "difficulty": "Easy"
+    },
+    {
+        "set_id": "humanities_set_05",
+        "set_name": "Set 5",
+        "topic": "Sociology",
+        "question": "中国传统节日‘春节’是农历的？(The traditional Chinese festival 'Spring Festival' is on the Lunar...?)",
+        "options": [
+            "January 1st",
+            "August 15th",
+            "May 5th",
+            "September 9th"
+        ],
+        "correct_answer": "January 1st",
+        "difficulty": "Easy"
+    },
+    {
+        "set_id": "humanities_set_06",
+        "set_name": "Set 6",
+        "topic": "Literature",
+        "question": "李白的诗《静夜思》描写的是？(What does Li Bai's 'Quiet Night Thought' depict?)",
+        "options": [
+            "Homesickness",
+            "The beauty of nature",
+            "Friendship",
+            "War"
+        ],
+        "correct_answer": "Homesickness",
+        "difficulty": "Easy"
+    },
+    {
+        "set_id": "humanities_set_06",
+        "set_name": "Set 6",
+        "topic": "Law",
+        "question": "中国公民满多少周岁有选举权？(At what age do Chinese citizens have the right to vote?)",
+        "options": [
+            "16",
+            "18",
+            "20",
+            "21"
+        ],
+        "correct_answer": "18",
+        "difficulty": "Easy"
+    },
+    {
+        "set_id": "humanities_set_06",
+        "set_name": "Set 6",
+        "topic": "History",
+        "question": "‘五四运动’爆发于哪一年？(In which year did the May Fourth Movement erupt?)",
+        "options": [
+            "1911",
+            "1919",
+            "1921",
+            "1949"
+        ],
+        "correct_answer": "1919",
+        "difficulty": "Medium"
+    },
+    {
+        "set_id": "humanities_set_07",
+        "set_name": "Set 7",
+        "topic": "Philosophy",
+        "question": "《论语》记录的是谁的言行？(Whose words and deeds does 'The Analects' record?)",
+        "options": [
+            "Laozi",
+            "Confucius",
+            "Mencius",
+            "Zhuangzi"
+        ],
+        "correct_answer": "Confucius",
+        "difficulty": "Easy"
+    },
+    {
+        "set_id": "humanities_set_07",
+        "set_name": "Set 7",
+        "topic": "Geography",
+        "question": "中国最长的河流是？(What is the longest river in China?)",
+        "options": [
+            "Yellow River",
+            "Yangtze River",
+            "Pearl River",
+            "Heilongjiang"
+        ],
+        "correct_answer": "Yangtze River",
+        "difficulty": "Easy"
+    },
+    {
+        "set_id": "humanities_set_07",
+        "set_name": "Set 7",
+        "topic": "Arts",
+        "question": "中国著名的瓷器之都是？(What is the famous 'Porcelain Capital' of China?)",
+        "options": [
+            "Hangzhou",
+            "Jingdezhen",
+            "Suzhou",
+            "Nanjing"
+        ],
+        "correct_answer": "Jingdezhen",
+        "difficulty": "Medium"
+    },
+    {
+        "set_id": "humanities_set_08",
+        "set_name": "Set 8",
+        "topic": "Literature",
+        "question": "巴金的‘激流三部曲’包括？(What does Ba Jin's 'Torrent Trilogy' include?)",
+        "options": [
+            "Family, Spring, Autumn",
+            "Fog, Rain, Lightning",
+            "Wind, Flower, Snow",
+            "Sun, Moon, Star"
+        ],
+        "correct_answer": "Family, Spring, Autumn",
+        "difficulty": "Hard"
+    },
+    {
+        "set_id": "humanities_set_08",
+        "set_name": "Set 8",
+        "topic": "Politics",
+        "question": "中国的执政党是？(What is the ruling party of China?)",
+        "options": [
+            "KMT",
+            "CPC (Communist Party of China)",
+            "DPP",
+            "Labor Party"
+        ],
+        "correct_answer": "CPC (Communist Party of China)",
+        "difficulty": "Easy"
+    },
+    {
+        "set_id": "humanities_set_08",
+        "set_name": "Set 8",
+        "topic": "Culture",
+        "question": "十二生肖中，排在第一位的是？(Which animal is first in the Chinese Zodiac?)",
+        "options": [
+            "Ox",
+            "Tiger",
+            "Rat",
+            "Dragon"
+        ],
+        "correct_answer": "Rat",
+        "difficulty": "Easy"
+    },
+    {
+        "set_id": "humanities_set_09",
+        "set_name": "Set 9",
+        "topic": "History",
+        "question": "建立元朝的民族是？(Which ethnic group established the Yuan Dynasty?)",
+        "options": [
+            "Han",
+            "Manchu",
+            "Mongol",
+            "Tibetan"
+        ],
+        "correct_answer": "Mongol",
+        "difficulty": "Medium"
+    },
+    {
+        "set_id": "humanities_set_09",
+        "set_name": "Set 9",
+        "topic": "Law",
+        "question": "结婚必须男女双方？(Marriage requires both parties to be...)",
+        "options": [
+            "Rich",
+            "Healthy",
+            "Willing (Voluntary)",
+            "Same age"
+        ],
+        "correct_answer": "Willing (Voluntary)",
+        "difficulty": "Easy"
+    },
+    {
+        "set_id": "humanities_set_09",
+        "set_name": "Set 9",
+        "topic": "Philosophy",
+        "question": "‘无为而治’是哪家的政治主张？('Governing by doing nothing' is the political claim of?)",
+        "options": [
+            "Taoism",
+            "Confucianism",
+            "Legalism",
+            "Mohism"
+        ],
+        "correct_answer": "Taoism",
+        "difficulty": "Medium"
+    },
+    {
+        "set_id": "humanities_set_10",
+        "set_name": "Set 10",
+        "topic": "Literature",
+        "question": "《水浒传》中有多少位好汉？(How many heroes are there in 'Water Margin'?)",
+        "options": [
+            "72",
+            "36",
+            "108",
+            "100"
+        ],
+        "correct_answer": "108",
+        "difficulty": "Easy"
+    },
+    {
+        "set_id": "humanities_set_10",
+        "set_name": "Set 10",
+        "topic": "Economics",
+        "question": "‘一带一路’是指？(What does 'Belt and Road' refer to?)",
+        "options": [
+            "Silk Road Economic Belt & 21st Century Maritime Silk Road",
+            "A belt and a road",
+            "Expressway construction",
+            "Fashion design"
+        ],
+        "correct_answer": "Silk Road Economic Belt & 21st Century Maritime Silk Road",
+        "difficulty": "Medium"
+    },
+    {
+        "set_id": "humanities_set_10",
+        "set_name": "Set 10",
+        "topic": "Arts",
+        "question": "中国书法的主要书体不包括？(Which is NOT a main script of Chinese calligraphy?)",
+        "options": [
+            "Regular Script (Kaishu)",
+            "Running Script (Xingshu)",
+            "Cursive Script (Caoshu)",
+            "Roman Script"
+        ],
+        "correct_answer": "Roman Script",
+        "difficulty": "Easy"
+    },
+    {
+        "set_id": "humanities_set_11",
+        "set_name": "Set 11",
+        "topic": "History",
+        "question": "郑和下西洋最远到达了？(How far did Zheng He's voyages reach?)",
+        "options": [
+            "America",
+            "East coast of Africa",
+            "Europe",
+            "Australia"
+        ],
+        "correct_answer": "East coast of Africa",
+        "difficulty": "Hard"
+    },
+    {
+        "set_id": "humanities_set_11",
+        "set_name": "Set 11",
+        "topic": "Culture",
+        "question": "中秋节人们通常吃？(What do people usually eat on Mid-Autumn Festival?)",
+        "options": [
+            "Dumplings",
+            "Mooncakes",
+            "Noodles",
+            "Rice Balls"
+        ],
+        "correct_answer": "Mooncakes",
+        "difficulty": "Easy"
+    },
+    {
+        "set_id": "humanities_set_11",
+        "set_name": "Set 11",
+        "topic": "Geography",
+        "question": "‘雾都’通常指中国的哪个城市？(Which Chinese city is usually called the 'Fog City'? Note: often Chongqing)",
+        "options": [
+            "Beijing",
+            "Chongqing",
+            "Shanghai",
+            "Chengdu"
+        ],
+        "correct_answer": "Chongqing",
+        "difficulty": "Medium"
+    },
+    {
+        "set_id": "humanities_set_12",
+        "set_name": "Set 12",
+        "topic": "Literature",
+        "question": "莫言获得了哪个奖项？(Which award did Mo Yan win?)",
+        "options": [
+            "Nobel Peace Prize",
+            "Nobel Literature Prize",
+            "Oscar",
+            "Pulitzer"
+        ],
+        "correct_answer": "Nobel Literature Prize",
+        "difficulty": "Easy"
+    },
+    {
+        "set_id": "humanities_set_12",
+        "set_name": "Set 12",
+        "topic": "Law",
+        "question": "知识产权包括著作权、商标权和？(IP rights include copyright, trademark, and?)",
+        "options": [
+            "Patent right",
+            "Human right",
+            "Voting right",
+            "Land right"
+        ],
+        "correct_answer": "Patent right",
+        "difficulty": "Medium"
+    },
+    {
+        "set_id": "humanities_set_12",
+        "set_name": "Set 12",
+        "topic": "Philosophy",
+        "question": "‘性善论’是谁提出的？(Who proposed 'Human nature is inherently good'?)",
+        "options": [
+            "Confucius",
+            "Mencius",
+            "Xunzi",
+            "Han Feizi"
+        ],
+        "correct_answer": "Mencius",
+        "difficulty": "Hard"
+    },
+    {
+        "set_id": "humanities_set_13",
+        "set_name": "Set 13",
+        "topic": "Sociology",
+        "question": "中国人口最多的民族是？(Which is the most populous ethnic group in China?)",
+        "options": [
+            "Zhuang",
+            "Manchu",
+            "Hui",
+            "Han"
+        ],
+        "correct_answer": "Han",
+        "difficulty": "Easy"
+    },
+    {
+        "set_id": "humanities_set_13",
+        "set_name": "Set 13",
+        "topic": "Arts",
+        "question": "兵马俑是个哪个朝代的文物？(Terracotta Warriors are artifacts from which dynasty?)",
+        "options": [
+            "Qin",
+            "Han",
+            "Tang",
+            "Song"
+        ],
+        "correct_answer": "Qin",
+        "difficulty": "Easy"
+    },
+    {
+        "set_id": "humanities_set_13",
+        "set_name": "Set 13",
+        "topic": "History",
+        "question": "甲骨文主要发现于？(Oracle Bone Script was mainly found in?)",
+        "options": [
+            "Beijing",
+            "Anyang, Henan",
+            "Xi'an",
+            "Nanjing"
+        ],
+        "correct_answer": "Anyang, Henan",
+        "difficulty": "Hard"
+    },
+    {
+        "set_id": "humanities_set_14",
+        "set_name": "Set 14",
+        "topic": "Literature",
+        "question": "《红楼梦》中的男主角是？(Who is the male protagonist in 'Dream of the Red Chamber'?)",
+        "options": [
+            "Jia Baoyu",
+            "Lin Daiyu",
+            "Xue Baochai",
+            "Wang Xifeng"
+        ],
+        "correct_answer": "Jia Baoyu",
+        "difficulty": "Easy"
+    },
+    {
+        "set_id": "humanities_set_14",
+        "set_name": "Set 14",
+        "topic": "Culture",
+        "question": "中国的国球是？(What is the 'National Ball' sport of China?)",
+        "options": [
+            "Football",
+            "Basketball",
+            "Table Tennis (Ping Pong)",
+            "Badminton"
+        ],
+        "correct_answer": "Table Tennis (Ping Pong)",
+        "difficulty": "Easy"
+    },
+    {
+        "set_id": "humanities_set_14",
+        "set_name": "Set 14",
+        "topic": "Geography",
+        "question": "中国最大的岛屿是？(What is the largest island in China?)",
+        "options": [
+            "Hainan Island",
+            "Taiwan Island",
+            "Chongming Island",
+            "Zhoushan Island"
+        ],
+        "correct_answer": "Taiwan Island",
+        "difficulty": "Medium"
+    },
+    {
+        "set_id": "humanities_set_15",
+        "set_name": "Set 15",
+        "topic": "Politics",
+        "question": "中国国旗上的五颗星象征？(What do the five stars on the Chinese flag symbolize?)",
+        "options": [
+            "Unity of the people under CPC",
+            "Five elements",
+            "Five directions",
+            "Five mountains"
+        ],
+        "correct_answer": "Unity of the people under CPC",
+        "difficulty": "Medium"
+    },
+    {
+        "set_id": "humanities_set_15",
+        "set_name": "Set 15",
+        "topic": "History",
+        "question": "鸦片战争发生在哪个世纪？(In which century did the Opium Wars occur?)",
+        "options": [
+            "18th",
+            "19th",
+            "20th",
+            "17th"
+        ],
+        "correct_answer": "19th",
+        "difficulty": "Medium"
+    },
+    {
+        "set_id": "humanities_set_15",
+        "set_name": "Set 15",
+        "topic": "Term Distinction",
+        "question": "‘老师’和‘教师’的区别？(Difference between 'Laoshi' and 'Jiaoshi'?)",
+        "options": [
+            "No difference",
+            "Laoshi is oral/form of address, Jiaoshi is occupation profession",
+            "Jiaoshi is for university only",
+            "Laoshi is for female only"
+        ],
+        "correct_answer": "Laoshi is oral/form of address, Jiaoshi is occupation profession",
+        "difficulty": "Medium"
+    }
+]

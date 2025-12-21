@@ -1,0 +1,242 @@
+[
+    {
+        "id": 1001,
+        "set_id": "generated_set_1",
+        "set_name": "Generated Set 1",
+        "topic": "Sets and Inequalities",
+        "question": "Given sets $$ A = \\{ x \\in \\mathbb{Z} \\mid 0 \\le x \\le 5 \\} $$ and $$ B = \\{ x \\in \\mathbb{Z} \\mid x^2 < 10 \\} $$, find $$ A \\cap B $$.",
+        "options": [
+            "$$ \\{ 0, 1, 2, 3 \\} $$",
+            "$$ \\{ 0, 1, 2 \\} $$",
+            "$$ \\{ 1, 2, 3 \\} $$",
+            "$$ \\{ 0, 1, 2, 3, 4, 5 \\} $$"
+        ],
+        "correct_answer": "$$ \\{ 0, 1, 2, 3 \\} $$",
+        "explanation": "$$ A = \\{0, 1, 2, 3, 4, 5\\} $$. $$ B = \\{-3, -2, -1, 0, 1, 2, 3\\} $$ (since $$ 3^2=9<10, 4^2=16 \\ge 10 $$). intersection is $$ \\{0, 1, 2, 3\\} $$.",
+        "difficulty": "Medium"
+    },
+    {
+        "id": 1002,
+        "set_id": "generated_set_1",
+        "set_name": "Generated Set 1",
+        "topic": "Sets and Inequalities",
+        "question": "Solve the rational inequality: $$ \\frac{x - 3}{x + 2} \\le 0 $$",
+        "options": [
+            "$$ -2 < x \\le 3 $$",
+            "$$ -2 \\le x \\le 3 $$",
+            "$$ x < -2 \\text{ or } x \\ge 3 $$",
+            "$$ x \\le -2 \\text{ or } x \\ge 3 $$"
+        ],
+        "correct_answer": "$$ -2 < x \\le 3 $$",
+        "explanation": "Critical points are -2 and 3. Test intervals. The expression is negative between -2 and 3. Denominator cannot be 0, so $$ x \\ne -2 $$.",
+        "difficulty": "Medium"
+    },
+    {
+        "id": 1003,
+        "set_id": "generated_set_1",
+        "set_name": "Generated Set 1",
+        "topic": "Sets and Inequalities",
+        "question": "If $$ A \\subset B $$, which of the following is always true?",
+        "options": [
+            "$$ A \\cup B = A $$",
+            "$$ A \\cap B = B $$",
+            "$$ A \\cup B = B $$",
+            "$$ B \\subset A $$"
+        ],
+        "correct_answer": "$$ A \\cup B = B $$",
+        "explanation": "Since A is inside B, their union is just B.",
+        "difficulty": "Easy"
+    },
+    {
+        "id": 1004,
+        "set_id": "generated_set_1",
+        "set_name": "Generated Set 1",
+        "topic": "Functions",
+        "question": "Determine the parity of the function $$ f(x) = x^3 + \\sin(x) $$.",
+        "options": [
+            "Even",
+            "Odd",
+            "Neither",
+            "Both"
+        ],
+        "correct_answer": "Odd",
+        "explanation": "$$ f(-x) = (-x)^3 + \\sin(-x) = -x^3 - \\sin(x) = -(x^3 + \\sin(x)) = -f(x) $$.",
+        "difficulty": "Medium"
+    },
+    {
+        "id": 1005,
+        "set_id": "generated_set_1",
+        "set_name": "Generated Set 1",
+        "topic": "Functions",
+        "question": "Find the general term $$ a_n $$ of the geometric sequence: 3, 6, 12, 24...",
+        "options": [
+            "$$ a_n = 3 \\cdot 2^{n-1} $$",
+            "$$ a_n = 3 \\cdot 2^n $$",
+            "$$ a_n = 2 \\cdot 3^{n-1} $$",
+            "$$ a_n = 3 + 3(n-1) $$"
+        ],
+        "correct_answer": "$$ a_n = 3 \\cdot 2^{n-1} $$",
+        "explanation": "First term $$ a=3 $$, ratio $$ r=2 $$. Formula $$ a_n = a r^{n-1} $$.",
+        "difficulty": "Easy"
+    },
+    {
+        "id": 1006,
+        "set_id": "generated_set_1",
+        "set_name": "Generated Set 1",
+        "topic": "Calculus",
+        "question": "Evaluate $$ \\lim_{x \\to 0} \\frac{\\sin(5x)}{x} $$",
+        "options": [
+            "1",
+            "5",
+            "0",
+            "Undefined"
+        ],
+        "correct_answer": "5",
+        "explanation": "Standard limit $$ \\lim_{x \\to 0} \\frac{\\sin(kx)}{x} = k $$. Here k=5.",
+        "difficulty": "Medium"
+    },
+    {
+        "id": 1007,
+        "set_id": "generated_set_1",
+        "set_name": "Generated Set 1",
+        "topic": "Calculus",
+        "question": "Find the derivative of $$ f(x) = e^{2x} + \\ln(x) $$.",
+        "options": [
+            "$$ 2e^{2x} + \\frac{1}{x} $$",
+            "$$ e^{2x} + \\frac{1}{x} $$",
+            "$$ 2e^{2x} + \\ln(x) $$",
+            "$$ e^{2x} + 1/x $$"
+        ],
+        "correct_answer": "$$ 2e^{2x} + \\frac{1}{x} $$",
+        "explanation": "Chain rule for $$ e^{2x} $$ gives $$ 2e^{2x} $$. Derivative of $$ \\ln(x) $$ is $$ 1/x $$.",
+        "difficulty": "Medium"
+    },
+    {
+        "id": 1008,
+        "set_id": "generated_set_1",
+        "set_name": "Generated Set 1",
+        "topic": "Geometry",
+        "question": "The equation $$ x^2 + y^2 - 4x + 6y - 12 = 0 $$ represents a circle. Find its radius.",
+        "options": [
+            "$$ 5 $$",
+            "$$ 25 $$",
+            "$$ \\sqrt{12} $$",
+            "$$ 7 $$"
+        ],
+        "correct_answer": "$$ 5 $$",
+        "explanation": "Complete the square: $$ (x-2)^2 + (y+3)^2 = 12 + 4 + 9 = 25 $$. Radius is $$ \\sqrt{25} = 5 $$.",
+        "difficulty": "Hard"
+    },
+    {
+        "id": 1009,
+        "set_id": "generated_set_1",
+        "set_name": "Generated Set 1",
+        "topic": "Vectors",
+        "question": "Given vectors $$ \\mathbf{a} = (1, 2) $$ and $$ \\mathbf{b} = (-2, 3) $$, find $$ \\mathbf{a} \\cdot \\mathbf{b} $$",
+        "options": [
+            "4",
+            "8",
+            "-4",
+            "5"
+        ],
+        "correct_answer": "4",
+        "explanation": "Dot product: $$ (1)(-2) + (2)(3) = -2 + 6 = 4 $$.",
+        "difficulty": "Easy"
+    },
+    {
+        "id": 1010,
+        "set_id": "generated_set_1",
+        "set_name": "Generated Set 1",
+        "topic": "Complex Numbers",
+        "question": "Find the modulus of the complex number $$ z = 3 - 4i $$.",
+        "options": [
+            "5",
+            "7",
+            "25",
+            "$$ \\sqrt{7} $$"
+        ],
+        "correct_answer": "5",
+        "explanation": "$$ |z| = \\sqrt{3^2 + (-4)^2} = \\sqrt{9 + 16} = \\sqrt{25} = 5 $$.",
+        "difficulty": "Medium"
+    },
+    {
+        "id": 1011,
+        "set_id": "generated_set_1",
+        "set_name": "Generated Set 1",
+        "topic": "Solid Geometry",
+        "question": "What is the volume of a sphere with radius 3?",
+        "options": [
+            "$$ 36\\pi $$",
+            "$$ 12\\pi $$",
+            "$$ 27\\pi $$",
+            "$$ 4\\pi $$"
+        ],
+        "correct_answer": "$$ 36\\pi $$",
+        "explanation": "Volume = $$ \\frac{4}{3}\\pi r^3 = \\frac{4}{3}\\pi (27) = 36\\pi $$.",
+        "difficulty": "Medium"
+    },
+    {
+        "id": 1012,
+        "set_id": "generated_set_1",
+        "set_name": "Generated Set 1",
+        "topic": "Probability",
+        "question": "If two fair dice are rolled, what is the probability that the sum is 10?",
+        "options": [
+            "$$ 1/12 $$",
+            "$$ 1/18 $$",
+            "$$ 1/36 $$",
+            "$$ 1/6 $$"
+        ],
+        "correct_answer": "$$ 1/12 $$",
+        "explanation": "Possible pairs: (4,6), (5,5), (6,4). 3 favorable outcomes. Total outcomes 36. $$ 3/36 = 1/12 $$.",
+        "difficulty": "Medium"
+    },
+    {
+        "id": 1013,
+        "set_id": "generated_set_1",
+        "set_name": "Generated Set 1",
+        "topic": "Statistics",
+        "question": "In a normal distribution, approximately what percentage of data falls within one standard deviation of the mean?",
+        "options": [
+            "68%",
+            "95%",
+            "99.7%",
+            "50%"
+        ],
+        "correct_answer": "68%",
+        "explanation": "Empirical rule states approx 68% falls within 1 SD.",
+        "difficulty": "Easy"
+    },
+    {
+        "id": 1014,
+        "set_id": "generated_set_1",
+        "set_name": "Generated Set 1",
+        "topic": "Statistics",
+        "question": "Find the variance of the data set: 2, 4, 6.",
+        "options": [
+            "2.67",
+            "4",
+            "1.5",
+            "8"
+        ],
+        "correct_answer": "2.67",
+        "explanation": "Mean = 4. deviations: -2, 0, 2. sq deviations: 4, 0, 4. Sum = 8. Variance = 8/3 ≈ 2.67 (population) or 4 (sample). Assuming population.",
+        "difficulty": "Medium"
+    },
+    {
+        "id": 1015,
+        "set_id": "generated_set_1",
+        "set_name": "Generated Set 1",
+        "topic": "Geometry",
+        "question": "Which conic section is represented by $$ 4x^2 - 9y^2 = 36 $$?",
+        "options": [
+            "Hyperbola",
+            "Ellipse",
+            "Parabola",
+            "Circle"
+        ],
+        "correct_answer": "Hyperbola",
+        "explanation": "Divide by 36: $$ x^2/9 - y^2/4 = 1 $$. Minus sign indicates hyperbola.",
+        "difficulty": "Medium"
+    }
+]
