@@ -10,7 +10,7 @@ A comprehensive, high-performance web application designed to help international
 ---
 
 ## 🚀 Live Demo
-**Website:** [https://www.cscamaster.com/](https://www.cscamaster.com/)
+**Live Link:** [cscamaster.com](https://cscamaster.com)
 
 ---
 
