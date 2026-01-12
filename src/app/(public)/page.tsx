@@ -45,11 +45,11 @@ export default async function Home() {
               </div>
 
               <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-slate-900 mb-4 sm:mb-6 leading-tight">
-                Ace Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">CSCA Exam</span>
+                Crack the CSCA Exam.<span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">Secure Your Future.</span>
               </h1>
 
               <p className="text-base sm:text-lg md:text-xl text-slate-600 mb-8 sm:mb-10 leading-relaxed max-w-2xl mx-auto px-4">
-                Complete preparation platform for Chinese university entrance exams. Practice tests, performance analytics, and scholarship guidance—all in one place.
+                The only 100% Free preparation platform for English & Chinese tracks. Access 15+ Mock Tests, "Whiteboard-Mode" practice, and verified scholarship leads.
               </p>
 
               <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4 px-4">
@@ -62,7 +62,7 @@ export default async function Home() {
                 ) : (
                   <Link href="/sign-up" className="w-full sm:w-auto">
                     <Button size="lg" className="h-12 sm:h-14 px-6 sm:px-8 text-base sm:text-lg bg-blue-600 hover:bg-blue-700 shadow-xl shadow-blue-200/50 w-full rounded-xl">
-                      Start Free Practice <ArrowRight className="ml-2 h-5 w-5" />
+                      Create Free Account <ArrowRight className="ml-2 h-5 w-5" />
                     </Button>
                   </Link>
                 )}
@@ -166,7 +166,7 @@ export default async function Home() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12 sm:mb-16">
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-slate-900 mb-3 sm:mb-4">
-                Why Choose CSCA Prep?
+                Why Choose CSCA Master?
               </h2>
               <p className="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto">
                 Professional exam preparation platform trusted by students
@@ -244,27 +244,35 @@ export default async function Home() {
         </section>
 
         {/* 4. CTA SECTION */}
-        <section className="py-16 sm:py-20 md:py-24 bg-gradient-to-br from-blue-600 to-purple-600">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 sm:mb-6">
-              Ready to Start Your Journey?
+        {/* 4. CTA SECTION */}
+        <section className="py-16 sm:py-20 md:py-24 bg-[#0F172A] relative overflow-hidden">
+          {/* Trophy Background Effect */}
+          <div className="absolute right-0 top-1/2 -translate-y-1/2 opacity-5 pointer-events-none">
+            <Trophy className="w-96 h-96 text-white" />
+          </div>
+
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+
+            {/* Badge */}
+            <div className="inline-block bg-amber-400 text-amber-950 px-4 py-1.5 rounded-full font-bold text-sm mb-6 sm:mb-8 shadow-lg shadow-amber-400/20">
+              Limited Opportunity
+            </div>
+
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white mb-6 sm:mb-8 leading-tight">
+              CSCA required Universities List <br className="hidden sm:block" />
+              (2026)
             </h2>
-            <p className="text-lg sm:text-xl text-blue-100 mb-8 sm:mb-10">
-              Join thousands of students preparing for Chinese university admissions
+
+            <p className="text-base sm:text-lg text-slate-300 mb-8 sm:mb-10 leading-relaxed max-w-2xl mx-auto">
+              CSCA Master has curated the list of Elite programs offering full scholarships.
+              Don't miss the March 31st deadline.
             </p>
-            {session ? (
-              <Link href="/tests">
-                <Button size="lg" className="h-12 sm:h-14 px-6 sm:px-8 text-base sm:text-lg bg-white text-blue-600 hover:bg-blue-50 shadow-xl rounded-xl">
-                  <Target className="mr-2 h-5 w-5" /> Start Practice Tests
-                </Button>
-              </Link>
-            ) : (
-              <Link href="/sign-up">
-                <Button size="lg" className="h-12 sm:h-14 px-6 sm:px-8 text-base sm:text-lg bg-white text-blue-600 hover:bg-blue-50 shadow-xl rounded-xl">
-                  Create Free Account <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
-              </Link>
-            )}
+
+            <Link href="https://eduexpressint.com/updates/complete-csc-universities-list-2026" target="_blank">
+              <Button size="lg" className="h-12 sm:h-14 px-8 sm:px-10 text-base sm:text-lg bg-emerald-500 hover:bg-emerald-600 text-white shadow-xl shadow-emerald-500/20 rounded-xl font-bold transition-all hover:scale-105">
+                Access List Now
+              </Button>
+            </Link>
           </div>
         </section>
 

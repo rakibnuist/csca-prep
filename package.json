@@ -2,7 +2,7 @@
   "name": "csca-prep",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://csca-prep-seven.vercel.app/",
+  "homepage": "https://www.cscamaster.com/",
   "scripts": {
     "dev": "next dev",
     "build": "prisma generate && next build",

@@ -51,12 +51,8 @@ export function Footer() {
                         <ul className="space-y-4 text-sm">
 
                             <li className="flex items-center gap-3">
-                                <Phone className="h-4 w-4 text-blue-500 shrink-0" />
-                                <a href="tel:+880123456789" className="hover:text-white">+880 1XXX-XXXXXX</a>
-                            </li>
-                            <li className="flex items-center gap-3">
                                 <Mail className="h-4 w-4 text-blue-500 shrink-0" />
-                                <a href="mailto:support@cscamaster.com" className="hover:text-white">support@cscamaster.com</a>
+                                <a href="mailto:cscaprepration@gmail.com" className="hover:text-white">cscaprepration@gmail.com</a>
                             </li>
                         </ul>
                     </div>

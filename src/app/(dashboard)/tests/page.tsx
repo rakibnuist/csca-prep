@@ -11,7 +11,7 @@ async function getTestsData() {
     let userId = session?.userId as string;
 
     if (!userId) {
-        const firstUser = await prisma.user.findFirst({ where: { email: 'student@csca-prep.com' } });
+        const firstUser = await prisma.user.findFirst({ where: { email: 'student@cscamaster.com' } });
         userId = firstUser?.id || "";
     }
 

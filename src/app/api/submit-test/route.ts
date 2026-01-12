@@ -56,14 +56,14 @@ export async function POST(request: Request) {
         // 3. Handle User Context
         if (!userId) {
             let defaultUser = await prisma.user.findFirst({
-                where: { email: 'student@csca-prep.com' }
+                where: { email: 'student@cscamaster.com' }
             });
 
             if (!defaultUser) {
                 try {
                     defaultUser = await prisma.user.create({
                         data: {
-                            email: 'student@csca-prep.com',
+                            email: 'student@cscamaster.com',
                             name: 'Default Student',
                             whatsapp: '+8801700000000',
                             major: 'Engineering'
@@ -73,7 +73,7 @@ export async function POST(request: Request) {
                     console.error('Failed to create default user:', userErr);
                     // If creation fails due to race condition, try to find it again
                     defaultUser = await prisma.user.findFirst({
-                        where: { email: 'student@csca-prep.com' }
+                        where: { email: 'student@cscamaster.com' }
                     });
                 }
             }

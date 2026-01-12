@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "CSCA Prep Master",
-  description: "Comprehensive Math Preparation for CSCA Exam (English & Chinese Tracks)",
+  description: "The only 100% Free preparation platform for English & Chinese tracks. Access 15+ Mock Tests, Whiteboard-Mode practice, and verified scholarship leads.",
 };
 
 export default function RootLayout({

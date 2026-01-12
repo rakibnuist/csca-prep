@@ -1,6 +1,6 @@
-# 🎓 CSCA Prep - Ultimate CSCA Exam Preparation Platform
+# 🎓 CSCA Master - Ultimate CSCA Exam Preparation Platform
 
-[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen?style=for-the-badge)](https://csca-prep-seven.vercel.app/)
+[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen?style=for-the-badge)](https://www.cscamaster.com/)
 [![Next.js](https://img.shields.io/badge/Next.js-15-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
 [![Prisma](https://img.shields.io/badge/Prisma-ORM-2D3748?style=for-the-badge&logo=prisma)](https://www.prisma.io/)
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Data-336791?style=for-the-badge&logo=postgresql)](https://www.postgresql.org/)
@@ -10,7 +10,7 @@ A comprehensive, high-performance web application designed to help international
 ---
 
 ## 🚀 Live Demo
-**Website:** [https://csca-prep-seven.vercel.app/](https://csca-prep-seven.vercel.app/)
+**Website:** [https://www.cscamaster.com/](https://www.cscamaster.com/)
 
 ---
 
@@ -18,13 +18,13 @@ A comprehensive, high-performance web application designed to help international
 
 Use the following accounts to explore the platform's features:
 
-### 🛠️ administrator Access
-- **Email:** `admin@csca-prep.com`
+### 🛠️ Administrator Access
+- **Email:** `admin@cscamaster.com`
 - **Password:** `password123`
 - **Capabilities:** View global statistics, manage question sets, and monitor student progress via the `/admin` dashboard.
 
 ### 📖 Student Access
-- **Email:** `student@csca-prep.com`
+- **Email:** `student@cscamaster.com`
 - **Password:** `password123`
 - **Capabilities:** Practice mock exams, view personal performance history, and track progress via the `/dashboard`.
 
