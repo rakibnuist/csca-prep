@@ -432,6 +432,13 @@ const scholarshipData = [
     }
 ];
 
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Search 300+ China Scholarships (2026) | CSC, Provincial & University Grants",
+    description: "Find fully funded scholarships for Bachelor, Master, and PhD in China. Browse official CSC, Provincial Government, and University-specific scholarship opportunities.",
+};
+
 export default async function ScholarshipsPage() {
     const session = await getSession();
 

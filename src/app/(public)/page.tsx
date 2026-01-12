@@ -19,11 +19,18 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Home | The #1 Free CSCA Exam Prep Platform",
+  description: "Prepare for the 2026 CSCA Exam with free mock tests, syllabus guides, and scholarship information. Join thousands of students securing full scholarships in China.",
+};
+
 export default async function Home() {
   const session = await getSession();
 
   return (
-    <div className="flex flex-col min-h-screen font-sans text-slate-900">
+    <div className="flex flex-col min-h-screen font-sans text-slate-900" suppressHydrationWarning>
       <Navbar isLoggedIn={!!session} />
 
       <main className="flex-grow pt-16">
@@ -259,20 +266,28 @@ export default async function Home() {
             </div>
 
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white mb-6 sm:mb-8 leading-tight">
-              CSCA required Universities List <br className="hidden sm:block" />
+              Get the CSCA required Universities List <br className="hidden sm:block" />
               (2026)
             </h2>
 
             <p className="text-base sm:text-lg text-slate-300 mb-8 sm:mb-10 leading-relaxed max-w-2xl mx-auto">
-              CSCA Master has curated the list of Elite programs offering full scholarships.
-              Don't miss the March 31st deadline.
+              We have curated the exclusive list of universities that mandate the CSCA exam for 2026.
+              Apply to these elite full-scholarship programs.
             </p>
 
-            <Link href="https://eduexpressint.com/updates/complete-csc-universities-list-2026" target="_blank">
-              <Button size="lg" className="h-12 sm:h-14 px-8 sm:px-10 text-base sm:text-lg bg-emerald-500 hover:bg-emerald-600 text-white shadow-xl shadow-emerald-500/20 rounded-xl font-bold transition-all hover:scale-105">
-                Access List Now
-              </Button>
-            </Link>
+            {session ? (
+              <Link href="/dashboard/universities">
+                <Button size="lg" className="h-12 sm:h-14 px-8 sm:px-10 text-base sm:text-lg bg-emerald-500 hover:bg-emerald-600 text-white shadow-xl shadow-emerald-500/20 rounded-xl font-bold transition-all hover:scale-105">
+                  View University List
+                </Button>
+              </Link>
+            ) : (
+              <Link href="/sign-up">
+                <Button size="lg" className="h-12 sm:h-14 px-8 sm:px-10 text-base sm:text-lg bg-emerald-500 hover:bg-emerald-600 text-white shadow-xl shadow-emerald-500/20 rounded-xl font-bold transition-all hover:scale-105">
+                  Sign Up to Get List
+                </Button>
+              </Link>
+            )}
           </div>
         </section>
 

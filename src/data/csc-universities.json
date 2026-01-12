@@ -1,0 +1,1532 @@
+[
+    {
+        "nameEn": "Peking University",
+        "nameZh": "北京大学",
+        "location": "Beijing"
+    },
+    {
+        "nameEn": "Tsinghua University",
+        "nameZh": "清华大学",
+        "location": "Beijing"
+    },
+    {
+        "nameEn": "Renmin University of China",
+        "nameZh": "中国人民大学",
+        "location": "Beijing"
+    },
+    {
+        "nameEn": "Beijing Normal University",
+        "nameZh": "北京师范大学",
+        "location": "Beijing"
+    },
+    {
+        "nameEn": "China Agricultural University",
+        "nameZh": "中国农业大学",
+        "location": "Beijing"
+    },
+    {
+        "nameEn": "Beijing Foreign Studies University",
+        "nameZh": "北京外国语大学",
+        "location": "Beijing"
+    },
+    {
+        "nameEn": "Beijing Language and Culture University",
+        "nameZh": "北京语言大学",
+        "location": "Beijing"
+    },
+    {
+        "nameEn": "University of Science and Technology Beijing",
+        "nameZh": "北京科技大学",
+        "location": "Beijing"
+    },
+    {
+        "nameEn": "Beijing University of Chemical Technology",
+        "nameZh": "北京化工大学",
+        "location": "Beijing"
+    },
+    {
+        "nameEn": "Beijing Jiaotong University",
+        "nameZh": "北京交通大学",
+        "location": "Beijing"
+    },
+    {
+        "nameEn": "Beijing University of Posts and Telecommunications",
+        "nameZh": "北京邮电大学",
+        "location": "Beijing"
+    },
+    {
+        "nameEn": "China University of Geosciences, Beijing",
+        "nameZh": "中国地质大学（北京）",
+        "location": "Beijing"
+    },
+    {
+        "nameEn": "China University of Mining and Technology, Beijing",
+        "nameZh": "中国矿业大学（北京）",
+        "location": "Beijing"
+    },
+    {
+        "nameEn": "China University of Petroleum, Beijing",
+        "nameZh": "中国石油大学（北京）",
+        "location": "Beijing"
+    },
+    {
+        "nameEn": "Beijing Forestry University",
+        "nameZh": "北京林业大学",
+        "location": "Beijing"
+    },
+    {
+        "nameEn": "Communication University of China",
+        "nameZh": "中国传媒大学",
+        "location": "Beijing"
+    },
+    {
+        "nameEn": "Central University of Finance and Economics",
+        "nameZh": "中央财经大学",
+        "location": "Beijing"
+    },
+    {
+        "nameEn": "China University of Political Science and Law",
+        "nameZh": "中国政法大学",
+        "location": "Beijing"
+    },
+    {
+        "nameEn": "Central Conservatory of Music",
+        "nameZh": "中央音乐学院",
+        "location": "Beijing"
+    },
+    {
+        "nameEn": "The Central Academy of Drama",
+        "nameZh": "中央戏剧学院",
+        "location": "Beijing"
+    },
+    {
+        "nameEn": "Central Academy of Fine Arts",
+        "nameZh": "中央美术学院",
+        "location": "Beijing"
+    },
+    {
+        "nameEn": "Beijing University of Chinese Medicine",
+        "nameZh": "北京中医药大学",
+        "location": "Beijing"
+    },
+    {
+        "nameEn": "University of International Business and Economics",
+        "nameZh": "对外经济贸易大学",
+        "location": "Beijing"
+    },
+    {
+        "nameEn": "North China Electric Power University",
+        "nameZh": "华北电力大学",
+        "location": "Beijing"
+    },
+    {
+        "nameEn": "Nankai University",
+        "nameZh": "南开大学",
+        "location": "Tianjin"
+    },
+    {
+        "nameEn": "Tianjin University",
+        "nameZh": "天津大学",
+        "location": "Tianjin"
+    },
+    {
+        "nameEn": "Dalian University of Technology",
+        "nameZh": "大连理工大学",
+        "location": "Dalian"
+    },
+    {
+        "nameEn": "Northeastern University",
+        "nameZh": "东北大学",
+        "location": "Shenyang"
+    },
+    {
+        "nameEn": "Jilin University",
+        "nameZh": "吉林大学",
+        "location": "Changchun"
+    },
+    {
+        "nameEn": "Northeast Normal University",
+        "nameZh": "东北师范大学",
+        "location": "Changchun"
+    },
+    {
+        "nameEn": "Northeast Forestry University",
+        "nameZh": "东北林业大学",
+        "location": "Harbin"
+    },
+    {
+        "nameEn": "Fudan University",
+        "nameZh": "复旦大学",
+        "location": "Shanghai"
+    },
+    {
+        "nameEn": "Shanghai Jiao Tong University",
+        "nameZh": "上海交通大学",
+        "location": "Shanghai"
+    },
+    {
+        "nameEn": "Tongji University",
+        "nameZh": "同济大学",
+        "location": "Shanghai"
+    },
+    {
+        "nameEn": "East China University of Science and Technology",
+        "nameZh": "华东理工大学",
+        "location": "Shanghai"
+    },
+    {
+        "nameEn": "Donghua University",
+        "nameZh": "东华大学",
+        "location": "Shanghai"
+    },
+    {
+        "nameEn": "East China Normal University",
+        "nameZh": "华东师范大学",
+        "location": "Shanghai"
+    },
+    {
+        "nameEn": "Shanghai International Studies University",
+        "nameZh": "上海外国语大学",
+        "location": "Shanghai"
+    },
+    {
+        "nameEn": "Shanghai University of Finance and Economics",
+        "nameZh": "上海财经大学",
+        "location": "Shanghai"
+    },
+    {
+        "nameEn": "Nanjing University",
+        "nameZh": "南京大学",
+        "location": "Nanjing"
+    },
+    {
+        "nameEn": "Southeast University",
+        "nameZh": "东南大学",
+        "location": "Nanjing"
+    },
+    {
+        "nameEn": "China University of Mining and Technology",
+        "nameZh": "中国矿业大学",
+        "location": "Xuzhou"
+    },
+    {
+        "nameEn": "Hohai University",
+        "nameZh": "河海大学",
+        "location": "Nanjing"
+    },
+    {
+        "nameEn": "Jiangnan University",
+        "nameZh": "江南大学",
+        "location": "Wuxi"
+    },
+    {
+        "nameEn": "Nanjing Agricultural University",
+        "nameZh": "南京农业大学",
+        "location": "Nanjing"
+    },
+    {
+        "nameEn": "China Pharmaceutical University",
+        "nameZh": "中国药科大学",
+        "location": "Nanjing"
+    },
+    {
+        "nameEn": "Hefei University of Technology",
+        "nameZh": "合肥工业大学",
+        "location": "Hefei"
+    },
+    {
+        "nameEn": "Zhejiang University",
+        "nameZh": "浙江大学",
+        "location": "Hangzhou"
+    },
+    {
+        "nameEn": "Xiamen University",
+        "nameZh": "厦门大学",
+        "location": "Xiamen"
+    },
+    {
+        "nameEn": "Shandong University",
+        "nameZh": "山东大学",
+        "location": "Jinan"
+    },
+    {
+        "nameEn": "Ocean University of China",
+        "nameZh": "中国海洋大学",
+        "location": "Qingdao"
+    },
+    {
+        "nameEn": "China University of Petroleum (East China)",
+        "nameZh": "中国石油大学（华东）",
+        "location": "Qingdao"
+    },
+    {
+        "nameEn": "Wuhan University",
+        "nameZh": "武汉大学",
+        "location": "Wuhan"
+    },
+    {
+        "nameEn": "Huazhong University of Science and Technology",
+        "nameZh": "华中科技大学",
+        "location": "Wuhan"
+    },
+    {
+        "nameEn": "China University of Geosciences, Wuhan",
+        "nameZh": "中国地质大学（武汉）",
+        "location": "Wuhan"
+    },
+    {
+        "nameEn": "Wuhan University of Technology",
+        "nameZh": "武汉理工大学",
+        "location": "Wuhan"
+    },
+    {
+        "nameEn": "Central China Normal University",
+        "nameZh": "华中师范大学",
+        "location": "Wuhan"
+    },
+    {
+        "nameEn": "Huazhong Agricultural University",
+        "nameZh": "华中农业大学",
+        "location": "Wuhan"
+    },
+    {
+        "nameEn": "Zhongnan University of Economics and Law",
+        "nameZh": "中南财经政法大学",
+        "location": "Wuhan"
+    },
+    {
+        "nameEn": "Central South University",
+        "nameZh": "中南大学",
+        "location": "Changsha"
+    },
+    {
+        "nameEn": "Hunan University",
+        "nameZh": "湖南大学",
+        "location": "Changsha"
+    },
+    {
+        "nameEn": "Sun Yat-sen University",
+        "nameZh": "中山大学",
+        "location": "Guangzhou"
+    },
+    {
+        "nameEn": "South China University of Technology",
+        "nameZh": "华南理工大学",
+        "location": "Guangzhou"
+    },
+    {
+        "nameEn": "Chongqing University",
+        "nameZh": "重庆大学",
+        "location": "Chongqing"
+    },
+    {
+        "nameEn": "Southwest University",
+        "nameZh": "西南大学",
+        "location": "Chongqing"
+    },
+    {
+        "nameEn": "Sichuan University",
+        "nameZh": "四川大学",
+        "location": "Chengdu"
+    },
+    {
+        "nameEn": "Southwestern University of Finance and Economics",
+        "nameZh": "西南财经大学",
+        "location": "Chengdu"
+    },
+    {
+        "nameEn": "Southwest Jiaotong University",
+        "nameZh": "西南交通大学",
+        "location": "Chengdu"
+    },
+    {
+        "nameEn": "University of Electronic Science and Technology of China",
+        "nameZh": "电子科技大学",
+        "location": "Chengdu"
+    },
+    {
+        "nameEn": "Xi'an Jiaotong University",
+        "nameZh": "西安交通大学",
+        "location": "Xi'an"
+    },
+    {
+        "nameEn": "Northwest A&F University",
+        "nameZh": "西北农林科技大学",
+        "location": "Xianyang"
+    },
+    {
+        "nameEn": "Shaanxi Normal University",
+        "nameZh": "陕西师范大学",
+        "location": "Xi'an"
+    },
+    {
+        "nameEn": "Xidian University",
+        "nameZh": "西安电子科技大学",
+        "location": "Xi'an"
+    },
+    {
+        "nameEn": "Chang'an University",
+        "nameZh": "长安大学",
+        "location": "Xi'an"
+    },
+    {
+        "nameEn": "Lanzhou University",
+        "nameZh": "兰州大学",
+        "location": "Lanzhou"
+    },
+    {
+        "nameEn": "Anhui University",
+        "nameZh": "安徽大学",
+        "location": "Hefei"
+    },
+    {
+        "nameEn": "Anhui Agricultural University",
+        "nameZh": "安徽农业大学",
+        "location": "Hefei"
+    },
+    {
+        "nameEn": "Anhui Normal University",
+        "nameZh": "安徽师范大学",
+        "location": "Wuhu"
+    },
+    {
+        "nameEn": "Anhui Medical University",
+        "nameZh": "安徽医科大学",
+        "location": "Hefei"
+    },
+    {
+        "nameEn": "Anshan Normal University",
+        "nameZh": "鞍山师范学院",
+        "location": "Anshan"
+    },
+    {
+        "nameEn": "North China University of Technology",
+        "nameZh": "北方工业大学",
+        "location": "Beijing"
+    },
+    {
+        "nameEn": "Beihua University",
+        "nameZh": "北华大学",
+        "location": "Jilin City"
+    },
+    {
+        "nameEn": "Beijing International Studies University",
+        "nameZh": "北京第二外国语学院",
+        "location": "Beijing"
+    },
+    {
+        "nameEn": "Beijing Film Academy",
+        "nameZh": "北京电影学院",
+        "location": "Beijing"
+    },
+    {
+        "nameEn": "Beijing Technology and Business University",
+        "nameZh": "北京工商大学",
+        "location": "Beijing"
+    },
+    {
+        "nameEn": "Beijing University of Technology",
+        "nameZh": "北京工业大学",
+        "location": "Beijing"
+    },
+    {
+        "nameEn": "Beihang University",
+        "nameZh": "北京航空航天大学",
+        "location": "Beijing"
+    },
+    {
+        "nameEn": "Beijing Institute of Technology",
+        "nameZh": "北京理工大学",
+        "location": "Beijing"
+    },
+    {
+        "nameEn": "Beijing Sport University",
+        "nameZh": "北京体育大学",
+        "location": "Beijing"
+    },
+    {
+        "nameEn": "Peking Union Medical College",
+        "nameZh": "北京协和医学院",
+        "location": "Beijing"
+    },
+    {
+        "nameEn": "Bohai University",
+        "nameZh": "渤海大学",
+        "location": "Jinzhou"
+    },
+    {
+        "nameEn": "Changchun University",
+        "nameZh": "长春大学",
+        "location": "Changchun"
+    },
+    {
+        "nameEn": "Changchun University of Science and Technology",
+        "nameZh": "长春理工大学",
+        "location": "Changchun"
+    },
+    {
+        "nameEn": "Changchun University of Chinese Medicine",
+        "nameZh": "长春中医药大学",
+        "location": "Changchun"
+    },
+    {
+        "nameEn": "Yangtze University",
+        "nameZh": "长江大学",
+        "location": "Jingzhou"
+    },
+    {
+        "nameEn": "Changsha University of Science & Technology",
+        "nameZh": "长沙理工大学",
+        "location": "Changsha"
+    },
+    {
+        "nameEn": "Chengdu University of Technology",
+        "nameZh": "成都理工大学",
+        "location": "Chengdu"
+    },
+    {
+        "nameEn": "Chengdu University of Traditional Chinese Medicine",
+        "nameZh": "成都中医药大学",
+        "location": "Chengdu"
+    },
+    {
+        "nameEn": "Chongqing Jiaotong University",
+        "nameZh": "重庆交通大学",
+        "location": "Chongqing"
+    },
+    {
+        "nameEn": "Chongqing Normal University",
+        "nameZh": "重庆师范大学",
+        "location": "Chongqing"
+    },
+    {
+        "nameEn": "Chongqing Medical University",
+        "nameZh": "重庆医科大学",
+        "location": "Chongqing"
+    },
+    {
+        "nameEn": "Chongqing University of Posts and Telecommunications",
+        "nameZh": "重庆邮电大学",
+        "location": "Chongqing"
+    },
+    {
+        "nameEn": "Dali University",
+        "nameZh": "大理大学",
+        "location": "Dali"
+    },
+    {
+        "nameEn": "Dalian Polytechnic University",
+        "nameZh": "大连工业大学",
+        "location": "Dalian"
+    },
+    {
+        "nameEn": "Dalian Maritime University",
+        "nameZh": "大连海事大学",
+        "location": "Dalian"
+    },
+    {
+        "nameEn": "Dalian Jiaotong University",
+        "nameZh": "大连交通大学",
+        "location": "Dalian"
+    },
+    {
+        "nameEn": "Dalian University of Foreign Languages",
+        "nameZh": "大连外国语大学",
+        "location": "Dalian"
+    },
+    {
+        "nameEn": "Dalian Medical University",
+        "nameZh": "大连医科大学",
+        "location": "Dalian"
+    },
+    {
+        "nameEn": "Dongbei University of Finance and Economics",
+        "nameZh": "东北财经大学",
+        "location": "Dalian"
+    },
+    {
+        "nameEn": "Northeast Electric Power University",
+        "nameZh": "东北电力大学",
+        "location": "Jilin City"
+    },
+    {
+        "nameEn": "Northeast Agricultural University",
+        "nameZh": "东北农业大学",
+        "location": "Harbin"
+    },
+    {
+        "nameEn": "Fujian Police College",
+        "nameZh": "福建警察学院",
+        "location": "Fuzhou"
+    },
+    {
+        "nameEn": "Fujian University of Technology",
+        "nameZh": "福建理工大学",
+        "location": "Fuzhou"
+    },
+    {
+        "nameEn": "Fujian Agriculture and Forestry University",
+        "nameZh": "福建农林大学",
+        "location": "Fuzhou"
+    },
+    {
+        "nameEn": "Fujian Normal University",
+        "nameZh": "福建师范大学",
+        "location": "Fuzhou"
+    },
+    {
+        "nameEn": "Fujian Medical University",
+        "nameZh": "福建医科大学",
+        "location": "Fuzhou"
+    },
+    {
+        "nameEn": "Fuzhou University",
+        "nameZh": "福州大学",
+        "location": "Fuzhou"
+    },
+    {
+        "nameEn": "Gansu University of Chinese Medicine",
+        "nameZh": "甘肃中医药大学",
+        "location": "Lanzhou"
+    },
+    {
+        "nameEn": "Gannan Normal University",
+        "nameZh": "赣南师范大学",
+        "location": "Ganzhou"
+    },
+    {
+        "nameEn": "Guangdong University of Foreign Studies",
+        "nameZh": "广东外语外贸大学",
+        "location": "Guangzhou"
+    },
+    {
+        "nameEn": "Guangxi University",
+        "nameZh": "广西大学",
+        "location": "Nanning"
+    },
+    {
+        "nameEn": "Guangxi University for Nationalities",
+        "nameZh": "广西民族大学",
+        "location": "Nanning"
+    },
+    {
+        "nameEn": "Guangxi Normal University",
+        "nameZh": "广西师范大学",
+        "location": "Guilin"
+    },
+    {
+        "nameEn": "Guangxi Medical University",
+        "nameZh": "广西医科大学",
+        "location": "Nanning"
+    },
+    {
+        "nameEn": "Guangzhou Medical University",
+        "nameZh": "广州医科大学",
+        "location": "Guangzhou"
+    },
+    {
+        "nameEn": "Guangzhou University of Chinese Medicine",
+        "nameZh": "广州中医药大学",
+        "location": "Guangzhou"
+    },
+    {
+        "nameEn": "Guizhou University",
+        "nameZh": "贵州大学",
+        "location": "Guiyang"
+    },
+    {
+        "nameEn": "Guizhou Minzu University",
+        "nameZh": "贵州民族大学",
+        "location": "Guiyang"
+    },
+    {
+        "nameEn": "Guizhou Normal University",
+        "nameZh": "贵州师范大学",
+        "location": "Guiyang"
+    },
+    {
+        "nameEn": "Guilin University of Electronic Technology",
+        "nameZh": "桂林电子科技大学",
+        "location": "Guilin"
+    },
+    {
+        "nameEn": "Harbin Engineering University",
+        "nameZh": "哈尔滨工程大学",
+        "location": "Harbin"
+    },
+    {
+        "nameEn": "Harbin Institute of Technology",
+        "nameZh": "哈尔滨工业大学",
+        "location": "Harbin"
+    },
+    {
+        "nameEn": "Harbin University of Science and Technology",
+        "nameZh": "哈尔滨理工大学",
+        "location": "Harbin"
+    },
+    {
+        "nameEn": "Harbin Normal University",
+        "nameZh": "哈尔滨师范大学",
+        "location": "Harbin"
+    },
+    {
+        "nameEn": "Harbin Medical University",
+        "nameZh": "哈尔滨医科大学",
+        "location": "Harbin"
+    },
+    {
+        "nameEn": "Hainan University",
+        "nameZh": "海南大学",
+        "location": "Haikou"
+    },
+    {
+        "nameEn": "Hainan Normal University",
+        "nameZh": "海南师范大学",
+        "location": "Haikou"
+    },
+    {
+        "nameEn": "Hangzhou Normal University",
+        "nameZh": "杭州师范大学",
+        "location": "Hangzhou"
+    },
+    {
+        "nameEn": "Hefei University",
+        "nameZh": "合肥大学",
+        "location": "Hefei"
+    },
+    {
+        "nameEn": "Hebei University",
+        "nameZh": "河北大学",
+        "location": "Baoding"
+    },
+    {
+        "nameEn": "Hebei University of Technology",
+        "nameZh": "河北工业大学",
+        "location": "Tianjin"
+    },
+    {
+        "nameEn": "Hebei University of Economics and Business",
+        "nameZh": "河北经贸大学",
+        "location": "Shijiazhuang"
+    },
+    {
+        "nameEn": "Hebei Normal University",
+        "nameZh": "河北师范大学",
+        "location": "Shijiazhuang"
+    },
+    {
+        "nameEn": "Hebei Medical University",
+        "nameZh": "河北医科大学",
+        "location": "Shijiazhuang"
+    },
+    {
+        "nameEn": "Henan University",
+        "nameZh": "河南大学",
+        "location": "Kaifeng"
+    },
+    {
+        "nameEn": "Henan University of Technology",
+        "nameZh": "河南工业大学",
+        "location": "Zhengzhou"
+    },
+    {
+        "nameEn": "Henan University of Chinese Medicine",
+        "nameZh": "河南中医药大学",
+        "location": "Zhengzhou"
+    },
+    {
+        "nameEn": "Heihe University",
+        "nameZh": "黑河学院",
+        "location": "Heihe"
+    },
+    {
+        "nameEn": "Heilongjiang University",
+        "nameZh": "黑龙江大学",
+        "location": "Harbin"
+    },
+    {
+        "nameEn": "Heilongjiang University of Chinese Medicine",
+        "nameZh": "黑龙江中医药大学",
+        "location": "Harbin"
+    },
+    {
+        "nameEn": "Hubei University",
+        "nameZh": "湖北大学",
+        "location": "Wuhan"
+    },
+    {
+        "nameEn": "Hubei University of Chinese Medicine",
+        "nameZh": "湖北中医药大学",
+        "location": "Wuhan"
+    },
+    {
+        "nameEn": "Hunan Normal University",
+        "nameZh": "湖南师范大学",
+        "location": "Changsha"
+    },
+    {
+        "nameEn": "East China University of Political Science and Law",
+        "nameZh": "华东政法大学",
+        "location": "Shanghai"
+    },
+    {
+        "nameEn": "South China Agricultural University",
+        "nameZh": "华南农业大学",
+        "location": "Guangzhou"
+    },
+    {
+        "nameEn": "South China Normal University",
+        "nameZh": "华南师范大学",
+        "location": "Guangzhou"
+    },
+    {
+        "nameEn": "Huaqiao University",
+        "nameZh": "华侨大学",
+        "location": "Quanzhou"
+    },
+    {
+        "nameEn": "Huangshan University",
+        "nameZh": "黄山学院",
+        "location": "Huangshan"
+    },
+    {
+        "nameEn": "Jilin Agricultural University",
+        "nameZh": "吉林农业大学",
+        "location": "Changchun"
+    },
+    {
+        "nameEn": "Jilin Normal University",
+        "nameZh": "吉林师范大学",
+        "location": "Siping"
+    },
+    {
+        "nameEn": "Jilin International Studies University",
+        "nameZh": "吉林外国语大学",
+        "location": "Changchun"
+    },
+    {
+        "nameEn": "University of Jinan",
+        "nameZh": "济南大学",
+        "location": "Jinan"
+    },
+    {
+        "nameEn": "Jinan University",
+        "nameZh": "暨南大学",
+        "location": "Guangzhou"
+    },
+    {
+        "nameEn": "Jiamusi University",
+        "nameZh": "佳木斯大学",
+        "location": "Jiamusi"
+    },
+    {
+        "nameEn": "Jiangsu University",
+        "nameZh": "江苏大学",
+        "location": "Zhenjiang"
+    },
+    {
+        "nameEn": "Jiangsu Police Institute",
+        "nameZh": "江苏警官学院",
+        "location": "Nanjing"
+    },
+    {
+        "nameEn": "Jiangsu Normal University",
+        "nameZh": "江苏师范大学",
+        "location": "Xuzhou"
+    },
+    {
+        "nameEn": "Jiangxi University of Finance and Economics",
+        "nameZh": "江西财经大学",
+        "location": "Nanchang"
+    },
+    {
+        "nameEn": "Jiangxi Agricultural University",
+        "nameZh": "江西农业大学",
+        "location": "Nanchang"
+    },
+    {
+        "nameEn": "Jiangxi Normal University",
+        "nameZh": "江西师范大学",
+        "location": "Nanchang"
+    },
+    {
+        "nameEn": "Jiangxi University of Chinese Medicine",
+        "nameZh": "江西中医药大学",
+        "location": "Nanchang"
+    },
+    {
+        "nameEn": "Jinzhou Medical University",
+        "nameZh": "锦州医科大学",
+        "location": "Jinzhou"
+    },
+    {
+        "nameEn": "Jingdezhen Ceramic Institute",
+        "nameZh": "景德镇陶瓷大学",
+        "location": "Jingdezhen"
+    },
+    {
+        "nameEn": "Kunming University of Science and Technology",
+        "nameZh": "昆明理工大学",
+        "location": "Kunming"
+    },
+    {
+        "nameEn": "Kunming Medical University",
+        "nameZh": "昆明医科大学",
+        "location": "Kunming"
+    },
+    {
+        "nameEn": "Lanzhou Jiaotong University",
+        "nameZh": "兰州交通大学",
+        "location": "Lanzhou"
+    },
+    {
+        "nameEn": "Lanzhou University of Technology",
+        "nameZh": "兰州理工大学",
+        "location": "Lanzhou"
+    },
+    {
+        "nameEn": "Liaoning University",
+        "nameZh": "辽宁大学",
+        "location": "Shenyang"
+    },
+    {
+        "nameEn": "Liaoning Technical University",
+        "nameZh": "辽宁工程技术大学",
+        "location": "Fuxin"
+    },
+    {
+        "nameEn": "Liaoning University of Technology",
+        "nameZh": "辽宁工业大学",
+        "location": "Jinzhou"
+    },
+    {
+        "nameEn": "University of Science and Technology Liaoning",
+        "nameZh": "辽宁科技大学",
+        "location": "Anshan"
+    },
+    {
+        "nameEn": "Liaoning Normal University",
+        "nameZh": "辽宁师范大学",
+        "location": "Dalian"
+    },
+    {
+        "nameEn": "Liaoning Petrochemical University",
+        "nameZh": "辽宁石油化工大学",
+        "location": "Fushun"
+    },
+    {
+        "nameEn": "Liaoning University of Traditional Chinese Medicine",
+        "nameZh": "辽宁中医药大学",
+        "location": "Shenyang"
+    },
+    {
+        "nameEn": "Ludong University",
+        "nameZh": "鲁东大学",
+        "location": "Yantai"
+    },
+    {
+        "nameEn": "Mudanjiang Normal University",
+        "nameZh": "牡丹江师范学院",
+        "location": "Mudanjiang"
+    },
+    {
+        "nameEn": "Nanchang University",
+        "nameZh": "南昌大学",
+        "location": "Nanchang"
+    },
+    {
+        "nameEn": "Nanchang Hangkong University",
+        "nameZh": "南昌航空大学",
+        "location": "Nanchang"
+    },
+    {
+        "nameEn": "Southern University of Science and Technology",
+        "nameZh": "南方科技大学",
+        "location": "Shenzhen"
+    },
+    {
+        "nameEn": "Southern Medical University",
+        "nameZh": "南方医科大学",
+        "location": "Guangzhou"
+    },
+    {
+        "nameEn": "Nanjing University of Aeronautics and Astronautics",
+        "nameZh": "南京航空航天大学",
+        "location": "Nanjing"
+    },
+    {
+        "nameEn": "Nanjing University of Science and Technology",
+        "nameZh": "南京理工大学",
+        "location": "Nanjing"
+    },
+    {
+        "nameEn": "Nanjing Forestry University",
+        "nameZh": "南京林业大学",
+        "location": "Nanjing"
+    },
+    {
+        "nameEn": "Nanjing Audit University",
+        "nameZh": "南京审计大学",
+        "location": "Nanjing"
+    },
+    {
+        "nameEn": "Nanjing Normal University",
+        "nameZh": "南京师范大学",
+        "location": "Nanjing"
+    },
+    {
+        "nameEn": "Nanjing University of Information Science and Technology",
+        "nameZh": "南京信息工程大学",
+        "location": "Nanjing"
+    },
+    {
+        "nameEn": "Nanjing Medical University",
+        "nameZh": "南京医科大学",
+        "location": "Nanjing"
+    },
+    {
+        "nameEn": "Nanjing University of the Arts",
+        "nameZh": "南京艺术学院",
+        "location": "Nanjing"
+    },
+    {
+        "nameEn": "Nanjing University of Posts and Telecommunications",
+        "nameZh": "南京邮电大学",
+        "location": "Nanjing"
+    },
+    {
+        "nameEn": "Nanjing University of Chinese Medicine",
+        "nameZh": "南京中医药大学",
+        "location": "Nanjing"
+    },
+    {
+        "nameEn": "Nanning Normal University",
+        "nameZh": "南宁师范大学",
+        "location": "Nanning"
+    },
+    {
+        "nameEn": "Nantong University",
+        "nameZh": "南通大学",
+        "location": "Nantong"
+    },
+    {
+        "nameEn": "Inner Mongolia University",
+        "nameZh": "内蒙古大学",
+        "location": "Hohhot"
+    },
+    {
+        "nameEn": "Inner Mongolia University of Technology",
+        "nameZh": "内蒙古工业大学",
+        "location": "Hohhot"
+    },
+    {
+        "nameEn": "Inner Mongolia University for Nationalities",
+        "nameZh": "内蒙古民族大学",
+        "location": "Tongliao"
+    },
+    {
+        "nameEn": "Inner Mongolia Agricultural University",
+        "nameZh": "内蒙古农业大学",
+        "location": "Hohhot"
+    },
+    {
+        "nameEn": "Inner Mongolia Normal University",
+        "nameZh": "内蒙古师范大学",
+        "location": "Hohhot"
+    },
+    {
+        "nameEn": "Ningbo University",
+        "nameZh": "宁波大学",
+        "location": "Ningbo"
+    },
+    {
+        "nameEn": "Ningbo University of Technology",
+        "nameZh": "宁波工程学院",
+        "location": "Ningbo"
+    },
+    {
+        "nameEn": "The University of Nottingham Ningbo China",
+        "nameZh": "守波诺丁汉大学",
+        "location": "Ningbo"
+    },
+    {
+        "nameEn": "Ningxia University",
+        "nameZh": "宁夏大学",
+        "location": "Yinchuan"
+    },
+    {
+        "nameEn": "Ningxia Medical University",
+        "nameZh": "宁夏医科大学",
+        "location": "Yinchuan"
+    },
+    {
+        "nameEn": "Qiqihar University",
+        "nameZh": "齐齐哈尔大学",
+        "location": "Qiqihar"
+    },
+    {
+        "nameEn": "Qingdao University",
+        "nameZh": "青岛大学",
+        "location": "Qingdao"
+    },
+    {
+        "nameEn": "Qingdao University of Science and Technology",
+        "nameZh": "青岛科技大学",
+        "location": "Qingdao"
+    },
+    {
+        "nameEn": "Qinghai University",
+        "nameZh": "青海大学",
+        "location": "Xining"
+    },
+    {
+        "nameEn": "Qinghai Nationalities University",
+        "nameZh": "青海民族大学",
+        "location": "Xining"
+    },
+    {
+        "nameEn": "China Three Gorges University",
+        "nameZh": "三峡大学",
+        "location": "Yichang"
+    },
+    {
+        "nameEn": "Xiamen University of Technology",
+        "nameZh": "厦门理工学院",
+        "location": "Xiamen"
+    },
+    {
+        "nameEn": "Shandong University of Science and Technology",
+        "nameZh": "山东科技大学",
+        "location": "Qingdao"
+    },
+    {
+        "nameEn": "Shandong University of Technology",
+        "nameZh": "山东理工大学",
+        "location": "Zibo"
+    },
+    {
+        "nameEn": "Shandong Normal University",
+        "nameZh": "山东师范大学",
+        "location": "Jinan"
+    },
+    {
+        "nameEn": "Shanxi University",
+        "nameZh": "山西大学",
+        "location": "Taiyuan"
+    },
+    {
+        "nameEn": "Shanxi University of Chinese Medicine",
+        "nameZh": "山西中医药大学",
+        "location": "Jinzhong"
+    },
+    {
+        "nameEn": "Shaanxi University of Chinese Medicine",
+        "nameZh": "陕西中医药大学",
+        "location": "Xianyang"
+    },
+    {
+        "nameEn": "Shantou University",
+        "nameZh": "汕头大学",
+        "location": "Shantou"
+    },
+    {
+        "nameEn": "Shanghai University",
+        "nameZh": "上海大学",
+        "location": "Shanghai"
+    },
+    {
+        "nameEn": "Shanghai University of International Business and Economics",
+        "nameZh": "上海对外经贸大学",
+        "location": "Shanghai"
+    },
+    {
+        "nameEn": "Shanghai Maritime University",
+        "nameZh": "上海海事大学",
+        "location": "Shanghai"
+    },
+    {
+        "nameEn": "Shanghai Ocean University",
+        "nameZh": "上海海洋大学",
+        "location": "Shanghai"
+    },
+    {
+        "nameEn": "ShanghaiTech University",
+        "nameZh": "上海科技大学",
+        "location": "Shanghai"
+    },
+    {
+        "nameEn": "University of Shanghai for Science and Technology",
+        "nameZh": "上海理工大学",
+        "location": "Shanghai"
+    },
+    {
+        "nameEn": "Shanghai Normal University",
+        "nameZh": "上海师范大学",
+        "location": "Shanghai"
+    },
+    {
+        "nameEn": "Shanghai University of Sport",
+        "nameZh": "上海体育大学",
+        "location": "Shanghai"
+    },
+    {
+        "nameEn": "Shanghai Conservatory of Music",
+        "nameZh": "上海音乐学院",
+        "location": "Shanghai"
+    },
+    {
+        "nameEn": "Shanghai University of Political Science and Law",
+        "nameZh": "上海政法学院",
+        "location": "Shanghai"
+    },
+    {
+        "nameEn": "Shanghai University of Traditional Chinese Medicine",
+        "nameZh": "上海中医药大学",
+        "location": "Shanghai"
+    },
+    {
+        "nameEn": "Shenyang University of Technology",
+        "nameZh": "沈阳工业大学",
+        "location": "Shenyang"
+    },
+    {
+        "nameEn": "Shenyang Aerospace University",
+        "nameZh": "沈阳航空航天大学",
+        "location": "Shenyang"
+    },
+    {
+        "nameEn": "Shenyang Jianzhu University",
+        "nameZh": "沈阳建筑大学",
+        "location": "Shenyang"
+    },
+    {
+        "nameEn": "Shenyang Ligong University",
+        "nameZh": "沈阳理工大学",
+        "location": "Shenyang"
+    },
+    {
+        "nameEn": "Shenyang Normal University",
+        "nameZh": "沈阳师范大学",
+        "location": "Shenyang"
+    },
+    {
+        "nameEn": "Shihezi University",
+        "nameZh": "石河子大学",
+        "location": "Shihezi"
+    },
+    {
+        "nameEn": "Capital University of Economics and Business",
+        "nameZh": "首都经济贸易大学",
+        "location": "Beijing"
+    },
+    {
+        "nameEn": "Capital Normal University",
+        "nameZh": "首都师范大学",
+        "location": "Beijing"
+    },
+    {
+        "nameEn": "Capital University of Physical Education and Sports",
+        "nameZh": "首都体育学院",
+        "location": "Beijing"
+    },
+    {
+        "nameEn": "Capital Medical University",
+        "nameZh": "首都医科大学",
+        "location": "Beijing"
+    },
+    {
+        "nameEn": "Sichuan Agricultural University",
+        "nameZh": "四川农业大学",
+        "location": "Ya'an"
+    },
+    {
+        "nameEn": "Sichuan International Studies University",
+        "nameZh": "四川外国语大学",
+        "location": "Chongqing"
+    },
+    {
+        "nameEn": "Soochow University",
+        "nameZh": "苏州大学",
+        "location": "Suzhou"
+    },
+    {
+        "nameEn": "Taiyuan University of Technology",
+        "nameZh": "太原理工大学",
+        "location": "Taiyuan"
+    },
+    {
+        "nameEn": "Tianjin University of Finance and Economics",
+        "nameZh": "天津财经大学",
+        "location": "Tianjin"
+    },
+    {
+        "nameEn": "Tiangong University",
+        "nameZh": "天津工业大学",
+        "location": "Tianjin"
+    },
+    {
+        "nameEn": "Tiangong University (formerly Tianjin University of Science & Technology)",
+        "nameZh": "天津科技大学",
+        "location": "Tianjin"
+    },
+    {
+        "nameEn": "Tianjin University of Technology",
+        "nameZh": "天津理工大学",
+        "location": "Tianjin"
+    },
+    {
+        "nameEn": "Tianjin Normal University",
+        "nameZh": "天津师范大学",
+        "location": "Tianjin"
+    },
+    {
+        "nameEn": "Tianjin Foreign Studies University",
+        "nameZh": "天津外国语大学",
+        "location": "Tianjin"
+    },
+    {
+        "nameEn": "Tianjin Medical University",
+        "nameZh": "天津医科大学",
+        "location": "Tianjin"
+    },
+    {
+        "nameEn": "Tianjin University of Technology and Education",
+        "nameZh": "天津职业技术师范大学",
+        "location": "Tianjin"
+    },
+    {
+        "nameEn": "Tianjin University of Traditional Chinese Medicine",
+        "nameZh": "天津中医药大学",
+        "location": "Tianjin"
+    },
+    {
+        "nameEn": "China Foreign Affairs University",
+        "nameZh": "外交学院",
+        "location": "Beijing"
+    },
+    {
+        "nameEn": "Wenzhou University",
+        "nameZh": "温州大学",
+        "location": "Wenzhou"
+    },
+    {
+        "nameEn": "Wenzhou Medical University",
+        "nameZh": "温州医科大学",
+        "location": "Wenzhou"
+    },
+    {
+        "nameEn": "Wuhan Textile University",
+        "nameZh": "武汉纺织大学",
+        "location": "Wuhan"
+    },
+    {
+        "nameEn": "Wuhan Sports University",
+        "nameZh": "武汉体育学院",
+        "location": "Wuhan"
+    },
+    {
+        "nameEn": "Wuyi University",
+        "nameZh": "武夷学院",
+        "location": "Wuyishan"
+    },
+    {
+        "nameEn": "Xi'an Shiyou University",
+        "nameZh": "西安石油大学",
+        "location": "Xi'an"
+    },
+    {
+        "nameEn": "Xi'an International Studies University",
+        "nameZh": "西安外国语大学",
+        "location": "Xi'an"
+    },
+    {
+        "nameEn": "Northwest University",
+        "nameZh": "西北大学",
+        "location": "Xi'an"
+    },
+    {
+        "nameEn": "Northwestern Polytechnical University",
+        "nameZh": "西北工业大学",
+        "location": "Xi'an"
+    },
+    {
+        "nameEn": "Northwest Normal University",
+        "nameZh": "西北师范大学",
+        "location": "Lanzhou"
+    },
+    {
+        "nameEn": "Westlake University",
+        "nameZh": "西湖大学",
+        "location": "Hangzhou"
+    },
+    {
+        "nameEn": "Southwest Petroleum University",
+        "nameZh": "西南石油大学",
+        "location": "Chengdu"
+    },
+    {
+        "nameEn": "Southwest University of Political Science and Law",
+        "nameZh": "西南政法大学",
+        "location": "Chongqing"
+    },
+    {
+        "nameEn": "Tibet University",
+        "nameZh": "西藏大学",
+        "location": "Lhasa"
+    },
+    {
+        "nameEn": "Xiangtan University",
+        "nameZh": "湘潭大学",
+        "location": "Xiangtan"
+    },
+    {
+        "nameEn": "Xinjiang University",
+        "nameZh": "新疆大学",
+        "location": "Urumqi"
+    },
+    {
+        "nameEn": "Xinjiang Normal University",
+        "nameZh": "新疆师范大学",
+        "location": "Urumqi"
+    },
+    {
+        "nameEn": "Xinjiang Medical University",
+        "nameZh": "新疆医科大学",
+        "location": "Urumqi"
+    },
+    {
+        "nameEn": "Yantai University",
+        "nameZh": "烟台大学",
+        "location": "Yantai"
+    },
+    {
+        "nameEn": "Yanbian University",
+        "nameZh": "延边大学",
+        "location": "Yanji"
+    },
+    {
+        "nameEn": "Yanshan University",
+        "nameZh": "燕山大学",
+        "location": "Qinhuangdao"
+    },
+    {
+        "nameEn": "Yangzhou University",
+        "nameZh": "扬州大学",
+        "location": "Yangzhou"
+    },
+    {
+        "nameEn": "Yunnan University of Finance and Economics",
+        "nameZh": "云南财经大学",
+        "location": "Kunming"
+    },
+    {
+        "nameEn": "Yunnan University",
+        "nameZh": "云南大学",
+        "location": "Kunming"
+    },
+    {
+        "nameEn": "Yunnan Minzu University",
+        "nameZh": "云南民族大学",
+        "location": "Kunming"
+    },
+    {
+        "nameEn": "Yunnan Agricultural University",
+        "nameZh": "云南农业大学",
+        "location": "Kunming"
+    },
+    {
+        "nameEn": "Yunnan Normal University",
+        "nameZh": "云南师范大学",
+        "location": "Kunming"
+    },
+    {
+        "nameEn": "Zhejiang Gongshang University",
+        "nameZh": "浙江工商大学",
+        "location": "Hangzhou"
+    },
+    {
+        "nameEn": "Zhejiang University of Technology",
+        "nameZh": "浙江工业大学",
+        "location": "Hangzhou"
+    },
+    {
+        "nameEn": "Zhejiang Ocean University",
+        "nameZh": "浙江海洋大学",
+        "location": "Zhoushan"
+    },
+    {
+        "nameEn": "Zhejiang Police College",
+        "nameZh": "浙江警察学院",
+        "location": "Hangzhou"
+    },
+    {
+        "nameEn": "Zhejiang University of Science and Technology",
+        "nameZh": "浙江科技大学",
+        "location": "Hangzhou"
+    },
+    {
+        "nameEn": "Zhejiang Sci-Tech University",
+        "nameZh": "浙江理工大学",
+        "location": "Hangzhou"
+    },
+    {
+        "nameEn": "Zhejiang Normal University",
+        "nameZh": "浙江师范大学",
+        "location": "Jinhua"
+    },
+    {
+        "nameEn": "Zhengzhou University",
+        "nameZh": "郑州大学",
+        "location": "Zhengzhou"
+    },
+    {
+        "nameEn": "University of Science and Technology of China",
+        "nameZh": "中国科学技术大学",
+        "location": "Hefei"
+    },
+    {
+        "nameEn": "University of Chinese Academy of Sciences",
+        "nameZh": "中国科学院大学",
+        "location": "Beijing"
+    },
+    {
+        "nameEn": "China Academy of Art",
+        "nameZh": "中国美术学院",
+        "location": "Hangzhou"
+    },
+    {
+        "nameEn": "Graduate School of Chinese Academy of Agricultural Sciences",
+        "nameZh": "中国农业科学院研究生院",
+        "location": "Beijing"
+    },
+    {
+        "nameEn": "China Youth University of Political Studies",
+        "nameZh": "中国青年政治学院",
+        "location": "Beijing"
+    },
+    {
+        "nameEn": "People's Public Security University of China",
+        "nameZh": "中国人民公安大学",
+        "location": "Beijing"
+    },
+    {
+        "nameEn": "National Police University of China",
+        "nameZh": "中国刑事警察学院",
+        "location": "Shenyang"
+    },
+    {
+        "nameEn": "China Medical University",
+        "nameZh": "中国医科大学",
+        "location": "Shenyang"
+    },
+    {
+        "nameEn": "China Conservatory of Music",
+        "nameZh": "中国音乐学院",
+        "location": "Beijing"
+    },
+    {
+        "nameEn": "Minzu University of China",
+        "nameZh": "中央民族大学",
+        "location": "Beijing"
+    }
+]

@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { LayoutDashboard, BookOpen, Library, Home, Menu, X } from "lucide-react";
+import { LayoutDashboard, BookOpen, Library, Home, Menu, X, Building2 } from "lucide-react";
 import { LogoutButton } from "@/components/LogoutButton";
 import { Button } from "@/components/ui/button";
 
@@ -14,6 +14,7 @@ export function DashboardSidebar() {
         { href: "/dashboard", icon: LayoutDashboard, label: "Overview" },
         { href: "/results", icon: BookOpen, label: "Results" },
         { href: "/tests", icon: Library, label: "Test Library" },
+        { href: "/dashboard/universities", icon: Building2, label: "Universities" },
     ];
 
     return (

@@ -14,6 +14,13 @@ import { Calculator, Zap, FlaskConical, Download, Lock } from "lucide-react";
 import Link from "next/link";
 import { getSession } from "@/lib/auth";
 
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "2026 CSCA Exam Syllabus & Topic Breakdown",
+    description: "Detailed syllabus for Mathematics, Physics, Chemistry, and Chinese (Stem/Humanities) tracks. Download the official PDF guide.",
+};
+
 export default async function SyllabusPage() {
     const session = await getSession();
 

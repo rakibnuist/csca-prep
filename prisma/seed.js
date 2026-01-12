@@ -106,16 +106,16 @@ async function main() {
     await prisma.test.deleteMany({});
 
     // 1. Seed Original Subjects
-    await seedSubject('../full_math_quiz.json', 'Mathematics', 'CSCA Mathematics Mock', 'Algebra & Calculus');
-    await seedSubject('../full_physics_quiz.json', 'Physics', 'CSCA Physics Mock', 'General Physics');
-    await seedSubject('../full_chemistry_quiz.json', 'Chemistry', 'CSCA Chemistry Mock', 'General Chemistry');
+    await seedSubject('./seeds/full_math_quiz.json', 'Mathematics', 'CSCA Mathematics Mock', 'Algebra & Calculus');
+    await seedSubject('./seeds/full_physics_quiz.json', 'Physics', 'CSCA Physics Mock', 'General Physics');
+    await seedSubject('./seeds/full_chemistry_quiz.json', 'Chemistry', 'CSCA Chemistry Mock', 'General Chemistry');
 
     // 2. Seed NEW Generated Subjects
-    await seedSubject('../generated_math_questions.json', 'Mathematics', 'CSCA Extra Math', 'General Math');
-    await seedSubject('../generated_physics_questions.json', 'Physics', 'CSCA Extra Physics', 'General Physics');
-    await seedSubject('../generated_chemistry_questions.json', 'Chemistry', 'CSCA Extra Chemistry', 'General Chemistry');
-    await seedSubject('../generated_chinese_humanities_15_sets.json', 'Professional Chinese (Humanities)', 'CSCA Prof. Chinese (Arts)', 'General Humanities');
-    await seedSubject('../generated_chinese_science_questions.json', 'Professional Chinese (Science)', 'CSCA Prof. Chinese (Sci/Eng)', 'General Science Chinese');
+    await seedSubject('./seeds/generated_math_questions.json', 'Mathematics', 'CSCA Extra Math', 'General Math');
+    await seedSubject('./seeds/generated_physics_questions.json', 'Physics', 'CSCA Extra Physics', 'General Physics');
+    await seedSubject('./seeds/generated_chemistry_questions.json', 'Chemistry', 'CSCA Extra Chemistry', 'General Chemistry');
+    await seedSubject('./seeds/generated_chinese_humanities_15_sets.json', 'Professional Chinese (Humanities)', 'CSCA Prof. Chinese (Arts)', 'General Humanities');
+    await seedSubject('./seeds/generated_chinese_science_questions.json', 'Professional Chinese (Science)', 'CSCA Prof. Chinese (Sci/Eng)', 'General Science Chinese');
 
 
 

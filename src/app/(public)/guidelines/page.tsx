@@ -31,6 +31,13 @@ import {
 import Link from "next/link";
 import { ReadinessChecklist } from "@/components/guidelines/ReadinessChecklist";
 
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "2026 CSCA Exam Guidelines & Rules (Home-Based)",
+    description: "Official guide for the CSCA Remote-Proctored Home-Based Testing (RHT). Learn about device requirements, exam rules, and registration process.",
+};
+
 export default async function GuidelinesPage() {
     const session = await getSession();
 

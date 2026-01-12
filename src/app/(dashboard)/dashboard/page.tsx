@@ -368,7 +368,6 @@ export default async function DashboardPage() {
                     <TopicAnalysis data={topicAnalysisBySubject} testsCompleted={testsCompleted} />
                 )}
 
-
             </div>
         </div>
     );
