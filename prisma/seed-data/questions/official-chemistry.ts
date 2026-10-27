@@ -294,8 +294,9 @@ export const officialChemistryQuestions: SeedQuestion[] = [
     difficulty: "EASY",
     stem: "Which diagram represents the electron configuration of an argon atom?",
     stemZh: "下列哪项表示氩原子的电子排布图？",
-    options: ["2, 8, 6", "2, 8, 8", "2, 8, 18", "2, 8, 2"],
-    optionsZh: ["2, 8, 6", "2, 8, 8", "2, 8, 18", "2, 8, 2"],
+    options: ["+9: 2, 7", "+18: 2, 8, 8", "+10: 2, 8", "+17: 2, 8, 7"],
+    optionsZh: ["+9：2, 7", "+18：2, 8, 8", "+10：2, 8", "+17：2, 8, 7"],
+    figure: "/figures/official/chem-q18.png",
     correct: 1,
     explanation:
       "Argon has 18 electrons. They fill K (2), L (8), M (8) by the minimum-energy rule, giving 2, 8, 8.",
@@ -837,6 +838,7 @@ export const officialChemistryQuestions: SeedQuestion[] = [
       "b 端口放出的气体能燃烧，产生蓝色火焰",
       "电路中每转移 1 mol 电子，b 端口放出气体的体积为 22.4 L（标准状况）",
     ],
+    figure: "/figures/official/chem-q48.png",
     correct: 0,
     explanation:
       "Cathode (a): 2H₂O + 2e⁻ → H₂↑ + 2OH⁻, so the solution is alkaline and phenolphthalein turns red. The gas at a is H₂ (not acidic); at b (anode) Cl₂ forms (doesn't burn); 1 mol e⁻ gives 0.5 mol Cl₂ = 11.2 L.",

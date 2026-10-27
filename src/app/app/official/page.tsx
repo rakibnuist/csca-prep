@@ -99,8 +99,7 @@ export default async function OfficialQaPage() {
               <span className="font-medium text-ink">Note:</span> these are official CSCA exam
               materials reproduced for study. They are kept free, attributed to the original source,
               and should be cross-checked against official channels. Full papers are also available
-              from the official portal. Questions that depend on a diagram show the official figure
-              where it has been digitised; a few figures are still being added.
+              from the official portal. Every figure-based question includes its official diagram.
             </p>
           </div>
         )}

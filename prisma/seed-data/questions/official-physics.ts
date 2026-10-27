@@ -470,6 +470,7 @@ export const officialPhysicsQuestions: SeedQuestion[] = [
       "Negative, with charge less than B",
     ],
     optionsZh: ["带正电，电荷量小于 B", "带负电，电荷量大于 B", "带正电，电荷量大于 B", "带负电，电荷量小于 B"],
+    figure: "/figures/official/phy-q29.png",
     correct: 3,
     explanation:
       "If C were positive, both forces on A would be repulsive and the resultant angle would be ≥ 60°. So C is negative (attractive, toward C). For the resultant to be within 60° of BA's extension, the attraction from C must be weaker than the repulsion from B, so |Q_C| < |Q_B|.",
@@ -543,6 +544,7 @@ export const officialPhysicsQuestions: SeedQuestion[] = [
       "线框受到水平向右的安培力",
       "bc 边受到的安培力大小不变",
     ],
+    figure: "/figures/official/phy-q33.png",
     correct: 2,
     explanation:
       "The field into the page increases, so Lenz's law gives an outward induced field and current a→d→c→b→a (not A). Since ΔB/Δt is constant, EMF and current are constant (B wrong). The frame is pushed toward the weaker field on the right (C correct). The Ampere force on bc grows as B grows (D wrong).",
@@ -562,6 +564,7 @@ export const officialPhysicsQuestions: SeedQuestion[] = [
       "The field strength at a and b is equal",
     ],
     optionsZh: ["b 点场强大于 a 点", "a 点场强大于 b 点", "该电场为匀强电场", "a、b 两点场强大小相等"],
+    figure: "/figures/official/phy-q34.png",
     correct: 1,
     explanation:
       "Field-line density indicates field strength: denser lines at a mean a stronger field. A uniform field needs parallel, equally spaced lines.",
@@ -576,6 +579,7 @@ export const officialPhysicsQuestions: SeedQuestion[] = [
     stemZh: "一个玻璃圆柱的横截面为半圆形，一束单色细光沿圆柱射向圆心 O，入射角为 30°，反射光与折射光恰好垂直，则玻璃的折射率为：",
     options: ["√3", "√2", "1.5", "√5"],
     optionsZh: ["√3", "√2", "1.5", "√5"],
+    figure: "/figures/official/phy-q35.png",
     correct: 0,
     explanation:
       "Reflection angle = 30°. Perpendicular beams give refraction angle 90° − 30° = 60°. Snell: n = sin60°/sin30° = (√3/2)/(1/2) = √3.",
@@ -590,6 +594,7 @@ export const officialPhysicsQuestions: SeedQuestion[] = [
     stemZh: "一片树叶从空中下落的轨迹如图，图中标记了树叶在 a、b、c、d 四个位置的速度方向，其中正确的是：",
     options: ["a", "b", "c", "d"],
     optionsZh: ["a", "b", "c", "d"],
+    figure: "/figures/official/phy-q36.png",
     correct: 3,
     explanation:
       "For curvilinear motion the instantaneous velocity is always along the tangent to the trajectory at that point. Only d is drawn tangentially.",
@@ -604,6 +609,7 @@ export const officialPhysicsQuestions: SeedQuestion[] = [
     stemZh: "一名学生将质量为 m 的篮球从高度 h 处以初速度 v 抛出，篮球恰好进入高度为 H 的篮筐。以地面为零势能面，不计空气阻力，则篮球进入篮筐时的机械能为：",
     options: ["½mv² + mgH", "½mv² + mg(H − h)", "½mv² + mgh", "½mv² + mgH + mg(H − h)"],
     optionsZh: ["½mv² + mgH", "½mv² + mg(H − h)", "½mv² + mgh", "½mv² + mgH + mg(H − h)"],
+    figure: "/figures/official/phy-q37.png",
     correct: 2,
     explanation:
       "Only gravity does work, so mechanical energy is conserved. At release E = ½mv² + mgh, and this is unchanged on entering the basket.",
@@ -692,6 +698,7 @@ export const officialPhysicsQuestions: SeedQuestion[] = [
       "ae 段有电流通过",
       "bc 段有电流通过",
     ],
+    figure: "/figures/official/phy-q42.png",
     correct: 3,
     explanation:
       "Moving left enlarges the ebcf loop, so flux increases (A and B wrong). Induced current flows only in the closed loop ebcf, so ae has none (C wrong) and bc, part of the loop, carries current (D correct).",
@@ -704,13 +711,14 @@ export const officialPhysicsQuestions: SeedQuestion[] = [
     difficulty: "HARD",
     stem: "Two identical metal balls are fixed at A and B with charges +Q and −5Q, and AB = BC. A point charge q fixed at C experiences force F₁. The two balls are then touched together and returned to their places, and the force on q becomes F₂. Then F₁/F₂ =",
     stemZh: "两个相同的金属球固定在 A、B 两点，电荷量分别为 +Q 和 −5Q，在 A、B 延长线上 C 点固定一个点电荷 q，受到的静电力大小为 F₁，已知 AB = BC。若将两球接触后再放回原处，点电荷 q 受到的静电力大小变为 F₂，则 F₁/F₂ 为：",
-    options: ["1/2", "2", "3", "4"],
-    optionsZh: ["1/2", "2", "3", "4"],
-    correct: 1,
+    options: ["21/10", "21/16", "19/10", "19/16"],
+    optionsZh: ["21/10", "21/16", "19/10", "19/16"],
+    figure: "/figures/official/phy-q43.png",
+    correct: 2,
     explanation:
-      "With C beyond B and AB = BC = l, the distances are AC = 2l and BC = l. F_A = kQq/(2l)² (repulsive, right) and F_B = 5kQq/l² (attractive, right), so F₁ = 5.25kQq/l². After contact the total charge −4Q splits equally to −2Q each: F_A' = 0.5kQq/l² and F_B' = 2kQq/l², both attractive (left), so F₂ = 2.5kQq/l². Hence F₁/F₂ ≈ 2.",
+      "Take C beyond B with AB = BC = l, so AC = 2l. F_A = kQq/(2l)² (repulsive, +x) and F_B = 5kQq/l² (attractive, −x), giving F₁ = 19kQq/(4l²). After contact the total −4Q splits equally to −2Q each: F_A' = 2kQq/(4l²) and F_B' = 2kQq/l², both attractive in the same direction, so F₂ = 5kQq/(2l²). Hence F₁/F₂ = 19/10.",
     explanationZh:
-      "C 在 B 外侧且 AB = BC = l 时，AC = 2l，BC = l。F_A = kQq/(2l)²（斥力向右），F_B = 5kQq/l²（引力向右），F₁ = 5.25kQq/l²。接触后总电荷 −4Q 平分，各为 −2Q，F_A' = 0.5kQq/l²、F_B' = 2kQq/l²，均向左，F₂ = 2.5kQq/l²，故 F₁/F₂ ≈ 2。",
+      "C 在 B 外侧且 AB = BC = l，则 AC = 2l。F_A = kQq/(2l)²（斥力，+x 方向），F_B = 5kQq/l²（引力，−x 方向），故 F₁ = 19kQq/(4l²)。接触后总电荷 −4Q 平分，各为 −2Q，F_A' = 2kQq/(4l²)、F_B' = 2kQq/l²，方向相同，F₂ = 5kQq/(2l²)。因此 F₁/F₂ = 19/10。",
     tags: ["electrostatics", "coulomb"],
   },
   {
@@ -734,6 +742,7 @@ export const officialPhysicsQuestions: SeedQuestion[] = [
     stemZh: "四个质量分别为 4m、3m、2m、m 的小球 A、B、C、D 通过细线或轻弹簧连接悬挂在 O 点处于静止状态。若剪断 B、C 之间的细线，剪断瞬间 B、C 的加速度分别为：",
     options: ["2g, 1.5g", "g, 1.5g", "g, 0.5g", "2g, 0.5g"],
     optionsZh: ["2g, 1.5g", "g, 1.5g", "g, 0.5g", "2g, 0.5g"],
+    figure: "/figures/official/phy-q45.png",
     correct: 1,
     explanation:
       "Before cutting, the BC tension is (2m + m)g = 3mg. At the instant of cutting the spring force is unchanged, so B's resultant is 6mg − 3mg = 3mg giving a_B = g; C's resultant is (2m + m)g = 3mg giving a_C = 1.5g.",
@@ -758,6 +767,7 @@ export const officialPhysicsQuestions: SeedQuestion[] = [
       "速度恒定时，增大 R 可使拉力增大",
       "速度越高，所需拉力越小",
     ],
+    figure: "/figures/official/phy-q46.png",
     correct: 1,
     explanation:
       "Cutting field lines generates an induced current and hence an Ampere force opposing the motion. At constant speed the pulling force balances this magnetic force, so ab feels both. Removing the force leaves the Ampere force to decelerate it; larger R or higher speed changes the balance in the opposite direction.",
@@ -782,6 +792,7 @@ export const officialPhysicsQuestions: SeedQuestion[] = [
       "所用时间为 mv₀/(qE)",
       "速度大小为 3v₀",
     ],
+    figure: "/figures/official/phy-q47.png",
     correct: 1,
     explanation:
       "Horizontal: x = v₀t. Vertical: y = ½at² with a = qE/m. Returning to the 45° line means y = x, giving t = 2mv₀/(qE). Then x = 2mv₀²/(qE) and the distance along the line is s = √2·x = 2√2mv₀²/(qE). The final speed is √5v₀, not 3v₀.",
