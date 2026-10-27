@@ -6,6 +6,7 @@ import { useState } from "react";
 import {
   LayoutDashboard,
   FileStack,
+  ScrollText,
   PenLine,
   CalendarCheck,
   Lightbulb,
@@ -22,6 +23,7 @@ import { signOutAction } from "@/lib/actions/auth";
 const NAV = [
   { href: "/app/dashboard", label: "Dashboard", icon: LayoutDashboard },
   { href: "/app/mocks", label: "Mock exams", icon: FileStack },
+  { href: "/app/official", label: "Official Q&A", icon: ScrollText },
   { href: "/app/practice", label: "Practice", icon: PenLine },
   { href: "/app/plan", label: "Study plan", icon: CalendarCheck },
   { href: "/tips", label: "Tips & tricks", icon: Lightbulb },

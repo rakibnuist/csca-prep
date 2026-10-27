@@ -20,6 +20,7 @@ import { chemistryQuestions } from "./seed-data/questions/chemistry";
 import { chineseHumanitiesQuestions } from "./seed-data/questions/chinese-humanities";
 import { chineseStemQuestions } from "./seed-data/questions/chinese-stem";
 import { officialMathQuestions } from "./seed-data/questions/official-math";
+import { officialChemistryQuestions } from "./seed-data/questions/official-chemistry";
 import type { SeedQuestion } from "./seed-data/types";
 import { EXAM_SITTINGS } from "../src/lib/site";
 
@@ -120,28 +121,49 @@ async function main() {
   }
 
   console.log("→ official past papers");
-  const OFFICIAL_SOURCE = "Official CSCA past paper (2026-03)";
-  for (let index = 0; index < officialMathQuestions.length; index++) {
-    const item = officialMathQuestions[index];
-    const id = `official-math-${String(index + 1).padStart(3, "0")}`;
-    const data = {
+  const OFFICIAL_PAPERS: {
+    code: string;
+    subjectCode: string;
+    source: string;
+    items: SeedQuestion[];
+  }[] = [
+    {
+      code: "math",
       subjectCode: "MATH",
-      topicId: item.topic,
-      difficulty: item.difficulty,
-      stem: item.stem,
-      stemZh: item.stemZh ?? null,
-      options: item.options,
-      optionsZh: item.optionsZh ?? [],
-      correctIndex: item.correct,
-      explanation: item.explanation,
-      explanationZh: item.explanationZh ?? null,
-      tags: item.tags ?? [],
-      source: OFFICIAL_SOURCE,
-      active: true,
-    };
-    await prisma.question.upsert({ where: { id }, create: { id, ...data }, update: data });
+      source: "Official CSCA past paper (2026-03)",
+      items: officialMathQuestions,
+    },
+    {
+      code: "chem",
+      subjectCode: "CHEM",
+      source: "Official CSCA past paper (2026-01)",
+      items: officialChemistryQuestions,
+    },
+  ];
+
+  for (const paper of OFFICIAL_PAPERS) {
+    for (let index = 0; index < paper.items.length; index++) {
+      const item = paper.items[index];
+      const id = `official-${paper.code}-${String(index + 1).padStart(3, "0")}`;
+      const data = {
+        subjectCode: paper.subjectCode,
+        topicId: item.topic,
+        difficulty: item.difficulty,
+        stem: item.stem,
+        stemZh: item.stemZh ?? null,
+        options: item.options,
+        optionsZh: item.optionsZh ?? [],
+        correctIndex: item.correct,
+        explanation: item.explanation,
+        explanationZh: item.explanationZh ?? null,
+        tags: item.tags ?? [],
+        source: paper.source,
+        active: true,
+      };
+      await prisma.question.upsert({ where: { id }, create: { id, ...data }, update: data });
+    }
+    console.log(`   ${paper.subjectCode} official: ${paper.items.length} items`);
   }
-  console.log(`   MATH official: ${officialMathQuestions.length} items`);
 
   console.log("→ mock papers");
   for (const bank of BANKS) {
@@ -194,33 +216,56 @@ async function main() {
     console.log(`   ${slug}: ${selected.length} questions`);
   }
 
-  // Official past paper (March 2026 Mathematics) as a takeable mock.
-  {
+  // Official past papers as takeable mocks.
+  const OFFICIAL_MOCKS: {
+    slug: string;
+    subjectCode: string;
+    title: string;
+    source: string;
+    durationMin: number;
+  }[] = [
+    {
+      slug: "math-official-2026-03",
+      subjectCode: "MATH",
+      title: "Mathematics · Official · March 2026",
+      source: "Official CSCA past paper (2026-03)",
+      durationMin: 60,
+    },
+    {
+      slug: "chem-official-2026-01",
+      subjectCode: "CHEM",
+      title: "Chemistry · Official · January 2026",
+      source: "Official CSCA past paper (2026-01)",
+      durationMin: 60,
+    },
+  ];
+
+  for (const paper of OFFICIAL_MOCKS) {
     const officialQuestions = await prisma.question.findMany({
-      where: { subjectCode: "MATH", active: true, source: OFFICIAL_SOURCE },
+      where: { subjectCode: paper.subjectCode, active: true, source: paper.source },
       orderBy: { id: "asc" },
     });
-    const slug = "math-official-2026-03";
+
     const mock = await prisma.mock.upsert({
-      where: { slug },
+      where: { slug: paper.slug },
       create: {
-        slug,
-        subjectCode: "MATH",
-        title: "Mathematics · Official · March 2026",
+        slug: paper.slug,
+        subjectCode: paper.subjectCode,
+        title: paper.title,
         subtitle:
           "Official CSCA past paper with the published answer key and explanations. Reconstructed for study — cross-check with official sources before relying on it.",
         year: 2026,
         paper: "Official",
-        durationMin: 60,
+        durationMin: paper.durationMin,
         questionCount: officialQuestions.length,
         isFullLength: true,
         published: true,
       },
       update: {
-        title: "Mathematics · Official · March 2026",
+        title: paper.title,
         subtitle:
           "Official CSCA past paper with the published answer key and explanations. Reconstructed for study — cross-check with official sources before relying on it.",
-        durationMin: 60,
+        durationMin: paper.durationMin,
         questionCount: officialQuestions.length,
         isFullLength: true,
         published: true,
@@ -233,7 +278,7 @@ async function main() {
         data: { mockId: mock.id, questionId: officialQuestions[order].id, order },
       });
     }
-    console.log(`   ${slug}: ${officialQuestions.length} questions (official)`);
+    console.log(`   ${paper.slug}: ${officialQuestions.length} questions (official)`);
   }
 
   console.log("→ exam calendar");

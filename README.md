@@ -125,7 +125,8 @@ prisma/seed-data/
   questions/chemistry.ts           # 56
   questions/chinese-humanities.ts  # 52
   questions/chinese-stem.ts        # 52
-  questions/official-math.ts       # 48 official March 2026 questions (past paper)
+  questions/official-math.ts       # 48 official March 2026 Mathematics questions
+  questions/official-chemistry.ts  # 48 official January 2026 Chemistry questions
 prisma/seeds/*.json                # ~2,000 legacy drill questions (practice only)
 ```
 
