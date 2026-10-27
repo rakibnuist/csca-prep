@@ -1,76 +1,111 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import type { Metadata, Viewport } from "next";
+import { Inter, Instrument_Serif, Geist_Mono } from "next/font/google";
+import "katex/dist/katex.min.css";
 import "./globals.css";
+import { SITE } from "@/lib/site";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
+  display: "swap",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const display = Instrument_Serif({
+  variable: "--font-display",
   subsets: ["latin"],
+  weight: "400",
+  style: ["normal", "italic"],
+  display: "swap",
+});
+
+const mono = Geist_Mono({
+  variable: "--font-mono",
+  subsets: ["latin"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://cscamaster.com'), // Replace with actual domain
+  metadataBase: new URL(SITE.url),
   title: {
-    default: "CSCA Prep Master | Free CSCA Exam Preparation",
-    template: "%s | CSCA Prep Master",
+    default: "CSCA Master — Full-length CSCA mock exams & syllabus-aligned practice",
+    template: "%s · CSCA Master",
   },
-  description: "The only 100% Free preparation platform for English & Chinese tracks. Access 15+ Mock Tests, Whiteboard-Mode practice, and verified scholarship leads.",
-  keywords: ["CSCA Exam", "Study in China", "CSC Scholarship", "CSCA Preparation", "Chinese Universities", "Mock Tests"],
-  authors: [{ name: "CSCA Prep Team" }],
-  creator: "CSCA Prep Team",
+  description: SITE.description,
+  applicationName: SITE.name,
+  keywords: [
+    "CSCA",
+    "CSCA exam",
+    "CSCA mock test",
+    "China Scholastic Competency Assessment",
+    "CSCA preparation",
+    "study in China",
+    "CSC scholarship",
+    "CSCA mathematics",
+    "CSCA physics",
+    "CSCA chemistry",
+    "CSCA sample questions",
+  ],
+  authors: [{ name: "CSCA Master" }],
+  creator: "CSCA Master",
+  alternates: { canonical: "/" },
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://cscamaster.com",
-    siteName: "CSCA Prep Master",
-    title: "CSCA Prep Master | Free CSCA Exam Preparation",
-    description: "The only 100% Free preparation platform for English & Chinese tracks. Access 15+ Mock Tests, Whiteboard-Mode practice, and verified scholarship leads.",
-    images: [
-      {
-        url: "/og-image.png", // Ensure this image exists in public folder
-        width: 1200,
-        height: 630,
-        alt: "CSCA Prep Master Preview",
-      },
-    ],
+    url: SITE.url,
+    siteName: SITE.name,
+    title: "CSCA Master — the exam-accurate CSCA preparation platform",
+    description: SITE.description,
   },
   twitter: {
     card: "summary_large_image",
-    title: "CSCA Prep Master | Free CSCA Exam Preparation",
-    description: "Ace the CSCA Exam with free mock tests and study guides.",
-    images: ["/og-image.png"],
-    creator: "@cscaprep",
+    title: "CSCA Master — the exam-accurate CSCA preparation platform",
+    description: SITE.description,
   },
   robots: {
     index: true,
     follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
-    },
+    googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1 },
   },
-  verification: {
-    google: 'p_uUt3M-pejdzU4AkxQQgwlXzGW9Jfu7woOPLJwP2_M',
-  },
+  category: "education",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export const viewport: Viewport = {
+  themeColor: "#fbf7f0",
+  width: "device-width",
+  initialScale: 1,
+};
+
+const ORGANISATION_JSONLD = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": `${SITE.url}/#organization`,
+      name: SITE.name,
+      url: SITE.url,
+      description: SITE.description,
+      email: SITE.email,
+    },
+    {
+      "@type": "WebSite",
+      "@id": `${SITE.url}/#website`,
+      url: SITE.url,
+      name: SITE.name,
+      description: SITE.description,
+      publisher: { "@id": `${SITE.url}/#organization` },
+      inLanguage: "en",
+    },
+  ],
+};
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${inter.variable} ${display.variable} ${mono.variable} font-sans`}>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(ORGANISATION_JSONLD) }}
+        />
         {children}
       </body>
     </html>
