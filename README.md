@@ -28,7 +28,7 @@ undergraduate applicants from 2028.
 ```bash
 npm install
 cp .env.example .env.local     # already present in this checkout
-npm run db:seed                # subjects, syllabus, 2,200+ questions, 5 papers, exam calendar
+npm run db:seed                # subjects, syllabus, 2,200+ questions, 6 papers (incl. official), calendar
 npm run dev                    # boots the embedded database, then Next.js
 ```
 
@@ -125,6 +125,7 @@ prisma/seed-data/
   questions/chemistry.ts           # 56
   questions/chinese-humanities.ts  # 52
   questions/chinese-stem.ts        # 52
+  questions/official-math.ts       # 48 official March 2026 questions (past paper)
 prisma/seeds/*.json                # ~2,000 legacy drill questions (practice only)
 ```
 

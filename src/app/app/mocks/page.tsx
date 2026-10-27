@@ -119,7 +119,9 @@ export default async function MocksPage() {
                       <div className="min-w-0">
                         <div className="flex flex-wrap items-center gap-2">
                           <p className="text-[13px] font-medium text-ink">{mock.title}</p>
-                          {inProgress ? (
+                          {mock.paper === "Official" ? (
+                            <Pill tone="red">Official past paper</Pill>
+                          ) : inProgress ? (
                             <Pill tone="gold">In progress</Pill>
                           ) : done.length > 0 ? (
                             <Pill tone="jade">
@@ -192,11 +194,22 @@ export default async function MocksPage() {
           );
         })}
 
-        <p className="pt-2 text-[11px] leading-relaxed text-ink-faint">
-          Chinese papers are CSCA-format short papers: 48 questions in 54 minutes, covering the same
-          item types as the official 80-in-90 paper. The card labels this, because pretending
-          otherwise would be dishonest.
-        </p>
+        <div className="mt-6 space-y-2 rounded-xl border border-line bg-card p-4 text-[11px] leading-relaxed text-ink-soft">
+          <p>
+            <span className="font-medium text-ink">Calibrated to the official paper.</span>{" "}
+            Question stems are bilingual, 48 single-answer items in 60 minutes, scored 0–100 — and
+            the topic order and difficulty ramp match the official past papers (warm-up first, then
+            harder).
+          </p>
+          <p>
+            <span className="font-medium text-ink">Official past papers.</span> The{" "}
+            <span className="text-vermillion">Mathematics · March 2026</span> paper is the real
+            sitting, digitised with its published answer key and explanations so you can study the
+            exact style. More official sittings are being transcribed. Chinese practice papers are
+            CSCA-format short papers (48 questions / 54 minutes) covering the same item types as the
+            official 80-in-90 paper.
+          </p>
+        </div>
       </AppBody>
     </>
   );

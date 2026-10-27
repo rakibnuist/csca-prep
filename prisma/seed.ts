@@ -19,6 +19,7 @@ import { physicsQuestions } from "./seed-data/questions/physics";
 import { chemistryQuestions } from "./seed-data/questions/chemistry";
 import { chineseHumanitiesQuestions } from "./seed-data/questions/chinese-humanities";
 import { chineseStemQuestions } from "./seed-data/questions/chinese-stem";
+import { officialMathQuestions } from "./seed-data/questions/official-math";
 import type { SeedQuestion } from "./seed-data/types";
 import { EXAM_SITTINGS } from "../src/lib/site";
 
@@ -118,6 +119,30 @@ async function main() {
     console.log(`   ${bank.code}: ${bank.items.length} drill items`);
   }
 
+  console.log("→ official past papers");
+  const OFFICIAL_SOURCE = "Official CSCA past paper (2026-03)";
+  for (let index = 0; index < officialMathQuestions.length; index++) {
+    const item = officialMathQuestions[index];
+    const id = `official-math-${String(index + 1).padStart(3, "0")}`;
+    const data = {
+      subjectCode: "MATH",
+      topicId: item.topic,
+      difficulty: item.difficulty,
+      stem: item.stem,
+      stemZh: item.stemZh ?? null,
+      options: item.options,
+      optionsZh: item.optionsZh ?? [],
+      correctIndex: item.correct,
+      explanation: item.explanation,
+      explanationZh: item.explanationZh ?? null,
+      tags: item.tags ?? [],
+      source: OFFICIAL_SOURCE,
+      active: true,
+    };
+    await prisma.question.upsert({ where: { id }, create: { id, ...data }, update: data });
+  }
+  console.log(`   MATH official: ${officialMathQuestions.length} items`);
+
   console.log("→ mock papers");
   for (const bank of BANKS) {
     const subject = subjects.find((entry) => entry.code === bank.code)!;
@@ -167,6 +192,48 @@ async function main() {
       });
     }
     console.log(`   ${slug}: ${selected.length} questions`);
+  }
+
+  // Official past paper (March 2026 Mathematics) as a takeable mock.
+  {
+    const officialQuestions = await prisma.question.findMany({
+      where: { subjectCode: "MATH", active: true, source: OFFICIAL_SOURCE },
+      orderBy: { id: "asc" },
+    });
+    const slug = "math-official-2026-03";
+    const mock = await prisma.mock.upsert({
+      where: { slug },
+      create: {
+        slug,
+        subjectCode: "MATH",
+        title: "Mathematics · Official · March 2026",
+        subtitle:
+          "Official CSCA past paper with the published answer key and explanations. Reconstructed for study — cross-check with official sources before relying on it.",
+        year: 2026,
+        paper: "Official",
+        durationMin: 60,
+        questionCount: officialQuestions.length,
+        isFullLength: true,
+        published: true,
+      },
+      update: {
+        title: "Mathematics · Official · March 2026",
+        subtitle:
+          "Official CSCA past paper with the published answer key and explanations. Reconstructed for study — cross-check with official sources before relying on it.",
+        durationMin: 60,
+        questionCount: officialQuestions.length,
+        isFullLength: true,
+        published: true,
+      },
+    });
+
+    await prisma.mockItem.deleteMany({ where: { mockId: mock.id } });
+    for (let order = 0; order < officialQuestions.length; order++) {
+      await prisma.mockItem.create({
+        data: { mockId: mock.id, questionId: officialQuestions[order].id, order },
+      });
+    }
+    console.log(`   ${slug}: ${officialQuestions.length} questions (official)`);
   }
 
   console.log("→ exam calendar");
