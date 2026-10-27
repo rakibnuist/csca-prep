@@ -228,7 +228,7 @@ export const GUIDES: Guide[] = [
           "Find the programme page on the university's international admissions site, not the Chinese-language homepage.",
           "Look for the CSCA section: most list required papers by programme.",
           "If it is not published, email admissions with your programme name and intake year.",
-          "Check our university directory for an indicative profile, then verify.",
+          "Check the programme page on the university's international admissions site, then verify by email.",
           "Write the answer into your application spreadsheet — requirements change between cycles.",
         ],
         callout:
@@ -236,7 +236,7 @@ export const GUIDES: Guide[] = [
       },
     ],
     related: [
-      { label: "University directory", href: "/universities" },
+      { label: "University requirements", href: "/requirements" },
       { label: "CSCA exam guide", href: "/csca" },
       { label: "CSCA vs HSK", href: "/guides/csca-vs-hsk" },
     ],

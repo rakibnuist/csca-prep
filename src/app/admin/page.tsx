@@ -7,13 +7,13 @@ import { SUBJECTS } from "@/lib/exam";
 export const metadata = { title: "Admin overview" };
 
 export default async function AdminOverviewPage() {
-  const [users, attempts, questions, mocks, universities, leads, recent, bySubject] =
+  const [users, attempts, questions, mocks, reviews, leads, recent, bySubject] =
     await Promise.all([
       prisma.user.count(),
       prisma.attempt.count({ where: { status: "SUBMITTED" } }),
       prisma.question.count({ where: { active: true } }),
       prisma.mock.count({ where: { published: true } }),
-      prisma.university.count(),
+      prisma.reviewItem.count(),
       prisma.lead.count(),
       prisma.attempt.findMany({
         where: { status: "SUBMITTED" },
@@ -35,7 +35,7 @@ export default async function AdminOverviewPage() {
     { label: "Students", value: users, icon: Users, note: "registered accounts" },
     { label: "Papers submitted", value: attempts, icon: FileStack, note: `${avg._avg.score?.toFixed(1) ?? "—"} avg score` },
     { label: "Questions live", value: questions, icon: Target, note: `${mocks} published papers` },
-    { label: "Universities", value: universities, icon: TrendingUp, note: "in directory" },
+    { label: "Review cards", value: reviews, icon: TrendingUp, note: "spaced-repetition" },
     { label: "Leads", value: leads, icon: Mail, note: "waitlist & contact" },
   ];
 

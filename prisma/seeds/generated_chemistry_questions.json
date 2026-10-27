@@ -1,0 +1,242 @@
+[
+    {
+        "id": 3001,
+        "set_id": "generated_chemistry_set_1",
+        "set_name": "Generated Chemistry Set 1",
+        "topic": "Basic Concepts",
+        "question": "How many moles of $$ CO_2 $$ are present in 44 grams of Carbon Dioxide? (Atomic weights: C=12, O=16)",
+        "options": [
+            "1 mole",
+            "0.5 moles",
+            "2 moles",
+            "44 moles"
+        ],
+        "correct_answer": "1 mole",
+        "explanation": "Molar mass of $$ CO_2 = 12 + 2(16) = 44 \\, \\text{g/mol} $$. Moles = Mass / Molar Mass = 44/44 = 1.",
+        "difficulty": "Easy"
+    },
+    {
+        "id": 3002,
+        "set_id": "generated_chemistry_set_1",
+        "set_name": "Generated Chemistry Set 1",
+        "topic": "Basic Concepts",
+        "question": "Calculate the pH of a $$ 0.01 \\, \\text{M} $$ solution of HCl, assuming complete dissociation.",
+        "options": [
+            "2",
+            "1",
+            "12",
+            "0.01"
+        ],
+        "correct_answer": "2",
+        "explanation": "$$ pH = -\\log[H^+] $$. $$ [H^+] = 10^{-2} $$, so $$ pH = -(-2) = 2 $$.",
+        "difficulty": "Easy"
+    },
+    {
+        "id": 3003,
+        "set_id": "generated_chemistry_set_1",
+        "set_name": "Generated Chemistry Set 1",
+        "topic": "Basic Concepts",
+        "question": "According to the Ideal Gas Law (PV=nRT), if pressure is kept constant and temperature is doubled, what happens to the volume?",
+        "options": [
+            "It doubles",
+            "It halves",
+            "It remains the same",
+            "It quadruples"
+        ],
+        "correct_answer": "It doubles",
+        "explanation": "$$ V \\propto T $$ when P and n are constant. If T doubles, V doubles.",
+        "difficulty": "Medium"
+    },
+    {
+        "id": 3004,
+        "set_id": "generated_chemistry_set_1",
+        "set_name": "Generated Chemistry Set 1",
+        "topic": "Organic Chemistry",
+        "question": "What is the general formula for non-cyclic alkanes?",
+        "options": [
+            "$$ C_nH_{2n+2} $$",
+            "$$ C_nH_{2n} $$",
+            "$$ C_nH_{2n-2} $$",
+            "$$ C_nH_{2n+1}OH $$"
+        ],
+        "correct_answer": "$$ C_nH_{2n+2} $$",
+        "explanation": "Alkanes are saturated hydrocarbons with single bonds only, following $$ C_nH_{2n+2} $$.",
+        "difficulty": "Easy"
+    },
+    {
+        "id": 3005,
+        "set_id": "generated_chemistry_set_1",
+        "set_name": "Generated Chemistry Set 1",
+        "topic": "Reactions",
+        "question": "In the reaction $$ Zn + CuSO_4 \\rightarrow ZnSO_4 + Cu $$, what is being oxidized?",
+        "options": [
+            "$$ Zn $$",
+            "$$ Cu $$",
+            "$$ SO_4^{2-} $$",
+            "$$ ZnSO_4 $$"
+        ],
+        "correct_answer": "$$ Zn $$",
+        "explanation": "Zinc loses electrons ($$ Zn^0 \\to Zn^{2+} $$), so it is oxidized. Copper is reduced.",
+        "difficulty": "Medium"
+    },
+    {
+        "id": 3006,
+        "set_id": "generated_chemistry_set_1",
+        "set_name": "Generated Chemistry Set 1",
+        "topic": "Periodic Table",
+        "question": "Which of the following elements has the highest electronegativity?",
+        "options": [
+            "Fluorine (F)",
+            "Oxygen (O)",
+            "Nitrogen (N)",
+            "Carbon (C)"
+        ],
+        "correct_answer": "Fluorine (F)",
+        "explanation": "Electronegativity increases across a period and decreases down a group. Fluorine is the most electronegative element.",
+        "difficulty": "Easy"
+    },
+    {
+        "id": 3007,
+        "set_id": "generated_chemistry_set_1",
+        "set_name": "Generated Chemistry Set 1",
+        "topic": "Theories and Laws",
+        "question": "Which type of bond involves the sharing of electron pairs between atoms?",
+        "options": [
+            "Covalent bond",
+            "Ionic bond",
+            "Metallic bond",
+            "Hydrogen bond"
+        ],
+        "correct_answer": "Covalent bond",
+        "explanation": "Covalent bonding involves the sharing of electrons. Ionic involves transfer.",
+        "difficulty": "Easy"
+    },
+    {
+        "id": 3008,
+        "set_id": "generated_chemistry_set_1",
+        "set_name": "Generated Chemistry Set 1",
+        "topic": "Equilibrium",
+        "question": "For the exothermic reaction $$ N_2 + 3H_2 \\rightleftharpoons 2NH_3 + \\text{Heat} $$, which condition favors the production of Ammonia ($$ NH_3 $$)?",
+        "options": [
+            "Increasing pressure",
+            "Increasing temperature",
+            "Removing Nitrogen",
+            "Adding a catalyst (only speeds up rate)"
+        ],
+        "correct_answer": "Increasing pressure",
+        "explanation": "Increasing pressure favors the side with fewer gas moles (Right: 2 moles, Left: 4 moles). Exothermic reactions favor lower temperatures.",
+        "difficulty": "Hard"
+    },
+    {
+        "id": 3009,
+        "set_id": "generated_chemistry_set_1",
+        "set_name": "Generated Chemistry Set 1",
+        "topic": "Atomic Structure",
+        "question": "What is the electronic configuration of Oxygen (Atomic number 8)?",
+        "options": [
+            "$$ 1s^2 2s^2 2p^4 $$",
+            "$$ 1s^2 2s^2 2p^6 $$",
+            "$$ 1s^2 2s^2 2p^2 $$",
+            "$$ 1s^2 2s^1 2p^5 $$"
+        ],
+        "correct_answer": "$$ 1s^2 2s^2 2p^4 $$",
+        "explanation": "Total 8 electrons. Shell 1 takes 2. Shell 2 takes remaining 6 ($$ 2s^2, 2p^4 $$).",
+        "difficulty": "Medium"
+    },
+    {
+        "id": 3010,
+        "set_id": "generated_chemistry_set_1",
+        "set_name": "Generated Chemistry Set 1",
+        "topic": "Experiments",
+        "question": "Which gas turns limewater milky?",
+        "options": [
+            "Carbon Dioxide ($$ CO_2 $$)",
+            "Oxygen ($$ O_2 $$)",
+            "Hydrogen ($$ H_2 $$)",
+            "Ammonia ($$ NH_3 $$)"
+        ],
+        "correct_answer": "Carbon Dioxide ($$ CO_2 $$)",
+        "explanation": "$$ CO_2 $$ reacts with calcium hydroxide (limewater) to form insoluble calcium carbonate (white precipitate).",
+        "difficulty": "Easy"
+    },
+    {
+        "id": 3011,
+        "set_id": "generated_chemistry_set_1",
+        "set_name": "Generated Chemistry Set 1",
+        "topic": "Experiments",
+        "question": "Identify the separation method suitable for separating oil and water.",
+        "options": [
+            "Separating funnel",
+            "Distillation",
+            "Filtration",
+            "Evaporation"
+        ],
+        "correct_answer": "Separating funnel",
+        "explanation": "Oil and water are immiscible liquids with different densities; a separating funnel is used.",
+        "difficulty": "Easy"
+    },
+    {
+        "id": 3012,
+        "set_id": "generated_chemistry_set_1",
+        "set_name": "Generated Chemistry Set 1",
+        "topic": "Industrial Applications",
+        "question": "What is the main catalyst used in the Haber process for Ammonia synthesis?",
+        "options": [
+            "Iron ($$ Fe $$)",
+            "Vanadium Pentoxide ($$ V_2O_5 $$)",
+            "Platinum ($$ Pt $$)",
+            "Nickel ($$ Ni $$)"
+        ],
+        "correct_answer": "Iron ($$ Fe $$)",
+        "explanation": "Finely divided Iron is used as a catalyst in the Haber process.",
+        "difficulty": "Medium"
+    },
+    {
+        "id": 3013,
+        "set_id": "generated_chemistry_set_1",
+        "set_name": "Generated Chemistry Set 1",
+        "topic": "Properties of Substances",
+        "question": "Which of the following is a transition metal?",
+        "options": [
+            "Iron (Fe)",
+            "Sodium (Na)",
+            "Calcium (Ca)",
+            "Aluminum (Al)"
+        ],
+        "correct_answer": "Iron (Fe)",
+        "explanation": "Iron is in the d-block and is a transition metal. Na and Ca are s-block; Al is p-block.",
+        "difficulty": "Easy"
+    },
+    {
+        "id": 3014,
+        "set_id": "generated_chemistry_set_1",
+        "set_name": "Generated Chemistry Set 1",
+        "topic": "Theories and Laws",
+        "question": "Strong electrolytes, when dissolved in water:",
+        "options": [
+            "Completely dissociate into ions",
+            "Partially dissociate",
+            "Do not dissociate",
+            "Form precipitates immediately"
+        ],
+        "correct_answer": "Completely dissociate into ions",
+        "explanation": "Strong electrolytes (like NaCl, HCl) dissociate almost 100% into ions in aqueous solution.",
+        "difficulty": "Easy"
+    },
+    {
+        "id": 3015,
+        "set_id": "generated_chemistry_set_1",
+        "set_name": "Generated Chemistry Set 1",
+        "topic": "Reactions",
+        "question": "When an acid reacts with a base, the products are usually:",
+        "options": [
+            "Salt and Water",
+            "Salt and Hydrogen gas",
+            "Base and Water",
+            "Acid and Salt"
+        ],
+        "correct_answer": "Salt and Water",
+        "explanation": "Neutralization reaction: Acid + Base $$ \\rightarrow $$ Salt + Water.",
+        "difficulty": "Easy"
+    }
+]

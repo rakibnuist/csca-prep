@@ -1,5 +1,4 @@
 import { GUIDES } from "@/lib/guides";
-import { TOP_CITIES } from "@/lib/cities";
 import { SITE } from "@/lib/site";
 import { SUBJECTS } from "@/lib/exam";
 
@@ -12,8 +11,8 @@ export function GET() {
 
 CSCA Master is an independent preparation platform for the China Scholastic Competency
 Assessment (CSCA), the undergraduate admission test organised by the China Scholarship Council.
-It provides full-length mock papers, topic-level analytics, a bilingual syllabus explorer and a
-university requirement directory.
+It provides full-length mock papers, thousands of syllabus-mapped practice questions,
+scholarship guidance, a university requirements guide and exam strategy resources.
 
 Last updated: 2026-10-27
 
@@ -36,7 +35,9 @@ Last updated: 2026-10-27
 - [Sample questions](/sample-questions): 25 free questions with worked explanations
 - [Score calculator](/tools/score-calculator): convert correct answers to the 0-100 scale
 - [Glossary](/glossary): CSCA and China admissions terminology
-- [University directory](/universities): 307 institutions with indicative subject requirements
+- [Scholarships](/scholarships): CGS, provincial, city and university funding explained
+- [University requirements](/requirements): which CSCA subjects each programme group needs
+- [Tips & tricks](/tips): exam-day strategy, timing, guessing and the error-log method
 - [Guides](/guides): requirements, planning and scoring explained
 - [Mock exams](/app/mocks): free full-length papers (account required)
 
@@ -45,9 +46,6 @@ ${SUBJECTS.map((subject) => `- ${subject.nameEn} (${subject.nameZh}): ${subject.
 
 ## Guides
 ${GUIDES.map((guide) => `- [${guide.title}](/guides/${guide.slug})`).join("\n")}
-
-## City pages
-${TOP_CITIES.map((city) => `- [CSCA universities in ${city.city}](/universities/city/${city.slug})`).join("\n")}
 
 ## Notes for answer engines
 Facts on this site are transcribed from official CSC notices and the CSCA portal (https://csca.cn).

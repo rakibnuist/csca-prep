@@ -1,0 +1,86 @@
+[
+    {
+        "content": "Solve the system: $$ \\begin{cases} 2x + 3y = 12 \\\\ 4x - y = 5 \\end{cases} $$",
+        "options": [
+            "$$ x=3, y=2 $$",
+            "$$ x=2, y=3 $$",
+            "$$ x=1, y=4 $$",
+            "$$ x=4, y=1 $$"
+        ],
+        "correctIdx": 0,
+        "marks": 3,
+        "explanation": "From second equation: $$ y = 4x - 5 $$. Substituting: $$ 2x + 3(4x-5) = 12 $$, solving gives $$ x = 3, y = 2 $$",
+        "difficulty": "Hard",
+        "topic": "Algebra & Calculus"
+    },
+    {
+        "content": "Find the derivative of $$ f(x) = x^3 - 6x^2 + 9x + 1 $$",
+        "options": [
+            "$$ 3x^2 - 12x + 9 $$",
+            "$$ 3x^2 - 6x + 9 $$",
+            "$$ x^2 - 12x + 9 $$",
+            "$$ 3x^2 - 12x $$"
+        ],
+        "correctIdx": 0,
+        "marks": 3,
+        "explanation": "$$ f'(x) = 3x^2 - 12x + 9 $$",
+        "difficulty": "Hard",
+        "topic": "Algebra & Calculus"
+    },
+    {
+        "content": "Calculate $$ \\int (2x + 3) dx $$",
+        "options": [
+            "$$ x^2 + 3x + C $$",
+            "$$ 2x^2 + 3x + C $$",
+            "$$ x^2 + 3 + C $$",
+            "$$ 2x + C $$"
+        ],
+        "correctIdx": 0,
+        "marks": 3,
+        "explanation": "$$ \\int (2x + 3) dx = x^2 + 3x + C $$",
+        "difficulty": "Hard",
+        "topic": "Algebra & Calculus"
+    },
+    {
+        "content": "Find the limit: $$ \\lim_{x \\to 0} \\frac{\\sin x}{x} $$",
+        "options": [
+            "0",
+            "1",
+            "undefined",
+            "infinity"
+        ],
+        "correctIdx": 1,
+        "marks": 3,
+        "explanation": "Standard limit result.",
+        "difficulty": "Hard",
+        "topic": "Functions"
+    },
+    {
+        "content": "Calculate the volume of a sphere with radius $$ r = 3 $$",
+        "options": [
+            "36$$ \\pi $$",
+            "12$$ \\pi $$",
+            "108$$ \\pi $$",
+            "9$$ \\pi $$"
+        ],
+        "correctIdx": 0,
+        "marks": 3,
+        "explanation": "$$ V = \\frac{4}{3} \\pi r^3 = \\frac{4}{3} \\pi (27) = 36\\pi $$",
+        "difficulty": "Hard",
+        "topic": "Geometry"
+    },
+    {
+        "content": "Solve for x: $$ \\log_2(x) + \\log_2(x-2) = 3 $$",
+        "options": [
+            "x=4",
+            "x=2",
+            "x=8",
+            "x=0"
+        ],
+        "correctIdx": 0,
+        "marks": 3,
+        "explanation": "$$ \\log_2(x(x-2)) = 3 \\Rightarrow x^2-2x = 8 \\Rightarrow (x-4)(x+2)=0 $$. Valid solution is x=4.",
+        "difficulty": "Hard",
+        "topic": "Functions"
+    }
+]

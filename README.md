@@ -5,7 +5,7 @@ Production target: **[www.cscamaster.com](https://www.cscamaster.com)** · local
 
 CSCA Master is a full preparation platform for international students applying to Chinese
 universities. It pairs an exam-fidelity simulator with topic-level analytics, a spaced-review queue, a
-bilingual syllabus explorer and a university requirement directory.
+bilingual syllabus explorer, scholarship and university-requirements guides, and exam strategy.
 
 The CSCA is administered by the China Scholarship Council. It becomes a required undergraduate
 admission document for Chinese Government Scholarship universities in the 2026/27 cycle, and for all
@@ -28,7 +28,7 @@ undergraduate applicants from 2028.
 ```bash
 npm install
 cp .env.example .env.local     # already present in this checkout
-npm run db:seed                # subjects, syllabus, 272 questions, 5 papers, 307 universities
+npm run db:seed                # subjects, syllabus, 2,200+ questions, 5 papers, exam calendar
 npm run dev                    # boots the embedded database, then Next.js
 ```
 
@@ -58,7 +58,9 @@ The student account is seeded with two completed papers so the dashboard has his
 - `/csca` — long-form exam guide (format, subjects, fees, scoring, exemptions, registration)
 - `/exam-dates` — published 2026–27 sittings, timetable in Beijing time, regional suitability
 - `/syllabus` + `/syllabus/[subject]` — official topic tree with weights and drill links
-- `/universities` + `/universities/[slug]` + `/universities/city/[city]` — 307 institutions
+- `/scholarships` — CGS, provincial, city and university funding
+- `/requirements` — which CSCA subjects each programme group needs
+- `/tips` — time budget, flag-and-skip, per-subject techniques, error-log method
 - `/sample-questions` — free sample questions, no account required (top-of-funnel SEO asset)
 - `/tools/score-calculator` — score and percentile estimator
 - `/glossary` — CSCA terminology, linkable definitions
@@ -83,7 +85,7 @@ The student account is seeded with two completed papers so the dashboard has his
 - Dashboard: readiness score, score trend, topic mastery, next sitting countdown, review queue
 - Result review: every question, your answer, the correct answer and the working — collapsed by
   default so a 48-question review is navigable
-- Practice: 50 topics, 10-question sets, instant explanations, attempt tracking
+- Practice: 50 topics, ~2,200-question bank, difficulty filters, 10-question "quick drills", instant explanations, attempt tracking
 - Smart review: spaced-repetition ladder (1 → 3 → 6 → 12 → 21 days)
 - Study plan: three phases dated backwards from the target sitting, with a persisted checklist
 
@@ -117,12 +119,13 @@ All curriculum content lives in version-controlled TypeScript, not in an admin f
 ```
 prisma/seed-data/
   syllabus.ts                      # 5 subjects + 50 topics, bilingual, with weights
-  universities.ts                  # curated requirement profiles
-  questions/math.ts                # 56 original items
+  legacy.ts                        # loader for the bulk drill bank (prisma/seeds/*.json)
+  questions/math.ts                # 56 curated items (used in mocks)
   questions/physics.ts             # 56
   questions/chemistry.ts           # 56
   questions/chinese-humanities.ts  # 52
   questions/chinese-stem.ts        # 52
+prisma/seeds/*.json                # ~2,000 legacy drill questions (practice only)
 ```
 
 `npm run db:seed` is idempotent: stable IDs mean you can edit a question and re-seed without losing
@@ -192,8 +195,9 @@ at [csca.cn](https://csca.cn).
 1. **Own the entity, not just the keyword.** Every page names *China Scholastic Competency
    Assessment*, links to the official source and uses consistent facts, so search engines can treat
    this site as a canonical reference.
-2. **Long-tail capture.** Syllabus topic pages, city university pages, guides and the glossary answer
-   specific queries ("CSCA maths syllabus", "CSCA required universities in Beijing", "CSCA vs HSK").
+2. **Long-tail capture.** Syllabus topic pages, guides, the requirements page, scholarships page and
+   the glossary answer specific queries ("CSCA maths syllabus", "CSCA subject requirements",
+   "Chinese Government Scholarship", "CSCA vs HSK").
 3. **Free tools as link magnets.** Sample questions and the score calculator give people a reason to
    link without paying.
 4. **Technical hygiene.** Static/ISR marketing pages, one H1 per page, canonical URLs, breadcrumb
@@ -210,12 +214,12 @@ at [csca.cn](https://csca.cn).
 - **One paper per subject.** The bank supports a second paper only after it grows past ~96 items per
   subject; the admin page tracks coverage against an 80-item target.
 - **Percentiles are modelled**, not official cohort data. Labelled as estimates everywhere.
-- **University requirements are indicative.** 40+ institutions have curated profiles; the rest are
-  listed from the official CSCA university list with the default subject pattern.
+- **Requirements and scholarships are guidance, not policy.** They reflect the official CSCA
+  structure and published funding rates; universities change rules and amounts each cycle.
 - **No email verification, password reset or OAuth.** Add an email provider before public launch.
 - **No payment integration.** Pro is a waitlist with lead capture, not a checkout.
-- `/universities` is dynamic because it filters on query parameters. Everything else marketing-facing
-  is static or ISR.
+- The legacy drill bank is bulk/templated content and is deliberately excluded from scored mocks
+  (mocks use the curated bank only).
 
 ---
 

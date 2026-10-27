@@ -1,0 +1,242 @@
+[
+    {
+        "id": 2001,
+        "set_id": "generated_physics_set_1",
+        "set_name": "Generated Physics Set 1",
+        "topic": "Mechanics",
+        "question": "A car accelerates uniformly from rest to a speed of $$ 20 \\, \\text{m/s} $$ in $$ 10 \\, \\text{s} $$. What is the distance covered during this time?",
+        "options": [
+            "$$ 100 \\, \\text{m} $$",
+            "$$ 200 \\, \\text{m} $$",
+            "$$ 50 \\, \\text{m} $$",
+            "$$ 150 \\, \\text{m} $$"
+        ],
+        "correct_answer": "$$ 100 \\, \\text{m} $$",
+        "explanation": "Using $$ s = \\frac{1}{2}(u+v)t $$: $$ s = \\frac{1}{2}(0 + 20)(10) = 10 \\times 10 = 100 \\, \\text{m} $$.",
+        "difficulty": "Easy"
+    },
+    {
+        "id": 2002,
+        "set_id": "generated_physics_set_1",
+        "set_name": "Generated Physics Set 1",
+        "topic": "Mechanics",
+        "question": "A force of $$ 50 \\, \\text{N} $$ acts on a body of mass $$ 10 \\, \\text{kg} $$ on a frictionless horizontal surface. What is the acceleration produced?",
+        "options": [
+            "$$ 0.2 \\, \\text{m/s}^2 $$",
+            "$$ 5 \\, \\text{m/s}^2 $$",
+            "$$ 50 \\, \\text{m/s}^2 $$",
+            "$$ 500 \\, \\text{m/s}^2 $$"
+        ],
+        "correct_answer": "$$ 5 \\, \\text{m/s}^2 $$",
+        "explanation": "Newton's Second Law: $$ F = ma \\implies a = F/m = 50/10 = 5 \\, \\text{m/s}^2 $$.",
+        "difficulty": "Easy"
+    },
+    {
+        "id": 2003,
+        "set_id": "generated_physics_set_1",
+        "set_name": "Generated Physics Set 1",
+        "topic": "Mechanics",
+        "question": "Two objects of equal mass collide elastically. One is moving with velocity $$ v $$ and the other is at rest. After the collision, what happens?",
+        "options": [
+            "They stick together and move with velocity $$ v/2 $$",
+            "They swap velocities",
+            "Both come to rest",
+            "They move in opposite directions with velocity $$ v $$"
+        ],
+        "correct_answer": "They swap velocities",
+        "explanation": "In an elastic collision between equal masses where one is at rest, they exchange velocities. The moving one stops, the stationary one moves with $$ v $$.",
+        "difficulty": "Medium"
+    },
+    {
+        "id": 2004,
+        "set_id": "generated_physics_set_1",
+        "set_name": "Generated Physics Set 1",
+        "topic": "Mechanics",
+        "question": "If the distance between two planets is doubled, how does the gravitational force between them change?",
+        "options": [
+            "It becomes 4 times stronger",
+            "It becomes 2 times stronger",
+            "It becomes 1/2 of the original force",
+            "It becomes 1/4 of the original force"
+        ],
+        "correct_answer": "It becomes 1/4 of the original force",
+        "explanation": "Gravitational force $$ F \\propto \\frac{1}{r^2} $$. If $$ r \\to 2r $$, $$ F \\to \\frac{1}{(2r)^2} = \\frac{1}{4r^2} $$.",
+        "difficulty": "Medium"
+    },
+    {
+        "id": 2005,
+        "set_id": "generated_physics_set_1",
+        "set_name": "Generated Physics Set 1",
+        "topic": "Thermodynamics",
+        "question": "An ideal gas is kept at constant volume. If its temperature (in Kelvin) is doubled, what happens to the pressure?",
+        "options": [
+            "It remains the same",
+            "It doubles",
+            "It halves",
+            "It quadruples"
+        ],
+        "correct_answer": "It doubles",
+        "explanation": "Gay-Lussac's Law: $$ P \\propto T $$ at constant volume. If $$ T $$ doubles, $$ P $$ doubles.",
+        "difficulty": "Easy"
+    },
+    {
+        "id": 2006,
+        "set_id": "generated_physics_set_1",
+        "set_name": "Generated Physics Set 1",
+        "topic": "Thermodynamics",
+        "question": "During an isothermal expansion of an ideal gas, which of the following is true?",
+        "options": [
+            "Internal energy increases",
+            "Internal energy decreases",
+            "Internal energy remains constant",
+            "No heat is exchanged"
+        ],
+        "correct_answer": "Internal energy remains constant",
+        "explanation": "For an ideal gas, Internal Energy $$ U $$ depends only on Temperature $$ T $$. Isothermal means $$ \\Delta T = 0 $$, so $$ \\Delta U = 0 $$.",
+        "difficulty": "Medium"
+    },
+    {
+        "id": 2007,
+        "set_id": "generated_physics_set_1",
+        "set_name": "Generated Physics Set 1",
+        "topic": "Electromagnetism",
+        "question": "Two point charges $$ +q $$ and $$ +q $$ are separated by a distance $$ r $$. If the distance is reduced to $$ r/2 $$, the force between them becomes:",
+        "options": [
+            "2 times larger",
+            "4 times larger",
+            "Half as large",
+            "Remains the same"
+        ],
+        "correct_answer": "4 times larger",
+        "explanation": "Coulomb's Law: $$ F \\propto \\frac{1}{r^2} $$. If $$ r \\to r/2 $$, $$ F \\to \\frac{1}{(r/2)^2} = \\frac{4}{r^2} $$.",
+        "difficulty": "Medium"
+    },
+    {
+        "id": 2008,
+        "set_id": "generated_physics_set_1",
+        "set_name": "Generated Physics Set 1",
+        "topic": "Electromagnetism",
+        "question": "Three resistors of $$ 6\\,\\Omega $$ each are connected in parallel. What is the equivalent resistance?",
+        "options": [
+            "$$ 18\\,\\Omega $$",
+            "$$ 2\\,\\Omega $$",
+            "$$ 3\\,\\Omega $$",
+            "$$ 6\\,\\Omega $$"
+        ],
+        "correct_answer": "$$ 2\\,\\Omega $$",
+        "explanation": "$$ \\frac{1}{R_{eq}} = \\frac{1}{6} + \\frac{1}{6} + \\frac{1}{6} = \\frac{3}{6} = \\frac{1}{2} $$. So $$ R_{eq} = 2\\,\\Omega $$.",
+        "difficulty": "Medium"
+    },
+    {
+        "id": 2009,
+        "set_id": "generated_physics_set_1",
+        "set_name": "Generated Physics Set 1",
+        "topic": "Electromagnetism",
+        "question": "An electron moves with velocity $$ v $$ perpendicular to a uniform magnetic field $$ B $$. The path of the electron is:",
+        "options": [
+            "Linear",
+            "Parabolic",
+            "Circular",
+            "Elliptical"
+        ],
+        "correct_answer": "Circular",
+        "explanation": "The magnetic Lorentz force $$ F = q(\\mathbf{v} \\times \\mathbf{B}) $$ acts perpendicular to velocity, providing a centripetal force.",
+        "difficulty": "Medium"
+    },
+    {
+        "id": 2010,
+        "set_id": "generated_physics_set_1",
+        "set_name": "Generated Physics Set 1",
+        "topic": "Electromagnetism",
+        "question": "According to Lenz's Law, the direction of an induced current is such that it:",
+        "options": [
+            "Assists the change in magnetic flux",
+            "Opposes the change in magnetic flux producing it",
+            "Is always clockwise",
+            "Is unrelated to the magnetic flux"
+        ],
+        "correct_answer": "Opposes the change in magnetic flux producing it",
+        "explanation": "Lenz's Law is a consequence of conservation of energy; the induced field must oppose the change.",
+        "difficulty": "Easy"
+    },
+    {
+        "id": 2011,
+        "set_id": "generated_physics_set_1",
+        "set_name": "Generated Physics Set 1",
+        "topic": "Optics",
+        "question": "A light ray travels from air ($$ n=1 $$) into glass ($$ n=1.5 $$). If the angle of incidence is $$ 30^\\circ $$, which is true about the angle of refraction $$ r $$?",
+        "options": [
+            "$$ r > 30^\\circ $$",
+            "$$ r = 30^\\circ $$",
+            "$$ r < 30^\\circ $$",
+            "It cannot be determined"
+        ],
+        "correct_answer": "$$ r < 30^\\circ $$",
+        "explanation": "Snell's Law: $$ n_1 \\sin i = n_2 \\sin r $$. Since $$ n_2 > n_1 $$, $$ \\sin r < \\sin i $$, so $$ r < i $$.",
+        "difficulty": "Medium"
+    },
+    {
+        "id": 2012,
+        "set_id": "generated_physics_set_1",
+        "set_name": "Generated Physics Set 1",
+        "topic": "Optics",
+        "question": "In a Young's double-slit experiment, if the distance between the slits is decreased, what happens to the fringe width?",
+        "options": [
+            "It decreases",
+            "It increases",
+            "It remains the same",
+            "Fringes disappear"
+        ],
+        "correct_answer": "It increases",
+        "explanation": "Fringe width $$ \\beta = \\frac{\\lambda D}{d} $$. If $$ d $$ (slit separation) decreases, $$ \\beta $$ increases.",
+        "difficulty": "Medium"
+    },
+    {
+        "id": 2013,
+        "set_id": "generated_physics_set_1",
+        "set_name": "Generated Physics Set 1",
+        "topic": "Modern Physics",
+        "question": "In the photoelectric effect, if the frequency of incident light is increased (above threshold), what increases?",
+        "options": [
+            "Number of emitted electrons",
+            "Maximum kinetic energy of emitted electrons",
+            "Work function of the metal",
+            "Threshold frequency"
+        ],
+        "correct_answer": "Maximum kinetic energy of emitted electrons",
+        "explanation": "$$ K_{max} = hf - \\phi $$. Increasing $$ f $$ increases $$ K_{max} $$. Intensity determines the number of electrons.",
+        "difficulty": "Medium"
+    },
+    {
+        "id": 2014,
+        "set_id": "generated_physics_set_1",
+        "set_name": "Generated Physics Set 1",
+        "topic": "Modern Physics",
+        "question": "Which of the following particles is emitted during $$ \\alpha $$-decay?",
+        "options": [
+            "Electron",
+            "Proton",
+            "Helium nucleus",
+            "Neutron"
+        ],
+        "correct_answer": "Helium nucleus",
+        "explanation": "An Alpha particle is a Helium nucleus ($$ ^4_2\\text{He} $$), consisting of 2 protons and 2 neutrons.",
+        "difficulty": "Easy"
+    },
+    {
+        "id": 2015,
+        "set_id": "generated_physics_set_1",
+        "set_name": "Generated Physics Set 1",
+        "topic": "Mechanics",
+        "question": "Which physical quantity is conserved in all collisions?",
+        "options": [
+            "Kinetic Energy",
+            "Momentum",
+            "Velocity",
+            "Potential Energy"
+        ],
+        "correct_answer": "Momentum",
+        "explanation": "Momentum is always conserved in isolated collisions. Kinetic energy is only conserved in elastic collisions.",
+        "difficulty": "Easy"
+    }
+]

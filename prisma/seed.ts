@@ -7,15 +7,13 @@
  * identifiers, so re-running updates content in place without touching a
  * student's attempts (mock rows are reused, only their item list is rebuilt).
  */
-import { readFileSync } from "node:fs";
-import path from "node:path";
 import { PrismaClient } from "@prisma/client";
 import { PrismaPg } from "@prisma/adapter-pg";
 import { Pool } from "pg";
 import bcrypt from "bcryptjs";
 
 import { subjects, topics } from "./seed-data/syllabus";
-import { curatedUniversities } from "./seed-data/universities";
+import { loadLegacyBank } from "./seed-data/legacy";
 import { mathQuestions } from "./seed-data/questions/math";
 import { physicsQuestions } from "./seed-data/questions/physics";
 import { chemistryQuestions } from "./seed-data/questions/chemistry";
@@ -40,13 +38,6 @@ const BANKS: { code: string; items: SeedQuestion[] }[] = [
   { code: "CH_HUM", items: chineseHumanitiesQuestions },
   { code: "CH_SCI", items: chineseStemQuestions },
 ];
-
-function slugify(value: string) {
-  return value
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/(^-|-$)/g, "");
-}
 
 function seededShuffle<T>(items: T[], seed = 7): T[] {
   const copy = [...items];
@@ -102,6 +93,31 @@ async function main() {
     console.log(`   ${bank.code}: ${bank.items.length} items`);
   }
 
+  console.log("→ legacy drill bank");
+  for (const bank of loadLegacyBank()) {
+    for (let index = 0; index < bank.items.length; index++) {
+      const item = bank.items[index];
+      const id = `drill-${bank.code.toLowerCase()}-${String(index + 1).padStart(4, "0")}`;
+      const data = {
+        subjectCode: bank.code,
+        topicId: item.topic,
+        difficulty: item.difficulty,
+        stem: item.stem,
+        stemZh: null,
+        options: item.options,
+        optionsZh: [],
+        correctIndex: item.correct,
+        explanation: item.explanation,
+        explanationZh: null,
+        tags: item.tags ?? [],
+        source: "Legacy drill bank",
+        active: true,
+      };
+      await prisma.question.upsert({ where: { id }, create: { id, ...data }, update: data });
+    }
+    console.log(`   ${bank.code}: ${bank.items.length} drill items`);
+  }
+
   console.log("→ mock papers");
   for (const bank of BANKS) {
     const subject = subjects.find((entry) => entry.code === bank.code)!;
@@ -110,7 +126,7 @@ async function main() {
     const slug = `${bank.code.toLowerCase()}-mock-01`;
     const selected = seededShuffle(
       await prisma.question.findMany({
-        where: { subjectCode: bank.code, active: true },
+        where: { subjectCode: bank.code, active: true, source: "CSCA Master original" },
         orderBy: { id: "asc" },
       }),
       bank.code.charCodeAt(0),
@@ -173,75 +189,6 @@ async function main() {
       },
     });
   }
-
-  console.log("→ universities");
-  const base = JSON.parse(
-    readFileSync(path.join(process.cwd(), "src/data/csc-universities.json"), "utf8"),
-  ) as { nameEn: string; nameZh: string; location: string }[];
-
-  const curatedByName = new Map(curatedUniversities.map((entry) => [entry.nameEn, entry]));
-
-  for (const entry of base) {
-    const curated = curatedByName.get(entry.nameEn);
-    const slug = slugify(entry.nameEn);
-    const data = {
-      nameEn: entry.nameEn,
-      nameZh: entry.nameZh,
-      city: entry.location,
-      province: entry.location,
-      tier: curated?.tier ?? [],
-      languages: curated?.languages ?? ["Chinese", "English"],
-      needsChineseTest: true,
-      scienceSubjectRule: curated?.scienceSubjectRule ?? "MATH + PHYS or CHEM",
-      humanitiesRule: curated?.humanitiesRule ?? "MATH only",
-      englishRequirement: curated?.englishRequirement ?? null,
-      hskRequirement: curated?.hskRequirement ?? null,
-      applicationDeadline: curated?.applicationDeadline ?? null,
-      scholarship: true,
-      website: curated?.website ?? null,
-      summary: curated?.summary ?? null,
-      popularMajors: curated?.popularMajors ?? [],
-      internationalCount: curated?.internationalCount ?? null,
-      rank: curated?.rank ?? null,
-      verified: Boolean(curated),
-    };
-
-    await prisma.university.upsert({
-      where: { slug },
-      create: { slug, ...data },
-      update: data,
-    });
-    curatedByName.delete(entry.nameEn);
-  }
-
-  // curated entries not present in the base list
-  for (const entry of curatedByName.values()) {
-    const slug = slugify(entry.nameEn);
-    const data = {
-      nameEn: entry.nameEn,
-      nameZh: entry.nameZh,
-      city: entry.city,
-      province: entry.province ?? entry.city,
-      tier: entry.tier ?? [],
-      languages: entry.languages ?? ["Chinese", "English"],
-      needsChineseTest: true,
-      scienceSubjectRule: entry.scienceSubjectRule ?? "MATH + PHYS or CHEM",
-      humanitiesRule: entry.humanitiesRule ?? "MATH only",
-      englishRequirement: entry.englishRequirement ?? null,
-      hskRequirement: entry.hskRequirement ?? null,
-      applicationDeadline: entry.applicationDeadline ?? null,
-      scholarship: true,
-      website: entry.website ?? null,
-      summary: entry.summary ?? null,
-      popularMajors: entry.popularMajors ?? [],
-      internationalCount: entry.internationalCount ?? null,
-      rank: entry.rank ?? null,
-      verified: true,
-    };
-    await prisma.university.upsert({ where: { slug }, create: { slug, ...data }, update: data });
-  }
-
-  console.log(`   ${await prisma.university.count()} institutions`);
 
   console.log("→ demo accounts");
   const password = await bcrypt.hash("password123", 11);

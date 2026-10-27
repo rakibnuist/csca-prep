@@ -4,7 +4,7 @@ export const SITE = {
   url: process.env.NEXT_PUBLIC_APP_URL ?? "https://www.cscamaster.com",
   tagline: "The exam-accurate way to prepare for the CSCA.",
   description:
-    "Full-length CSCA mock exams with official timing, topic-level analytics and the university requirement matrix. Prepare for the China Scholastic Competency Assessment the way it is actually sat.",
+    "Full-length CSCA mock exams with official timing, thousands of syllabus-mapped practice questions, scholarship guidance and a university requirements guide. Prepare for the China Scholastic Competency Assessment the way it is actually sat.",
   email: "hello@cscamaster.com",
   support: "support@cscamaster.com",
   founded: 2026,
@@ -21,9 +21,10 @@ export const OFFICIAL = {
 export const NAV_LINKS = [
   { href: "/app/mocks", label: "Mock exams" },
   { href: "/app/practice", label: "Practice" },
+  { href: "/tips", label: "Tips & tricks" },
   { href: "/syllabus", label: "Syllabus" },
-  { href: "/universities", label: "Universities" },
-  { href: "/csca", label: "Exam guide" },
+  { href: "/requirements", label: "Requirements" },
+  { href: "/scholarships", label: "Scholarships" },
 ] as const;
 
 export const FOOTER_LINKS = [
@@ -32,17 +33,17 @@ export const FOOTER_LINKS = [
     links: [
       { href: "/app/mocks", label: "Mock exams" },
       { href: "/app/practice", label: "Topic practice" },
+      { href: "/tips", label: "Tips & tricks" },
       { href: "/syllabus", label: "Official syllabus" },
-      { href: "/app/plan", label: "Study plan" },
     ],
   },
   {
     title: "Apply",
     links: [
-      { href: "/universities", label: "University directory" },
+      { href: "/scholarships", label: "Scholarships" },
+      { href: "/requirements", label: "University requirements" },
       { href: "/exam-dates", label: "Exam dates & fees" },
       { href: "/csca", label: "CSCA exam guide" },
-      { href: "/app/universities", label: "My shortlist" },
     ],
   },
   {

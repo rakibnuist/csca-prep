@@ -109,9 +109,9 @@ export default function GuidesPage() {
               href: "/tools/score-calculator",
             },
             {
-              title: "University directory",
-              body: "Which subjects each institution expects.",
-              href: "/universities",
+              title: "Scholarships",
+              body: "CGS and other funding, explained.",
+              href: "/scholarships",
             },
           ].map((tool) => (
             <Link

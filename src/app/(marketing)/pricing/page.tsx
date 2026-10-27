@@ -8,7 +8,7 @@ import { Faq } from "@/components/site/faq";
 export const metadata: Metadata = {
   title: "Pricing — free CSCA practice, Pro when you need the reps",
   description:
-    "CSCA Master is free to start: one full mock per subject, every topic drill, the syllabus and the university directory. Pro adds unlimited papers and adaptive planning.",
+    "CSCA Master is free to start: one full mock per subject, every topic drill, the syllabus, tips and the requirements guide. Pro adds unlimited papers and adaptive planning.",
   alternates: { canonical: "/pricing" },
 };
 
@@ -18,7 +18,7 @@ const COMPARISON = [
   { feature: "Smart review queue", free: true, pro: true },
   { feature: "Topic-level analytics", free: true, pro: true },
   { feature: "Syllabus explorer & weights", free: true, pro: true },
-  { feature: "University requirement directory", free: true, pro: true },
+  { feature: "University requirements guide", free: true, pro: true },
   { feature: "Adaptive study plan", free: "Manual checklist", pro: "Auto-adjusted weekly" },
   { feature: "Predicted score range", free: false, pro: true },
   { feature: "Mentor review of your error log", free: false, pro: "Monthly" },
@@ -58,7 +58,7 @@ export default function PricingPage() {
                 "All 50 topic drills",
                 "Smart review queue",
                 "Score history and topic breakdown",
-                "Syllabus and university directory",
+                "Syllabus and requirements guide",
               ].map((item) => (
                 <li key={item} className="flex gap-2">
                   <Check className="mt-0.5 h-3.5 w-3.5 shrink-0 text-jade" /> {item}

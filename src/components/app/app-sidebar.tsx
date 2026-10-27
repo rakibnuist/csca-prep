@@ -8,7 +8,7 @@ import {
   FileStack,
   PenLine,
   CalendarCheck,
-  Building2,
+  Lightbulb,
   Shield,
   Settings,
   Menu,
@@ -24,7 +24,7 @@ const NAV = [
   { href: "/app/mocks", label: "Mock exams", icon: FileStack },
   { href: "/app/practice", label: "Practice", icon: PenLine },
   { href: "/app/plan", label: "Study plan", icon: CalendarCheck },
-  { href: "/app/universities", label: "Shortlist", icon: Building2 },
+  { href: "/tips", label: "Tips & tricks", icon: Lightbulb },
 ];
 
 export function AppSidebar({

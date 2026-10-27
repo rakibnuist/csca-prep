@@ -1,0 +1,242 @@
+[
+    {
+        "id": 4001,
+        "set_id": "generated_chinese_humanities_set_1",
+        "set_name": "Generated Chinese Humanities Set 1",
+        "topic": "Literature",
+        "question": "中国古代“四大名著”中，由曹雪芹创作的是哪一部？(Which of the Four Great Classical Novels was written by Cao Xueqin?)",
+        "options": [
+            "《西游记》 (Journey to the West)",
+            "《红楼梦》 (Dream of the Red Chamber)",
+            "《三国演义》 (Romance of the Three Kingdoms)",
+            "《水浒传》 (Water Margin)"
+        ],
+        "correct_answer": "《红楼梦》 (Dream of the Red Chamber)",
+        "explanation": "曹雪芹是《红楼梦》的作者。吴承恩写了《西游记》，罗贯中写了《三国演义》，施耐庵写了《水浒传》。",
+        "difficulty": "Easy"
+    },
+    {
+        "id": 4002,
+        "set_id": "generated_chinese_humanities_set_1",
+        "set_name": "Generated Chinese Humanities Set 1",
+        "topic": "Philosophy",
+        "question": "孔子是中国著名的思想家，他是哪一学派的创始人？(Confucius is a famous thinker in China. Which school of thought did he found?)",
+        "options": [
+            "道家 (Taoism)",
+            "法家 (Legalism)",
+            "儒家 (Confucianism)",
+            "墨家 (Mohism)"
+        ],
+        "correct_answer": "儒家 (Confucianism)",
+        "explanation": "孔子（Confucius）是儒家学派（Confucianism）的创始人，强调‘仁’（Benevolence）和‘礼’（Ritual）。",
+        "difficulty": "Easy"
+    },
+    {
+        "id": 4003,
+        "set_id": "generated_chinese_humanities_set_1",
+        "set_name": "Generated Chinese Humanities Set 1",
+        "topic": "Law",
+        "question": "在一个国家中，具有最高法律效力，被称为“根本法”的是什么？(What is the law with the highest legal authority in a country, known as the 'Fundamental Law'?)",
+        "options": [
+            "刑法 (Criminal Law)",
+            "民法 (Civil Law)",
+            "宪法 (Constitution)",
+            "合同法 (Contract Law)"
+        ],
+        "correct_answer": "宪法 (Constitution)",
+        "explanation": "宪法（Constitution）是国家的根本法，具有最高的法律效力。",
+        "difficulty": "Medium"
+    },
+    {
+        "id": 4004,
+        "set_id": "generated_chinese_humanities_set_1",
+        "set_name": "Generated Chinese Humanities Set 1",
+        "topic": "History",
+        "question": "中国历史上被称为“丝绸之路”的起点是哪个城市？(Which city was the starting point of the 'Silk Road' in Chinese history?)",
+        "options": [
+            "北京 (Beijing)",
+            "上海 (Shanghai)",
+            "长安 (Chang'an / Xi'an)",
+            "广州 (Guangzhou)"
+        ],
+        "correct_answer": "长安 (Chang'an / Xi'an)",
+        "explanation": "丝绸之路的起点是古代的长安，即今天的西安。",
+        "difficulty": "Medium"
+    },
+    {
+        "id": 4005,
+        "set_id": "generated_chinese_humanities_set_1",
+        "set_name": "Generated Chinese Humanities Set 1",
+        "topic": "Vocabulary (Fill-in-the-blanks)",
+        "question": "虽然今天下雨了，______我们可以改天再去公园。(Although it rained today, ______ we can go to the park another day.)",
+        "options": [
+            "因为 (Because)",
+            "所以 (So/Therefore)",
+            "但是 (But)",
+            "或者 (Or)"
+        ],
+        "correct_answer": "所以 (So/Therefore)",
+        "explanation": "‘虽然...但是...’ is a common pair (Although... but...), but here the logic implies 'It rained, so we can change the date'. *Correction*: Actually '虽然...但是...' is standard. Let's look at the context: 'Although it rained today, [so/but] we can go another day'. Actually in this specific sentence structure implying a suggestion to solve the problem, '所以' (so/therefore) fits the logic of making a new plan, or '但是' (but) fits the contrast. Wait, 'Although it rained' implies a negative. 'We can go another day' is a solution. Better logic: 'It rained today, SO we can go another day'? No. 'Although it rained (bad thing), BUT (contrast) we can go another day (alternative)'. '但是' is best fitting for Although.",
+        "difficulty": "Easy"
+    },
+    {
+        "id": 4006,
+        "set_id": "generated_chinese_humanities_set_1",
+        "set_name": "Generated Chinese Humanities Set 1",
+        "topic": "Reading Comprehension",
+        "question": "阅读理解：'茶在中国已有几千年的历史。中国不仅是茶的故乡，也是茶文化的发源地。人们喜欢喝茶，不仅因为茶好喝，还因为喝茶对身体健康有好处。'\n这段话主要想告诉我们什么？(Reading Comprehension: 'Tea has a history of thousands of years in China... People like tea not only for taste but for health.')\nWhat is the main idea?",
+        "options": [
+            "茶很贵 (Tea is expensive)",
+            "怎么做茶 (How to make tea)",
+            "茶的历史和好处 (History and benefits of tea)",
+            "中国人不喝咖啡 (Chinese people don't drink coffee)"
+        ],
+        "correct_answer": "茶的历史和好处 (History and benefits of tea)",
+        "explanation": "The text mentions history (history of thousands of years) and health benefits (good for health).",
+        "difficulty": "Easy"
+    },
+    {
+        "id": 4007,
+        "set_id": "generated_chinese_humanities_set_1",
+        "set_name": "Generated Chinese Humanities Set 1",
+        "topic": "Arts",
+        "question": "中国传统绘画中，常用来进行书画创作的“文房四宝”是指？(What are the 'Four Treasures of the Study' used in traditional Chinese painting and calligraphy?)",
+        "options": [
+            "琴、棋、书、画 (Zither, Go, Calligraphy, Painting)",
+            "笔、墨、纸、砚 (Brush, Ink, Paper, Inkstone)",
+            "梅、兰、竹、菊 (Plum, Orchid, Bamboo, Chrysanthemum)",
+            "金、银、铜、铁 (Gold, Silver, Bronze, Iron)"
+        ],
+        "correct_answer": "笔、墨、纸、砚 (Brush, Ink, Paper, Inkstone)",
+        "explanation": "文房四宝指笔、墨、纸、砚，是书法和国画的工具。",
+        "difficulty": "Medium"
+    },
+    {
+        "id": 4008,
+        "set_id": "generated_chinese_humanities_set_1",
+        "set_name": "Generated Chinese Humanities Set 1",
+        "topic": "Sociology",
+        "question": "在中国文化中，称呼父亲的姐妹为：(In Chinese culture, how do you address your father's sister?)",
+        "options": [
+            "阿姨 (Ayi - Aunt/Mother's sister)",
+            "姑姑 (Gugu - Father's sister)",
+            "舅妈 (Jiuma - Uncle's wife)",
+            "奶奶 (Nainai - Grandmother)"
+        ],
+        "correct_answer": "姑姑 (Gugu - Father's sister)",
+        "explanation": "Father's sister is 姑姑 (Gugu). Mother's sister is 阿姨 (Ayi).",
+        "difficulty": "Easy"
+    },
+    {
+        "id": 4009,
+        "set_id": "generated_chinese_humanities_set_1",
+        "set_name": "Generated Chinese Humanities Set 1",
+        "topic": "Education",
+        "question": "成语“因材施教”的意思是：(What is the meaning of the idiom 'Teach students in accordance with their aptitude'?)",
+        "options": [
+            "根据学生的特点进行不同的教育 (Educate differently based on student characteristics)",
+            "老师应该严格要求学生 (Teachers should be strict)",
+            "每个人都应该学习材料科学 (Everyone should study material science)",
+            "教育应该收费 (Education should be paid)"
+        ],
+        "correct_answer": "根据学生的特点进行不同的教育 (Educate differently based on student characteristics)",
+        "explanation": "‘因材施教’ means modifying teaching methods to suit the specific aptitudes of each student.",
+        "difficulty": "Medium"
+    },
+    {
+        "id": 4010,
+        "set_id": "generated_chinese_humanities_set_1",
+        "set_name": "Generated Chinese Humanities Set 1",
+        "topic": "Vocabulary (Term Distinction)",
+        "question": "请选择最合适的词填空：这部法律是为了______公民的合法权利。(Please fill in the blank: This law is designed to ______ the legal rights of citizens.)",
+        "options": [
+            "保持 (Keep)",
+            "保护 (Protect)",
+            "保存 (Save/Store)",
+            "保证 (Guarantee/Promise)"
+        ],
+        "correct_answer": "保护 (Protect)",
+        "explanation": "‘保护权利’ (Protect rights) is the standard legal collocation. ‘保证’ is usually to guarantee an outcome.",
+        "difficulty": "Medium"
+    },
+    {
+        "id": 4011,
+        "set_id": "generated_chinese_humanities_set_1",
+        "set_name": "Generated Chinese Humanities Set 1",
+        "topic": "Modern Literature",
+        "question": "鲁迅是中国现代文学的奠基人，他的著名小说是：(Lu Xun is the founder of modern Chinese literature. What is his famous short story?)",
+        "options": [
+            "《狂人日记》 (A Madman's Diary)",
+            "《家》 (The Family)",
+            "《雷雨》 (Thunderstorm)",
+            "《围城》 (Fortress Besieged)"
+        ],
+        "correct_answer": "《狂人日记》 (A Madman's Diary)",
+        "explanation": "《狂人日记》是鲁迅的第一部白话文小说。",
+        "difficulty": "Medium"
+    },
+    {
+        "id": 4012,
+        "set_id": "generated_chinese_humanities_set_1",
+        "set_name": "Generated Chinese Humanities Set 1",
+        "topic": "Economics/Society",
+        "question": "“改革开放”是中国哪一年开始实行的政策？(In which year did China start the 'Reform and Opening-up' policy?)",
+        "options": [
+            "1949年",
+            "1978年",
+            "1990年",
+            "2008年"
+        ],
+        "correct_answer": "1978年",
+        "explanation": "1978年，中国共产党十一届三中全会召开，标志着改革开放的开始。",
+        "difficulty": "Hard"
+    },
+    {
+        "id": 4013,
+        "set_id": "generated_chinese_humanities_set_1",
+        "set_name": "Generated Chinese Humanities Set 1",
+        "topic": "Ethnology",
+        "question": "中国一共有多少个民族？(How many ethnic groups are there in China?)",
+        "options": [
+            "50",
+            "52",
+            "55",
+            "56"
+        ],
+        "correct_answer": "56",
+        "explanation": "China officially recognizes 56 ethnic groups (55 minorities + Han).",
+        "difficulty": "Easy"
+    },
+    {
+        "id": 4014,
+        "set_id": "generated_chinese_humanities_set_1",
+        "set_name": "Generated Chinese Humanities Set 1",
+        "topic": "Reading Comprehension",
+        "question": "阅读理解：'唐朝是中国诗歌的黄金时代，涌现了李白、杜甫等伟大的诗人。李白被称为“诗仙”，他的诗歌充满了浪漫主义色彩。'\n关于李白，文中提到了什么？(Reading Comprehension: 'Tang Dynasty is the golden age... Li Bai is called the Poet Immortal...')\nWhat is mentioned about Li Bai?",
+        "options": [
+            "他生活在宋朝 (He lived in Song Dynasty)",
+            "他被称为“诗仙” (He is called 'Poet Immortal')",
+            "他喜欢画画 (He liked painting)",
+            "他是一个政治家 (He was a politician)"
+        ],
+        "correct_answer": "他被称为“诗仙” (He is called 'Poet Immortal')",
+        "explanation": "Text explicitly says: 李白被称为“诗仙” (Li Bai is known as the Poet Immortal).",
+        "difficulty": "Easy"
+    },
+    {
+        "id": 4015,
+        "set_id": "generated_chinese_humanities_set_1",
+        "set_name": "Generated Chinese Humanities Set 1",
+        "topic": "Journalism/Communication",
+        "question": "在新闻传播中，真实性被认为是新闻的：(In journalism, 'authenticity/truthfulness' is considered the ______ of news?)",
+        "options": [
+            "生命 (Life/Soul)",
+            "娱乐 (Entertainment)",
+            "广告 (Advertisement)",
+            "错误 (Mistake)"
+        ],
+        "correct_answer": "生命 (Life/Soul)",
+        "explanation": "Truthfulness is often called the 'life' (生命) of news reporting in Chinese journalistic theory.",
+        "difficulty": "Medium"
+    }
+]

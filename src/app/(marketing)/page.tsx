@@ -83,37 +83,6 @@ const TOPIC_SAMPLE = [
   { name: "Sets & inequalities", mastery: 88, tone: "bg-jade" },
 ];
 
-const UNIVERSITY_SAMPLE = [
-  {
-    name: "Peking University",
-    zh: "北京大学",
-    city: "Beijing",
-    tier: "985",
-    rule: "MATH + PHYS or CHEM",
-  },
-  {
-    name: "Tongji University",
-    zh: "同济大学",
-    city: "Shanghai",
-    tier: "985",
-    rule: "MATH + PHYS",
-  },
-  {
-    name: "Fudan University",
-    zh: "复旦大学",
-    city: "Shanghai",
-    tier: "985",
-    rule: "MATH + PHYS or CHEM",
-  },
-  {
-    name: "Beijing Language and Culture University",
-    zh: "北京语言大学",
-    city: "Beijing",
-    tier: "211",
-    rule: "MATH + 文科中文",
-  },
-];
-
 const HOME_JSONLD = {
   "@context": "https://schema.org",
   "@graph": [
@@ -121,7 +90,7 @@ const HOME_JSONLD = {
       "@type": "Course",
       name: "CSCA exam preparation",
       description:
-        "Full-length CSCA mock exams in the official format, topic-level analytics, syllabus explorer and university requirement directory for international applicants to Chinese universities.",
+        "Full-length CSCA mock exams in the official format, topic-level analytics, a syllabus explorer, scholarship guidance and a university requirements guide for international applicants to Chinese universities.",
       provider: { "@type": "Organization", name: SITE.name, url: SITE.url },
       url: SITE.url,
       inLanguage: "en",
@@ -192,7 +161,7 @@ export default function HomePage() {
 
             <p className="lead mt-6 max-w-xl text-pretty">
               Full-length mock papers with the real timings and question counts, topic-level
-              analytics, and a university requirement matrix you would otherwise assemble by hand.
+              analytics, plus scholarship and university-requirements guidance you would otherwise assemble by hand.
               Built on the official 2025 syllabus. Free to start.
             </p>
 
@@ -466,51 +435,71 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── University matrix ────────────────────────────────── */}
+      {/* ── Scholarships & requirements ─────────────────────── */}
       <section className="border-y border-line bg-card/60 py-20 sm:py-24">
         <div className="shell">
           <SectionHead
-            eyebrow="University intelligence"
-            title="Which subjects does your university actually require?"
-            body="The official site shows you universities. It does not give you a comparable requirement matrix. We maintain one: required subjects, teaching language, Chinese-test exemption and application windows."
-            action={
-              <Link
-                href="/universities"
-                className="inline-flex items-center gap-1.5 text-[13px] font-medium text-ink underline decoration-line-strong underline-offset-4 hover:decoration-vermillion"
-              >
-                Browse the directory <ArrowRight className="h-3.5 w-3.5" />
-              </Link>
-            }
+            eyebrow="Apply smarter"
+            title="Know your subjects. Then know your funding."
+            body="The two things the official site makes you hunt for: which CSCA papers your programme needs, and which scholarship can actually fund your degree."
           />
 
-          <div className="mt-10 overflow-hidden rounded-2xl border border-line bg-card">
-            <div className="hidden grid-cols-[1.6fr_0.7fr_0.6fr_1fr] gap-4 border-b border-line bg-paper-deep/60 px-5 py-3 text-[10.5px] tracking-[0.12em] text-ink-faint uppercase sm:grid">
-              <span>University</span>
-              <span>City</span>
-              <span>Tier</span>
-              <span>CSCA subjects</span>
-            </div>
-            {UNIVERSITY_SAMPLE.map((uni) => (
-              <div
-                key={uni.name}
-                className="grid gap-1 border-b border-line/70 px-5 py-4 last:border-0 sm:grid-cols-[1.6fr_0.7fr_0.6fr_1fr] sm:items-center sm:gap-4"
+          <div className="mt-10 grid gap-4 lg:grid-cols-2">
+            <div className="rounded-2xl border border-line bg-card p-6 sm:p-7">
+              <Eyebrow>University requirements</Eyebrow>
+              <h3 className="mt-3 font-display text-2xl text-ink">Which papers your major needs</h3>
+              <ul className="mt-4 space-y-2.5 text-[13px] text-ink-soft">
+                {[
+                  ["Engineering & tech", "Maths + Physics"],
+                  ["Medicine, pharmacy, chemistry", "Maths + Chemistry"],
+                  ["Economics, business, humanities, law", "Maths only (+ Chinese if taught in Chinese)"],
+                  ["Any English-taught degree", "Maths (+ science subject), no Chinese paper"],
+                ].map(([group, rule]) => (
+                  <li key={group} className="flex items-start justify-between gap-4 border-b border-line/70 pb-2.5 last:border-0">
+                    <span>{group}</span>
+                    <span className="shrink-0 text-right font-medium text-ink">{rule}</span>
+                  </li>
+                ))}
+              </ul>
+              <Link
+                href="/requirements"
+                className="mt-5 inline-flex items-center gap-1.5 text-[12.5px] font-medium text-vermillion hover:underline"
               >
-                <div>
-                  <p className="text-[14px] font-medium text-ink">{uni.name}</p>
-                  <p className="text-[11px] text-ink-faint">{uni.zh}</p>
+                Full requirements guide <ArrowRight className="h-3.5 w-3.5" />
+              </Link>
+            </div>
+
+            <div className="relative overflow-hidden rounded-2xl bg-ink p-6 text-paper sm:p-7">
+              <div className="absolute inset-0 bg-[radial-gradient(70%_70%_at_100%_0%,rgba(200,16,46,0.35),transparent_65%)]" />
+              <div className="relative">
+                <Eyebrow className="text-paper/40">Scholarships</Eyebrow>
+                <h3 className="mt-3 font-display text-2xl text-paper">From CGS to provincial grants</h3>
+                <p className="mt-3 text-[13px] leading-relaxed text-paper/70">
+                  The Chinese Government Scholarship covers tuition, housing, a monthly stipend and
+                  medical insurance. Provincial, city and university awards sit on top — and a strong
+                  CSCA score strengthens every application.
+                </p>
+                <div className="mt-5 grid grid-cols-2 gap-2 text-paper/80">
+                  {[
+                    ["¥2,500", "monthly undergraduate stipend"],
+                    ["2", "main CGS application routes"],
+                    ["100%", "tuition covered on full CGS"],
+                  ].map(([value, label]) => (
+                    <div key={label} className="border-t border-paper/15 pt-2">
+                      <p className="font-display text-2xl text-paper">{value}</p>
+                      <p className="text-[11px] text-paper/50">{label}</p>
+                    </div>
+                  ))}
                 </div>
-                <p className="text-[12.5px] text-ink-soft">{uni.city}</p>
-                <span className="w-fit rounded border border-line px-1.5 py-0.5 text-[10px] font-medium text-ink-soft">
-                  {uni.tier}
-                </span>
-                <p className="text-[12.5px] text-ink-soft">{uni.rule}</p>
+                <Link
+                  href="/scholarships"
+                  className="mt-6 inline-flex h-10 items-center gap-1.5 rounded-full bg-vermillion px-4 text-[12.5px] font-medium text-paper"
+                >
+                  Explore scholarships <ArrowRight className="h-3.5 w-3.5" />
+                </Link>
               </div>
-            ))}
+            </div>
           </div>
-          <p className="mt-3 text-[11px] text-ink-faint">
-            Indicative requirements. Always confirm with the admissions office — institutions set
-            their own rules and update them each cycle.
-          </p>
         </div>
       </section>
 
@@ -740,7 +729,7 @@ export default function HomePage() {
                 {[
                   "One full mock per subject",
                   "All topic drills and review queue",
-                  "Full syllabus and university directory",
+                  "Full syllabus and requirements guide",
                   "Score history and topic breakdown",
                 ].map((item) => (
                   <li key={item} className="flex gap-2">

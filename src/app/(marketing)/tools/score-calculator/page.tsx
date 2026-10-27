@@ -123,7 +123,7 @@ export default function ScoreCalculatorPage() {
               <Link href="/csca" className="text-ink-soft underline decoration-line-strong underline-offset-4 hover:text-ink">
                 Exam guide
               </Link>
-              <Link href="/universities" className="text-ink-soft underline decoration-line-strong underline-offset-4 hover:text-ink">
+              <Link href="/requirements" className="text-ink-soft underline decoration-line-strong underline-offset-4 hover:text-ink">
                 University requirements
               </Link>
             </div>

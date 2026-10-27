@@ -1,16 +1,6 @@
 import type { MetadataRoute } from "next";
-import base from "@/data/csc-universities.json";
-import { curatedUniversities } from "../../prisma/seed-data/universities";
 import { SITE } from "@/lib/site";
 import { GUIDES } from "@/lib/guides";
-import { TOP_CITIES } from "@/lib/cities";
-
-function slugify(value: string) {
-  return value
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/(^-|-$)/g, "");
-}
 
 export const dynamic = "force-static";
 
@@ -23,7 +13,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${url}/csca`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
     { url: `${url}/exam-dates`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
     { url: `${url}/syllabus`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
-    { url: `${url}/universities`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
+    { url: `${url}/scholarships`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
+    { url: `${url}/requirements`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
+    { url: `${url}/tips`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${url}/sample-questions`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
     { url: `${url}/guides`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${url}/glossary`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
@@ -49,20 +41,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  const cities: MetadataRoute.Sitemap = TOP_CITIES.map((city) => ({
-    url: `${url}/universities/city/${city.slug}`,
-    lastModified: now,
-    changeFrequency: "monthly",
-    priority: 0.6,
-  }));
-
-  const curatedSlugs = new Set(curatedUniversities.map((entry) => slugify(entry.nameEn)));
-  const universities: MetadataRoute.Sitemap = base.map((entry) => ({
-    url: `${url}/universities/${slugify(entry.nameEn)}`,
-    lastModified: now,
-    changeFrequency: "monthly",
-    priority: curatedSlugs.has(slugify(entry.nameEn)) ? 0.7 : 0.5,
-  }));
-
-  return [...staticRoutes, ...subjects, ...guides, ...cities, ...universities];
+  return [...staticRoutes, ...subjects, ...guides];
 }

@@ -29,7 +29,7 @@ export default async function DashboardPage() {
   const user = await prisma.user.findUnique({ where: { id: session.id } });
   if (!user) return null;
 
-  const [attempts, inProgress, dueReviews, savedCount, tasks, mockCount] = await Promise.all([
+  const [attempts, inProgress, dueReviews, reviewCards, tasks, mockCount] = await Promise.all([
     prisma.attempt.findMany({
       where: { userId: user.id, status: "SUBMITTED" },
       include: { mock: { include: { subject: true } } },
@@ -45,7 +45,7 @@ export default async function DashboardPage() {
     prisma.reviewItem.count({
       where: { userId: user.id, nextReviewAt: { lte: new Date() } },
     }),
-    prisma.savedUniversity.count({ where: { userId: user.id } }),
+    prisma.reviewItem.count({ where: { userId: user.id } }),
     prisma.planTask.findMany({
       where: { userId: user.id },
       orderBy: [{ done: "asc" }, { order: "asc" }],
@@ -335,10 +335,10 @@ export default async function DashboardPage() {
               <p className="mt-3 font-display text-2xl text-ink tabular">{dueReviews}</p>
               <p className="text-[10.5px] text-ink-faint">Reviews due</p>
             </Link>
-            <Link href="/app/universities" className="panel p-4 transition hover:border-line-strong">
+            <Link href="/app/practice" className="panel p-4 transition hover:border-line-strong">
               <BookOpen className="h-4 w-4 text-jade" />
-              <p className="mt-3 font-display text-2xl text-ink tabular">{savedCount}</p>
-              <p className="text-[10.5px] text-ink-faint">Saved universities</p>
+              <p className="mt-3 font-display text-2xl text-ink tabular">{reviewCards}</p>
+              <p className="text-[10.5px] text-ink-faint">Review cards</p>
             </Link>
           </section>
 

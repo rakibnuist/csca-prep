@@ -80,8 +80,11 @@ Nobody combines: **exam-accurate simulator + topic-level mastery analytics + uni
 /exam-dates                All 2026–2027 sittings + registration windows + timezone notes
 /syllabus                  Syllabus hub (5 subjects)
 /syllabus/[subject]        Bilingual topic tree, weights, practice links
-/universities              Directory + requirement matrix + filters (public, read-only)
-/universities/[slug]       University detail: subjects required, language, deadlines
+/scholarships              CGS, provincial, city and university funding (public, read-only)
+/requirements              Which CSCA subjects each programme group needs + exemptions
+/tips                      Exam strategy, time budget, per-subject technique, error log
+/sample-questions          25 free questions, no account
+/guides  /glossary  /tools/score-calculator   Long-tail SEO cluster
 /pricing                   Free vs Pro waitlist (honest)
 /about  /contact           Trust + lead capture
 /sign-in  /sign-up         Auth
@@ -89,11 +92,11 @@ Nobody combines: **exam-accurate simulator + topic-level mastery analytics + uni
 /app/dashboard             Readiness, countdown, next actions, score trend, weak topics
 /app/mocks                 Mock library by subject, attempt state
 /app/mocks/[slug]          Briefing: format, rules, sections, start
-/app/mocks/[slug]/run      Full-screen exam simulator (timer, palette, flags, review)
-/app/practice              Topic drills + smart review queue
+/exam/[slug]               Full-screen exam simulator (timer, palette, flags, review)
+/app/practice              Topic drills + difficulty filter + smart review queue
+/app/practice/quick        Mixed 10-question drill (any subject, any difficulty)
 /app/results  /app/results/[id]   Score, topic breakdown, percentile, full review
 /app/plan                  Personalised 3-phase study plan + checklist
-/app/universities          Saved shortlist
 /admin                     Content + attempt + lead overview
 ```
 
@@ -102,7 +105,7 @@ Nobody combines: **exam-accurate simulator + topic-level mastery analytics + uni
 ## 5. Data model (Prisma)
 
 `User` · `Subject` · `Topic` · `Question` · `Mock` · `MockItem` · `Attempt` · `ReviewItem`
-`University` · `SavedUniversity` · `ExamDate` · `Lead`
+`ExamDate` · `Lead`
 
 Design notes:
 - `Question.options` is a Postgres `String[]` with `correctIndex`; CN variants sit alongside EN.
@@ -133,9 +136,9 @@ no copied official paper text; requirement data marked "verify with the universi
 
 - **P0 — Foundations (done):** local Postgres-free dev DB (PGlite wire server), Prisma schema, auth, design system.
 - **P1 — Exam engine (done):** simulator, autosave, server-side scoring, review, analytics.
-- **P2 — Content (done):** syllabus, question bank, mocks, universities, exam dates, seeding.
-- **P3 — Growth (done):** SEO cluster (sample questions, score calculator, glossary, five guides, 78 city pages),
-  sitemap, JSON-LD, static rendering, landing conversion, lead capture, admin.
+- **P2 — Content (done):** syllabus, curated bank (272) + legacy drill bank (~1,940), mocks, exam dates, seeding.
+- **P3 — Growth (done):** SEO cluster (sample questions, score calculator, glossary, five guides,
+  scholarships, requirements, tips), sitemap, JSON-LD, static rendering, landing conversion, lead capture, admin.
 - **P4 — Launch (next):** deploy to cscamaster.com (Vercel + managed Postgres), verify Search Console,
   add email verification/password reset, then start content cadence (one guide per fortnight).
 

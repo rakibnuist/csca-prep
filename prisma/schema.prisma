@@ -22,10 +22,9 @@ model User {
   createdAt    DateTime @default(now())
   updatedAt    DateTime @updatedAt
 
-  attempts          Attempt[]
-  reviews           ReviewItem[]
-  savedUniversities SavedUniversity[]
-  planTasks         PlanTask[]
+  attempts  Attempt[]
+  reviews   ReviewItem[]
+  planTasks PlanTask[]
 
   @@index([createdAt])
 }
@@ -194,50 +193,6 @@ model PlanTask {
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   @@index([userId, phase, order])
-}
-
-// ─────────────────────────── Universities ───────────────────────────
-
-model University {
-  id                  String   @id @default(cuid())
-  slug                String   @unique
-  nameEn              String
-  nameZh              String
-  city                String
-  province            String?
-  tier                String[] @default([]) // 985 | 211 | DFC | CSCA_CENTRE
-  languages           String[] @default([]) // Chinese | English
-  needsChineseTest    Boolean  @default(true)
-  scienceSubjectRule  String   @default("MATH + at least one of PHYS/CHEM")
-  humanitiesRule      String   @default("MATH only")
-  englishRequirement  String?
-  hskRequirement      String?
-  applicationDeadline String?
-  scholarship         Boolean  @default(true)
-  website             String?
-  summary             String?
-  popularMajors       String[] @default([])
-  internationalCount  Int?
-  rank                Int?
-  verified            Boolean  @default(false)
-  lastVerified        DateTime @default(now())
-
-  savedBy SavedUniversity[]
-
-  @@index([city])
-  @@index([rank])
-}
-
-model SavedUniversity {
-  userId       String
-  universityId String
-  note         String?
-  createdAt    DateTime @default(now())
-
-  user       User       @relation(fields: [userId], references: [id], onDelete: Cascade)
-  university University @relation(fields: [universityId], references: [id], onDelete: Cascade)
-
-  @@id([userId, universityId])
 }
 
 // ─────────────────────────── Exam calendar ───────────────────────────

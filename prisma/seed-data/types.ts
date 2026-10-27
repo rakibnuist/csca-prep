@@ -39,22 +39,3 @@ export type SeedTopic = {
   weight: number;
   order: number;
 };
-
-export type SeedUniversity = {
-  nameEn: string;
-  nameZh: string;
-  city: string;
-  province?: string;
-  tier?: string[];
-  languages?: string[];
-  scienceSubjectRule?: string;
-  humanitiesRule?: string;
-  englishRequirement?: string;
-  hskRequirement?: string;
-  applicationDeadline?: string;
-  website?: string;
-  popularMajors?: string[];
-  internationalCount?: number;
-  rank?: number;
-  summary?: string;
-};
