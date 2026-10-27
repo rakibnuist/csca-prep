@@ -6,6 +6,8 @@ export type SeedQuestion = {
   stemZh?: string;
   options: string[];
   optionsZh?: string[];
+  /** Optional diagram, e.g. "/figures/official/phy-q9.png" */
+  figure?: string;
   correct: number;
   explanation: string;
   explanationZh?: string;

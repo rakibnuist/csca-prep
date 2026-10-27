@@ -155,6 +155,7 @@ export const officialPhysicsQuestions: SeedQuestion[] = [
       "x-t 图像为斜率恒定的正斜率直线",
       "v-t 图像为向下倾斜的直线",
     ],
+    figure: "/figures/official/phy-q9.png",
     correct: 1,
     explanation:
       "Uniform acceleration means velocity increases linearly with time: the v-t graph is an upward-sloping straight line whose slope is the constant acceleration.",
@@ -205,6 +206,7 @@ export const officialPhysicsQuestions: SeedQuestion[] = [
       "0~5 s 内，平均速度为 0.8 m/s",
       "4~5 s 内，速度为 0.8 m/s",
     ],
+    figure: "/figures/official/phy-q12.png",
     correct: 1,
     explanation:
       "On an x-t graph the slope is velocity. From 0 to 4 s the car goes 0→4 m at constant speed v = 4/4 = 1.0 m/s. Displacement is 4 m, not 8; over 0–5 s it returns to 0 so average velocity is 0; from 4 to 5 s the slope gives 4 m/s.",
@@ -291,6 +293,7 @@ export const officialPhysicsQuestions: SeedQuestion[] = [
       "周期为 2 s，振幅为 6 cm",
       "频率为 2 Hz",
     ],
+    figure: "/figures/official/phy-q18.png",
     correct: 1,
     explanation:
       "T = 60/30 = 2 s, f = 0.5 Hz, amplitude = 6/2 = 3 cm. One full oscillation covers 4A = 12 cm. In 3 s (1.5T) from O the distance is 6A = 18 cm; amplitude is 3 cm, not 6.",
@@ -351,6 +354,7 @@ export const officialPhysicsQuestions: SeedQuestion[] = [
       "t = 1.2 s 时，质点 Q 的加速度最大",
       "t = 1.4 s 时，质点 M 沿 y 轴负方向运动",
     ],
+    figure: "/figures/official/phy-q22.png",
     correct: 0,
     explanation:
       "From the graph λ = 8 m and A = 6 cm, so T = λ/v = 0.8 s. P starts at a crest; 0.6 s = ¾T covers 3A = 18 cm. At 0.6 s P is at equilibrium (displacement 0). At 1.2 s = 1.5T, Q is at equilibrium so acceleration is zero. At 1.4 s M is at a trough (velocity zero).",
@@ -384,6 +388,7 @@ export const officialPhysicsQuestions: SeedQuestion[] = [
     stemZh: "如图所示电路中，R = 2 Ω。断开开关 S 时电压表示数为 3 V；闭合 S 后电压表示数为 2 V，则电源内阻 r 为：",
     options: ["3 Ω", "2 Ω", "4 Ω", "1 Ω"],
     optionsZh: ["3 Ω", "2 Ω", "4 Ω", "1 Ω"],
+    figure: "/figures/official/phy-q24.png",
     correct: 3,
     explanation:
       "Open circuit: EMF E = 3 V. Closed: terminal voltage U = 2 V, current I = U/R = 1 A. Then E = U + Ir → 3 = 2 + 1×r → r = 1 Ω.",
@@ -489,6 +494,7 @@ export const officialPhysicsQuestions: SeedQuestion[] = [
       "P、Q 两点的电势和场强均不同",
       "P、Q 两点的电势相等",
     ],
+    figure: "/figures/official/phy-q30.png",
     correct: 1,
     explanation:
       "Parallel equally spaced field lines mean a uniform field, so the field strength is identical everywhere (same magnitude and direction). Potentials differ unless on the same equipotential; plate polarity can't be determined without field direction.",

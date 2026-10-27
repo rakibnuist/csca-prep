@@ -1,4 +1,5 @@
 "use client";
+/* eslint-disable @next/next/no-img-element */
 
 import { useMemo, useState } from "react";
 import Link from "next/link";
@@ -12,6 +13,7 @@ export type PracticeQuestion = {
   stemZh: string | null;
   options: string[];
   optionsZh: string[];
+  figure?: string | null;
   correctIndex: number;
   explanation: string;
   explanationZh: string | null;
@@ -171,6 +173,12 @@ export function PracticeRunner({
         <div className="text-[15px] leading-[1.7] text-ink">
           <MathText>{stem}</MathText>
         </div>
+
+        {question.figure && (
+          <div className="mt-3 overflow-hidden rounded-lg border border-line bg-white p-2">
+            <img src={question.figure} alt="Official diagram" className="mx-auto max-h-[300px] w-auto" />
+          </div>
+        )}
 
         <div className="mt-5 space-y-2" role="radiogroup" aria-label="Answer options">
           {options.map((option, optionIndex) => {

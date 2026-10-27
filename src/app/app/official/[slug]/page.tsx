@@ -42,6 +42,7 @@ export default async function OfficialQaDetailPage({
     stemZh: item.question.stemZh,
     options: item.question.options,
     optionsZh: item.question.optionsZh,
+    figure: item.question.figure,
     correctIndex: item.question.correctIndex,
     explanation: item.question.explanation,
     explanationZh: item.question.explanationZh,

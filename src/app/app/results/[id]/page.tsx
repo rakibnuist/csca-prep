@@ -250,6 +250,17 @@ export default async function ResultPage({
                       <MathText>{item.question.stem}</MathText>
                     </div>
 
+                    {item.question.figure && (
+                      <div className="mt-3 overflow-hidden rounded-lg border border-line bg-white p-2">
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                        <img
+                          src={item.question.figure}
+                          alt="Official exam diagram"
+                          className="mx-auto max-h-[280px] w-auto"
+                        />
+                      </div>
+                    )}
+
                     <div className="mt-3 space-y-1.5">
                       {item.question.options.map((option, optionIndex) => {
                         const isCorrectOption = optionIndex === item.question.correctIndex;

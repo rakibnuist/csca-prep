@@ -1,4 +1,5 @@
 "use client";
+/* eslint-disable @next/next/no-img-element */
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
@@ -317,6 +318,16 @@ export function ExamRunner({
             <div className="mt-5 text-[15.5px] leading-[1.7] text-ink">
               <MathText>{stem}</MathText>
             </div>
+
+            {current?.figure && (
+              <div className="mt-4 overflow-hidden rounded-lg border border-line bg-white p-2">
+                <img
+                  src={current.figure}
+                  alt="Official exam diagram"
+                  className="mx-auto max-h-[300px] w-auto"
+                />
+              </div>
+            )}
 
             <div
               role="radiogroup"

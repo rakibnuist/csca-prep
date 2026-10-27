@@ -1,4 +1,5 @@
 "use client";
+/* eslint-disable @next/next/no-img-element */
 
 import { useState } from "react";
 import Link from "next/link";
@@ -13,6 +14,7 @@ export type OfficialQaQuestion = {
   stemZh: string | null;
   options: string[];
   optionsZh: string[];
+  figure: string | null;
   correctIndex: number;
   explanation: string;
   explanationZh: string | null;
@@ -96,6 +98,16 @@ export function OfficialQaBrowser({
                   <p className="mt-1.5 font-chinese text-[12.5px] leading-relaxed text-ink-faint">
                     <MathText>{question.stemZh}</MathText>
                   </p>
+                )}
+
+                {question.figure && (
+                  <div className="mt-3 overflow-hidden rounded-lg border border-line bg-white p-2">
+                    <img
+                      src={question.figure}
+                      alt="Official exam diagram"
+                      className="mx-auto max-h-[320px] w-auto"
+                    />
+                  </div>
                 )}
 
                 <div className="mt-3 space-y-1.5">

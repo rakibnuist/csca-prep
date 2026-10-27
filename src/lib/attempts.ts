@@ -11,6 +11,7 @@ export type ExamQuestionPayload = {
   stemZh: string | null;
   options: string[];
   optionsZh: string[];
+  figure: string | null;
   difficulty: string;
   topicCode: string;
   topicTitle: string;
@@ -39,6 +40,7 @@ export function toPayload(mock: NonNullable<Awaited<ReturnType<typeof getMockWit
     stemZh: item.question.stemZh,
     options: item.question.options,
     optionsZh: item.question.optionsZh,
+    figure: item.question.figure,
     difficulty: item.question.difficulty,
     topicCode: item.question.topic.code,
     topicTitle: item.question.topic.titleEn,

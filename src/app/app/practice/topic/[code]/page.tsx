@@ -51,6 +51,7 @@ export default async function TopicPracticePage({
       stemZh: true,
       options: true,
       optionsZh: true,
+      figure: true,
       correctIndex: true,
       explanation: true,
       explanationZh: true,

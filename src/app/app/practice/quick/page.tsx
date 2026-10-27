@@ -51,6 +51,7 @@ export default async function QuickDrillPage({
       stemZh: question.stemZh,
       options: question.options,
       optionsZh: question.optionsZh,
+      figure: question.figure,
       correctIndex: question.correctIndex,
       explanation: question.explanation,
       explanationZh: question.explanationZh,

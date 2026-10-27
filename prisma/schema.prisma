@@ -80,6 +80,7 @@ model Question {
   stemZh        String?
   options       String[]
   optionsZh     String[] @default([])
+  figure        String? // path to an official diagram under /public
   correctIndex  Int
   explanation   String
   explanationZh String?
