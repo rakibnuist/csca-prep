@@ -21,6 +21,7 @@ import { chineseHumanitiesQuestions } from "./seed-data/questions/chinese-humani
 import { chineseStemQuestions } from "./seed-data/questions/chinese-stem";
 import { officialMathQuestions } from "./seed-data/questions/official-math";
 import { officialChemistryQuestions } from "./seed-data/questions/official-chemistry";
+import { officialPhysicsQuestions } from "./seed-data/questions/official-physics";
 import type { SeedQuestion } from "./seed-data/types";
 import { EXAM_SITTINGS } from "../src/lib/site";
 
@@ -139,6 +140,12 @@ async function main() {
       source: "Official CSCA past paper (2026-01)",
       items: officialChemistryQuestions,
     },
+    {
+      code: "phy",
+      subjectCode: "PHYS",
+      source: "Official CSCA past paper (2026-01)",
+      items: officialPhysicsQuestions,
+    },
   ];
 
   for (const paper of OFFICIAL_PAPERS) {
@@ -235,6 +242,13 @@ async function main() {
       slug: "chem-official-2026-01",
       subjectCode: "CHEM",
       title: "Chemistry · Official · January 2026",
+      source: "Official CSCA past paper (2026-01)",
+      durationMin: 60,
+    },
+    {
+      slug: "phy-official-2026-01",
+      subjectCode: "PHYS",
+      title: "Physics · Official · January 2026",
       source: "Official CSCA past paper (2026-01)",
       durationMin: 60,
     },
