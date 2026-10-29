@@ -35,7 +35,7 @@ export default async function SignInPage({
         <p className="mt-1.5 font-mono text-[11.5px] leading-relaxed text-ink-soft">
           student@cscamaster.com · password123
           <br />
-          admin@cscamaster.com · password123
+          Admin accounts are not published. Use your own credentials.
         </p>
       </div>
     </div>
