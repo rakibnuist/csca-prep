@@ -1,0 +1,93 @@
+# CSCA Master — Docker stack behind the Traefik edge already running on this VPS
+# (traefik-gyx5: host-network, Docker label discovery, exposedbydefault=false,
+# HTTP-01 "letsencrypt" resolver). TLS is issued by Traefik — no certbot here.
+#
+#   cd /docker/csca-prep && docker compose up -d --build
+#
+# App source lives in ./app (rsynced from the laptop by deploy/deploy.sh).
+name: csca-prep
+
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: csca-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${DB_USER:-csca}
+      POSTGRES_PASSWORD: ${DB_PASSWORD:?DB_PASSWORD must be set in .env}
+      POSTGRES_DB: ${DB_NAME:-cscamaster}
+      TZ: UTC
+      PGDATA: /var/lib/postgresql/data/pgdata
+    volumes:
+      - csca-db:/var/lib/postgresql/data
+    shm_size: 256mb
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${DB_USER:-csca} -d ${DB_NAME:-cscamaster}"]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+    labels:
+      - traefik.enable=false
+
+  app:
+    build:
+      context: ./app
+      args:
+        NEXT_PUBLIC_APP_URL: ${APP_URL:-https://www.cscamaster.com}
+        NEXT_PUBLIC_SITE_NAME: ${SITE_NAME:-CSCA Master}
+    image: csca-prep:latest
+    container_name: csca-prep
+    init: true
+    restart: unless-stopped
+    stop_grace_period: 30s
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      NODE_ENV: production
+      PORT: "3000"
+      DATABASE_URL: postgresql://${DB_USER:-csca}:${DB_PASSWORD}@db:5432/${DB_NAME:-cscamaster}?schema=public
+      JWT_SECRET: ${JWT_SECRET:?JWT_SECRET must be set in .env}
+      NEXT_PUBLIC_APP_URL: ${APP_URL:-https://www.cscamaster.com}
+      NEXT_PUBLIC_SITE_NAME: ${SITE_NAME:-CSCA Master}
+      PG_POOL_MAX: "10"
+    healthcheck:
+      test:
+        - CMD
+        - node
+        - -e
+        - "fetch('http://127.0.0.1:3000/').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 60s
+    labels:
+      - traefik.enable=true
+      # canonical host: www. NEXT_PUBLIC_APP_URL is https://www.cscamaster.com
+      - "traefik.http.routers.csca.rule=Host(`www.cscamaster.com`)"
+      - traefik.http.routers.csca.entrypoints=websecure
+      - traefik.http.routers.csca.tls=true
+      - traefik.http.routers.csca.tls.certresolver=letsencrypt
+      # explicit SANs: Traefik cannot infer domains from an OR-ed Host() rule
+      - "traefik.http.routers.csca.tls.domains[0].main=cscamaster.com"
+      - "traefik.http.routers.csca.tls.domains[0].sans=www.cscamaster.com"
+      - traefik.http.routers.csca.middlewares=csca-hsts
+      - traefik.http.services.csca.loadbalancer.server.port=3000
+      - traefik.http.services.csca.loadbalancer.server.scheme=http
+      # apex -> www, path preserved
+      - "traefik.http.routers.csca-apex.rule=Host(`cscamaster.com`)"
+      - traefik.http.routers.csca-apex.entrypoints=websecure
+      - traefik.http.routers.csca-apex.tls=true
+      - traefik.http.routers.csca-apex.tls.certresolver=letsencrypt
+      - "traefik.http.routers.csca-apex.tls.domains[0].main=cscamaster.com"
+      - "traefik.http.routers.csca-apex.tls.domains[0].sans=www.cscamaster.com"
+      - traefik.http.routers.csca-apex.middlewares=csca-apex-redirect
+      - "traefik.http.middlewares.csca-apex-redirect.redirectregex.regex=^https?://cscamaster\\.com/(.*)"
+      - "traefik.http.middlewares.csca-apex-redirect.redirectregex.replacement=https://www.cscamaster.com/$${1}"
+      - traefik.http.middlewares.csca-apex-redirect.redirectregex.permanent=true
+      # HSTS at the edge (1 year; no includeSubDomains — other apps share the VPS)
+      - traefik.http.middlewares.csca-hsts.headers.stsseconds=31536000
+      - traefik.http.middlewares.csca-hsts.headers.stsincludeSubdomains=false
+
+volumes:
+  csca-db:
