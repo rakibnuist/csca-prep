@@ -8,7 +8,7 @@ import { breadcrumbLd, pageMetadata } from "@/lib/seo";
 import { OFFICIAL } from "@/lib/site";
 
 export const metadata: Metadata = pageMetadata({
-  title: "CSCA score calculator — convert correct answers to a 0–100 score",
+  title: "CSCA score calculator — answers to a 0–100 mark",
   description:
     "Convert raw CSCA answers into the official 0–100 scale, estimate your percentile band, and see exactly how many questions you need for a target score.",
   path: "/tools/score-calculator",
@@ -76,8 +76,8 @@ export default function ScoreCalculatorPage() {
       </section>
 
       <section className="border-t border-line bg-card/60 py-14">
-        <div className="shell grid gap-10 lg:grid-cols-[0.85fr_1.15fr]">
-          <div>
+        <div className="shell grid grid-cols-1 gap-10 lg:grid-cols-[0.85fr_1.15fr]">
+          <div className="min-w-0">
             <Eyebrow>Read this before you panic</Eyebrow>
             <h2 className="display-md mt-3">Three things the calculator cannot tell you.</h2>
             <ul className="mt-4 space-y-3 text-[13px] leading-relaxed text-ink-soft">
@@ -106,11 +106,12 @@ export default function ScoreCalculatorPage() {
             </a>
           </div>
 
-          <div className="space-y-3">
+          <div className="min-w-0 space-y-3">
             {FAQ.map((item) => (
               <details key={item.q} className="group rounded-xl border border-line bg-paper px-4 py-3">
-                <summary className="cursor-pointer list-none text-[12.5px] font-medium text-ink">
-                  {item.q}
+                <summary className="flex cursor-pointer list-none items-center justify-between gap-4 text-[12.5px] font-medium text-ink">
+                  <span className="min-w-0 flex-1">{item.q}</span>
+                  <span className="shrink-0 text-ink-faint transition group-open:rotate-45">+</span>
                 </summary>
                 <p className="mt-2 text-[12px] leading-relaxed text-ink-soft">{item.a}</p>
               </details>

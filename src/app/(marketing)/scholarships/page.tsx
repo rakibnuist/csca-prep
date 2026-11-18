@@ -4,21 +4,15 @@ import {
   ArrowRight,
   ArrowUpRight,
   Banknote,
-  Building2,
-  CalendarClock,
-  Check,
-  FileCheck2,
-  GraduationCap,
-  Landmark,
-  MapPinned,
 } from "lucide-react";
 import { Eyebrow, Pill, SectionHead } from "@/components/site/section";
+import { BangladeshPartnerBanner } from "@/components/site/bangladesh-partner-banner";
 import { JsonLd } from "@/components/seo/jsonld";
 import { breadcrumbLd, pageMetadata } from "@/lib/seo";
 import { OFFICIAL } from "@/lib/site";
 
 export const metadata: Metadata = pageMetadata({
-  title: "Scholarships to study in China 2027 — CGS, provincial and university funding",
+  title: "China scholarships 2027 — CGS, provincial and university",
   description:
     "How the Chinese Government Scholarship works (coverage, stipend, eligibility, two routes), plus provincial, city, Confucius Institute and university scholarships for international undergraduates.",
   path: "/scholarships",
@@ -68,7 +62,7 @@ const FAQ = [
   },
   {
     q: "Do I need a CSCA score to get a CGS scholarship?",
-    a: "For undergraduate programmes, yes. CGS undergraduate applicants must register for and sit the CSCA before the application deadline and upload a valid score report. Which subjects you need depends on the applied major.",
+    a: "For undergraduate programmes, yes. CGS undergraduate applicants must register for and sit the CSCA before the application deadline and upload a valid score report. Official CSCA rules make Mathematics and Professional Chinese (Humanities or STEM) compulsory for all CGS applicants regardless of teaching language, plus Physics/Chemistry where your major requires them.",
   },
   {
     q: "What is the difference between Type A and Type B?",
@@ -98,7 +92,7 @@ export default function ScholarshipsPage() {
 
       <section className="border-b border-line">
         <div className="shell py-12 sm:py-16">
-          <Eyebrow>Funding guide · verified October 2026</Eyebrow>
+          <Eyebrow>Funding guide · verified November 2026</Eyebrow>
           <h1 className="display-lg mt-4 max-w-3xl text-balance">
             Scholarships to study in China, from full CGS to tuition waivers.
           </h1>
@@ -117,8 +111,8 @@ export default function ScholarshipsPage() {
       </section>
 
       <section className="shell py-12">
-        <div className="grid gap-8 lg:grid-cols-[1.5fr_0.8fr]">
-          <article className="prose-edu max-w-none">
+        <div className="grid grid-cols-1 gap-8 lg:grid-cols-[1.5fr_0.8fr]">
+          <article className="prose-edu min-w-0 max-w-none">
             <h2>The Chinese Government Scholarship (CGS)</h2>
             <p>
               Run by the China Scholarship Council (CSC), the CGS is China&apos;s flagship funding
@@ -126,7 +120,7 @@ export default function ScholarshipsPage() {
               scholarships available anywhere, which is why competition for it is real.
             </p>
 
-            <div className="not-prose my-6 overflow-hidden rounded-xl border border-line bg-card">
+            <div className="not-prose my-6 overflow-x-auto rounded-xl border border-line bg-card">
               <table className="w-full text-[12.5px]">
                 <thead>
                   <tr className="bg-paper-deep/70 text-left text-[10px] tracking-[0.1em] text-ink-faint uppercase">
@@ -209,7 +203,7 @@ export default function ScholarshipsPage() {
               {PROVINCIAL.map((row) => (
                 <div
                   key={row.name}
-                  className="grid gap-1 border-b border-line/60 px-4 py-2.5 last:border-0 sm:grid-cols-[1.4fr_0.6fr_1.2fr] sm:items-center sm:gap-3"
+                  className="grid grid-cols-1 gap-1 border-b border-line/60 px-4 py-2.5 last:border-0 sm:grid-cols-[1.4fr_0.6fr_1.2fr] sm:items-center sm:gap-3"
                 >
                   <p className="text-[12.5px] font-medium text-ink">{row.name}</p>
                   <p className="text-[11.5px] text-ink-soft">{row.region}</p>
@@ -245,7 +239,7 @@ export default function ScholarshipsPage() {
             </ul>
 
             <h2>Timeline that repeats every year</h2>
-            <div className="not-prose my-6 grid gap-3 sm:grid-cols-2">
+            <div className="not-prose my-6 grid grid-cols-1 gap-3 sm:grid-cols-2">
               {[
                 { when: "Oct – Nov", what: "Shortlist universities and majors; check CSCA subject requirements." },
                 { when: "Nov – Feb", what: "CGS applications open (embassy deadlines vary, often Dec–Feb)." },
@@ -266,30 +260,34 @@ export default function ScholarshipsPage() {
               scholarship application — a strong score is the cheapest way to stand out in a
               competitive shortlist.
             </p>
+            <div className="not-prose">
+              <BangladeshPartnerBanner className="mt-8 mb-0" />
+            </div>
           </article>
 
-          <aside className="space-y-4 lg:sticky lg:top-24 lg:self-start">
-            <div className="panel p-5">
+          <aside className="min-w-0 space-y-4 lg:sticky lg:top-24 lg:self-start">
+            <div className="panel card-elevate p-5">
               <Banknote className="h-4 w-4 text-ink-faint" />
               <p className="mt-2 font-display text-3xl text-ink">¥2,500<span className="text-base text-ink-faint">/mo</span></p>
               <p className="text-[11.5px] text-ink-soft">CGS undergraduate stipend, on top of free tuition and housing.</p>
             </div>
 
-            <div className="panel p-5">
+            <div className="panel card-elevate p-5">
               <p className="eyebrow">CSCA links to funding</p>
               <p className="mt-2 text-[12px] leading-relaxed text-ink-soft">
-                Since the 2026/27 cycle, undergraduate CGS applicants must submit a CSCA score. The
-                subjects depend on your major.
+                Since the 2026/27 cycle, undergraduate CGS applicants must submit a CSCA score
+                (Mathematics and Professional Chinese are compulsory for CGS applicants; Physics and
+                Chemistry depend on your major).
               </p>
               <Link
                 href="/requirements"
-                className="mt-3 inline-flex items-center gap-1 text-[11.5px] font-medium text-vermillion hover:underline"
+                className="mt-3 inline-flex items-center gap-1 text-[11.5px] font-medium text-indigo hover:underline"
               >
                 Which papers you need <ArrowRight className="h-3 w-3" />
               </Link>
             </div>
 
-            <div className="panel p-5">
+            <div className="panel card-elevate p-5">
               <p className="eyebrow">Official sources</p>
               <div className="mt-2 space-y-1.5">
                 {[
@@ -301,7 +299,7 @@ export default function ScholarshipsPage() {
                     href={href}
                     target="_blank"
                     rel="noreferrer noopener"
-                    className="flex items-center justify-between text-[11.5px] text-ink-soft hover:text-vermillion"
+                    className="flex min-h-8 items-center justify-between py-1 text-[11.5px] text-ink-soft hover:text-indigo"
                   >
                     {label} <ArrowUpRight className="h-3 w-3" />
                   </a>
@@ -326,13 +324,13 @@ export default function ScholarshipsPage() {
       </section>
 
       <section className="border-t border-line bg-card/60 py-14">
-        <div className="shell grid gap-8 lg:grid-cols-[0.8fr_1.2fr]">
+        <div className="shell grid grid-cols-1 gap-8 lg:grid-cols-[0.8fr_1.2fr]">
           <SectionHead
             eyebrow="FAQ"
             title="Scholarship questions, answered."
             body="If yours is not here, the fastest answer usually comes from the university's scholarship office."
           />
-          <div className="space-y-2.5">
+          <div className="min-w-0 space-y-2.5">
             {FAQ.map((item) => (
               <details key={item.q} className="group rounded-xl border border-line bg-paper px-4 py-3">
                 <summary className="cursor-pointer list-none text-[12.5px] font-medium text-ink">
