@@ -3,7 +3,9 @@ import { mathQuestions } from "../../prisma/seed-data/questions/math";
 import { physicsQuestions } from "../../prisma/seed-data/questions/physics";
 import { chemistryQuestions } from "../../prisma/seed-data/questions/chemistry";
 import { chineseHumanitiesQuestions } from "../../prisma/seed-data/questions/chinese-humanities";
+import { chineseHumanitiesExtraQuestions } from "../../prisma/seed-data/questions/chinese-humanities-extra";
 import { chineseStemQuestions } from "../../prisma/seed-data/questions/chinese-stem";
+import { chineseStemExtraQuestions } from "../../prisma/seed-data/questions/chinese-stem-extra";
 import type { SeedSubject, SeedTopic } from "../../prisma/seed-data/types";
 
 /**
@@ -20,8 +22,8 @@ const BANK_SIZES: Record<string, number> = {
   MATH: mathQuestions.length,
   PHYS: physicsQuestions.length,
   CHEM: chemistryQuestions.length,
-  CH_HUM: chineseHumanitiesQuestions.length,
-  CH_SCI: chineseStemQuestions.length,
+  CH_HUM: chineseHumanitiesQuestions.length + chineseHumanitiesExtraQuestions.length,
+  CH_SCI: chineseStemQuestions.length + chineseStemExtraQuestions.length,
 };
 
 export type CurriculumSubject = SeedSubject & {

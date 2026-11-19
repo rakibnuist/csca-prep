@@ -7,20 +7,30 @@
 
 @theme inline {
   /* brand */
-  --color-paper: #fbf7f0;
-  --color-paper-deep: #f4ede1;
-  --color-ink: #16120f;
-  --color-ink-soft: #5a534b;
-  --color-ink-faint: #6f665c;
-  --color-line: #e6dccc;
-  --color-line-strong: #d5c8b5;
-  --color-vermillion: #c8102e;
-  --color-vermillion-deep: #96071f;
-  --color-jade: #0b6b52;
-  --color-jade-soft: #e6f1ec;
-  --color-gold: #a97a1f;
-  --color-gold-soft: #f7ecd6;
-  --color-night: #17130f;
+  --color-paper: #f8fafc;
+  --color-paper-deep: #f1f5f9;
+  --color-ink: #0f172a;
+  --color-ink-soft: #475569;
+  --color-ink-faint: #64748b;
+  /* Lighter faint ink for dark surfaces. */
+  --color-ink-faint-dark: #94a3b8;
+  --color-line: #e2e8f0;
+  --color-line-strong: #cbd5e1;
+  /* Indigo and Royal Blue form a cohesive, motivating EdTech palette. */
+  --color-indigo: #4f46e5;
+  --color-indigo-deep: #4338ca;
+  --color-indigo-soft: #eef2ff;
+  --color-vermillion: #2563eb;
+  --color-vermillion-deep: #1d4ed8;
+  /* Lighter brand tones for dark surfaces. */
+  --color-vermillion-light: #60a5fa;
+  --color-jade: #059669;
+  --color-jade-light: #34d399;
+  --color-gold-deep: #b45309;
+  --color-jade-soft: #ecfdf5;
+  --color-gold: #d97706;
+  --color-gold-soft: #fffbeb;
+  --color-night: #0f172a;
 
   /* shadcn bridge */
   --color-background: var(--background);
@@ -55,46 +65,53 @@
 
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, "Noto Sans CJK SC", "PingFang SC",
     "Microsoft YaHei", sans-serif;
-  --font-display: var(--font-display), "Iowan Old Style", "Palatino Linotype", Georgia,
-    "Noto Serif CJK SC", "Songti SC", serif;
+  --font-display: var(--font-display), var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-serif-editorial), ui-serif, Georgia, "Times New Roman", serif;
   --font-mono: var(--font-mono), ui-monospace, "SFMono-Regular", Menlo, monospace;
-  --font-chinese: "Noto Serif CJK SC", "Songti SC", "STSong", serif;
+  --font-chinese: "Noto Sans CJK SC", "PingFang SC", "Microsoft YaHei", sans-serif;
 
-  --shadow-card: 0 1px 2px rgb(22 18 15 / 0.04), 0 12px 32px -20px rgb(22 18 15 / 0.18);
-  --shadow-lift: 0 2px 4px rgb(22 18 15 / 0.05), 0 24px 60px -28px rgb(22 18 15 / 0.28);
+  --shadow-card: 0 1px 3px rgb(15 23 42 / 0.04), 0 10px 28px -18px rgb(15 23 42 / 0.12);
+  --shadow-lift: 0 4px 12px rgb(15 23 42 / 0.06), 0 24px 48px -20px rgb(37 99 235 / 0.18);
 }
 
 :root {
-  --radius: 0.75rem;
+  --radius: 0.875rem;
 
-  --background: #fbf7f0;
-  --foreground: #16120f;
+  --background: #f8fafc;
+  --foreground: #0f172a;
   --card: #ffffff;
-  --card-foreground: #16120f;
+  --card-foreground: #0f172a;
   --popover: #ffffff;
-  --popover-foreground: #16120f;
-  --primary: #c8102e;
-  --primary-foreground: #fff8f3;
-  --secondary: #f2ebdf;
-  --secondary-foreground: #16120f;
-  --muted: #f4eee3;
-  --muted-foreground: #5a534b;
-  --accent: #f4eee3;
-  --accent-foreground: #16120f;
-  --destructive: #b42318;
-  --destructive-foreground: #fff8f3;
-  --border: #e6dccc;
-  --input: #e0d5c3;
-  --ring: rgb(200 16 46 / 0.28);
+  --popover-foreground: #0f172a;
+  --primary: #2563eb;
+  --primary-foreground: #ffffff;
+  --secondary: #f1f5f9;
+  --secondary-foreground: #0f172a;
+  --muted: #f1f5f9;
+  --muted-foreground: #475569;
+  --accent: #f1f5f9;
+  --accent-foreground: #0f172a;
+  --destructive: #e11d48;
+  --destructive-foreground: #ffffff;
+  --border: #e2e8f0;
+  --input: #cbd5e1;
+  --ring: rgb(37 99 235 / 0.28);
 
-  --chart-1: #c8102e;
-  --chart-2: #0b6b52;
-  --chart-3: #a97a1f;
-  --chart-4: #35507a;
-  --chart-5: #7a3b5d;
+  --chart-1: #2563eb;
+  --chart-2: #059669;
+  --chart-3: #d97706;
+  --chart-4: #4f46e5;
+  --chart-5: #0891b2;
 }
 
 @layer base {
+  /* Hero glows and the marquee are positioned outside the viewport on narrow
+     screens; `clip` hides the overflow without creating a scroll container, so
+     `position: sticky` on the header keeps working. */
+  body {
+    overflow-x: clip;
+  }
+
   * {
     @apply border-border;
   }
@@ -108,19 +125,21 @@
     @apply bg-paper text-ink antialiased;
     font-feature-settings: "cv02", "cv03", "cv04", "cv11";
     text-rendering: optimizeLegibility;
+    letter-spacing: -0.006em;
   }
 
   ::selection {
-    background: #c8102e;
-    color: #fff8f3;
+    background: #2563eb;
+    color: #ffffff;
   }
 
   h1,
   h2,
   h3,
   h4 {
-    @apply font-display font-normal;
-    letter-spacing: -0.015em;
+    @apply font-display font-semibold;
+    letter-spacing: -0.02em;
+    text-wrap: balance;
   }
 
   :focus-visible {
@@ -131,7 +150,7 @@
 /* ─────────────────────────── Layout helpers ─────────────────────────── */
 
 @utility shell {
-  @apply mx-auto w-full max-w-[1180px] px-5 sm:px-8;
+  @apply mx-auto w-full max-w-[1200px] px-5 sm:px-8;
 }
 
 @utility shell-wide {
@@ -139,27 +158,35 @@
 }
 
 @utility eyebrow {
-  @apply text-[11px] font-medium uppercase tracking-[0.2em] text-ink-faint;
+  @apply text-[11px] font-semibold uppercase tracking-[0.14em] text-indigo;
 }
 
 @utility hairline {
   @apply border-t border-line;
 }
 
+/* Clean, geometric display headlines across marketing and student app. */
 @utility display-xl {
-  @apply font-display text-[2.6rem] leading-[0.98] tracking-[-0.02em] sm:text-[3.6rem] md:text-[4.4rem];
+  @apply font-display text-[2.5rem] font-bold leading-[1.06] tracking-[-0.03em] sm:text-[3.4rem] md:text-[4.1rem];
 }
 
 @utility display-lg {
-  @apply font-display text-[2.1rem] leading-[1.02] tracking-[-0.02em] sm:text-[2.8rem] md:text-[3.4rem];
+  @apply font-display text-[2rem] font-bold leading-[1.1] tracking-[-0.025em] sm:text-[2.6rem] md:text-[3.1rem];
 }
 
 @utility display-md {
-  @apply font-display text-[1.7rem] leading-[1.08] tracking-[-0.01em] sm:text-[2.1rem];
+  @apply font-display text-[1.55rem] font-bold leading-[1.14] tracking-[-0.02em] sm:text-[1.95rem];
+}
+
+@utility serif-accent {
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: -0.025em;
 }
 
 @utility lead {
-  @apply text-[1.02rem] leading-relaxed text-ink-soft sm:text-[1.12rem];
+  @apply text-[1.02rem] leading-[1.7] text-ink-soft sm:text-[1.125rem];
+  text-wrap: pretty;
 }
 
 @utility panel {
@@ -168,7 +195,7 @@
 }
 
 @utility seal {
-  @apply inline-flex items-center justify-center rounded-[0.35rem] bg-vermillion text-[#fff8f3];
+  @apply inline-flex items-center justify-center rounded-xl bg-vermillion text-white;
 }
 
 /* ─────────────────────────── Component flourishes ─────────────────────────── */
@@ -191,17 +218,11 @@
   }
 
   .grain::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    pointer-events: none;
-    opacity: 0.035;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='120' height='120' filter='url(%23n)'/%3E%3C/svg%3E");
-    mix-blend-mode: multiply;
+    display: none;
   }
 
   .rule-dots {
-    background-image: radial-gradient(circle, #d5c8b5 1px, transparent 1px);
+    background-image: radial-gradient(circle, #cbd5e1 1px, transparent 1px);
     background-size: 10px 10px;
   }
 
@@ -273,43 +294,61 @@
 
 /* ─────────────────────────── Long-form content ─────────────────────────── */
 
-.prose-edu {
-  @apply text-[1rem] leading-[1.75] text-ink-soft;
-}
-.prose-edu h2 {
-  @apply mt-12 mb-4 font-display text-2xl text-ink sm:text-3xl;
-}
-.prose-edu h3 {
-  @apply mt-8 mb-3 font-display text-xl text-ink;
-}
-.prose-edu p {
-  @apply mb-4;
-}
-.prose-edu a {
-  @apply text-vermillion underline decoration-vermillion/30 underline-offset-4 hover:decoration-vermillion;
-}
-.prose-edu ul {
-  @apply mb-5 space-y-2 pl-5;
-  list-style: none;
-}
-.prose-edu ul > li {
-  @apply relative;
-}
-.prose-edu ul > li::before {
-  content: "";
-  @apply absolute top-[0.65em] left-[-1rem] h-1.5 w-1.5 rounded-full bg-vermillion/70;
-}
-.prose-edu strong {
-  @apply font-semibold text-ink;
-}
-.prose-edu table {
-  @apply my-6 w-full border-collapse text-sm;
-}
-.prose-edu th {
-  @apply border-b border-line bg-paper-deep px-3 py-2 text-left text-xs font-semibold tracking-wider text-ink uppercase;
-}
-.prose-edu td {
-  @apply border-b border-line px-3 py-2.5 align-top;
+/*
+ * These live in `@layer components` so that a Tailwind utility class on an
+ * element always wins over the prose default. Unlayered CSS beats every
+ * layer, which meant `.prose-edu a` was overriding `text-paper/85` on the
+ * dark CTA buttons and painting them vermillion — a contrast failure.
+ */
+@layer components {
+  .prose-edu {
+    @apply text-[1rem] leading-[1.75] text-ink-soft;
+  }
+  .prose-edu h2 {
+    @apply mt-12 mb-4 font-display text-[1.65rem] font-bold leading-[1.15] text-ink sm:text-[1.9rem];
+  }
+  .prose-edu h3 {
+    @apply mt-8 mb-3 font-display text-xl text-ink;
+  }
+  .prose-edu p {
+    @apply mb-4;
+    text-wrap: pretty;
+  }
+  .prose-edu a {
+    @apply text-indigo underline decoration-indigo/30 underline-offset-4 hover:decoration-indigo;
+  }
+  /* Vermillion fails contrast on a dark surface, so links inside one use the
+     light brand tone. Handles the dark block being inside the prose block
+     and the prose block being inside a dark section. */
+  .prose-edu .bg-night a,
+  .prose-edu .bg-ink a,
+  .bg-night .prose-edu a,
+  .bg-ink .prose-edu a {
+    @apply text-vermillion-light decoration-vermillion-light/40 hover:decoration-vermillion-light;
+  }
+  .prose-edu ul {
+    @apply mb-5 space-y-2 pl-5;
+    list-style: none;
+  }
+  .prose-edu ul > li {
+    @apply relative;
+  }
+  .prose-edu ul > li::before {
+    content: "";
+    @apply absolute top-[0.65em] left-[-1rem] h-1.5 w-1.5 rounded-full bg-vermillion/70;
+  }
+  .prose-edu strong {
+    @apply font-semibold text-ink;
+  }
+  .prose-edu table {
+    @apply my-6 w-full border-collapse text-sm;
+  }
+  .prose-edu th {
+    @apply border-b border-line bg-paper-deep px-3 py-2 text-left text-xs font-semibold tracking-wider text-ink uppercase;
+  }
+  .prose-edu td {
+    @apply border-b border-line px-3 py-2.5 align-top;
+  }
 }
 
 /* KaTeX tuning */
@@ -321,4 +360,423 @@
 }
 .katex {
   font-size: 1.03em;
+}
+
+.print-only {
+  display: none;
+}
+
+/* ── Printable score report ─────────────────────────────────────────────
+   The result page doubles as a report students attach to an application.
+   Printing strips the app chrome, collapses to one column and keeps the
+   numbers in black on white. */
+@media print {
+  @page {
+    margin: 14mm;
+  }
+
+  header,
+  nav,
+  footer,
+  .print\:hidden,
+  [data-app-sidebar] {
+    display: none !important;
+  }
+
+  html,
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+    /* The answer grid and the score ring carry meaning through colour; without
+       this, browsers drop the fills and the grid prints as empty boxes. */
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  /* Report layout: sections keep their heading with their content, and the
+     result cards never split across a page break. */
+  .print-report section,
+  .print-report .panel,
+  .print-report figure {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .print-report h1,
+  .print-report h2 {
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
+  /* A printed grid does not need hover affordances. */
+  .print-report [role="img"] {
+    cursor: default;
+  }
+
+  /* The report is two sheets: cover + grid on the first, question review on the
+     second. Chromium ignores @page margin boxes, so the sheet is labelled in the
+     content instead of faking a page counter. */
+  .print-page-2 {
+    break-before: page;
+    page-break-before: always;
+  }
+
+  .print-sheet-foot::after {
+    content: "cscamaster.com · practice document";
+    display: block;
+    margin-top: 6mm;
+    padding-top: 2mm;
+    border-top: 0.5pt solid #cfc9bd;
+    font-size: 7.5pt;
+    color: #7a736a;
+  }
+
+  main,
+  .mx-auto {
+    max-width: none !important;
+    padding: 0 !important;
+  }
+
+  .panel,
+  .rounded-xl,
+  .rounded-2xl {
+    border-color: #cfc9bd !important;
+    box-shadow: none !important;
+    break-inside: avoid;
+  }
+
+  a[href]::after {
+    content: "";
+  }
+
+  .display-md,
+  .display-lg {
+    font-size: 22pt !important;
+    line-height: 1.15 !important;
+  }
+
+  .print-only {
+    display: block !important;
+  }
+
+  details {
+    break-inside: avoid;
+  }
+
+  details > summary {
+    font-weight: 600;
+  }
+}
+
+/* ─────────────────────────── Motion system ───────────────────────────
+   Scroll reveals, counters, a marquee, and hover sheen. Everything is CSS +
+   IntersectionObserver (no animation library), and everything collapses to a
+   static page under `prefers-reduced-motion: reduce`. */
+
+@keyframes csca-fade-up {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 18px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes csca-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes csca-float {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(0, -10px, 0);
+  }
+}
+
+@keyframes csca-gradient-pan {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes csca-marquee {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+@keyframes csca-sheen {
+  from {
+    transform: translateX(-120%) skewX(-12deg);
+  }
+  to {
+    transform: translateX(220%) skewX(-12deg);
+  }
+}
+
+@keyframes csca-pulse-ring {
+  0% {
+    box-shadow: 0 0 0 0 rgb(37 99 235 / 0.35);
+  }
+  70% {
+    box-shadow: 0 0 0 12px rgb(37 99 235 / 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgb(37 99 235 / 0);
+  }
+}
+
+/* Scroll reveal. The element starts hidden only when JS is running (`.js` on
+   <html>), so a no-JS visitor and any crawler still sees the content. */
+.reveal {
+  opacity: 1;
+}
+
+html.js .reveal {
+  opacity: 1;
+  transform: none;
+  transition:
+    opacity 450ms cubic-bezier(0.22, 1, 0.36, 1),
+    transform 450ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+html.js .reveal[data-variant="fade"],
+html.js .reveal[data-variant="scale"],
+html.js .reveal[data-variant="left"],
+html.js .reveal[data-variant="right"] {
+  transform: none;
+}
+
+html.js .reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+html.js .reveal[data-instant="true"] {
+  opacity: 1;
+  transform: none;
+  transition: none;
+}
+
+.animate-float {
+  animation: csca-float 7s ease-in-out infinite;
+}
+
+.animate-float-slow {
+  animation: csca-float 11s ease-in-out infinite;
+}
+
+.text-gradient {
+  background-image: linear-gradient(
+    100deg,
+    var(--color-vermillion) 0%,
+    #60a5fa 35%,
+    var(--color-indigo) 68%,
+    var(--color-vermillion) 100%
+  );
+  background-size: 220% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: csca-gradient-pan 9s ease-in-out infinite;
+}
+
+.card-elevate {
+  transition:
+    transform 320ms cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 320ms cubic-bezier(0.22, 1, 0.36, 1),
+    border-color 320ms ease;
+}
+
+.card-elevate:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lift);
+  border-color: color-mix(in oklab, var(--color-vermillion) 28%, var(--color-line));
+}
+
+.btn-sheen {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.btn-sheen::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(90deg, transparent, rgb(255 255 255 / 0.32), transparent);
+  transform: translateX(-120%) skewX(-12deg);
+}
+
+.btn-sheen:not(:disabled):hover::after {
+  animation: csca-sheen 780ms ease-out;
+}
+
+.marquee {
+  overflow: hidden;
+  mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: csca-marquee 34s linear infinite;
+}
+
+.marquee:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+.grain::before {
+  display: none;
+}
+
+.grid-mesh {
+  background-image:
+    linear-gradient(to right, rgb(15 23 42 / 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(15 23 42 / 0.04) 1px, transparent 1px);
+  background-size: 44px 44px;
+  mask-image: radial-gradient(ellipse 75% 65% at 50% 0%, #000 35%, transparent 80%);
+}
+
+.pulse-dot {
+  animation: csca-pulse-ring 2.6s ease-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html.js .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
+  .animate-float,
+  .animate-float-slow,
+  .text-gradient,
+  .marquee-track,
+  .pulse-dot {
+    animation: none !important;
+  }
+
+  .btn-sheen::after {
+    display: none;
+  }
+}
+
+/* ── Chart draw-in ──────────────────────────────────────────────────────
+   The geometry is server-rendered; only the class `in-view` (added by the
+   InView component) starts the stroke and bar animation. */
+
+@keyframes csca-draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.chart-line {
+  stroke-dasharray: 1400;
+  stroke-dashoffset: 1400;
+}
+
+.in-view .chart-line {
+  animation: csca-draw 1300ms cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.chart-area {
+  opacity: 0;
+  fill-opacity: 0.1;
+}
+
+.in-view .chart-area {
+  animation: csca-fade-in 700ms ease-out 600ms forwards;
+}
+
+.chart-dot {
+  opacity: 0;
+}
+
+.in-view .chart-dot {
+  animation: csca-fade-in 360ms ease-out forwards;
+}
+
+.mastery-bar {
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 900ms cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay: calc(var(--bar-step, 0) * 70ms);
+}
+
+/* Phones: shorter stagger and a quicker draw, so the list does not feel like it
+   is loading one row at a time. */
+@media (max-width: 640px) {
+  .mastery-bar {
+    transition-duration: 620ms;
+    transition-delay: calc(var(--bar-step, 0) * 40ms);
+  }
+}
+
+.in-view .mastery-bar {
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .chart-line,
+  .chart-area,
+  .chart-dot,
+  .mastery-bar {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+    stroke-dashoffset: 0 !important;
+  }
+}
+
+/* SVG axis labels: 10px is readable on a phone; the desktop chart has room for
+   the smaller original size. */
+.chart-axis {
+  font-size: 10px;
+}
+
+@media (min-width: 640px) {
+  .chart-axis {
+    font-size: 9px;
+  }
+}
+
+/* ── Chinese typography ─────────────────────────────────────────────────
+   Instrument Serif has no CJK glyphs, so a Chinese headline would fall back to
+   a sans and lose the editorial weight. Keep the Latin serif first (so "CSCA"
+   stays serif) and ask for a serif CJK — Songti on macOS/iOS, Noto Serif CJK
+   on Android and Linux, SimSun on Windows. Where none exists the browser falls
+   back to its sans CJK, which still reads correctly. */
+[lang="zh-CN"] :is(.display-xl, .display-lg, .prose-edu h2) {
+  font-family: var(--font-display), "Noto Sans CJK SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+}
+
+/* Chinese body copy needs a touch more line-height than Latin. */
+[lang="zh-CN"] .prose-edu p,
+[lang="zh-CN"] .lead {
+  line-height: 1.85;
 }

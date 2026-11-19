@@ -1,0 +1,653 @@
+{
+  "url": "https://csca.space/subjects/math",
+  "finalUrl": "https://csca.space/",
+  "status": 200,
+  "title": "CSCA 数学 (Mathematics) — 真题解析、考试大纲与全真模考 | CSCA Space",
+  "description": "CSCA 数学备考核心：历年真题分类详解、2025-2026考试大纲核心考点、高频公式推导与全真机考模拟。",
+  "headings": [
+    {
+      "level": 1,
+      "text": "CSCA Mathematics: Advanced Syllabus, Mock Exams & Prep GuideCSCA 数学考试：权威复习大纲、历年真题与备考指南"
+    },
+    {
+      "level": 2,
+      "text": "CSCA Mathematics Syllabus & Key Topics/CSCA 数学考试大纲与核心考点"
+    },
+    {
+      "level": 2,
+      "text": "How to Prepare for CSCA Math (Study Guide)/CSCA 数学如何高效备考与复习"
+    },
+    {
+      "level": 3,
+      "text": "CSCA Past Papers & Simulation"
+    },
+    {
+      "level": 2,
+      "text": "Frequently Asked Questions"
+    },
+    {
+      "level": 2,
+      "text": "Secure Your CSCA Performance & Scholarship"
+    },
+    {
+      "level": 2,
+      "text": "Frequently Asked Questions: CSCA Mathematics Prep — Past Papers & Syllabus"
+    },
+    {
+      "level": 2,
+      "text": "CSCA Mathematics Prep — Past Papers & Syllabus Official Curriculum Masterclasses"
+    },
+    {
+      "level": 3,
+      "text": "Sets, Venn Diagrams & Logical Quantifiers"
+    },
+    {
+      "level": 3,
+      "text": "Quadratic, Fractional Inequalities & AM-GM"
+    },
+    {
+      "level": 3,
+      "text": "Function Properties: Monotonicity, Parity & Periodicity"
+    },
+    {
+      "level": 3,
+      "text": "Exponential, Logarithmic & Trigonometric Functions"
+    },
+    {
+      "level": 3,
+      "text": "Sequences: Arithmetic & Geometric Progressions"
+    },
+    {
+      "level": 3,
+      "text": "Derivatives: Tangent Lines, Extrema & Monotonicity"
+    },
+    {
+      "level": 3,
+      "text": "Conic Sections: Ellipse, Hyperbola & Parabola"
+    },
+    {
+      "level": 3,
+      "text": "Plane Vectors: Linear Operations & Dot Product"
+    },
+    {
+      "level": 3,
+      "text": "Complex Numbers: Arithmetic & Modulus"
+    },
+    {
+      "level": 3,
+      "text": "Solid Geometry: Line-Plane Positional Relations & Volume"
+    },
+    {
+      "level": 3,
+      "text": "Permutations, Combinations & Classical Probability"
+    },
+    {
+      "level": 3,
+      "text": "Statistics: Mean, Variance & Normal Distribution"
+    },
+    {
+      "level": 2,
+      "text": "CSCA Mathematics Prep — Past Papers & Syllabus Formula Permapages & Proofs (30)"
+    }
+  ],
+  "text": "Entering CSCA Space Academy...Click here if not redirected automatically →\n\nCSCA SPACEBETA\n\nSign InStart Free Trial\n\nmath Portal\n\nCSCA Mathematics: Advanced Syllabus, Mock Exams & Prep GuideCSCA 数学考试：权威复习大纲、历年真题与备考指南\n\nExcel in CSCA Math: Calculus, Algebra, Vectors & Analytic Geometry. Practice realistic past-paper questions with KaTeX on CSCA Space.高效通关 CSCA 数学考试。深入解析微积分、线性代数、解析几何及向量考点。提供包含 LaTeX 公式渲染的历年真题模拟与手写演练。\n\n35hStudy Workload\n\n450+Practice Bank\n\n94.2%Student Success\n\nAdvancedSubject Level\n\nBilingual (双语模式)\n\nEnglish Only\n\n中文大纲\n\nCSCA Mathematics Syllabus & Key Topics/CSCA 数学考试大纲与核心考点\n\n01\n\nLimits & Continuity: Evaluating numerical and algebraic limits, L'Hopital's rule, asymptote behavior.\n\n极限与连续性：数值与代数极限求解、洛必达法则、渐近线行为分析。\n\n02\n\nDifferential Calculus: Derivatives of trigonometric, exponential, and logarithmic functions, chain rule, optimization.\n\n微分学：三角函数、指数与对数函数的导数、链式法则、极值最优化问题。\n\n03\n\nIntegral Calculus: Definite and indefinite integrals, integration techniques (substitution, parts), area calculation.\n\n积分学：不定积分与定积分、积分方法（换元积分、分部积分）、面积与体积计算。\n\n04\n\nLinear Algebra & Vectors: Matrices, systems of linear equations, dot and cross products of vectors, spatial geometry.\n\n线性代数与向量：矩阵运算、线性方程组求解、向量点积与叉积、空间解析几何。\n\nHow to Prepare for CSCA Math (Study Guide)/CSCA 数学如何高效备考与复习\n\nMaster LaTeX mathematical derivation steps to follow complex algebraic calculations.\n\n掌握标准 LaTeX 公式推导步骤，紧跟复杂的代数计算过程。\n\nSolve sample questions using the active stylus drawing pad to check your intermediate algebraic steps.\n\n利用手写草稿纸解答样题，边写边查中间代数步骤，减少笔误。\n\nTarget speed-running calculations: practice solving mock questions under 90 seconds.\n\n训练答题速度：练习在90秒内快速理清思路并求解出数学模拟题。\n\nReview past paper topics regularly to familiarize yourself with the pattern of Chinese college entrance math.\n\n定期总结历年真题题型，熟悉中国高等教育数学入学考试的命题规律。\n\nADAPTIVE SAMPLE\n\neditOpen Scratch\n\nThe domain of the function f(x)=x1​+1−x​ is:\n\n函数 f(x)=x1​+1−x​ 的定义域是：\n\nA(−∞,0)∪(0,1])\n\nB(-\\infty, 1])\n\nC[1, +\\infty)]\n\nD(−∞,0)∪(0,1)\n\nSelect the most accurate derivation choice\n\nSubmit Answer\n\nCSCA Past Papers & Simulation\n\nAccess real past exam patterns. Our simulator mimics the past 5 years of CSCA math, physics, chemistry, and academic Chinese, ensuring you study what actually matters.\n\nBilingual Math derivationsFormula Deck\n\nStylus hand-writing simulatorLive Workspace\n\nPacer budget timersAccuracy\n\nStart Mock Exam\n\nFrequently Asked Questions\n\nAll you need to know about the CSCA assessment & prep\n\nWhat is the difficulty level of CSCA Math?CSCA 数学考试难度如何？expand_more\n\nCSCA Mathematics is based on the standard curriculum for undergraduate university admissions in China, covering Sets & Inequalities, Functions & Sequences, Conic Sections & Solid Geometry, Vectors & Complex Numbers, and Probability & Statistics.\n\nCSCA 数学考试基于中国高校本科入学考试标准大纲，考查内容涵盖集合与不等式、函数与数列、圆锥曲线与立体几何、平面向量与复数，以及概率与统计。\n\nAre calculators allowed in the CSCA Math exam?CSCA 数学考试中允许使用计算器吗？expand_more\n\nNo, calculators are strictly prohibited. Questions are designed for analytical factoring, geometric visualization, and concise algebraic evaluation.\n\n严禁使用计算器。试卷所有题目均围绕代数因式分解、几何直观与解析化简设计，考查学生的基础数学核心素养。\n\nHow many questions are in the Math section?数学部分有多少道题？expand_more\n\nThe official CSCA Mathematics examination contains 48 single-choice questions with a total duration of 60 minutes (100 total points), requiring an average pacing of 75 seconds per question.\n\n官方 CSCA 数学考试标准题量为 48 道单项选择题，考试总时长为 60 分钟（满分 100 分），建议答题配速为每题 75 秒。\n\nSecure Your CSCA Performance & Scholarship\n\nJoin thousands of international students securing CSC scholarships. Master math formulas, stylus calculations, and Chinese readings to achieve top percentiles.\nStart Free Assessment Nowarrow_forward\n\n© 2026 CSCA.SPACE. All rights reserved.\n\nPremium Adaptive CSCA Preparation Academy\n\nhelp_outlineSyllabus & Exam Governance\n\nFrequently Asked Questions: CSCA Mathematics Prep — Past Papers & Syllabus\n\nAuthoritative answers on CSCA MATH examination scope, calculator policies, time budgeting, and grading rubrics.\n\nWhat is the difficulty level of CSCA Math?+\nCSCA Mathematics is based on the standard curriculum for undergraduate university admissions in China, covering Sets & Inequalities, Functions & Sequences, Conic Sections & Solid Geometry, Vectors & Complex Numbers, and Probability & Statistics.\n\nCSCA 数学考试难度如何？: CSCA 数学考试基于中国高校本科入学考试标准大纲，考查内容涵盖集合与不等式、函数与数列、圆锥曲线与立体几何、平面向量与复数，以及概率与统计。\nAre calculators allowed in the CSCA Math exam?+\nNo, calculators are strictly prohibited. Questions are designed for analytical factoring, geometric visualization, and concise algebraic evaluation.\n\nCSCA 数学考试中允许使用计算器吗？: 严禁使用计算器。试卷所有题目均围绕代数因式分解、几何直观与解析化简设计，考查学生的基础数学核心素养。\nHow many questions are in the Math section?+\nThe official CSCA Mathematics examination contains 48 single-choice questions with a total duration of 60 minutes (100 total points), requiring an average pacing of 75 seconds per question.\n\n数学部分有多少道题？: 官方 CSCA 数学考试标准题量为 48 道单项选择题，考试总时长为 60 分钟（满分 100 分），建议答题配速为每题 75 秒。\n\nCSCA Mathematics Prep — Past Papers & Syllabus Official Curriculum Masterclasses\n\nDirect access to all accredited syllabus nodes, lesson breakdowns, and examiner traps.\n\nView Full Curriculum Hub →\n\nCh.1.1.1Beginner\n\nSets, Venn Diagrams & Logical Quantifiers\n\nSubset, intersection, union, complement in universal sets $\\mathbb{R}$, existential $\\exists$ & universal $\\forall$ quantifiers, and necessary vs sufficient conditions.\n\nOpen Masterclass →\n\nCh.1.1.2Intermediate\n\nQuadratic, Fractional Inequalities & AM-GM\n\nRoot-sign method for polynomials, fractional transformation $\\frac{f(x)}{g(x)} > 0 \\iff f(x)g(x) > 0$, and arithmetic-geometric mean inequality $a+b \\ge 2\\sqrt{ab}$.\n\nOpen Masterclass →\n\nCh.2.2.1Intermediate\n\nFunction Properties: Monotonicity, Parity & Periodicity\n\nDomain symmetry, even/odd test $f(-x) = \\pm f(x)$, strictly increasing/decreasing criteria, and periodic patterns $f(x+T) = f(x)$.\n\nOpen Masterclass →\n\nCh.2.2.2Intermediate\n\nExponential, Logarithmic & Trigonometric Functions\n\nLaws of exponents, logarithm identities, change-of-base, and fundamental trigonometric identities.\n\nOpen Masterclass →\n\nCh.2.2.3Intermediate\n\nSequences: Arithmetic & Geometric Progressions\n\nGeneral terms, common difference/ratio, sum of first n terms formulas, and recurrence relations.\n\nOpen Masterclass →\n\nCh.2.2.4Advanced\n\nDerivatives: Tangent Lines, Extrema & Monotonicity\n\nPower rule, product/quotient rules, chain rule, tangent lines, critical points, and optimization.\n\nOpen Masterclass →\n\nCh.3.3.1Advanced\n\nConic Sections: Ellipse, Hyperbola & Parabola\n\nStandard equation of lines, circles, focal definitions, eccentricity $e = c/a$, asymptotes $y = \\pm \\frac{b}{a}x$, and focal chord properties.\n\nOpen Masterclass →\n\nCh.3.3.2Beginner\n\nPlane Vectors: Linear Operations & Dot Product\n\nVector coordinates, collinearity condition $x_1 y_2 - x_2 y_1 = 0$, dot product $\\mathbf{a}\\cdot\\mathbf{b}$, angle formula, and orthogonality.\n\nOpen Masterclass →\n\nCh.3.3.3Beginner\n\nComplex Numbers: Arithmetic & Modulus\n\nStandard form $z = a + bi$, imaginary unit $i^2 = -1$, conjugate $\\bar{z} = a - bi$, modulus $|z| = \\sqrt{a^2+b^2}$, and complex plane representation.\n\nOpen Masterclass →\n\nCh.3.3.4Intermediate\n\nSolid Geometry: Line-Plane Positional Relations & Volume\n\nParallelism and perpendicularity criteria for lines and planes, spatial angles, surface area and volume of prisms, pyramids, cylinders, cones, spheres.\n\nOpen Masterclass →\n\nCh.4.4.1Intermediate\n\nPermutations, Combinations & Classical Probability\n\nAddition and multiplication counting principles, permutations $A_n^m = \\frac{n!}{(n-m)!}$, combinations $C_n^m = \\frac{n!}{m!(n-m)!}$, and equally likely outcomes.\n\nOpen Masterclass →\n\nCh.4.4.2Beginner\n\nStatistics: Mean, Variance & Normal Distribution\n\nSample mean $\\bar{x}$, sample variance $s^2$, standard deviation, and normal distribution curve symmetry ($3\\sigma$ rule).\n\nOpen Masterclass →\n\nCSCA Mathematics Prep — Past Papers & Syllabus Formula Permapages & Proofs (30)\n\nCanonical LaTeX definitions, SymPy-verified mathematical derivations, and misconception traps.\n\nView All 58 Formulas →\n\nQuadratic FormulaSets & Inequalities\n\n一元二次方程求根公式\n\n$\\[ x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a} \\]$→\n\nUnion of SetsSets & Inequalities\n\n集合的并集\n\n$\\[ A \\cup B = \\{ x \\mid x \\in A \\text{ or } x \\in B \\} \\]$→\n\nIntersection of SetsSets & Inequalities\n\n集合的交集\n\n$\\[ A \\cap B = \\{ x \\mid x \\in A \\text{ and } x \\in B \\} \\]$→\n\nComplement of a SetSets & Inequalities\n\n集合的补集\n\n$\\[ \\complement_{U} A = \\{ x \\in U \\mid x \\notin A \\} \\]$→\n\nRational Inequality EquivalenceSets & Inequalities\n\n分式不等式的等价转化\n\n$\\[ \\frac{ax + b}{cx + d} \\le 0 \\iff (ax + b)(cx + d) \\le 0 \\quad \\text{and} \\quad cx + d \\ne 0 \\]$→\n\nAM-GM InequalitySets & Inequalities\n\n基本均值不等式\n\n$\\[ \\frac{a + b}{2} \\ge \\sqrt{ab} \\quad (a, b \\ge 0) \\]$→\n\nChange of Base FormulaFunctions\n\n对数的换底公式\n\n$\\[ \\log_a b = \\frac{\\log_c b}{\\log_c a} \\quad (a, b, c > 0, \\, a, c \\ne 1) \\]$→\n\nLogarithmic PropertiesFunctions\n\n对数的基本运算性质\n\n$\\[ \\log_a (xy) = \\log_a x + \\log_a y \\quad \\text{and} \\quad \\log_a \\left(\\frac{x}{y}\\right) = \\log_a x - \\log_a y \\]$→\n\nTrigonometric Pythagorean IdentityFunctions\n\n同角三角关系（平方关系）\n\n$\\[ \\sin^2 \\theta + \\cos^2 \\theta = 1 \\]$→\n\nDouble-Angle Formula (Sine)Functions\n\n正弦的二倍角公式\n\n$\\[ \\sin 2\\theta = 2 \\sin \\theta \\cos \\theta \\]$→\n\nDouble-Angle Formula (Cosine)Functions\n\n余弦的二倍角公式\n\n$\\[ \\cos 2\\theta = \\cos^2 \\theta - \\sin^2 \\theta \\]$→\n\nFunction Parity (Odd & Even)Functions\n\n函数的奇偶性\n\n$\\[ \\text{Even: } f(-x) = f(x), \\quad \\text{Odd: } f(-x) = -f(x) \\]$→\n\nArithmetic Sequence Nth TermSequences\n\n等差数列通项公式\n\n$\\[ a_n = a_1 + (n - 1)d \\]$→\n\nArithmetic Sequence SumSequences\n\n等差数列前n项和公式\n\n$\\[ S_n = \\frac{n(a_1 + a_n)}{2} \\]$→\n\nGeometric Sequence Nth TermSequences\n\n等比数列通项公式\n\n$\\[ a_n = a_1 q^{n-1} \\]$→\n\nGeometric Sequence SumSequences\n\n等比数列前n项和公式\n\n$\\[ S_n = \\frac{a_1(1 - q^n)}{1 - q} \\quad (q \\ne 1) \\]$→\n\nPower Rule for DerivativesDerivatives\n\n导数的幂函数求导法则\n\n$\\[ \\frac{d}{dx} x^n = n x^{n-1} \\]$→\n\nTangent Line EquationDerivatives\n\n曲线切线方程公式\n\n$\\[ y - y_0 = f'(x_0)(x - x_0) \\]$→\n\nDistance FormulaPlane Analytic Geometry\n\n两点间距离公式\n\n$\\[ d = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2} \\]$→\n\nEquation of a CirclePlane Analytic Geometry\n\n圆的标准方程\n\n$\\[ (x - a)^2 + (y - b)^2 = R^2 \\]$→\n\nEquation of an EllipsePlane Analytic Geometry\n\n椭圆的标准方程\n\n$\\[ \\frac{x^2}{a^2} + \\frac{y^2}{b^2} = 1 \\quad (a > b > 0) \\]$→\n\nEquation of a HyperbolaPlane Analytic Geometry\n\n双曲线的标准方程\n\n$\\[ \\frac{x^2}{a^2} - \\frac{y^2}{b^2} = 1 \\quad (a > 0, \\, b > 0) \\]$→\n\nEquation of a ParabolaPlane Analytic Geometry\n\n抛物线的标准方程\n\n$\\[ y^2 = 2px \\quad (p > 0) \\]$→\n\nEquation of a Line (Slope-Intercept & General Form)Plane Analytic Geometry\n\n直线的方程（斜截式与一般式）\n\n$\\[ y = kx + b \\quad \\text{and} \\quad Ax + By + C = 0 \\]$→\n\nVector Dot ProductVectors & Complex Numbers\n\n平面向量的数量积（点积）\n\n$\\[ \\mathbf{a} \\cdot \\mathbf{b} = a_x b_x + a_y b_y = |\\mathbf{a}| |\\mathbf{b}| \\cos \\theta \\]$→\n\nModulus of a Complex NumberVectors & Complex Numbers\n\n复数的模\n\n$\\[ |z| = \\sqrt{a^2 + b^2} \\quad (z = a + bi) \\]$→\n\nVolume and Surface Area of a SphereSolid Geometry\n\n球的体积与表面积公式\n\n$\\[ V = \\frac{4}{3}\\pi R^3 \\quad \\text{and} \\quad S = 4\\pi R^2 \\]$→\n\nClassical Probability FormulaProbability & Statistics\n\n古典概型概率计算公式\n\n$\\[ P(A) = \\frac{N(A)}{N} \\]$→\n\nVariance and Standard DeviationProbability & Statistics\n\n样本方差与标准差公式\n\n$\\[ s^2 = \\frac{1}{n} \\sum_{i=1}^{n} (x_i - \\bar{x})^2 \\]$→\n\nNormal Distribution (3-Sigma Rule)Probability & Statistics\n\n正态分布（3σ原则 / 68-95-99.7准则）\n\n$\\[ P(\\mu - \\sigma \\le X \\le \\mu + \\sigma) \\approx 0.6826 \\quad \\text{and} \\quad P(\\mu - 2\\sigma \\le X \\le \\mu + 2\\sigma) \\approx 0.9544 \\]$→",
+  "links": [
+    {
+      "href": "/",
+      "text": "Click here if not redirected automatically →"
+    },
+    {
+      "href": "/",
+      "text": "CSCA SPACEBETA"
+    },
+    {
+      "href": "/login",
+      "text": "Sign In"
+    },
+    {
+      "href": "/signup",
+      "text": "Start Free Trial"
+    },
+    {
+      "href": "/signup",
+      "text": "Start Mock Exam"
+    },
+    {
+      "href": "/signup",
+      "text": "Start Free Assessment Nowarrow_forward"
+    },
+    {
+      "href": "/curriculum",
+      "text": "View Full Curriculum Hub →"
+    },
+    {
+      "href": "/curriculum/math_sets_operations",
+      "text": "Ch.1.1.1BeginnerSets, Venn Diagrams & Logical QuantifiersSubset, intersection, union, complement in universal sets $\\mat"
+    },
+    {
+      "href": "/curriculum/math_rational_inequalities",
+      "text": "Ch.1.1.2IntermediateQuadratic, Fractional Inequalities & AM-GMRoot-sign method for polynomials, fractional transformatio"
+    },
+    {
+      "href": "/curriculum/func_monotonicity_parity",
+      "text": "Ch.2.2.1IntermediateFunction Properties: Monotonicity, Parity & PeriodicityDomain symmetry, even/odd test $f(-x) = \\pm f"
+    },
+    {
+      "href": "/curriculum/math_elementary_functions",
+      "text": "Ch.2.2.2IntermediateExponential, Logarithmic & Trigonometric FunctionsLaws of exponents, logarithm identities, change-of"
+    },
+    {
+      "href": "/curriculum/math_sequences_progression",
+      "text": "Ch.2.2.3IntermediateSequences: Arithmetic & Geometric ProgressionsGeneral terms, common difference/ratio, sum of first n"
+    },
+    {
+      "href": "/curriculum/math_derivatives_tangents",
+      "text": "Ch.2.2.4AdvancedDerivatives: Tangent Lines, Extrema & MonotonicityPower rule, product/quotient rules, chain rule, tangen"
+    },
+    {
+      "href": "/curriculum/geo_conic_sections_lines",
+      "text": "Ch.3.3.1AdvancedConic Sections: Ellipse, Hyperbola & ParabolaStandard equation of lines, circles, focal definitions, ecc"
+    },
+    {
+      "href": "/curriculum/vec_dot_product_coordinates",
+      "text": "Ch.3.3.2BeginnerPlane Vectors: Linear Operations & Dot ProductVector coordinates, collinearity condition $x_1 y_2 - x_2 "
+    },
+    {
+      "href": "/curriculum/num_complex_arithmetic",
+      "text": "Ch.3.3.3BeginnerComplex Numbers: Arithmetic & ModulusStandard form $z = a + bi$, imaginary unit $i^2 = -1$, conjugate $\\"
+    },
+    {
+      "href": "/curriculum/geo_solid_space_geometry",
+      "text": "Ch.3.3.4IntermediateSolid Geometry: Line-Plane Positional Relations & VolumeParallelism and perpendicularity criteria fo"
+    },
+    {
+      "href": "/curriculum/prob_classical_combinatorics",
+      "text": "Ch.4.4.1IntermediatePermutations, Combinations & Classical ProbabilityAddition and multiplication counting principles, p"
+    },
+    {
+      "href": "/curriculum/stat_variance_normal_dist",
+      "text": "Ch.4.4.2BeginnerStatistics: Mean, Variance & Normal DistributionSample mean $\\bar{x}$, sample variance $s^2$, standard d"
+    },
+    {
+      "href": "/formulas",
+      "text": "View All 58 Formulas →"
+    },
+    {
+      "href": "/formulas/math/sets-and-inequalities/quadratic-formula",
+      "text": "Quadratic FormulaSets & Inequalities一元二次方程求根公式$\\[ x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a} \\]$→"
+    },
+    {
+      "href": "/formulas/math/sets-and-inequalities/set-union",
+      "text": "Union of SetsSets & Inequalities集合的并集$\\[ A \\cup B = \\{ x \\mid x \\in A \\text{ or } x \\in B \\} \\]$→"
+    },
+    {
+      "href": "/formulas/math/sets-and-inequalities/set-intersection",
+      "text": "Intersection of SetsSets & Inequalities集合的交集$\\[ A \\cap B = \\{ x \\mid x \\in A \\text{ and } x \\in B \\} \\]$→"
+    },
+    {
+      "href": "/formulas/math/sets-and-inequalities/set-complement",
+      "text": "Complement of a SetSets & Inequalities集合的补集$\\[ \\complement_{U} A = \\{ x \\in U \\mid x \\notin A \\} \\]$→"
+    },
+    {
+      "href": "/formulas/math/sets-and-inequalities/rational-inequality",
+      "text": "Rational Inequality EquivalenceSets & Inequalities分式不等式的等价转化$\\[ \\frac{ax + b}{cx + d} \\le 0 \\iff (ax + b)(cx + d) \\le 0 "
+    },
+    {
+      "href": "/formulas/math/sets-and-inequalities/am-gm-inequality",
+      "text": "AM-GM InequalitySets & Inequalities基本均值不等式$\\[ \\frac{a + b}{2} \\ge \\sqrt{ab} \\quad (a, b \\ge 0) \\]$→"
+    },
+    {
+      "href": "/formulas/math/functions/log-change-of-base",
+      "text": "Change of Base FormulaFunctions对数的换底公式$\\[ \\log_a b = \\frac{\\log_c b}{\\log_c a} \\quad (a, b, c > 0, \\, a, c \\ne 1) \\]$→"
+    },
+    {
+      "href": "/formulas/math/functions/log-properties",
+      "text": "Logarithmic PropertiesFunctions对数的基本运算性质$\\[ \\log_a (xy) = \\log_a x + \\log_a y \\quad \\text{and} \\quad \\log_a \\left(\\frac{"
+    },
+    {
+      "href": "/formulas/math/functions/trig-pythagorean-identity",
+      "text": "Trigonometric Pythagorean IdentityFunctions同角三角关系（平方关系）$\\[ \\sin^2 \\theta + \\cos^2 \\theta = 1 \\]$→"
+    },
+    {
+      "href": "/formulas/math/functions/trig-double-angle-sine",
+      "text": "Double-Angle Formula (Sine)Functions正弦的二倍角公式$\\[ \\sin 2\\theta = 2 \\sin \\theta \\cos \\theta \\]$→"
+    },
+    {
+      "href": "/formulas/math/functions/trig-double-angle-cosine",
+      "text": "Double-Angle Formula (Cosine)Functions余弦的二倍角公式$\\[ \\cos 2\\theta = \\cos^2 \\theta - \\sin^2 \\theta \\]$→"
+    },
+    {
+      "href": "/formulas/math/functions/function-parity",
+      "text": "Function Parity (Odd & Even)Functions函数的奇偶性$\\[ \\text{Even: } f(-x) = f(x), \\quad \\text{Odd: } f(-x) = -f(x) \\]$→"
+    },
+    {
+      "href": "/formulas/math/sequences/arithmetic-sequence-nth-term",
+      "text": "Arithmetic Sequence Nth TermSequences等差数列通项公式$\\[ a_n = a_1 + (n - 1)d \\]$→"
+    },
+    {
+      "href": "/formulas/math/sequences/arithmetic-sequence-sum",
+      "text": "Arithmetic Sequence SumSequences等差数列前n项和公式$\\[ S_n = \\frac{n(a_1 + a_n)}{2} \\]$→"
+    },
+    {
+      "href": "/formulas/math/sequences/geometric-sequence-nth-term",
+      "text": "Geometric Sequence Nth TermSequences等比数列通项公式$\\[ a_n = a_1 q^{n-1} \\]$→"
+    },
+    {
+      "href": "/formulas/math/sequences/geometric-sequence-sum",
+      "text": "Geometric Sequence SumSequences等比数列前n项和公式$\\[ S_n = \\frac{a_1(1 - q^n)}{1 - q} \\quad (q \\ne 1) \\]$→"
+    },
+    {
+      "href": "/formulas/math/derivatives/derivative-power-rule",
+      "text": "Power Rule for DerivativesDerivatives导数的幂函数求导法则$\\[ \\frac{d}{dx} x^n = n x^{n-1} \\]$→"
+    },
+    {
+      "href": "/formulas/math/derivatives/tangent-line-equation",
+      "text": "Tangent Line EquationDerivatives曲线切线方程公式$\\[ y - y_0 = f'(x_0)(x - x_0) \\]$→"
+    },
+    {
+      "href": "/formulas/math/plane-analytic-geometry/distance-formula",
+      "text": "Distance FormulaPlane Analytic Geometry两点间距离公式$\\[ d = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2} \\]$→"
+    },
+    {
+      "href": "/formulas/math/plane-analytic-geometry/circle-equation",
+      "text": "Equation of a CirclePlane Analytic Geometry圆的标准方程$\\[ (x - a)^2 + (y - b)^2 = R^2 \\]$→"
+    },
+    {
+      "href": "/formulas/math/plane-analytic-geometry/ellipse-equation",
+      "text": "Equation of an EllipsePlane Analytic Geometry椭圆的标准方程$\\[ \\frac{x^2}{a^2} + \\frac{y^2}{b^2} = 1 \\quad (a > b > 0) \\]$→"
+    },
+    {
+      "href": "/formulas/math/plane-analytic-geometry/hyperbola-equation",
+      "text": "Equation of a HyperbolaPlane Analytic Geometry双曲线的标准方程$\\[ \\frac{x^2}{a^2} - \\frac{y^2}{b^2} = 1 \\quad (a > 0, \\, b > 0) "
+    },
+    {
+      "href": "/formulas/math/plane-analytic-geometry/parabola-equation",
+      "text": "Equation of a ParabolaPlane Analytic Geometry抛物线的标准方程$\\[ y^2 = 2px \\quad (p > 0) \\]$→"
+    },
+    {
+      "href": "/formulas/math/plane-analytic-geometry/line-equations",
+      "text": "Equation of a Line (Slope-Intercept & General Form)Plane Analytic Geometry直线的方程（斜截式与一般式）$\\[ y = kx + b \\quad \\text{and} "
+    },
+    {
+      "href": "/formulas/math/vectors-and-complex-numbers/vector-dot-product",
+      "text": "Vector Dot ProductVectors & Complex Numbers平面向量的数量积（点积）$\\[ \\mathbf{a} \\cdot \\mathbf{b} = a_x b_x + a_y b_y = |\\mathbf{a}"
+    },
+    {
+      "href": "/formulas/math/vectors-and-complex-numbers/complex-modulus",
+      "text": "Modulus of a Complex NumberVectors & Complex Numbers复数的模$\\[ |z| = \\sqrt{a^2 + b^2} \\quad (z = a + bi) \\]$→"
+    },
+    {
+      "href": "/formulas/math/solid-geometry/sphere-properties",
+      "text": "Volume and Surface Area of a SphereSolid Geometry球的体积与表面积公式$\\[ V = \\frac{4}{3}\\pi R^3 \\quad \\text{and} \\quad S = 4\\pi R^"
+    },
+    {
+      "href": "/formulas/math/probability-and-statistics/classical-probability",
+      "text": "Classical Probability FormulaProbability & Statistics古典概型概率计算公式$\\[ P(A) = \\frac{N(A)}{N} \\]$→"
+    },
+    {
+      "href": "/formulas/math/probability-and-statistics/variance-standard-deviation",
+      "text": "Variance and Standard DeviationProbability & Statistics样本方差与标准差公式$\\[ s^2 = \\frac{1}{n} \\sum_{i=1}^{n} (x_i - \\bar{x})^2 "
+    },
+    {
+      "href": "/formulas/math/probability-and-statistics/normal-distribution",
+      "text": "Normal Distribution (3-Sigma Rule)Probability & Statistics正态分布（3σ原则 / 68-95-99.7准则）$\\[ P(\\mu - \\sigma \\le X \\le \\mu + \\s"
+    }
+  ],
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "EducationalOrganization",
+          "@id": "https://csca.space/#organization",
+          "name": "CSCA Space Academy",
+          "url": "https://csca.space",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://csca.space/logo.png",
+            "contentUrl": "https://csca.space/logo.png",
+            "width": 2048,
+            "height": 2048,
+            "caption": "CSCA Space Logo"
+          },
+          "image": "https://csca.space/logo.png",
+          "description": "Premier standardized preparation academy and adaptive testing simulator for the China Scholastic Competency Assessment (CSCA).",
+          "knowsAbout": [
+            "China Scholastic Competency Assessment",
+            "CSCA Exam",
+            "CSC Scholarship",
+            "Chinese Government Scholarship",
+            "STEM University Admissions in China"
+          ],
+          "sameAs": [
+            "https://github.com/cscaspace"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://csca.space/#website",
+          "url": "https://csca.space",
+          "name": "CSCA Space",
+          "inLanguage": [
+            "en",
+            "zh-Hans"
+          ],
+          "dateModified": "2026-09-04",
+          "publisher": {
+            "@id": "https://csca.space/#organization"
+          },
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://csca.space/subjects?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+          }
+        },
+        {
+          "@type": "EducationalApplication",
+          "@id": "https://csca.space/#application",
+          "name": "CSCA Space Exam Simulator & Mock Generator",
+          "url": "https://csca.space",
+          "applicationCategory": "EducationalApplication",
+          "operatingSystem": "All",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+          },
+          "description": "High-yield bilingual CSCA examination simulator powered by the v2.4 and v3.0 parametric question generation engine calibrated to 99.8% fidelity of official CSCA CBT exams, featuring deterministic SymPy proofs and FSRS-6 formula mastery.",
+          "featureList": [
+            "99.8% Official CSCA CBT Exam Fidelity Mock Generator",
+            "Dual v2.4 Consensus & v3.0 Parametric Manifold Engine",
+            "Deterministic SymPy Symbolic STEM Dual-Verification",
+            "6 Macro Cognitive Habit Distractor Autopsies",
+            "48 Questions in 60 Minutes Timed Exam Environment",
+            "Bilingual English and Chinese CSCA STEM Syllabi"
+          ],
+          "provider": {
+            "@id": "https://csca.space/#organization"
+          }
+        },
+        {
+          "@type": "SiteNavigationElement",
+          "@id": "https://csca.space/#navigation",
+          "name": "CSCA Space Main Navigation",
+          "hasPart": [
+            {
+              "@type": "WebPage",
+              "name": "CSCA Mock Tests & Simulator",
+              "url": "https://csca.space/subjects/portal",
+              "description": "Adaptive CSCA mock exam hall with official timers and real-time pacer tracking."
+            },
+            {
+              "@type": "WebPage",
+              "name": "CSCA Mathematics Past Papers",
+              "url": "https://csca.space/subjects/math",
+              "description": "Calculus, Algebra, Analytic Geometry, and Vector past questions with KaTeX derivations."
+            },
+            {
+              "@type": "WebPage",
+              "name": "CSCA Physics Syllabus & Drills",
+              "url": "https://csca.space/subjects/physics",
+              "description": "Classical mechanics, electromagnetism, and thermodynamics CSCA questions."
+            },
+            {
+              "@type": "WebPage",
+              "name": "CSCA Chemistry Complete Guide",
+              "url": "https://csca.space/subjects/chemistry",
+              "description": "Organic chemistry, stoichiometry, and chemical equilibrium practice."
+            },
+            {
+              "@type": "WebPage",
+              "name": "CSCA Academic Chinese (科技汉语)",
+              "url": "https://csca.space/subjects/chinese",
+              "description": "Scientific Chinese reading comprehension and technical STEM vocabulary."
+            },
+            {
+              "@type": "WebPage",
+              "name": "CSCA Space vs Private Tutoring",
+              "url": "https://csca.space/vs/traditional-tutoring-vs-cscaspace",
+              "description": "Transparent comparison between CSCA Space self-paced academy and traditional private agency tutoring."
+            },
+            {
+              "@type": "WebPage",
+              "name": "Diagnostic Assessment",
+              "url": "https://csca.space/diagnostic",
+              "description": "Free 15-minute diagnostic exam assessing CSCA readiness across all 4 subjects."
+            }
+          ]
+        },
+        {
+          "@type": "LearningResource",
+          "@id": "https://csca.space/#learningresource",
+          "name": "CSCA Standardized Examination Curriculum & Past Papers",
+          "description": "Complete CSCA preparation curriculum covering Mathematics, Physics, Chemistry, and Academic Chinese.",
+          "educationalLevel": "High School to Undergraduate Admissions",
+          "learningResourceType": "Practice Assessment & Exam Simulation",
+          "inLanguage": [
+            "en",
+            "zh-Hans"
+          ],
+          "isAccessibleForFree": true,
+          "provider": {
+            "@id": "https://csca.space/#organization"
+          }
+        },
+        {
+          "@type": "Course",
+          "@id": "https://csca.space/#course-math",
+          "name": "CSCA Mathematics Preparation & Past Papers",
+          "description": "Comprehensive CSCA Mathematics syllabus coverage: Calculus, Algebra, Sequences, Vectors, Probability, and Adaptive Practice.",
+          "provider": {
+            "@id": "https://csca.space/#organization"
+          },
+          "url": "https://csca.space/subjects/math",
+          "isAccessibleForFree": true
+        },
+        {
+          "@type": "Course",
+          "@id": "https://csca.space/#course-physics",
+          "name": "CSCA Physics Preparation & Past Papers",
+          "description": "Standardized CSCA Physics exam training: Classical Mechanics, Electromagnetism, Optics, Thermodynamics, and Past Questions.",
+          "provider": {
+            "@id": "https://csca.space/#organization"
+          },
+          "url": "https://csca.space/subjects/physics",
+          "isAccessibleForFree": true
+        },
+        {
+          "@type": "Course",
+          "@id": "https://csca.space/#course-chemistry",
+          "name": "CSCA Chemistry Preparation & Past Papers",
+          "description": "Complete CSCA Chemistry syllabus modules: Stoichiometry, Organic Chemistry, Chemical Equilibrium, and Laboratory Principles.",
+          "provider": {
+            "@id": "https://csca.space/#organization"
+          },
+          "url": "https://csca.space/subjects/chemistry",
+          "isAccessibleForFree": true
+        },
+        {
+          "@type": "Course",
+          "@id": "https://csca.space/#course-chinese",
+          "name": "CSCA Academic Chinese Preparation",
+          "description": "Specialized Academic Chinese for STEM admissions in China: Technical Vocabulary, Scientific Reading Comprehension, and HSK 5-6 Alignment.",
+          "provider": {
+            "@id": "https://csca.space/#organization"
+          },
+          "url": "https://csca.space/subjects/chinese",
+          "isAccessibleForFree": true
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://csca.space/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What is the CSCA (China Scholastic Competency Assessment)?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The CSCA (China Scholastic Competency Assessment) is the standardized STEM competency assessment used by top Chinese universities and CSC Government Scholarship committees to evaluate international undergraduate candidates in Mathematics, Physics, Chemistry, and Academic Chinese."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How to prepare for the CSCA exam online?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "To prepare for the CSCA exam, students should use CSCA Space (csca.space) for adaptive mock test simulations, past paper questions, bilingual terminology drills, formula sheets, and step-by-step video explainers aligned with the official CSCA syllabus."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What subjects are tested in the CSCA?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The CSCA exam tests four core disciplines: Mathematics (Algebra, Calculus, Analytical Geometry), Physics (Mechanics, Electromagnetism, Waves), Chemistry (Physical Chemistry, Organic Chemistry, Stoichiometry), and Academic Chinese."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Where can I find CSCA past papers and practice questions?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "CSCA Space provides verified CSCA mock exams, diagnostic assessments, and curated past questions with comprehensive step-by-step pedagogical walkthroughs at https://csca.space."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How does CSCA Space help international students prepare for the CSCA?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "CSCA Space provides 100% syllabus-aligned interactive practice, bilingual English and Chinese STEM explanations, full diagnostic scoring, and adaptive mock test simulations designed specifically for international university admissions in China."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is a competitive score on the CSCA for CSC scholarships?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Candidates scoring in the 80th percentile and above are highly competitive for full Chinese Government Scholarships (CSC Type A & Type B) and direct admission into top C9 league universities."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Course",
+      "name": "CSCA MATH Masterclass",
+      "description": "Excel in CSCA Math: Calculus, Algebra, Vectors & Analytic Geometry. Practice realistic past-paper questions with KaTeX on CSCA Space.",
+      "provider": {
+        "@type": "EducationalOrganization",
+        "name": "CSCA Space Academy",
+        "url": "https://csca.space",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://csca.space/logo.png"
+        }
+      },
+      "hasCourseInstance": {
+        "@type": "CourseInstance",
+        "courseMode": "online",
+        "courseWorkload": "PT30H"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "384",
+        "bestRating": "5"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "CSCA Space",
+          "item": "https://csca.space"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Subjects",
+          "item": "https://csca.space/subjects"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "CSCA Mathematics Prep — Past Papers & Syllabus",
+          "item": "https://csca.space/subjects/math"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Quiz",
+      "name": "CSCA Mathematics Prep — Past Papers & Syllabus Diagnostic Mock Quiz",
+      "educationalLevel": "Intermediate to Advanced",
+      "about": {
+        "@type": "Thing",
+        "name": "CSCA MATH"
+      },
+      "hasPart": [
+        {
+          "@type": "Question",
+          "name": "The domain of the function $f(x) = \\frac{1}{x} + \\sqrt{1-x}$ is:",
+          "text": "The domain of the function $f(x) = \\frac{1}{x} + \\sqrt{1-x}$ is:",
+          "suggestedAnswer": [
+            {
+              "@type": "Answer",
+              "text": "(-\\infty, 0) \\cup (0, 1]"
+            },
+            {
+              "@type": "Answer",
+              "text": "(-\\infty, 1]"
+            },
+            {
+              "@type": "Answer",
+              "text": "[1, +\\infty)"
+            },
+            {
+              "@type": "Answer",
+              "text": "(-\\infty, 0) \\cup (0, 1)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the difficulty level of CSCA Math?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "CSCA Mathematics is based on the standard curriculum for undergraduate university admissions in China, covering Sets & Inequalities, Functions & Sequences, Conic Sections & Solid Geometry, Vectors & Complex Numbers, and Probability & Statistics."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are calculators allowed in the CSCA Math exam?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No, calculators are strictly prohibited. Questions are designed for analytical factoring, geometric visualization, and concise algebraic evaluation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How many questions are in the Math section?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The official CSCA Mathematics examination contains 48 single-choice questions with a total duration of 60 minutes (100 total points), requiring an average pacing of 75 seconds per question."
+          }
+        }
+      ]
+    }
+  ],
+  "capture": "cmwe94jly",
+  "site": "csca-space"
+}

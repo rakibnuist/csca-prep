@@ -1,0 +1,158 @@
+{
+  "source": "https://csca.cn/home (SY_KSRQ config) + official notice 考试公告 2026-07-24 timetable image",
+  "fetched": "2026-11-13",
+  "timezone": "Asia/Shanghai (UTC+8)",
+  "note": "Day 1 = 专业中文 then 数学; Day 2 = 物理 then 化学. Start times alternate between 08:00 and 14:00 blocks by sitting — never assume 14:00.",
+  "sittings": [
+    {
+      "label": "November 2026",
+      "labelZh": "2026年11月",
+      "examDate": "2026-11-14",
+      "examDateEnd": "2026-11-15",
+      "registration": "2026-10-15 15:00 → 2026-10-21 23:59",
+      "status": "Registration Closed",
+      "statusZh": "报名已结束",
+      "days": [
+        {
+          "date": "2026-11-14",
+          "papers": [
+            { "time": "14:00–15:30", "subject": "专业中文", "subjectEn": "Professional Chinese", "minutes": 90 },
+            { "time": "17:00–18:00", "subject": "数学", "subjectEn": "Mathematics", "minutes": 60 }
+          ]
+        },
+        {
+          "date": "2026-11-15",
+          "papers": [
+            { "time": "14:00–15:00", "subject": "物理", "subjectEn": "Physics", "minutes": 60 },
+            { "time": "16:30–17:30", "subject": "化学", "subjectEn": "Chemistry", "minutes": 60 }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "December 2026",
+      "labelZh": "2026年12月",
+      "examDate": "2026-12-19",
+      "examDateEnd": "2026-12-20",
+      "registration": "announced per sitting",
+      "status": "Registration Not Yet Open",
+      "statusZh": "报名未开始",
+      "days": [
+        {
+          "date": "2026-12-19",
+          "papers": [
+            { "time": "08:00–09:30", "subject": "专业中文", "subjectEn": "Professional Chinese", "minutes": 90 },
+            { "time": "11:00–12:00", "subject": "数学", "subjectEn": "Mathematics", "minutes": 60 }
+          ]
+        },
+        {
+          "date": "2026-12-20",
+          "papers": [
+            { "time": "08:00–09:00", "subject": "物理", "subjectEn": "Physics", "minutes": 60 },
+            { "time": "10:30–11:30", "subject": "化学", "subjectEn": "Chemistry", "minutes": 60 }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "January 2027",
+      "labelZh": "2027年1月",
+      "examDate": "2027-01-23",
+      "examDateEnd": "2027-01-24",
+      "registration": "announced per sitting",
+      "status": "Registration Not Yet Open",
+      "statusZh": "报名未开始",
+      "days": [
+        {
+          "date": "2027-01-23",
+          "papers": [
+            { "time": "14:00–15:30", "subject": "专业中文", "subjectEn": "Professional Chinese", "minutes": 90 },
+            { "time": "17:00–18:00", "subject": "数学", "subjectEn": "Mathematics", "minutes": 60 }
+          ]
+        },
+        {
+          "date": "2027-01-24",
+          "papers": [
+            { "time": "14:00–15:00", "subject": "物理", "subjectEn": "Physics", "minutes": 60 },
+            { "time": "16:30–17:30", "subject": "化学", "subjectEn": "Chemistry", "minutes": 60 }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "March 2027",
+      "labelZh": "2027年3月",
+      "examDate": "2027-03-13",
+      "examDateEnd": "2027-03-14",
+      "registration": "announced per sitting",
+      "status": "Registration Not Yet Open",
+      "statusZh": "报名未开始",
+      "days": [
+        {
+          "date": "2027-03-13",
+          "papers": [
+            { "time": "14:00–15:30", "subject": "专业中文", "subjectEn": "Professional Chinese", "minutes": 90 },
+            { "time": "17:00–18:00", "subject": "数学", "subjectEn": "Mathematics", "minutes": 60 }
+          ]
+        },
+        {
+          "date": "2027-03-14",
+          "papers": [
+            { "time": "14:00–15:00", "subject": "物理", "subjectEn": "Physics", "minutes": 60 },
+            { "time": "16:30–17:30", "subject": "化学", "subjectEn": "Chemistry", "minutes": 60 }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "April 2027",
+      "labelZh": "2027年4月",
+      "examDate": "2027-04-24",
+      "examDateEnd": "2027-04-25",
+      "registration": "announced per sitting",
+      "status": "Registration Not Yet Open",
+      "statusZh": "报名未开始",
+      "days": [
+        {
+          "date": "2027-04-24",
+          "papers": [
+            { "time": "14:00–15:30", "subject": "专业中文", "subjectEn": "Professional Chinese", "minutes": 90 },
+            { "time": "17:00–18:00", "subject": "数学", "subjectEn": "Mathematics", "minutes": 60 }
+          ]
+        },
+        {
+          "date": "2027-04-25",
+          "papers": [
+            { "time": "14:00–15:00", "subject": "物理", "subjectEn": "Physics", "minutes": 60 },
+            { "time": "16:30–17:30", "subject": "化学", "subjectEn": "Chemistry", "minutes": 60 }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "June 2027",
+      "labelZh": "2027年6月",
+      "examDate": "2027-06-26",
+      "examDateEnd": "2027-06-27",
+      "registration": "announced per sitting",
+      "status": "Registration Not Yet Open",
+      "statusZh": "报名未开始",
+      "days": [
+        {
+          "date": "2027-06-26",
+          "papers": [
+            { "time": "08:00–09:30", "subject": "专业中文", "subjectEn": "Professional Chinese", "minutes": 90 },
+            { "time": "11:00–12:00", "subject": "数学", "subjectEn": "Mathematics", "minutes": 60 }
+          ]
+        },
+        {
+          "date": "2027-06-27",
+          "papers": [
+            { "time": "08:00–09:00", "subject": "物理", "subjectEn": "Physics", "minutes": 60 },
+            { "time": "10:30–11:30", "subject": "化学", "subjectEn": "Chemistry", "minutes": 60 }
+          ]
+        }
+      ]
+    }
+  ]
+}

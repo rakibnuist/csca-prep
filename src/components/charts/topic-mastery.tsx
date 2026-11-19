@@ -12,18 +12,19 @@ function tone(value: number) {
  * Deliberately CSS-only: topic mastery is a small, scannable list rather than a
  * chart, and this keeps the dashboard free of a chart runtime.
  */
-export function TopicMastery({ data }: { data: MasteryPoint[] }) {
+export function TopicMastery({ data, lang = "en" }: { data: MasteryPoint[]; lang?: "en" | "zh" }) {
+  const zh = lang === "zh";
   if (data.length === 0) {
     return (
       <div className="flex h-[160px] items-center justify-center rounded-lg border border-dashed border-line text-[12px] text-ink-faint">
-        Topic mastery appears after your first paper.
+        {zh ? "完成首套试卷后显示知识点掌握度。" : "Topic mastery appears after your first paper."}
       </div>
     );
   }
 
   return (
     <ul className="space-y-3">
-      {data.map((entry) => (
+      {data.map((entry, index) => (
         <li key={entry.code}>
           <div className="flex items-baseline justify-between gap-3">
             <span className="min-w-0 truncate text-[12px] text-ink-soft" title={entry.title}>
@@ -35,8 +36,16 @@ export function TopicMastery({ data }: { data: MasteryPoint[] }) {
           </div>
           <div className="mt-1.5 h-1.5 overflow-hidden rounded-full bg-paper-deep">
             <div
-              className={cn("h-full rounded-full", tone(entry.mastery))}
-              style={{ width: `${Math.max(2, entry.mastery)}%` }}
+              className={cn("mastery-bar h-full rounded-full", tone(entry.mastery))}
+              style={
+                {
+                  width: `${Math.max(2, entry.mastery)}%`,
+                  // The step lives in a custom property so the media query in
+                  // globals.css can shorten the chain on small screens without
+                  // an inline style overriding it.
+                  "--bar-step": index,
+                } as React.CSSProperties
+              }
             />
           </div>
         </li>

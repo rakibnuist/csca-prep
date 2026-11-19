@@ -7,6 +7,7 @@ import { JsonLd } from "@/components/seo/jsonld";
 import { breadcrumbLd, pageMetadata } from "@/lib/seo";
 import { CURRICULUM, getSubject } from "@/lib/curriculum";
 import { OFFICIAL } from "@/lib/site";
+import { TIER_CLASS, TIER_SHORT, hasPastPaperSpread, topicTier } from "@/lib/topic-frequency";
 
 const CODES = ["math", "phys", "chem", "ch_hum", "ch_sci"] as const;
 
@@ -24,7 +25,7 @@ export async function generateMetadata({
   if (!record) return { title: "Syllabus" };
 
   return pageMetadata({
-    title: `CSCA ${record.nameEn} syllabus — topics, weights and practice`,
+    title: `CSCA ${record.shortEn} syllabus — topics and weights`,
     description: `${record.nameEn} topics in the official CSCA syllabus: ${record.topics
       .slice(0, 5)
       .map((topic) => topic.titleEn)
@@ -59,6 +60,7 @@ export default async function SubjectSyllabusPage({
   const previous = CODES[(index - 1 + CODES.length) % CODES.length];
   const next = CODES[(index + 1) % CODES.length];
   const others = CURRICULUM.filter((entry) => entry.code !== record.code);
+  const showFrequency = hasPastPaperSpread(record.code);
 
   return (
     <>
@@ -118,33 +120,44 @@ export default async function SubjectSyllabusPage({
       </section>
 
       <section className="shell py-12">
-        <div className="grid gap-10 lg:grid-cols-[1fr_260px]">
-          <div className="space-y-10">
+        <div className="grid grid-cols-1 gap-10 lg:grid-cols-[1fr_260px]">
+          <div className="min-w-0 space-y-10">
             {Object.entries(units).map(([unit, unitTopics]) => {
               const unitWeight = unitTopics.reduce((sum, topic) => sum + topic.weight, 0);
               return (
                 <div key={unit}>
-                  <div className="flex items-baseline justify-between border-b border-line pb-2">
-                    <h2 className="font-display text-2xl text-ink">
+                  <div className="flex items-baseline justify-between gap-2 border-b border-line pb-2">
+                    <h2 className="min-w-0 flex-1 font-display text-2xl text-ink">
                       {unit}
                       <span className="ml-2 font-chinese text-sm text-ink-faint">
                         {unitTopics[0]?.unitZh}
                       </span>
                     </h2>
-                    <span className="text-[11px] text-ink-faint">
+                    <span className="shrink-0 text-[11px] text-ink-faint">
                       ~{Math.round(unitWeight * 100)}% of the paper
                     </span>
                   </div>
 
                   <div className="mt-4 space-y-4">
                     {unitTopics.map((topic) => (
-                      <div key={topic.code} className="rounded-xl border border-line bg-card p-4 sm:p-5">
+                      <div
+                        key={topic.code}
+                        id={topic.code}
+                        className="scroll-mt-24 rounded-xl border border-line bg-card p-4 sm:p-5"
+                      >
                         <div className="flex flex-wrap items-start justify-between gap-2">
-                          <div>
-                            <div className="flex items-center gap-2">
+                          <div className="min-w-0">
+                            <div className="flex flex-wrap items-center gap-2">
                               <span className="rounded bg-paper-deep px-1.5 py-0.5 text-[10px] font-medium text-ink-faint">
                                 {topic.code}
                               </span>
+                              {showFrequency && (
+                                <span
+                                  className={`rounded-full border px-1.5 py-0.5 text-[9.5px] font-medium ${TIER_CLASS[topicTier(record.code, topic.code)]}`}
+                                >
+                                  {TIER_SHORT[topicTier(record.code, topic.code)]}
+                                </span>
+                              )}
                               <h3 className="text-[14px] font-medium text-ink">{topic.titleEn}</h3>
                             </div>
                             <p className="mt-0.5 text-[11.5px] text-ink-faint">{topic.titleZh}</p>
@@ -183,7 +196,7 @@ export default async function SubjectSyllabusPage({
             })}
           </div>
 
-          <aside className="space-y-4 lg:sticky lg:top-24 lg:self-start">
+          <aside className="min-w-0 space-y-4 lg:sticky lg:top-24 lg:self-start">
             <div className="panel p-4">
               <p className="eyebrow">Weight map</p>
               <div className="mt-3 space-y-2">
@@ -193,7 +206,7 @@ export default async function SubjectSyllabusPage({
                     <div className="h-1.5 flex-1 overflow-hidden rounded-full bg-paper-deep">
                       <div
                         className="h-full rounded-full bg-ink/70"
-                        style={{ width: `${Math.max(5, topic.weight * 400)}%` }}
+                        style={{ width: `${Math.min(100, Math.max(5, topic.weight * 400))}%` }}
                       />
                     </div>
                   </div>

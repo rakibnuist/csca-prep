@@ -38,6 +38,16 @@ else
   bad "cannot read row counts"
 fi
 
+# The app refuses to start on a schema mismatch, so these must be in place.
+tv=$(r "docker exec csca-db psql -U csca -d cscamaster -tAc \"select count(*) from information_schema.columns where table_name='User' and column_name='tokenVersion'\"")
+rl=$(r "docker exec csca-db psql -U csca -d cscamaster -tAc \"select count(*) from information_schema.tables where table_name='RateLimit'\"")
+[[ "$tv" == "1" ]] && ok "User.tokenVersion present" || bad "User.tokenVersion missing (${tv:-0})"
+[[ "$rl" == "1" ]] && ok "RateLimit table present" || bad "RateLimit table missing (${rl:-0})"
+sets=$(r "docker exec csca-db psql -U csca -d cscamaster -tAc \"select count(*) from \\\"Mock\\\" where slug like 'csca-set-%'\"")
+[[ "${sets:-0}" -ge 150 ]] && ok "${sets} practice sets" || bad "only ${sets:-0} practice sets (expected 150)"
+mocks=$(r "docker exec csca-db psql -U csca -d cscamaster -tAc 'select count(*) from \"Mock\" where published = true'")
+ok "${mocks:-?} papers published"
+
 head1 "traefik"
 r "docker logs traefik-gyx5-traefik-1 --since 60m 2>&1 | grep -i csca | tail -4" | sed 's/^/  /'
 if r "docker logs traefik-gyx5-traefik-1 --since 6h 2>&1 | grep -q 'Unable to obtain ACME certificate for domains.*cscamaster'"; then
@@ -45,6 +55,27 @@ if r "docker logs traefik-gyx5-traefik-1 --since 6h 2>&1 | grep -q 'Unable to ob
 else
   ok "no certificate errors for cscamaster"
 fi
+
+head1 "edge cache"
+# The marketing pages are prerendered and carry `s-maxage`, but Cloudflare only
+# caches HTML when a Cache Rule says so. Without it every request reaches the
+# VPS (measured TTFB 1.3–12.4 s).
+for p in / /csca /syllabus; do
+  # Two requests: the first populates the cache, the second should be a HIT.
+  # Generous timeouts — a slow link can make a cached response look slow.
+  curl -sS -o /dev/null --max-time 60 "https://www.${DOMAIN}${p}" 2>/dev/null || true
+  status=$(curl -sSI --max-time 60 "https://www.${DOMAIN}${p}" 2>/dev/null | tr -d '\r' \
+    | awk 'tolower($1)=="cf-cache-status:"{print $2}')
+  case "$status" in
+    HIT) ok "cf-cache-status HIT for ${p}" ;;
+    DYNAMIC|EXPIRED|'') bad "cf-cache-status ${status:-none} for ${p} — run deploy/cloudflare-cache.sh" ;;
+    *) ok "cf-cache-status ${status} for ${p}" ;;
+  esac
+done
+# Per-user routes must never be cached at the edge.
+status=$(curl -sSI --max-time 60 "https://www.${DOMAIN}/api/me" 2>/dev/null | tr -d '\r' \
+  | awk 'tolower($1)=="cf-cache-status:"{print $2}')
+[[ "$status" != "HIT" ]] && ok "/api/me not cached (${status:-none})" || bad "/api/me is being cached at the edge"
 
 head1 "public DNS + https"
 ip=$(getent hosts "www.${DOMAIN}" | head -1 | awk '{print $1}')

@@ -1,0 +1,77 @@
+/** Country dial-code list for the WhatsApp field (aligned with the exam's student base). */
+export const COUNTRIES = [
+  { name: "Afghanistan", dial: "93" },
+  { name: "Australia", dial: "61" },
+  { name: "Bangladesh", dial: "880" },
+  { name: "Brazil", dial: "55" },
+  { name: "Cambodia", dial: "855" },
+  { name: "Cameroon", dial: "237" },
+  { name: "Canada", dial: "1" },
+  { name: "China", dial: "86" },
+  { name: "Egypt", dial: "20" },
+  { name: "Ethiopia", dial: "251" },
+  { name: "France", dial: "33" },
+  { name: "Germany", dial: "49" },
+  { name: "Ghana", dial: "233" },
+  { name: "Hong Kong SAR", dial: "852" },
+  { name: "India", dial: "91" },
+  { name: "Indonesia", dial: "62" },
+  { name: "Iran", dial: "98" },
+  { name: "Iraq", dial: "964" },
+  { name: "Italy", dial: "39" },
+  { name: "Japan", dial: "81" },
+  { name: "Jordan", dial: "962" },
+  { name: "Kazakhstan", dial: "7" },
+  { name: "Kenya", dial: "254" },
+  { name: "Kuwait", dial: "965" },
+  { name: "Kyrgyzstan", dial: "996" },
+  { name: "Laos", dial: "856" },
+  { name: "Malaysia", dial: "60" },
+  { name: "Maldives", dial: "960" },
+  { name: "Mongolia", dial: "976" },
+  { name: "Morocco", dial: "212" },
+  { name: "Myanmar", dial: "95" },
+  { name: "Nepal", dial: "977" },
+  { name: "Netherlands", dial: "31" },
+  { name: "New Zealand", dial: "64" },
+  { name: "Nigeria", dial: "234" },
+  { name: "Oman", dial: "968" },
+  { name: "Pakistan", dial: "92" },
+  { name: "Philippines", dial: "63" },
+  { name: "Qatar", dial: "974" },
+  { name: "Russia", dial: "7" },
+  { name: "Saudi Arabia", dial: "966" },
+  { name: "Singapore", dial: "65" },
+  { name: "South Africa", dial: "27" },
+  { name: "South Korea", dial: "82" },
+  { name: "Spain", dial: "34" },
+  { name: "Sri Lanka", dial: "94" },
+  { name: "Sudan", dial: "249" },
+  { name: "Sweden", dial: "46" },
+  { name: "Switzerland", dial: "41" },
+  { name: "Taiwan", dial: "886" },
+  { name: "Tajikistan", dial: "992" },
+  { name: "Tanzania", dial: "255" },
+  { name: "Thailand", dial: "66" },
+  { name: "Tunisia", dial: "216" },
+  { name: "Türkiye", dial: "90" },
+  { name: "UAE", dial: "971" },
+  { name: "Uganda", dial: "256" },
+  { name: "Ukraine", dial: "380" },
+  { name: "United Kingdom", dial: "44" },
+  { name: "United States", dial: "1" },
+  { name: "Uzbekistan", dial: "998" },
+  { name: "Vietnam", dial: "84" },
+  { name: "Yemen", dial: "967" },
+] as const;
+
+export type CountryDial = (typeof COUNTRIES)[number]["dial"];
+
+export function isValidDial(value: string): value is CountryDial {
+  return COUNTRIES.some((country) => country.dial === value);
+}
+
+/** Nationality name → dial code, so picking a nationality can prefill the WhatsApp code. */
+export function dialForCountryName(name: string): CountryDial | undefined {
+  return COUNTRIES.find((country) => country.name === name)?.dial;
+}

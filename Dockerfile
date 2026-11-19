@@ -2,7 +2,7 @@
 # Built on the server by `deploy/deploy.sh`; context is the repo root.
 
 FROM node:22-alpine AS base
-RUN apk add --no-cache libc6-compat openssl
+RUN apk add --no-cache libc6-compat openssl fontconfig font-noto-cjk
 WORKDIR /app
 ENV NEXT_TELEMETRY_DISABLED=1
 
@@ -22,8 +22,17 @@ COPY . .
 
 # NEXT_PUBLIC_* is inlined at build time — they must be build args, not runtime env.
 ARG NEXT_PUBLIC_APP_URL="https://www.cscamaster.com"
+# Search-engine ownership proofs. Next renders metadata at build time for the
+# static marketing routes, so these must exist as build args — an env var on the
+# running container would arrive too late.
+ARG NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION=""
+ARG NEXT_PUBLIC_BING_SITE_VERIFICATION=""
+ARG NEXT_PUBLIC_YANDEX_VERIFICATION=""
 ARG NEXT_PUBLIC_SITE_NAME="CSCA Master"
 ENV NEXT_PUBLIC_APP_URL=$NEXT_PUBLIC_APP_URL \
+    NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION=$NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION \
+    NEXT_PUBLIC_BING_SITE_VERIFICATION=$NEXT_PUBLIC_BING_SITE_VERIFICATION \
+    NEXT_PUBLIC_YANDEX_VERIFICATION=$NEXT_PUBLIC_YANDEX_VERIFICATION \
     NEXT_PUBLIC_SITE_NAME=$NEXT_PUBLIC_SITE_NAME
 
 # `next build` must not need a live database: pages degrade at build time.
@@ -47,7 +56,13 @@ COPY --from=builder /app/prisma.config.ts ./prisma.config.ts
 COPY --from=builder /app/next.config.ts ./next.config.ts
 COPY --from=builder /app/tsconfig.json ./tsconfig.json
 
-# Runs as root inside the container (Next.js writes .next/cache at runtime and
-# `docker compose exec` needs write access for prisma db push / seed).
+# Run Node as an unprivileged user while keeping /app and HOME writable for
+# Next.js runtime caches and `docker compose exec` prisma/seed commands.
+RUN addgroup --system --gid 1001 nodejs \
+  && adduser --system --uid 1001 nextjs \
+  && chown -R nextjs:nodejs /app
+
+USER nextjs
+ENV HOME=/tmp
 EXPOSE 3000
 CMD ["node", "node_modules/next/dist/bin/next", "start", "-p", "3000"]

@@ -24,12 +24,16 @@ const input =
 
 export function LeadForm({
   source,
-  cta = "Join the waitlist",
+  cta = "Get updates",
   includeMessage = false,
+  successTitle = "Thanks — you're in.",
+  successBody = "We'll be in touch — no more than one message.",
 }: {
   source: string;
   cta?: string;
   includeMessage?: boolean;
+  successTitle?: string;
+  successBody?: string;
 }) {
   const [state, action] = useActionState<LeadState, FormData>(submitLeadAction, null);
 
@@ -37,10 +41,8 @@ export function LeadForm({
     return (
       <div className="rounded-xl border border-jade/25 bg-jade-soft/60 p-5 text-center">
         <CheckCircle2 className="mx-auto h-5 w-5 text-jade" />
-        <p className="mt-2 text-[13px] font-medium text-ink">You are on the list.</p>
-        <p className="mt-1 text-[12px] text-ink-soft">
-          We will email you when Pro opens — no more than one message.
-        </p>
+        <p className="mt-2 text-[13px] font-medium text-ink">{successTitle}</p>
+        <p className="mt-1 text-[12px] text-ink-soft">{successBody}</p>
       </div>
     );
   }
@@ -55,14 +57,14 @@ export function LeadForm({
         </p>
       )}
 
-      <div className="grid gap-2.5 sm:grid-cols-2">
-        <input name="name" required placeholder="Full name" className={input} />
-        <input name="email" type="email" required placeholder="Email" className={input} />
+      <div className="grid grid-cols-1 gap-2.5 sm:grid-cols-2">
+        <input name="name" required maxLength={120} aria-label="Full name" placeholder="Full name" className={input} />
+        <input name="email" type="email" required maxLength={160} aria-label="Email" placeholder="Email" className={input} />
       </div>
 
-      <div className="grid gap-2.5 sm:grid-cols-2">
-        <input name="country" placeholder="Country" className={input} />
-        <input name="whatsapp" placeholder="WhatsApp (optional)" className={input} />
+      <div className="grid grid-cols-1 gap-2.5 sm:grid-cols-2">
+        <input name="country" maxLength={80} aria-label="Country" placeholder="Country" className={input} />
+        <input name="whatsapp" maxLength={32} aria-label="WhatsApp (optional)" placeholder="WhatsApp (optional)" className={input} />
       </div>
 
       <select name="goal" defaultValue="" className={input} aria-label="Goal">
@@ -77,6 +79,8 @@ export function LeadForm({
         <textarea
           name="message"
           rows={3}
+          maxLength={2000}
+          aria-label="Message"
           placeholder="What are you stuck on?"
           className="w-full rounded-lg border border-line bg-card px-3 py-2.5 text-[13px] text-ink placeholder:text-ink-faint focus:border-vermillion/50 focus:outline-none"
         />

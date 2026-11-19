@@ -1,0 +1,97 @@
+---
+title: "CSCA 设备与网络 (设备与网络) (official)"
+source: "https://csca.cn/about/* · POST /sv/open/zyxx/list {zydm:GYKS_KSXZ_JJWK_SBYWL}"
+fetched: "2026-11-13T00:34:21+00:00"
+operation: "csca.resource"
+code: "GYKS_KSXZ_JJWK_SBYWL"
+published: "2026-09-16T16:57:30+08:00"
+---
+
+
+# 设备与网络
+
+1. 主机位电脑（用于答题与正面监控）
+✅ 操作系统：Windows 10/11 或 Windows 7 SP1 及以上 64位正版系统（⚠ 不支持 MacOS 系统）
+✅ 运行环境：为保障考试安全与系统兼容性，考试客户端仅支持运行于真实物理硬件环境中，须满足以下条件：
+仅支持单一物理显示器
+
+仅支持本地操作，禁止使用远程桌面、云电脑或任何远程访问方式
+
+禁用任何虚拟化技术，包括但不限于 Hyper-V、Windows Sandbox、WSL/WSL2、VBS等
+
+⚠ 重要提示：部分设备（如 Microsoft Surface）因自身系统架构或虚拟化安全设置的固有限制，与考试客户端存在兼容性问题，导致无法正常运行考试客户端。
+请务必在考前规定时间内完成考试系统个人测试，确认客户端能够正常运行。如测试过程中发现客户端无法正常启动或运行异常，请及时更换为符合要求的 Windows 台式机或笔记本电脑。
+✅ 配置建议：屏幕分辨率不低于 1366×768，内存不少于 4GB
+✅ 硬盘要求：考试客户端所在分区须有不少于 2GB 可用空间（建议避免安装在C盘）
+✅ 屏幕要求：禁止外接显示器，且不得安装任何防偷窥膜、防反光屏等屏幕防护装置，以确保监考人员能够清晰查看电脑屏幕内容。
+✅ 摄像头：笔记本电脑内置摄像头或置于屏幕正上方的外接USB摄像头，分辨率≥720P（推荐1080P）
+✅ 音频设备：台式机需外接扬声器和麦克风；严禁使用无线耳机
+✅ 考试客户端：需提前下载运行CSCA指定的最新版考试客户端
+✅ 电源要求：保持电量充足，建议全程接通电源
+2. 副机位监控设备（用于侧后方环境监控）
+✅ 设备要求
+可使用智能手机或平板
+
+能够运行指定的 CSCA 副机位监控端口（基于浏览器）
+
+画面清晰、无遮挡、角度可调
+
+电量充足（建议全程接通电源）
+
+✅ 配套设备
+稳固支架或三脚架：确保设备稳定，避免晃动
+
+充电设备或备用电源：防止考试中途断电
+
+3. 网络连接
+✅ 带宽要求：上下行对称带宽不低于 20Mbps
+✅ 网速要求：考试系统连接网速不少于 500KB/s
+✅ 连接方式：建议使用有线宽带直连
+考试当天关闭所有与考试无关软件和后台程序
+✅ 测速工具：登录报名系统或考试客户端后，可使用内置测速功能验证连接质量
+✅ 建议准备：备用 4G 热点，熟悉如何快速切换至手机热点
+⚠ 重要提示：考生不得使用任何可能改变、隐藏、转发或代理网络连接、网络出口或IP 地址的工具或服务，包括但不限于VPN、代理服务器、网络代理软件、网络加速器及类似工具。
+如考生无法在不使用上述工具的情况下完成考试系统个人测试或集中模拟测试，说明其当前网络环境不符合CSCA居家网考要求。考生应提前更换符合要求的网络环境，或及时联系 CSCA 技术支持团队寻求帮助。
+
+## English
+1. Primary Device (Computer used for test delivery and front-facing monitoring)
+✅Operating System: Windows 10/11 or Windows 7 SP1 or above, 64-bit, genuine licensed system. (⚠ MacOS is not supported).
+✅Runtime Environment:To ensure test security and system compatibility, CSCA Test Software must run on a real physical hardware environment and meet the following requirements:
+Only a single physical monitor is supported.
+
+Local operation only; remote desktop, cloud PCs, or any remote access are not allowed.
+
+All virtualization technologies must be disabled, including but not limited to Hyper-V, Windows Sandbox, WSL/WSL2, and VBS.
+
+⚠ Important Notice: Some devices (such as certain Microsoft Surface models) may have compatibility issues with the CSCA Test Software due to their system architecture or virtualization-based security settings, which may prevent the software from running properly.
+Please make sure to complete the required Equipment and Software Check within the designated pre-exam period to confirm that the CSCA Test Software can run normally. If the software fails to launch or functions abnormally during the test, please promptly switch to a compliant Windows desktop or laptop computer.
+✅Configuration:Display resolution ≥ 1366×768, RAM ≥ 4GB
+✅Hard Drive:At least 2 GB of free space on the drive where you install the Test Software. (Installing on the C: drive is not recommended).
+✅Screen:External monitors are not allowed. Do not use a screen privacy filter or anti-glare cover. Your screen must remain clearly visible to the proctor at all times.
+✅Camera:Built-in laptop or external USB webcam placed directly above the screen, with a minimum resolution of 720p (1080p recommended)
+✅Audio:For desktop computers, use external speakers and a microphone; wireless headphones/earbuds are strictly prohibited
+✅CSCA Test Software:You must install the latest version of the designated Software before the test day.
+✅Power:Plug your computer into a power source for the entire test.
+2. Secondary Device (Smartphone or tablet used for rear-side room monitoring)
+✅ Device Requirements:
+Can be a smartphone or tablet with a functioning camera.
+
+Must be capable of running the designated CSCA Secondary Camera Portal (browser-based).
+
+The camera must provide a clear, unobstructed, and stable view at an appropriate angle.
+
+Ensure sufficient battery power, or keep the device plugged in throughout the test where possible.
+
+✅ Supporting Equipment
+Stable stand or tripod keep the device steady.
+
+Charger or power bank to prevent power loss during the test.
+
+3. Network Connection
+✅Bandwidth:Symmetrical upload/download bandwidth ≥ 20Mbps
+✅Internet Speed:Sustained connection speed ≥ 500 KB/s
+✅Connection Type:A wired broadband connection is strongly recommended; close all non-test applications and background processes on the test day.
+✅Speed Test Tool:After logging into the Registration System or the CSCA Test Software, use the built-in speed test tool to verify your connection quality.
+✅Backup:Prepare a backup 4G mobile hotspot and know how to switch to it quickly if needed.
+⚠ Important Notice: Test takers are strictly prohibited from using any tools or services that may alter, conceal, forward, or proxy network connections, network exit points, or IP addresses, including but not limited to VPNs, proxy servers, proxy software, network accelerators, and similar tools.
+If a test taker is unable to complete the Equipment and Software Check or the Proctored Mock Test without using such tools, this indicates that the current network environment does not meet the requirements for the CSCA Home-based Test. Test takers should switch to a compliant network environment in advance or promptly contact the CSCA Technical Support Team for assistance.

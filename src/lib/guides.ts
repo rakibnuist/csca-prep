@@ -55,7 +55,7 @@ export const GUIDES: Guide[] = [
             ["Length", "Level dependent", "90 minutes, 80 questions"],
             ["Score", "Level pass/fail", "0–100, plus percentile"],
             ["Run by", "Chinese testing centres", "China Scholarship Council"],
-            ["Required by", "Some universities, some programmes", "CSCA requirement for Chinese-taught degrees"],
+            ["Required by", "Some universities, some programmes", "CSCA requirement for CGS applicants and Chinese-taught degrees"],
           ],
         },
       },
@@ -64,7 +64,7 @@ export const GUIDES: Guide[] = [
         h2: "Who needs which",
         bullets: [
           "Chinese-taught undergraduate programme: CSCA Professional Chinese (Humanities or STEM stream) is normally required. The university may also ask for HSK 4–5 as an admission condition.",
-          "Fully English-taught programme: normally exempt from Professional Chinese. HSK is rarely required, though it can help socially and for internships.",
+          "Non-CGS English-taught programme: some universities waive Professional Chinese (confirm any waiver in writing before registering); CGS applicants must still sit Humanities or STEM Chinese even for English-taught degrees. HSK is rarely required, though it helps socially and for internships.",
           "Chinese Language major: some universities accept HSK 4 in place of Professional Chinese. This is a university-level exemption, not a national rule — get it in writing.",
           "Preparatory year (foundation) programmes: requirements vary; many use HSK progression instead of CSCA for the language component.",
         ],
@@ -73,7 +73,7 @@ export const GUIDES: Guide[] = [
         id: "exemptions",
         h2: "The exemptions that exist — and the ones people invent",
         paragraphs: [
-          "The two real exemptions are English-taught degrees and, for Chinese Language majors, an HSK 4 result accepted by the university. Everything else is institution-specific.",
+          "Non-CGS English-taught degrees with a written institutional waiver and, for Chinese Language majors, an HSK 4 result accepted by the university are the main exceptions — CGS applicants must still sit Professional Chinese, and everything else is institution-specific.",
           "Be sceptical of advice that says a high HSK score exempts you from CSCA entirely. HSK measures language, not mathematics or physics. Even applicants with HSK 6 sit Mathematics.",
         ],
         callout:
@@ -119,7 +119,7 @@ export const GUIDES: Guide[] = [
         id: "before",
         h2: "Before week one: choose your papers",
         paragraphs: [
-          "Confirm the exact CSCA subject combination from your target universities, not from a forum. Mathematics is mandatory; Physics and Chemistry depend on the programme; Professional Chinese depends on the teaching language.",
+          "Confirm the exact CSCA subject combination from your target universities, not from a forum. Mathematics is mandatory; Physics and Chemistry depend on the programme; Professional Chinese is compulsory for CGS applicants and Chinese-taught degrees (confirm any non-CGS English-taught waiver).",
         ],
         bullets: [
           "Write down the papers and the official question count and time for each.",
@@ -187,7 +187,7 @@ export const GUIDES: Guide[] = [
     title: "Which CSCA subjects do you need for your major?",
     h1: "Which CSCA subjects do you need for your major?",
     description:
-      "Mathematics is compulsory for everyone. Physics and Chemistry depend on the programme, and Professional Chinese depends on the teaching language. A practical mapping by major group.",
+      "Mathematics is compulsory for everyone. Physics and Chemistry depend on the programme, and Professional Chinese is required for CGS applicants and Chinese-taught programmes. A practical mapping by major group.",
     keywords: ["CSCA subjects by major", "CSCA requirements engineering", "CSCA medicine subjects", "CSCA humanities"],
     published: "2026-10-16",
     modified: "2026-10-27",
@@ -195,7 +195,7 @@ export const GUIDES: Guide[] = [
     intro:
       "There is no single CSCA subject combination. The rules follow the programme, not the university's reputation — which is why two applicants to the same university can need different papers.",
     takeaway:
-      "Maths for everyone; at least one of Physics/Chemistry for science, engineering, agriculture and medicine; Professional Chinese only for Chinese-taught degrees.",
+      "Maths for everyone; at least one of Physics/Chemistry for science, engineering, agriculture and medicine; Professional Chinese for CGS applicants and Chinese-taught degrees.",
     sections: [
       {
         id: "table",
@@ -209,16 +209,16 @@ export const GUIDES: Guide[] = [
             ["Medicine, dentistry, nursing", "Maths + Chemistry", "MBBS programmes often add an interview or biology background check."],
             ["Agriculture & life sciences", "Maths + Chemistry or Physics", "Rules vary widely; confirm per programme."],
             ["Economics, business, finance", "Maths only", "A humanities applicant pool, but Maths is not waived."],
-            ["Law, humanities, education, arts", "Maths only", "Plus Humanities Chinese if the degree is Chinese-taught."],
+            ["Law, humanities, education, arts", "Maths only", "Plus Humanities Chinese if Chinese-taught or CGS-funded."],
           ],
         },
       },
       {
         id: "chinese-language",
-        h2: "Professional Chinese is a language rule, not a subject rule",
+        h2: "Professional Chinese: CGS and teaching language rules",
         paragraphs: [
-          "The Chinese paper depends on how the degree is taught, not what it is about. A Chinese-taught engineering degree needs STEM Chinese; the same degree taught in English needs none.",
-          "Humanities and STEM Chinese use the same item types but different reading material. Choosing the wrong stream is a common and expensive mistake — confirm it with admissions before you register.",
+          "CSCA lists Professional Chinese as compulsory for Chinese Government Scholarship (CGS) applicants (regardless of teaching language) and for Chinese-taught degrees. Some universities waive it for non-scholarship English-taught degrees — confirm any waiver in writing with admissions.",
+          "Humanities and STEM Chinese use the same format (80 questions in 90 minutes) but different reading material. Choosing the wrong stream is a common and expensive mistake — confirm it with admissions before you register.",
         ],
       },
       {
@@ -228,11 +228,11 @@ export const GUIDES: Guide[] = [
           "Find the programme page on the university's international admissions site, not the Chinese-language homepage.",
           "Look for the CSCA section: most list required papers by programme.",
           "If it is not published, email admissions with your programme name and intake year.",
-          "Check the programme page on the university's international admissions site, then verify by email.",
+          "Check whether you are applying under the Chinese Government Scholarship (which always requires Professional Chinese) and confirm Humanities vs STEM Chinese.",
           "Write the answer into your application spreadsheet — requirements change between cycles.",
         ],
         callout:
-          "Some universities require three papers (Maths + Physics + Chemistry) for specific engineering programmes. If yours does, your CSCA fee is CNY 700 rather than 450 — budget for it.",
+          "Sitting two or three papers (such as Maths + Physics, or Maths + Physics + Chemistry) puts your CSCA fee at CNY 700 rather than CNY 450 — confirm your exact list before paying.",
       },
     ],
     related: [
@@ -305,7 +305,7 @@ export const GUIDES: Guide[] = [
         h2: "The mistakes that actually happen",
         bullets: [
           "Registering for the wrong Chinese stream (Humanities vs STEM).",
-          "Assuming an English-taught programme needs Professional Chinese.",
+          "Skipping or paying for Professional Chinese on an English-taught application without checking CGS rules or confirming an institutional waiver in writing.",
           "Missing the payment window by minutes.",
           "A photo that does not match the passport photo rules.",
           "Booking a sitting too late for the university's application deadline.",

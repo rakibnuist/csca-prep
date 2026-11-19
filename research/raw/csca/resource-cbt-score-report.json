@@ -1,0 +1,15 @@
+{
+  "source": "https://csca.cn/about/* · POST /sv/open/zyxx/list {zydm:GYKS_KSXZ_JZJK_CJYBG}",
+  "operation": "csca.resource",
+  "fetchedAt": "2026-11-13T00:34:21+00:00",
+  "code": "GYKS_KSXZ_JZJK_CJYBG",
+  "data": {
+    "code": "GYKS_KSXZ_JZJK_CJYBG",
+    "title": "成绩与报告",
+    "type": "richtext",
+    "published": "2026-10-08T10:37:14+08:00",
+    "version": 2,
+    "content": "<p><b>1. 成绩公布</b></p><p style=\"text-align: justify; margin-bottom: 12px;\">考试成绩通常在考试结束后<b>10个工作日内</b>公布。请登录CSCA官方报名网站查询并下载<b>电子版成绩报告</b>。 如有特殊情况导致延迟，将在官网发布公告。</p><p style=\"text-align: justify; margin-bottom: 12px;\"><b>2. 成绩效力</b></p><p style=\"text-align: justify; margin-bottom: 12px;\"><b>• 用途：</b>该成绩是申请中国高校本科录取的重要参考依据，同时也是中国政府奖学金评审的必备申请材料。</p><p style=\"text-align: justify;\"><b>• 有效期：</b>自证书发布之日起2年内有效。</p>",
+    "contentEn": "<p>1. Score Release</p><p style=\"text-align: justify; margin-bottom: 12px;\">Exam scores are typically released within 10 business days after your test date. Log in to your CSCA account at <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://www.csca.cn\">www.csca.cn</a> to view and download the electronic score report. Notice will be posted on the official website if delays occur.</p><p style=\"text-align: justify; margin-bottom: 12px;\">2. Score Validity &amp; Use</p><p style=\"text-align: justify; margin-bottom: 12px;\">* Purpose: The CSCA score serves as an important reference for undergraduate admissions to Chinese universities and is required for the evaluation of Chinese Government Scholarships.</p><p style=\"text-align: justify;\">* Validity Period: The score report is valid for two (2) years from the date of issuance.</p>"
+  }
+}

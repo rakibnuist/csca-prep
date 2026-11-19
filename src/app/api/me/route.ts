@@ -1,14 +1,25 @@
 import { NextResponse } from "next/server";
-import { getSession } from "@/lib/auth";
+import { getCurrentUser } from "@/lib/auth";
+
+// This response is per-session. It must never be written to a browser cache
+// or a CDN — the marketing navbar polls it on every page load.
+export const dynamic = "force-dynamic";
+
+const NO_STORE = { "Cache-Control": "no-store, max-age=0" };
 
 export async function GET() {
-  const session = await getSession();
-  if (!session) return NextResponse.json({ user: null });
+  const user = await getCurrentUser();
+  if (!user || user.status !== "APPROVED") {
+    return NextResponse.json({ user: null }, { headers: NO_STORE });
+  }
 
-  return NextResponse.json({
-    user: {
-      name: session.name,
-      role: session.role,
+  return NextResponse.json(
+    {
+      user: {
+        name: user.name,
+        role: user.role,
+      },
     },
-  });
+    { headers: NO_STORE },
+  );
 }

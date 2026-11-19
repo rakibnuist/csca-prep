@@ -1,0 +1,102 @@
+[
+  {
+    "topic": "P1.1", "difficulty": "MEDIUM",
+    "stem": "The graph shows velocity against time for an object. What is the displacement over the 10 s shown?",
+    "stemZh": "图为物体速度随时间的变化。10 s 内的位移是多少？",
+    "options": ["48 m", "64 m", "80 m", "32 m"], "optionsZh": ["48 m", "64 m", "80 m", "32 m"],
+    "figure": "/figures/original/phys-fig-01-vt.svg", "correct": 1,
+    "explanation": "Displacement is the area under a v–t graph. Triangle: ½ × 4 × 8 = 16 m. Rectangle: 6 × 8 = 48 m. Total = 64 m.",
+    "explanationZh": "位移等于 v–t 图下的面积。三角形：½ × 4 × 8 = 16 m；矩形：6 × 8 = 48 m；合计 64 m。",
+    "tags": ["kinematics", "graph"]
+  },
+  {
+    "topic": "P1.1", "difficulty": "EASY",
+    "stem": "For the v–t graph shown, what is the acceleration during the first 4 s?",
+    "stemZh": "对于图示 v–t 图，前 4 s 的加速度是多少？",
+    "options": ["0.5 m/s²", "4 m/s²", "8 m/s²", "2 m/s²"], "optionsZh": ["0.5 m/s²", "4 m/s²", "8 m/s²", "2 m/s²"],
+    "figure": "/figures/original/phys-fig-01-vt.svg", "correct": 3,
+    "explanation": "Acceleration is the gradient: rise/run = 8/4 = 2 m/s².",
+    "explanationZh": "加速度为斜率：8/4 = 2 m/s²。",
+    "tags": ["kinematics", "acceleration"]
+  },
+  {
+    "topic": "P1.2", "difficulty": "MEDIUM",
+    "stem": "A 4 kg block is pulled right with 20 N while friction acts left with 8 N. What is the net force on the block?",
+    "stemZh": "4 kg 的物块受到向右 20 N 的拉力，摩擦力向左 8 N。物块所受合力是多少？",
+    "options": ["20 N", "8 N", "12 N", "28 N"], "optionsZh": ["20 N", "8 N", "12 N", "28 N"],
+    "figure": "/figures/original/phys-fig-02-forces.svg", "correct": 2,
+    "explanation": "Net force = 20 − 8 = 12 N to the right. (The acceleration would be 12/4 = 3 m/s².)",
+    "explanationZh": "合力 = 20 − 8 = 12 N，方向向右（加速度为 12/4 = 3 m/s²）。",
+    "tags": ["newton", "net force"]
+  },
+  {
+    "topic": "P1.3", "difficulty": "MEDIUM",
+    "stem": "Cart A (2 kg, 3 m/s) hits stationary cart B (1 kg). After the collision A moves at 1 m/s. What is B's velocity?",
+    "stemZh": "小车 A（2 kg，3 m/s）撞击静止的小车 B（1 kg）。碰撞后 A 以 1 m/s 运动，B 的速度是多少？",
+    "options": ["2 m/s", "4 m/s", "3 m/s", "6 m/s"], "optionsZh": ["2 m/s", "4 m/s", "3 m/s", "6 m/s"],
+    "figure": "/figures/original/phys-fig-03-collision.svg", "correct": 1,
+    "explanation": "Conserve momentum: 2×3 = 2×1 + 1×v, so 6 = 2 + v and v = 4 m/s.",
+    "explanationZh": "动量守恒：2×3 = 2×1 + 1×v，即 6 = 2 + v，得 v = 4 m/s。",
+    "tags": ["momentum", "collision"]
+  },
+  {
+    "topic": "P1.4", "difficulty": "MEDIUM",
+    "stem": "The 2 kg pendulum bob is released from rest at 0.8 m above its lowest point. What is its speed at the bottom? (g = 10 m/s²)",
+    "stemZh": "2 kg 的摆球从比最低点高 0.8 m 处由静止释放。到达最低点时的速度是多少？（g = 10 m/s²）",
+    "options": ["2 m/s", "4 m/s", "8 m/s", "1.6 m/s"], "optionsZh": ["2 m/s", "4 m/s", "8 m/s", "1.6 m/s"],
+    "figure": "/figures/original/phys-fig-04-pendulum.svg", "correct": 1,
+    "explanation": "mgh = ½mv², so v = √(2gh) = √(2 × 10 × 0.8) = √16 = 4 m/s. Mass cancels.",
+    "explanationZh": "mgh = ½mv²，得 v = √(2gh) = √(2 × 10 × 0.8) = √16 = 4 m/s。质量约去。",
+    "tags": ["energy", "conservation"]
+  },
+  {
+    "topic": "P1.5", "difficulty": "MEDIUM",
+    "stem": "A satellite orbits at radius 1000 m with speed 200 m/s. What is its centripetal acceleration?",
+    "stemZh": "卫星以 200 m/s 的速度在半径 1000 m 的轨道上运动。其向心加速度是多少？",
+    "options": ["20 m/s²", "200 m/s²", "40 m/s²", "0.2 m/s²"], "optionsZh": ["20 m/s²", "200 m/s²", "40 m/s²", "0.2 m/s²"],
+    "figure": "/figures/original/phys-fig-05-orbit.svg", "correct": 2,
+    "explanation": "a = v²/r = 200²/1000 = 40000/1000 = 40 m/s², directed toward the centre.",
+    "explanationZh": "a = v²/r = 200²/1000 = 40 m/s²，方向指向圆心。",
+    "tags": ["circular motion", "acceleration"]
+  },
+  {
+    "topic": "P1.6", "difficulty": "EASY",
+    "stem": "The wave has wavelength 4 m and frequency 5 Hz. What is its speed?",
+    "stemZh": "该波波长为 4 m，频率为 5 Hz。波速是多少？",
+    "options": ["1.25 m/s", "9 m/s", "20 m/s", "5 m/s"], "optionsZh": ["1.25 m/s", "9 m/s", "20 m/s", "5 m/s"],
+    "figure": "/figures/original/phys-fig-06-wave.svg", "correct": 2,
+    "explanation": "Wave speed v = fλ = 5 × 4 = 20 m/s.",
+    "explanationZh": "波速 v = fλ = 5 × 4 = 20 m/s。",
+    "tags": ["waves", "speed"]
+  },
+  {
+    "topic": "P2.1", "difficulty": "HARD",
+    "stem": "Two positive charges, +2 μC and +3 μC, are 0.1 m apart. What is the electrostatic force between them? (k = 9×10⁹ N·m²/C²)",
+    "stemZh": "两个正电荷 +2 μC 与 +3 μC 相距 0.1 m。它们之间的静电力是多少？（k = 9×10⁹ N·m²/C²）",
+    "options": ["54 N", "0.54 N", "5.4 N", "1.8 N"], "optionsZh": ["54 N", "0.54 N", "5.4 N", "1.8 N"],
+    "figure": "/figures/original/phys-fig-07-charges.svg", "correct": 2,
+    "explanation": "F = kq₁q₂/r² = (9×10⁹ × 2×10⁻⁶ × 3×10⁻⁶)/(0.1)² = 0.054/0.01 = 5.4 N.",
+    "explanationZh": "F = kq₁q₂/r² = (9×10⁹ × 2×10⁻⁶ × 3×10⁻⁶)/(0.1)² = 5.4 N。",
+    "tags": ["electrostatics", "coulomb"]
+  },
+  {
+    "topic": "P2.2", "difficulty": "MEDIUM",
+    "stem": "Two 6 Ω resistors are in parallel, and the 2 Ω resistor is in series with them. What is the total resistance?",
+    "stemZh": "两个 6 Ω 电阻并联，再与 2 Ω 电阻串联。总电阻是多少？",
+    "options": ["3 Ω", "5 Ω", "8 Ω", "4 Ω"], "optionsZh": ["3 Ω", "5 Ω", "8 Ω", "4 Ω"],
+    "figure": "/figures/original/phys-fig-08-circuit.svg", "correct": 1,
+    "explanation": "Parallel pair: 1/R = 1/6 + 1/6 = 1/3, so R = 3 Ω. Add the series 2 Ω: total = 5 Ω.",
+    "explanationZh": "并联部分：1/R = 1/6 + 1/6 = 1/3，R = 3 Ω；再串联 2 Ω，总电阻 5 Ω。",
+    "tags": ["circuits", "resistance"]
+  },
+  {
+    "topic": "P4.1", "difficulty": "HARD",
+    "stem": "An object is 30 cm from a convex lens of focal length 10 cm. What is the image distance?",
+    "stemZh": "物体距焦距为 10 cm 的凸透镜 30 cm。像距是多少？",
+    "options": ["10 cm", "15 cm", "30 cm", "20 cm"], "optionsZh": ["10 cm", "15 cm", "30 cm", "20 cm"],
+    "figure": "/figures/original/phys-fig-09-lens.svg", "correct": 1,
+    "explanation": "1/f = 1/u + 1/v → 1/10 = 1/30 + 1/v → 1/v = 1/15, so v = 15 cm (a real image).",
+    "explanationZh": "1/f = 1/u + 1/v → 1/10 = 1/30 + 1/v → 1/v = 1/15，故 v = 15 cm（实像）。",
+    "tags": ["optics", "lens"]
+  }
+]

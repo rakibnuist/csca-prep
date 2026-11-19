@@ -1,0 +1,284 @@
+{
+  "url": "https://csca.space/diagnostic",
+  "finalUrl": "https://csca.space/diagnostic",
+  "status": 200,
+  "title": "CSCA Mock Test & Practice Simulator (2026 CBT Exam Format)",
+  "description": "Take a free, timed CSCA mock examination matching the official 48-question CBT format. Get immediate scoring, question autopsies, and weak-area analysis.",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Free CSCA Computer-Based Diagnostic & Mock Simulator"
+    }
+  ],
+  "text": "CSCA SPACEBETA\n\nDiagnostic\n\n🇨🇳 中文\nSign In\n\nOfficial 25-Question CSCA Benchmark\n\nFree CSCA Computer-Based Diagnostic & Mock Simulator\n\nTake the authoritative 25-question CSCA Mathematics diagnostic test sourced directly from authentic past entrance exams. Get an instant score, topic breakdown, and C9 admission probability rating.\n\n 25 Gold Questions\n\nFull Syllabus\n\nAlgebra, Calculus, Conics, Sequences, Trig\n\n Instant Telemetry\n\nPercentile Score\n\nBenchmarked against 1,200+ global applicants\n\n Open Access\n\nZero Friction\n\nNo credit card or initial login required\n\nStart Diagnostic Test",
+  "links": [
+    {
+      "href": "/",
+      "text": "CSCA SPACEBETADiagnostic"
+    },
+    {
+      "href": "/login",
+      "text": "Sign In"
+    }
+  ],
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "EducationalOrganization",
+          "@id": "https://csca.space/#organization",
+          "name": "CSCA Space Academy",
+          "url": "https://csca.space",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://csca.space/logo.png",
+            "contentUrl": "https://csca.space/logo.png",
+            "width": 2048,
+            "height": 2048,
+            "caption": "CSCA Space Logo"
+          },
+          "image": "https://csca.space/logo.png",
+          "description": "Premier standardized preparation academy and adaptive testing simulator for the China Scholastic Competency Assessment (CSCA).",
+          "knowsAbout": [
+            "China Scholastic Competency Assessment",
+            "CSCA Exam",
+            "CSC Scholarship",
+            "Chinese Government Scholarship",
+            "STEM University Admissions in China"
+          ],
+          "sameAs": [
+            "https://github.com/cscaspace"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://csca.space/#website",
+          "url": "https://csca.space",
+          "name": "CSCA Space",
+          "inLanguage": [
+            "en",
+            "zh-Hans"
+          ],
+          "dateModified": "2026-09-04",
+          "publisher": {
+            "@id": "https://csca.space/#organization"
+          },
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://csca.space/subjects?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+          }
+        },
+        {
+          "@type": "EducationalApplication",
+          "@id": "https://csca.space/#application",
+          "name": "CSCA Space Exam Simulator & Mock Generator",
+          "url": "https://csca.space",
+          "applicationCategory": "EducationalApplication",
+          "operatingSystem": "All",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+          },
+          "description": "High-yield bilingual CSCA examination simulator powered by the v2.4 and v3.0 parametric question generation engine calibrated to 99.8% fidelity of official CSCA CBT exams, featuring deterministic SymPy proofs and FSRS-6 formula mastery.",
+          "featureList": [
+            "99.8% Official CSCA CBT Exam Fidelity Mock Generator",
+            "Dual v2.4 Consensus & v3.0 Parametric Manifold Engine",
+            "Deterministic SymPy Symbolic STEM Dual-Verification",
+            "6 Macro Cognitive Habit Distractor Autopsies",
+            "48 Questions in 60 Minutes Timed Exam Environment",
+            "Bilingual English and Chinese CSCA STEM Syllabi"
+          ],
+          "provider": {
+            "@id": "https://csca.space/#organization"
+          }
+        },
+        {
+          "@type": "SiteNavigationElement",
+          "@id": "https://csca.space/#navigation",
+          "name": "CSCA Space Main Navigation",
+          "hasPart": [
+            {
+              "@type": "WebPage",
+              "name": "CSCA Mock Tests & Simulator",
+              "url": "https://csca.space/subjects/portal",
+              "description": "Adaptive CSCA mock exam hall with official timers and real-time pacer tracking."
+            },
+            {
+              "@type": "WebPage",
+              "name": "CSCA Mathematics Past Papers",
+              "url": "https://csca.space/subjects/math",
+              "description": "Calculus, Algebra, Analytic Geometry, and Vector past questions with KaTeX derivations."
+            },
+            {
+              "@type": "WebPage",
+              "name": "CSCA Physics Syllabus & Drills",
+              "url": "https://csca.space/subjects/physics",
+              "description": "Classical mechanics, electromagnetism, and thermodynamics CSCA questions."
+            },
+            {
+              "@type": "WebPage",
+              "name": "CSCA Chemistry Complete Guide",
+              "url": "https://csca.space/subjects/chemistry",
+              "description": "Organic chemistry, stoichiometry, and chemical equilibrium practice."
+            },
+            {
+              "@type": "WebPage",
+              "name": "CSCA Academic Chinese (科技汉语)",
+              "url": "https://csca.space/subjects/chinese",
+              "description": "Scientific Chinese reading comprehension and technical STEM vocabulary."
+            },
+            {
+              "@type": "WebPage",
+              "name": "CSCA Space vs Private Tutoring",
+              "url": "https://csca.space/vs/traditional-tutoring-vs-cscaspace",
+              "description": "Transparent comparison between CSCA Space self-paced academy and traditional private agency tutoring."
+            },
+            {
+              "@type": "WebPage",
+              "name": "Diagnostic Assessment",
+              "url": "https://csca.space/diagnostic",
+              "description": "Free 15-minute diagnostic exam assessing CSCA readiness across all 4 subjects."
+            }
+          ]
+        },
+        {
+          "@type": "LearningResource",
+          "@id": "https://csca.space/#learningresource",
+          "name": "CSCA Standardized Examination Curriculum & Past Papers",
+          "description": "Complete CSCA preparation curriculum covering Mathematics, Physics, Chemistry, and Academic Chinese.",
+          "educationalLevel": "High School to Undergraduate Admissions",
+          "learningResourceType": "Practice Assessment & Exam Simulation",
+          "inLanguage": [
+            "en",
+            "zh-Hans"
+          ],
+          "isAccessibleForFree": true,
+          "provider": {
+            "@id": "https://csca.space/#organization"
+          }
+        },
+        {
+          "@type": "Course",
+          "@id": "https://csca.space/#course-math",
+          "name": "CSCA Mathematics Preparation & Past Papers",
+          "description": "Comprehensive CSCA Mathematics syllabus coverage: Calculus, Algebra, Sequences, Vectors, Probability, and Adaptive Practice.",
+          "provider": {
+            "@id": "https://csca.space/#organization"
+          },
+          "url": "https://csca.space/subjects/math",
+          "isAccessibleForFree": true
+        },
+        {
+          "@type": "Course",
+          "@id": "https://csca.space/#course-physics",
+          "name": "CSCA Physics Preparation & Past Papers",
+          "description": "Standardized CSCA Physics exam training: Classical Mechanics, Electromagnetism, Optics, Thermodynamics, and Past Questions.",
+          "provider": {
+            "@id": "https://csca.space/#organization"
+          },
+          "url": "https://csca.space/subjects/physics",
+          "isAccessibleForFree": true
+        },
+        {
+          "@type": "Course",
+          "@id": "https://csca.space/#course-chemistry",
+          "name": "CSCA Chemistry Preparation & Past Papers",
+          "description": "Complete CSCA Chemistry syllabus modules: Stoichiometry, Organic Chemistry, Chemical Equilibrium, and Laboratory Principles.",
+          "provider": {
+            "@id": "https://csca.space/#organization"
+          },
+          "url": "https://csca.space/subjects/chemistry",
+          "isAccessibleForFree": true
+        },
+        {
+          "@type": "Course",
+          "@id": "https://csca.space/#course-chinese",
+          "name": "CSCA Academic Chinese Preparation",
+          "description": "Specialized Academic Chinese for STEM admissions in China: Technical Vocabulary, Scientific Reading Comprehension, and HSK 5-6 Alignment.",
+          "provider": {
+            "@id": "https://csca.space/#organization"
+          },
+          "url": "https://csca.space/subjects/chinese",
+          "isAccessibleForFree": true
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://csca.space/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What is the CSCA (China Scholastic Competency Assessment)?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The CSCA (China Scholastic Competency Assessment) is the standardized STEM competency assessment used by top Chinese universities and CSC Government Scholarship committees to evaluate international undergraduate candidates in Mathematics, Physics, Chemistry, and Academic Chinese."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How to prepare for the CSCA exam online?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "To prepare for the CSCA exam, students should use CSCA Space (csca.space) for adaptive mock test simulations, past paper questions, bilingual terminology drills, formula sheets, and step-by-step video explainers aligned with the official CSCA syllabus."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What subjects are tested in the CSCA?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The CSCA exam tests four core disciplines: Mathematics (Algebra, Calculus, Analytical Geometry), Physics (Mechanics, Electromagnetism, Waves), Chemistry (Physical Chemistry, Organic Chemistry, Stoichiometry), and Academic Chinese."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Where can I find CSCA past papers and practice questions?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "CSCA Space provides verified CSCA mock exams, diagnostic assessments, and curated past questions with comprehensive step-by-step pedagogical walkthroughs at https://csca.space."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How does CSCA Space help international students prepare for the CSCA?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "CSCA Space provides 100% syllabus-aligned interactive practice, bilingual English and Chinese STEM explanations, full diagnostic scoring, and adaptive mock test simulations designed specifically for international university admissions in China."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is a competitive score on the CSCA for CSC scholarships?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Candidates scoring in the 80th percentile and above are highly competitive for full Chinese Government Scholarships (CSC Type A & Type B) and direct admission into top C9 league universities."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://csca.space"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Diagnostic Mock Test",
+          "item": "https://csca.space/diagnostic"
+        }
+      ]
+    }
+  ],
+  "capture": "cmwe94apj",
+  "site": "csca-space"
+}

@@ -1,0 +1,55 @@
+{
+  "site": "csca-international",
+  "source": "https://cscainternational.com/",
+  "pages": [
+    {
+      "slug": "home",
+      "url": "https://cscainternational.com/",
+      "title": "Start Your Global Journey - We build real futures! Home - cscainternational.com",
+      "status": 200,
+      "chars": 7134
+    },
+    {
+      "slug": "csca-exams",
+      "url": "https://cscainternational.com/csca-exams/",
+      "title": "CSCA Exams - Start Your Global Journey",
+      "status": 200,
+      "chars": 6999
+    },
+    {
+      "slug": "contact",
+      "url": "https://cscainternational.com/contact/",
+      "title": "Contact - Start Your Global Journey",
+      "status": 200,
+      "chars": 3411
+    },
+    {
+      "slug": "legal",
+      "url": "https://cscainternational.com/legal/",
+      "title": "Legal - Start Your Global Journey",
+      "status": 200,
+      "chars": 5802
+    },
+    {
+      "slug": "csca-subjects-explained-what-matters-more-than-memorization",
+      "url": "https://cscainternational.com/csca-subjects-explained-what-matters-more-than-memorization/",
+      "title": "CSCA Subjects Explained: What Matters More Than Memorization - Start Your Global Journey",
+      "status": 200,
+      "chars": 6118
+    },
+    {
+      "slug": "why-csca-feels-difficult-even-for-high-scoring-students",
+      "url": "https://cscainternational.com/why-csca-feels-difficult-even-for-high-scoring-students/",
+      "title": "Why CSCA Feels Difficult Even for High-Scoring Students - Start Your Global Journey",
+      "status": 200,
+      "chars": 5404
+    },
+    {
+      "slug": "why-chinese-universities-use-csca-in-international-admissions",
+      "url": "https://cscainternational.com/why-chinese-universities-use-csca-in-international-admissions/",
+      "title": "Why Chinese Universities Use CSCA in International Admissions - Start Your Global Journey",
+      "status": 200,
+      "chars": 5913
+    }
+  ]
+}

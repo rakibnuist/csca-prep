@@ -1,0 +1,172 @@
+import type { SeedQuestion } from "../types";
+
+/**
+ * April 2026 Mathematics sprint review — Module 1: Sets and Inequalities.
+ *
+ * This is a review sheet, not an official sitting. The source has 20 items but
+ * six are internally inconsistent (several correct options or options that do
+ * not match the stem) and are omitted. The remaining 15 are reproduced with a
+ * reconstructed key.
+ */
+export const officialMathAprReviewM1Questions: SeedQuestion[] = [
+  {
+    topic: "M1.1",
+    difficulty: "EASY",
+    stem: "A = {1, 3, 5, 7}, B = {2, 3, 5, 8}. Then A ∩ B =",
+    options: ["{3, 5}", "{1, 2, 7, 8}", "{1, 3, 5, 7}", "∅"],
+    correct: 0,
+    explanation: "The common elements are 3 and 5, so A ∩ B = {3, 5}.",
+    explanationZh: "公共元素是 3 和 5，因此 A ∩ B = {3, 5}。",
+    tags: ["sets", "intersection", "review"],
+  },
+  {
+    topic: "M1.1",
+    difficulty: "EASY",
+    stem: "U = {1, 2, 3, 4, 5, 6} and A = {2, 4, 6}. Then ∁ᵤA =",
+    options: ["{1, 3, 5}", "{2, 4, 6}", "{1, 2, 3, 4, 5, 6}", "∅"],
+    correct: 0,
+    explanation: "The complement contains the elements of U that are not in A: {1, 3, 5}.",
+    explanationZh: "补集包含 U 中不属于 A 的元素：{1, 3, 5}。",
+    tags: ["sets", "complement", "review"],
+  },
+  {
+    topic: "M1.1",
+    difficulty: "EASY",
+    stem: "A = {x | −1 ≤ x < 3}, B = {x | 0 < x < 5}. Then A ∪ B =",
+    options: ["(0, 3)", "[−1, 5)", "(0, 5)", "(0, 5]"],
+    correct: 1,
+    explanation: "The union starts at −1 (included) and ends at 5 (excluded): [−1, 5).",
+    explanationZh: "并集从 −1（包含）到 5（不包含）：[−1, 5)。",
+    tags: ["sets", "intervals", "review"],
+  },
+  {
+    topic: "M1.1",
+    difficulty: "MEDIUM",
+    stem: "Which statement about sets is correct?",
+    options: [
+      "The empty set is a proper subset of every set",
+      "If A ∪ B = A, then B ⊆ A",
+      "If A ∩ B = ∅, then both A and B are empty",
+      "{1, 2} and {2, 1} are different sets",
+    ],
+    correct: 1,
+    explanation:
+      "If A ∪ B = A, every element of B is already in A, so B ⊆ A. The empty set is not a proper subset of itself; disjoint sets need not be empty; and order does not change a set.",
+    explanationZh:
+      "若 A ∪ B = A，则 B 的每个元素都已在 A 中，故 B ⊆ A。空集不是自身的真子集；不相交的集合不必为空；集合元素的顺序不影响集合。",
+    tags: ["sets", "subsets", "review"],
+  },
+  {
+    topic: "M1.1",
+    difficulty: "EASY",
+    stem: "A = (−∞, 2), B = (1, +∞). Then A ∩ B =",
+    options: ["(1, 2)", "(−∞, +∞)", "(−∞, 1]", "[2, +∞)"],
+    correct: 0,
+    explanation: "The overlap is the open interval (1, 2).",
+    explanationZh: "重叠部分为开区间 (1, 2)。",
+    tags: ["sets", "intervals", "review"],
+  },
+  {
+    topic: "M1.1",
+    difficulty: "EASY",
+    stem: "A = {x | x² − 4 = 0}. Which element belongs to A?",
+    options: ["0", "1", "−2", "4"],
+    correct: 2,
+    explanation: "x² − 4 = 0 gives x = ±2, so −2 ∈ A.",
+    explanationZh: "由 x² − 4 = 0 得 x = ±2，故 −2 ∈ A。",
+    tags: ["sets", "equations", "review"],
+  },
+  {
+    topic: "M1.1",
+    difficulty: "EASY",
+    stem: "How many subsets does a set with 3 elements have?",
+    options: ["3", "6", "7", "8"],
+    correct: 3,
+    explanation: "A set with n elements has 2ⁿ subsets; 2³ = 8.",
+    explanationZh: "含 n 个元素的集合有 2ⁿ 个子集；2³ = 8。",
+    tags: ["sets", "subsets", "review"],
+  },
+  {
+    topic: "M1.1",
+    difficulty: "EASY",
+    stem: "M = {x | x ≥ −2}, N = {x | x < 1}. Then M ∩ N =",
+    options: ["[−2, 1)", "(−2, 1)", "(−∞, −2]", "[1, +∞)"],
+    correct: 0,
+    explanation: "The overlap is −2 ≤ x < 1, i.e. [−2, 1).",
+    explanationZh: "重叠部分为 −2 ≤ x < 1，即 [−2, 1)。",
+    tags: ["sets", "intervals", "review"],
+  },
+  {
+    topic: "M1.1",
+    difficulty: "EASY",
+    stem: "A = {1, 2, 3}, B = {2, 3, 4}, C = {3, 4, 5}. Then (A ∪ B) ∩ C =",
+    options: ["{3}", "{3, 4}", "{2, 3, 4}", "{1, 2, 3, 4, 5}"],
+    correct: 1,
+    explanation: "A ∪ B = {1, 2, 3, 4}; intersecting with C leaves {3, 4}.",
+    explanationZh: "A ∪ B = {1, 2, 3, 4}；再与 C 求交集得 {3, 4}。",
+    tags: ["sets", "union", "intersection", "review"],
+  },
+  {
+    topic: "M1.2",
+    difficulty: "EASY",
+    stem: "The solution set of x² + 2x − 3 < 0 is",
+    options: ["(−∞, −3) ∪ (1, +∞)", "(−3, 1)", "(−∞, −1) ∪ (3, +∞)", "(−1, 3)"],
+    correct: 1,
+    explanation: "x² + 2x − 3 = (x + 3)(x − 1) < 0, so −3 < x < 1.",
+    explanationZh: "x² + 2x − 3 = (x + 3)(x − 1) < 0，故 −3 < x < 1。",
+    tags: ["inequalities", "quadratic", "review"],
+  },
+  {
+    topic: "M1.2",
+    difficulty: "EASY",
+    stem: "The solution set of x² ≥ 9 is",
+    options: ["[−3, 3]", "[3, +∞)", "(−∞, −3]", "(−∞, −3] ∪ [3, +∞)"],
+    correct: 3,
+    explanation: "x² ≥ 9 means |x| ≥ 3, so x ≤ −3 or x ≥ 3.",
+    explanationZh: "x² ≥ 9 即 |x| ≥ 3，故 x ≤ −3 或 x ≥ 3。",
+    tags: ["inequalities", "quadratic", "review"],
+  },
+  {
+    topic: "M1.2",
+    difficulty: "EASY",
+    stem: "The solution set of |x − 2| < 1 is",
+    options: ["(1, 3)", "(−∞, 1) ∪ (3, +∞)", "[1, 3]", "(−∞, 1] ∪ [3, +∞)"],
+    correct: 0,
+    explanation: "|x − 2| < 1 means −1 < x − 2 < 1, so 1 < x < 3.",
+    explanationZh: "|x − 2| < 1 即 −1 < x − 2 < 1，故 1 < x < 3。",
+    tags: ["inequalities", "absolute value", "review"],
+  },
+  {
+    topic: "M1.2",
+    difficulty: "MEDIUM",
+    stem: "If x² + mx + 1 > 0 for all real x, the range of m is",
+    options: ["(−2, 2)", "[−2, 2]", "(−∞, −2) ∪ (2, +∞)", "(−∞, −2] ∪ [2, +∞)"],
+    correct: 0,
+    explanation:
+      "The quadratic is always positive when its discriminant is negative: m² − 4 < 0, so −2 < m < 2.",
+    explanationZh: "当判别式为负时，二次式恒正：m² − 4 < 0，故 −2 < m < 2。",
+    tags: ["inequalities", "discriminant", "review"],
+  },
+  {
+    topic: "M1.2",
+    difficulty: "EASY",
+    stem: "If a > b, which inequality must hold?",
+    options: ["a − c > b − c", "ac > bc", "1/a < 1/b", "a² > b²"],
+    correct: 0,
+    explanation:
+      "Subtracting the same number from both sides preserves the inequality. The others depend on the sign of c or on the signs of a and b.",
+    explanationZh:
+      "两边同时减去同一个数，不等号方向不变。其余各项取决于 c 的符号或 a、b 的符号。",
+    tags: ["inequalities", "properties", "review"],
+  },
+  {
+    topic: "M1.2",
+    difficulty: "MEDIUM",
+    stem: "The solution set of the system x² − 4 < 0 and x + 1 > 0 is",
+    options: ["(−2, −1)", "(−1, 2)", "(−2, 2)", "(−1, +∞)"],
+    correct: 1,
+    explanation: "x² < 4 gives −2 < x < 2, and x + 1 > 0 gives x > −1. Together: −1 < x < 2.",
+    explanationZh: "由 x² < 4 得 −2 < x < 2，由 x + 1 > 0 得 x > −1。取交集得 −1 < x < 2。",
+    tags: ["inequalities", "systems", "review"],
+  },
+];

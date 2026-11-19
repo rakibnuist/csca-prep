@@ -1,13 +1,15 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, ArrowUpRight, BadgeCheck, Check, FileSearch, Languages, ShieldCheck } from "lucide-react";
+import { ArrowRight, ArrowUpRight, BadgeCheck, FileSearch, Languages, ShieldCheck } from "lucide-react";
 import { Eyebrow, Pill, SectionHead } from "@/components/site/section";
 import { JsonLd } from "@/components/seo/jsonld";
 import { breadcrumbLd, pageMetadata } from "@/lib/seo";
 import { OFFICIAL } from "@/lib/site";
+import { PAPER_STATS } from "@/lib/paper-stats";
+import { RequirementFit } from "@/components/tools/requirement-fit";
 
 export const metadata: Metadata = pageMetadata({
-  title: "CSCA university requirements — which subjects your major needs",
+  title: "CSCA requirements — which subjects a major needs",
   description:
     "Which CSCA papers each programme group requires, the language rules, exemptions and how to confirm the exact subjects for any Chinese university before you register.",
   path: "/requirements",
@@ -20,14 +22,23 @@ export const metadata: Metadata = pageMetadata({
   ],
 });
 
+/**
+ * Official baseline (csca.cn/about/examintro):
+ *   CGS applicants        — compulsory: Mathematics + Professional Chinese;
+ *                           optional: Physics, Chemistry
+ *   non-CGS applicants    — compulsory: Mathematics (+ Professional Chinese for
+ *                           Chinese-taught programmes); optional: Physics, Chemistry
+ * Individual universities narrow this down per programme, which is why the last
+ * column tells the reader to confirm.
+ */
 const MATRIX = [
-  { group: "Engineering & technology", subjects: "Maths + Physics", note: "Some accept Chemistry for materials or chemical engineering." },
-  { group: "Pure sciences & computer science", subjects: "Maths + Physics", note: "CS usually sits with engineering." },
-  { group: "Chemistry, pharmacy, materials", subjects: "Maths + Chemistry", note: "Physics sometimes accepted as the second subject." },
-  { group: "Medicine, dentistry, nursing", subjects: "Maths + Chemistry", note: "MBBS may add an interview or biology check." },
-  { group: "Agriculture & life sciences", subjects: "Maths + Chemistry or Physics", note: "Rules vary widely — confirm per programme." },
-  { group: "Economics, business, finance", subjects: "Maths only", note: "Humanities applicant pool, but Maths is never waived." },
-  { group: "Law, humanities, education, arts", subjects: "Maths only", note: "Plus Humanities Chinese if the degree is Chinese-taught." },
+  { group: "Engineering & technology", subjects: "Maths + Professional Chinese + Physics", note: "Chemistry accepted instead of Physics for materials or chemical engineering at some institutions." },
+  { group: "Pure sciences & computer science", subjects: "Maths + Professional Chinese + Physics", note: "CS usually sits with engineering." },
+  { group: "Chemistry, pharmacy, materials", subjects: "Maths + Professional Chinese + Chemistry", note: "Physics sometimes accepted as the second elective." },
+  { group: "Medicine, dentistry, nursing", subjects: "Maths + Professional Chinese + Chemistry", note: "MBBS may add an interview or a biology check." },
+  { group: "Agriculture & life sciences", subjects: "Maths + Professional Chinese + Chemistry or Physics", note: "Rules vary widely — confirm per programme." },
+  { group: "Economics, business, finance", subjects: "Maths + Professional Chinese", note: "No science elective, but Mathematics is never waived." },
+  { group: "Law, humanities, education, arts", subjects: "Maths + Professional Chinese (Humanities)", note: "STEM Chinese is only for maths/science/engineering applicants." },
 ];
 
 const FAQ = [
@@ -41,7 +52,11 @@ const FAQ = [
   },
   {
     q: "Do I need Professional Chinese?",
-    a: "Only for Chinese-taught programmes. English-taught degrees are exempt, and Chinese Language majors may qualify with HSK 4. Choosing the wrong stream — Humanities vs STEM — is a common, expensive mistake.",
+    a: "CSCA lists it as a compulsory paper for Chinese Government Scholarship applicants, and for Chinese-taught programmes on any scholarship. Some English-taught programmes are waived by the receiving university — that is an institutional exception, not a general rule, so confirm it in writing before you register. Choosing the wrong stream, Humanities versus STEM, is a common and expensive mistake.",
+  },
+  {
+    q: "Is there an HSK exemption?",
+    a: "Some universities accept HSK Level 4 or above from Chinese Language majors in place of the Professional Chinese paper. CSCA's own rules do not promise it, so treat it as a per-institution arrangement and confirm with admissions.",
   },
   {
     q: "Who decides my exact subject combination?",
@@ -67,26 +82,32 @@ export default function RequirementsPage() {
 
       <section className="border-b border-line">
         <div className="shell py-12 sm:py-16">
-          <Eyebrow>Requirements · verified October 2026</Eyebrow>
+          <Eyebrow>Requirements · verified November 2026</Eyebrow>
           <h1 className="display-lg mt-4 max-w-3xl text-balance">
             Which CSCA subjects does your programme need?
           </h1>
           <p className="lead mt-5 max-w-2xl">
             The rules follow your <strong className="text-ink">programme</strong>, not the
             university&apos;s reputation. Maths is compulsory for everyone; Physics and Chemistry
-            depend on the degree; Professional Chinese depends on the teaching language.
+            depend on the degree; Professional Chinese is compulsory for CGS applicants and
+            Chinese-taught programmes.
           </p>
           <div className="mt-6 flex flex-wrap gap-2">
             <Pill tone="red">Maths mandatory</Pill>
             <Pill tone="jade">Science subject optional by major</Pill>
-            <Pill>Chinese only for Chinese-taught</Pill>
+            <Pill>Chinese for CGS &amp; Chinese-taught</Pill>
           </div>
         </div>
       </section>
 
+      <div className="shell pt-10">
+        <RequirementFit chineseRequired />
+      </div>
+
+
       <section className="shell py-12">
-        <div className="grid gap-8 lg:grid-cols-[1.5fr_0.8fr]">
-          <div>
+        <div className="grid grid-cols-1 gap-8 lg:grid-cols-[1.5fr_0.8fr]">
+          <div className="min-w-0">
             <h2 className="font-display text-2xl text-ink">Subject rules by programme group</h2>
             <div className="mt-4 overflow-hidden rounded-xl border border-line bg-card">
               <div className="hidden grid-cols-[1fr_1fr_1.1fr] gap-3 border-b border-line bg-paper-deep/60 px-4 py-2.5 text-[10px] tracking-[0.1em] text-ink-faint uppercase sm:grid">
@@ -97,7 +118,7 @@ export default function RequirementsPage() {
               {MATRIX.map((row) => (
                 <div
                   key={row.group}
-                  className="grid gap-1 border-b border-line/60 px-4 py-3 last:border-0 sm:grid-cols-[1fr_1fr_1.1fr] sm:items-center sm:gap-3"
+                  className="grid grid-cols-1 gap-1 border-b border-line/60 px-4 py-3 last:border-0 sm:grid-cols-[1fr_1fr_1.1fr] sm:items-center sm:gap-3"
                 >
                   <p className="text-[12.5px] font-medium text-ink">{row.group}</p>
                   <p className="text-[12px] font-medium text-vermillion-deep">{row.subjects}</p>
@@ -106,21 +127,21 @@ export default function RequirementsPage() {
               ))}
             </div>
 
-            <div className="mt-8 grid gap-4 sm:grid-cols-2">
+            <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2">
               <div className="rounded-xl border border-line bg-card p-5">
                 <Languages className="h-5 w-5 text-ink-faint" />
-                <h3 className="mt-3 font-display text-lg text-ink">The language rule</h3>
+                <h3 className="mt-3 font-display text-lg text-ink">The CGS &amp; language rule</h3>
                 <p className="mt-1.5 text-[12.5px] leading-relaxed text-ink-soft">
-                  Professional Chinese is required only when your degree is taught in Chinese.
-                  English-taught programmes skip it — but still sit Mathematics and any required
-                  science subject.
+                  CSCA lists Professional Chinese as compulsory for Chinese Government Scholarship
+                  (CGS) applicants and for Chinese-taught programmes. Some universities waive it for
+                  non-CGS English-taught degrees — confirm in writing before you register.
                 </p>
               </div>
               <div className="rounded-xl border border-line bg-card p-5">
                 <ShieldCheck className="h-5 w-5 text-ink-faint" />
                 <h3 className="mt-3 font-display text-lg text-ink">The exemptions</h3>
                 <ul className="mt-1.5 space-y-1 text-[12.5px] text-ink-soft">
-                  <li>English-taught degree → no Professional Chinese.</li>
+                  <li>Non-CGS English-taught degree → often waived (confirm with admissions).</li>
                   <li>Chinese Language major → HSK 4 may replace it.</li>
                   <li>Nothing exempts you from Mathematics.</li>
                 </ul>
@@ -128,7 +149,7 @@ export default function RequirementsPage() {
             </div>
 
             <div className="mt-8 rounded-xl border border-gold/30 bg-gold-soft/50 p-5">
-              <p className="flex items-center gap-1.5 text-[11px] font-medium text-gold uppercase">
+              <p className="flex items-center gap-1.5 text-[11px] font-medium text-gold-deep uppercase">
                 <BadgeCheck className="h-3.5 w-3.5" /> Cost note
               </p>
               <p className="mt-1.5 text-[13px] leading-relaxed text-ink-soft">
@@ -138,8 +159,8 @@ export default function RequirementsPage() {
             </div>
           </div>
 
-          <aside className="space-y-4 lg:sticky lg:top-24 lg:self-start">
-            <div className="panel p-5">
+          <aside className="min-w-0 space-y-4 lg:sticky lg:top-24 lg:self-start">
+            <div className="panel card-elevate p-5">
               <FileSearch className="h-4 w-4 text-ink-faint" />
               <p className="mt-2 font-display text-xl text-ink">Confirm in five minutes</p>
               <ol className="mt-3 space-y-2.5 text-[12px] text-ink-soft">
@@ -150,20 +171,20 @@ export default function RequirementsPage() {
                   "Write the answer into your application spreadsheet; rules change each cycle.",
                 ].map((step, index) => (
                   <li key={step} className="flex gap-2.5">
-                    <span className="font-display text-vermillion/70 tabular">0{index + 1}</span>
+                    <span className="font-display text-vermillion tabular">0{index + 1}</span>
                     <span>{step}</span>
                   </li>
                 ))}
               </ol>
             </div>
 
-            <div className="panel p-5">
+            <div className="panel card-elevate p-5">
               <p className="eyebrow">Then prepare it</p>
               <div className="mt-2 space-y-1.5">
                 {[
                   ["/app/mocks", "Full-length mock papers"],
                   ["/syllabus", "Syllabus by subject"],
-                  ["/app/practice", "Topic drills (2,000+ questions)"],
+                  ["/app/practice", `Topic drills (${PAPER_STATS.questions.toLocaleString()} questions)`],
                   ["/guides/csca-registration-step-by-step", "Registration guide"],
                 ].map(([href, label]) => (
                   <Link
@@ -187,7 +208,7 @@ export default function RequirementsPage() {
                 href={OFFICIAL.site}
                 target="_blank"
                 rel="noreferrer noopener"
-                className="mt-2 inline-flex items-center gap-1 text-[11px] font-medium text-vermillion hover:underline"
+                className="mt-2 inline-flex items-center gap-1 text-[11px] font-medium text-indigo hover:underline"
               >
                 Official CSCA portal <ArrowUpRight className="h-3 w-3" />
               </a>
@@ -197,13 +218,13 @@ export default function RequirementsPage() {
       </section>
 
       <section className="border-t border-line bg-card/60 py-14">
-        <div className="shell grid gap-8 lg:grid-cols-[0.8fr_1.2fr]">
+        <div className="shell grid grid-cols-1 gap-8 lg:grid-cols-[0.8fr_1.2fr]">
           <SectionHead
             eyebrow="FAQ"
             title="The questions that decide your papers."
             body="Choosing the wrong subjects is the most expensive CSCA mistake — it costs a retake, not just a fee."
           />
-          <div className="space-y-2.5">
+          <div className="min-w-0 space-y-2.5">
             {FAQ.map((item) => (
               <details key={item.q} className="group rounded-xl border border-line bg-paper px-4 py-3">
                 <summary className="cursor-pointer list-none text-[12.5px] font-medium text-ink">

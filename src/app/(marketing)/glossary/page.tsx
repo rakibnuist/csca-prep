@@ -63,8 +63,8 @@ export default function GlossaryPage() {
       </section>
 
       <section className="shell py-12">
-        <div className="grid gap-10 lg:grid-cols-[0.25fr_0.75fr]">
-          <aside className="hidden lg:block">
+        <div className="grid grid-cols-1 gap-10 lg:grid-cols-[0.25fr_minmax(0,0.75fr)]">
+          <aside className="hidden min-w-0 lg:block">
             <div className="sticky top-24">
               <p className="eyebrow">Contents</p>
               <nav className="mt-3 space-y-1">
@@ -91,7 +91,7 @@ export default function GlossaryPage() {
             </div>
           </aside>
 
-          <div className="space-y-10">
+          <div className="min-w-0 space-y-10">
             {GLOSSARY_CATEGORIES.map((category) => (
               <div key={category} id={category.toLowerCase().replace(/\s+/g, "-")} className="scroll-mt-24">
                 <h2 className="border-b border-line pb-2 font-display text-2xl text-ink">{category}</h2>
@@ -103,9 +103,14 @@ export default function GlossaryPage() {
                       className="scroll-mt-24 rounded-xl border border-line bg-card p-4 sm:p-5"
                     >
                       <dt className="flex flex-wrap items-baseline gap-2">
-                        <span className="text-[14px] font-medium text-ink">{entry.term}</span>
+                        <Link
+                          href={`/glossary/${entry.slug}`}
+                          className="text-[14px] font-medium text-ink transition hover:text-vermillion"
+                        >
+                          {entry.term}
+                        </Link>
                         {entry.zh && (
-                          <span className="font-chinese text-[12px] text-vermillion/80">{entry.zh}</span>
+                          <span className="font-chinese text-[12px] text-vermillion">{entry.zh}</span>
                         )}
                       </dt>
                       <dd className="mt-1.5 text-[12.5px] leading-relaxed text-ink-soft">
@@ -118,7 +123,7 @@ export default function GlossaryPage() {
             ))}
 
             <div className="flex flex-col items-start justify-between gap-3 rounded-xl border border-line bg-ink px-5 py-5 text-paper sm:flex-row sm:items-center">
-              <div>
+              <div className="min-w-0 flex-1">
                 <p className="font-display text-xl">Now put the vocabulary to work.</p>
                 <p className="mt-1 text-[12px] text-paper/60">
                   Sample questions, syllabus and the university requirement matrix — all free to

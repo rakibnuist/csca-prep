@@ -1,0 +1,293 @@
+{
+  "url": "https://www.cscaprepare.com/ai-assistant",
+  "finalUrl": "https://www.cscaprepare.com/ai-assistant",
+  "status": 200,
+  "title": "CSCA AI Assistant | CSCA Preparation",
+  "description": "CSCA AI Assistant is a coming-soon guide for subject choice, syllabus reading, university research, and scholarship navigation.",
+  "headings": [
+    {
+      "level": 1,
+      "text": "CSCA AI Assistant"
+    },
+    {
+      "level": 2,
+      "text": "Your CSCA study copilot for subjects, syllabus, universities, and scholarships"
+    },
+    {
+      "level": 2,
+      "text": "What the assistant is being designed to help with"
+    },
+    {
+      "level": 3,
+      "text": "CSCA core questions"
+    },
+    {
+      "level": 3,
+      "text": "Subjects and syllabus"
+    },
+    {
+      "level": 3,
+      "text": "University navigation"
+    },
+    {
+      "level": 3,
+      "text": "Scholarship route clarity"
+    },
+    {
+      "level": 3,
+      "text": "Join the early-access waitlist"
+    },
+    {
+      "level": 2,
+      "text": "Built around a curated CSCA knowledge layer"
+    },
+    {
+      "level": 2,
+      "text": "Why this page exists before the full tool is live"
+    },
+    {
+      "level": 3,
+      "text": "For students"
+    },
+    {
+      "level": 3,
+      "text": "For AI directories"
+    },
+    {
+      "level": 3,
+      "text": "For future rollout"
+    },
+    {
+      "level": 3,
+      "text": "Exam Info"
+    },
+    {
+      "level": 3,
+      "text": "Subjects"
+    },
+    {
+      "level": 3,
+      "text": "Platform"
+    },
+    {
+      "level": 3,
+      "text": "Legal"
+    }
+  ],
+  "text": "csca prepare\nPracticeMock TestsSyllabusSubject RouteUniversities\n\nSelect language\nENIDVIRU▾\n\nHome/Ai Assistant\n\nAI Assistant\n\nCSCA AI Assistant\n\nA focused AI guide for CSCA subject choice, syllabus reading, university research, and scholarship route navigation. This first public version is coming soon.\n\nComing soon\n\nYour CSCA study copilot for subjects, syllabus, universities, and scholarships\n\nCSCA AI Assistant is being built as a practical education assistant, not a generic chatbot. It is designed to help international students ask clearer questions about the CSCA exam and get grounded guidance based on the materials already organized in CSCA Prepare.\n\nAsk About Early AccessBrowse Subject Guides\n\nCurrent Stage\n\nComing soon / preview page\n\nPrimary Role\n\nEducation guidance assistant\n\nFirst Scope\n\nCore, syllabus, universities, scholarships\n\nWhat the assistant is being designed to help with\n\nThe first public version is intentionally narrow. It is meant to answer the most common planning questions students ask before they choose subjects or commit to a preparation path.\n\nCSCA core questions\n\nExplain what CSCA is, how registration works, how score release fits into planning, and what students should verify from official sources.\n\nSubjects and syllabus\n\nHelp students understand what math, physics, chemistry, humanities Chinese, and STEM Chinese actually cover before they over-collect materials.\n\nUniversity navigation\n\nShow students how to use a university directory as a research tool and how to move from broad school discovery into deeper official verification.\n\nScholarship route clarity\n\nGive a simpler first explanation of CSC, provincial, and university scholarship paths without pretending that unofficial summaries replace official notices.\n\nJoin the early-access waitlist\n\nLeave your email and we will let you know when the first public version of CSCA AI Assistant opens.\n\nEmail address\n\nI agree to receive waitlist and early-access updates by email.\n\nCompany\n\nJoin the Waitlist\n\nBuilt around a curated CSCA knowledge layer\n\nThe goal is to make this assistant more useful than a broad AI search box. Instead of answering from a random internet blend, it is being shaped around curated CSCA preparation materials, structured syllabus summaries, scholarship navigation notes, and university directory guidance already organized on this site.\n\nAnswer only within the current knowledge scope instead of guessing missing rules.\n\nSeparate route guidance from official verification so students know what still needs confirmation.\n\nHelp users move into the right next page instead of leaving them with abstract advice.\n\nWhy this page exists before the full tool is live\n\nThis preview page gives students, directories, and future partners a clear public description of the product direction. It also makes it easier to explain what the AI assistant is for before the first interactive release is opened more broadly.\n\nFor students\n\nIt explains what the assistant will help with and what kinds of planning questions it is meant to support first.\n\nFor AI directories\n\nIt provides a stable product page that describes the product clearly enough for submissions, listings, and future backlinks.\n\nFor future rollout\n\nIt creates a clean public URL now, so the page can grow into the live assistant later without changing the destination.\n\nListed on\n\nExternal AI directories and product discovery platforms\n\nMossAI ToolsAll in AI ToolsAiTop10 ToolsMossAI ToolsAll in AI ToolsAiTop10 Tools\n\nBrowse SubjectsRead the SyllabusExplore UniversitiesCompare Scholarships\n\nA clearer path to CSCA subjects, exam logistics, technical readiness, and preparation planning for international students.\n\nCustomer support: Contact page\n\nExam Info\n\nWhat Is CSCA\n\nSyllabus\n\nUniversities\n\nScholarships\n\nExam Calendar\n\nRegistration\n\nExam Formats\n\nExam Dates\n\nFees\n\nSubjects\n\nMath\n\nPhysics\n\nChemistry\n\nHumanities Chinese\n\nPlatform\n\nAbout\n\nContact\n\nChoose Subjects\n\nMock Tests\n\nPractice\n\nAI Assistant\n\nUniversities\n\nScholarships\n\nResources\n\nLegal\n\nPrivacy Policy\n\nTerms\n\nShop\n\nThis is an independent preparation platform. It is not affiliated with, authorized by, endorsed by, or sponsored by CSCA, CSC, or China’s Ministry of Education. Verify registration and policy information on the official CSCA website.",
+  "links": [
+    {
+      "href": "/",
+      "text": "csca prepare"
+    },
+    {
+      "href": "/practice",
+      "text": "Practice"
+    },
+    {
+      "href": "/mock-test",
+      "text": "Mock Tests"
+    },
+    {
+      "href": "/syllabus",
+      "text": "Syllabus"
+    },
+    {
+      "href": "/tools/subject-picker",
+      "text": "Subject Route"
+    },
+    {
+      "href": "/universities",
+      "text": "Universities"
+    },
+    {
+      "href": "/",
+      "text": "Home"
+    },
+    {
+      "href": "/contact",
+      "text": "Ask About Early Access"
+    },
+    {
+      "href": "/subjects",
+      "text": "Browse Subject Guides"
+    },
+    {
+      "href": "https://mossai.org/",
+      "text": "MossAI Tools"
+    },
+    {
+      "href": "https://allinai.tools",
+      "text": "All in AI Tools"
+    },
+    {
+      "href": "https://aitop10.tools/",
+      "text": "AiTop10 Tools"
+    },
+    {
+      "href": "https://mossai.org/",
+      "text": "MossAI Tools"
+    },
+    {
+      "href": "https://allinai.tools",
+      "text": "All in AI Tools"
+    },
+    {
+      "href": "https://aitop10.tools/",
+      "text": "AiTop10 Tools"
+    },
+    {
+      "href": "/subjects",
+      "text": "Browse Subjects"
+    },
+    {
+      "href": "/syllabus",
+      "text": "Read the Syllabus"
+    },
+    {
+      "href": "/universities",
+      "text": "Explore Universities"
+    },
+    {
+      "href": "/scholarships",
+      "text": "Compare Scholarships"
+    },
+    {
+      "href": "/contact",
+      "text": "Contact page"
+    },
+    {
+      "href": "/what-is-csca",
+      "text": "What Is CSCA"
+    },
+    {
+      "href": "/syllabus",
+      "text": "Syllabus"
+    },
+    {
+      "href": "/universities",
+      "text": "Universities"
+    },
+    {
+      "href": "/scholarships",
+      "text": "Scholarships"
+    },
+    {
+      "href": "/exam-calendar",
+      "text": "Exam Calendar"
+    },
+    {
+      "href": "/csca-registration",
+      "text": "Registration"
+    },
+    {
+      "href": "/csca-exam-formats",
+      "text": "Exam Formats"
+    },
+    {
+      "href": "/csca-exam-dates",
+      "text": "Exam Dates"
+    },
+    {
+      "href": "/csca-fees",
+      "text": "Fees"
+    },
+    {
+      "href": "/subjects/math",
+      "text": "Math"
+    },
+    {
+      "href": "/subjects/physics",
+      "text": "Physics"
+    },
+    {
+      "href": "/subjects/chemistry",
+      "text": "Chemistry"
+    },
+    {
+      "href": "/subjects/humanities-chinese",
+      "text": "Humanities Chinese"
+    },
+    {
+      "href": "/about",
+      "text": "About"
+    },
+    {
+      "href": "/contact",
+      "text": "Contact"
+    },
+    {
+      "href": "/choose-subjects",
+      "text": "Choose Subjects"
+    },
+    {
+      "href": "/mock-test",
+      "text": "Mock Tests"
+    },
+    {
+      "href": "/practice",
+      "text": "Practice"
+    },
+    {
+      "href": "/ai-assistant",
+      "text": "AI Assistant"
+    },
+    {
+      "href": "/universities",
+      "text": "Universities"
+    },
+    {
+      "href": "/scholarships",
+      "text": "Scholarships"
+    },
+    {
+      "href": "/resources",
+      "text": "Resources"
+    },
+    {
+      "href": "/privacy",
+      "text": "Privacy Policy"
+    },
+    {
+      "href": "/terms",
+      "text": "Terms"
+    },
+    {
+      "href": "/shop",
+      "text": "Shop"
+    },
+    {
+      "href": "https://csca.cn/home",
+      "text": "the official CSCA website"
+    }
+  ],
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "CSCA AI Assistant",
+      "description": "CSCA AI Assistant is an education-focused AI guide for CSCA subject choice, syllabus reading, university directory research, and scholarship route navigation.",
+      "url": "https://www.cscaprepare.com/ai-assistant"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.cscaprepare.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "AI Assistant",
+          "item": "https://www.cscaprepare.com/ai-assistant"
+        }
+      ]
+    }
+  ],
+  "capture": "cmwe91ao0",
+  "site": "cscaprepare"
+}

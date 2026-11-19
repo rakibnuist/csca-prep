@@ -13,19 +13,29 @@ export function Logo({
   return (
     <Link
       href="/"
-      aria-label="CSCA Master home"
-      className={cn("group inline-flex items-center gap-2.5", className)}
+      // Only label the link when it has no visible text (compact mode).
+      // Labelling it otherwise makes the accessible name disagree with the
+      // visible "CSCA Master — Exam preparation".
+      aria-label={compact ? "CSCA Master home" : undefined}
+      className={cn("group inline-flex shrink-0 items-center gap-2.5 whitespace-nowrap", className)}
     >
       <span
         className={cn(
-          "relative flex h-8 w-8 items-center justify-center rounded-[0.4rem] bg-vermillion transition-transform duration-300 group-hover:-rotate-3",
+          "relative flex h-8 w-8 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-vermillion to-indigo shadow-sm transition-transform duration-300 group-hover:-rotate-3",
         )}
       >
         <svg viewBox="0 0 24 24" className="h-4.5 w-4.5" fill="none" aria-hidden="true">
           <path
-            d="M5.5 12.5l4 4L18.5 7"
-            stroke="#FFF8F3"
-            strokeWidth="2.6"
+            d="M4 9l8-4 8 4-8 4-8-4z"
+            stroke="#FFFFFF"
+            strokeWidth="1.9"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+          <path
+            d="M8 12.2v3.8c0 1.4 1.8 2.5 4 2.5s4-1.1 4-2.5v-3.8"
+            stroke="#FFFFFF"
+            strokeWidth="1.9"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
@@ -35,19 +45,19 @@ export function Logo({
         <span className="flex flex-col leading-none">
           <span
             className={cn(
-              "font-display text-[1.15rem] tracking-[-0.01em]",
+              "font-display text-[1.12rem] font-bold tracking-[-0.02em]",
               invert ? "text-paper" : "text-ink",
             )}
           >
-            CSCA <span className="italic">Master</span>
+            CSCA <span className="text-vermillion">Master</span>
           </span>
           <span
             className={cn(
-              "mt-1 text-[8.5px] font-medium tracking-[0.28em] uppercase",
-              invert ? "text-paper/50" : "text-ink-faint",
+              "mt-0.5 text-[9.5px] font-semibold tracking-[0.14em] uppercase",
+              invert ? "text-paper/60" : "text-ink-faint",
             )}
           >
-            Exam preparation
+            Student Prep
           </span>
         </span>
       )}

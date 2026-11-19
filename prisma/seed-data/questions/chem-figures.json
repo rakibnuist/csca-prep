@@ -1,0 +1,102 @@
+[
+  {
+    "topic": "C1.1", "difficulty": "EASY",
+    "stem": "Which box shows a compound?",
+    "stemZh": "哪个方框表示化合物？",
+    "options": ["A", "B", "C", "D"], "optionsZh": ["A", "B", "C", "D"],
+    "figure": "/figures/original/chem-fig-01-particles.svg", "correct": 2,
+    "explanation": "C shows molecules made of two different atoms chemically bonded in a fixed ratio — a compound. A and B are elements; D is a mixture.",
+    "explanationZh": "C 表示由两种不同原子按固定比例化合而成的分子——化合物。A、B 是单质，D 是混合物。",
+    "tags": ["classification", "compound"]
+  },
+  {
+    "topic": "C1.1", "difficulty": "MEDIUM",
+    "stem": "Which box shows a mixture?",
+    "stemZh": "哪个方框表示混合物？",
+    "options": ["A", "B", "C", "D"], "optionsZh": ["A", "B", "C", "D"],
+    "figure": "/figures/original/chem-fig-01-particles.svg", "correct": 3,
+    "explanation": "D contains different substances not chemically combined — a mixture. A, B and C are pure substances.",
+    "explanationZh": "D 含有多种未发生化学结合的物质——混合物。A、B、C 都是纯净物。",
+    "tags": ["classification", "mixture"]
+  },
+  {
+    "topic": "C1.3", "difficulty": "EASY",
+    "stem": "The arrow marks a solution on the pH scale. Which solution is acidic?",
+    "stemZh": "箭头指向 pH 标尺上的某溶液。下列哪个溶液呈酸性？",
+    "options": ["pH 7", "pH 2", "pH 9", "pH 12"], "optionsZh": ["pH 7", "pH 2", "pH 9", "pH 12"],
+    "figure": "/figures/original/chem-fig-02-ph.svg", "correct": 1,
+    "explanation": "Acids have pH below 7. pH 2 is acidic; pH 7 is neutral; 9 and 12 are basic.",
+    "explanationZh": "酸的 pH 小于 7。pH 2 呈酸性，pH 7 中性，pH 9 与 12 呈碱性。",
+    "tags": ["acids", "pH"]
+  },
+  {
+    "topic": "C1.4", "difficulty": "EASY",
+    "stem": "How many moles are in a 44 g sample of CO₂? (C = 12, O = 16)",
+    "stemZh": "44 g 的 CO₂ 含有多少摩尔？（C = 12，O = 16）",
+    "options": ["0.5 mol", "1 mol", "2 mol", "44 mol"], "optionsZh": ["0.5 mol", "1 mol", "2 mol", "44 mol"],
+    "figure": "/figures/original/chem-fig-03-mole.svg", "correct": 1,
+    "explanation": "Molar mass of CO₂ = 12 + 2×16 = 44 g/mol. n = m/M = 44/44 = 1 mol.",
+    "explanationZh": "CO₂ 的摩尔质量 = 12 + 2×16 = 44 g/mol。n = m/M = 44/44 = 1 mol。",
+    "tags": ["moles", "molar mass"]
+  },
+  {
+    "topic": "C1.5", "difficulty": "MEDIUM",
+    "stem": "A fixed amount of gas is compressed to half its volume at constant temperature. What happens to the pressure?",
+    "stemZh": "一定量的气体在恒温下被压缩到原体积的一半，压强如何变化？",
+    "options": ["It halves", "It stays the same", "It doubles", "It quadruples"], "optionsZh": ["减半", "不变", "加倍", "变为四倍"],
+    "figure": "/figures/original/chem-fig-04-gas.svg", "correct": 2,
+    "explanation": "Boyle's law: pV is constant at fixed temperature, so halving V doubles p.",
+    "explanationZh": "玻意耳定律：恒温下 pV 为常数，因此体积减半时压强加倍。",
+    "tags": ["gas laws", "boyle"]
+  },
+  {
+    "topic": "C2.1", "difficulty": "EASY",
+    "stem": "Using the reactivity series shown, which metal reacts with dilute hydrochloric acid?",
+    "stemZh": "根据图示金属活动性顺序，哪种金属能与稀盐酸反应？",
+    "options": ["Cu", "Ag", "Zn", "Au"], "optionsZh": ["Cu", "Ag", "Zn", "Au"],
+    "figure": "/figures/original/chem-fig-05-reactivity.svg", "correct": 2,
+    "explanation": "Zn is above hydrogen in the reactivity series, so it reacts with dilute acid. Cu, Ag and Au are below hydrogen.",
+    "explanationZh": "Zn 在活动性顺序中位于氢之前，能与稀酸反应；Cu、Ag、Au 位于氢之后。",
+    "tags": ["inorganic", "reactivity"]
+  },
+  {
+    "topic": "C2.2", "difficulty": "EASY",
+    "stem": "Which structure is an alkene?",
+    "stemZh": "哪个结构是烯烃？",
+    "options": ["1", "2", "3", "None of them"], "optionsZh": ["1", "2", "3", "都不是"],
+    "figure": "/figures/original/chem-fig-06-organic.svg", "correct": 1,
+    "explanation": "Structure 2 contains a carbon–carbon double bond (C=C), which defines an alkene. Structure 1 is an alkane; 3 is an alcohol.",
+    "explanationZh": "结构 2 含有碳碳双键（C=C），属于烯烃。结构 1 是烷烃，结构 3 是醇。",
+    "tags": ["organic", "alkene"]
+  },
+  {
+    "topic": "C3.1", "difficulty": "MEDIUM",
+    "stem": "In the table excerpt, which element belongs to Group 2 (the alkaline earth metals)?",
+    "stemZh": "在表格片段中，哪个元素属于第 2 族（碱土金属）？",
+    "options": ["H", "Be", "K", "Na"], "optionsZh": ["H", "Be", "K", "Na"],
+    "figure": "/figures/original/chem-fig-07-periodic.svg", "correct": 1,
+    "explanation": "Group 2 begins with beryllium (Be): Be, Mg, Ca… H is in Group 1; K and Na are also Group 1.",
+    "explanationZh": "第 2 族从铍 Be 开始：Be、Mg、Ca…… H、K、Na 属于第 1 族。",
+    "tags": ["periodic table", "groups"]
+  },
+  {
+    "topic": "C3.2", "difficulty": "MEDIUM",
+    "stem": "Which diagram shows ionic bonding?",
+    "stemZh": "哪个图示表示离子键？",
+    "options": ["The lattice on the left", "The molecule on the right", "Both", "Neither"], "optionsZh": ["左侧的晶格", "右侧的分子", "两者都是", "两者都不是"],
+    "figure": "/figures/original/chem-fig-08-bond.svg", "correct": 0,
+    "explanation": "Ionic bonding forms a lattice of alternating positive and negative ions (left). The right shows a shared electron pair — covalent bonding.",
+    "explanationZh": "离子键形成正负离子交替排列的晶格（左图）。右图表示共用电子对——共价键。",
+    "tags": ["bonding", "ionic"]
+  },
+  {
+    "topic": "C3.3", "difficulty": "MEDIUM",
+    "stem": "The graph shows reaction rate against time. What is true once equilibrium is reached?",
+    "stemZh": "图为反应速率随时间的变化。达到平衡后下列哪项正确？",
+    "options": ["The forward rate is greater", "The reverse rate is greater", "The rates are equal", "The reaction stops"], "optionsZh": ["正反应速率更大", "逆反应速率更大", "两速率相等", "反应停止"],
+    "figure": "/figures/original/chem-fig-09-equilibrium.svg", "correct": 2,
+    "explanation": "At dynamic equilibrium the forward and reverse rates are equal, so concentrations stay constant even though both reactions continue.",
+    "explanationZh": "动态平衡时正、逆反应速率相等，浓度保持不变，但反应仍在进行。",
+    "tags": ["equilibrium", "rates"]
+  }
+]

@@ -1,0 +1,601 @@
+{
+  "url": "https://csca.space/subjects/physics",
+  "finalUrl": "https://csca.space/",
+  "status": 200,
+  "title": "CSCA 物理 (Physics) — Syllabus, Past Papers & Formula Proofs | CSCA Space",
+  "description": "Excel in CSCA Physics. Study mechanics, electromagnetism & thermodynamics. Diagnostic mock tests with formula explanations on CSCA Space.",
+  "headings": [
+    {
+      "level": 1,
+      "text": "CSCA Physics: Advanced Syllabus, Mock Exams & Study GuideCSCA 物理考试：权威复习大纲、历年真题与备考指南"
+    },
+    {
+      "level": 2,
+      "text": "CSCA Physics Syllabus & Core Topics/CSCA 物理考试大纲与核心考点"
+    },
+    {
+      "level": 2,
+      "text": "CSCA Physics Preparation Strategy/CSCA 物理如何高效备考与复习"
+    },
+    {
+      "level": 3,
+      "text": "CSCA Past Papers & Simulation"
+    },
+    {
+      "level": 2,
+      "text": "Frequently Asked Questions"
+    },
+    {
+      "level": 2,
+      "text": "Secure Your CSCA Performance & Scholarship"
+    },
+    {
+      "level": 2,
+      "text": "Frequently Asked Questions: CSCA Physics Prep — Past Papers & Mechanics"
+    },
+    {
+      "level": 2,
+      "text": "CSCA Physics Prep — Past Papers & Mechanics Official Curriculum Masterclasses"
+    },
+    {
+      "level": 3,
+      "text": "Kinematics & Newton's Laws of Motion"
+    },
+    {
+      "level": 3,
+      "text": "Momentum, Impulse & Collisions"
+    },
+    {
+      "level": 3,
+      "text": "Work, Energy & Mechanical Conservation"
+    },
+    {
+      "level": 3,
+      "text": "Circular Motion & Universal Gravitation"
+    },
+    {
+      "level": 3,
+      "text": "Simple Harmonic Motion & Mechanical Waves"
+    },
+    {
+      "level": 3,
+      "text": "Electrostatics & Direct Current Circuits"
+    },
+    {
+      "level": 3,
+      "text": "Magnetic Fields, Ampere Force & Lorentz Force"
+    },
+    {
+      "level": 3,
+      "text": "Electromagnetic Induction: Faraday's & Lenz's Laws"
+    },
+    {
+      "level": 3,
+      "text": "Kinetic Theory of Gases & First Law of Thermodynamics"
+    },
+    {
+      "level": 3,
+      "text": "Geometrical Optics: Reflection, Refraction & TIR"
+    },
+    {
+      "level": 3,
+      "text": "Physical Optics: Interference & Diffraction"
+    },
+    {
+      "level": 3,
+      "text": "Photoelectric Effect, Atomic Structure & Nuclear Physics"
+    },
+    {
+      "level": 2,
+      "text": "CSCA Physics Prep — Past Papers & Mechanics Formula Permapages & Proofs (17)"
+    }
+  ],
+  "text": "Entering CSCA Space Academy...Click here if not redirected automatically →\n\nCSCA SPACEBETA\n\nSign InStart Free Trial\n\nphysics Portal\n\nCSCA Physics: Advanced Syllabus, Mock Exams & Study GuideCSCA 物理考试：权威复习大纲、历年真题与备考指南\n\nExcel in CSCA Physics. Study mechanics, electromagnetism & thermodynamics. Diagnostic mock tests with formula explanations on CSCA Space.系统复习 CSCA 物理。掌握经典力学、电磁学、波与现代物理核心考点。提供带在线手写受力分析与详细公式解答的历年真题模拟题库。\n\n30hStudy Workload\n\n380+Practice Bank\n\n91.8%Student Success\n\nAdvancedSubject Level\n\nBilingual (双语模式)\n\nEnglish Only\n\n中文大纲\n\nCSCA Physics Syllabus & Core Topics/CSCA 物理考试大纲与核心考点\n\n01\n\nClassical Mechanics: Kinematics, Newton's laws of motion, work-energy theorem, conservation of momentum, torque, rotational equilibrium.\n\n经典力学：运动学、牛顿运动定律、动能定理与机械能守恒、动量守恒定理、力矩与刚体平衡。\n\n02\n\nElectromagnetism: Coulomb's law, electric field intensity, electric potential, Ohm's law, DC circuits, magnetic fields, electromagnetic induction.\n\n电磁学：库仑定律、电场强度与电势、欧姆定律、复杂直流电路、磁场与洛伦兹力、电磁感应定律。\n\n03\n\nThermodynamics & Kinetic Theory: Gas laws, first law of thermodynamics, heat engines, microscopic description of temperature.\n\n热学与分子动理论：理想气体状态方程、热力学第一定律、热机效率、温度的微观本质分析。\n\n04\n\nOptics & Modern Physics: Refraction, wave interference, photoelectric effect, atomic orbits, nuclear decay equations.\n\n光学与现代物理：折射与全反射、光的干涉衍射、光电效应、玻尔氢原子能级、衰变方程。\n\nCSCA Physics Preparation Strategy/CSCA 物理如何高效备考与复习\n\nUse our stylus drawing board to construct free-body diagrams for mechanics equations.\n\n利用平台手写画板绘制受力分析图与电路图，直观梳理力学与电学方程。\n\nMemorize SI units and typical order-of-magnitude estimates to eliminate incorrect choices fast.\n\n熟记国际标准单位（SI）与典型物理量的数量级估计，快速排除错误选项。\n\nDerive key physical equations (like range equations or orbital velocities) from first principles.\n\n从基本原理出发，推导核心物理公式（如射程公式、轨道速度公式等），加深理解。\n\nUnderstand the conceptual boundaries between classical mechanics and quantum concepts.\n\n理清经典力学与现代量子物理概念的适用边界与核心差异。\n\nADAPTIVE SAMPLE\n\neditOpen Scratch\n\nA block of mass m is sliding down a frictionless incline at angle θ. What is the acceleration of the block down the incline?\n\n一质量为 m 的物体在倾角为 θ 的光滑斜面上向下滑动。该物体沿斜面向下的加速度为多少？\n\nAg \\sin \\theta\n\nBg \\cos \\theta\n\nCg\n\nDg \\tan \\theta\n\nSelect the most accurate derivation choice\n\nSubmit Answer\n\nCSCA Past Papers & Simulation\n\nAccess real past exam patterns. Our simulator mimics the past 5 years of CSCA math, physics, chemistry, and academic Chinese, ensuring you study what actually matters.\n\nBilingual Math derivationsFormula Deck\n\nStylus hand-writing simulatorLive Workspace\n\nPacer budget timersAccuracy\n\nStart Mock Exam\n\nFrequently Asked Questions\n\nAll you need to know about the CSCA assessment & prep\n\nWhat math is needed for CSCA Physics?CSCA 物理考试需要哪些数学基础？expand_more\n\nYou need a solid grasp of algebra, geometry, and basic calculus (simple derivatives and integrals) to solve rate-of-change and kinematics questions.\n\n考生需要具备扎实的代数、几何及基础微积分知识（能进行简单的求导和积分计算），以解决变化率及运动学方程问题。\n\nHow is the physics section structured?物理部分题型是如何设置的？expand_more\n\nIt consists of 15-20 multiple choice questions focusing on force analysis, mechanics, and electricity layouts.\n\n物理部分由15-20道单项选择题组成，重点考察受力分析、力学定理以及电磁电路的计算。\n\nWhat is the recommended study sequence?推荐的复习顺序是什么？expand_more\n\nStart with mechanics, as it builds the mathematical tools and force analysis skills required to understand electromagnetism and thermodynamics.\n\n建议从经典力学开始复习，因为力学能帮助您建立数学建模和受力分析的扎实功底，这是后续学习电磁学和热学的基础。\n\nSecure Your CSCA Performance & Scholarship\n\nJoin thousands of international students securing CSC scholarships. Master math formulas, stylus calculations, and Chinese readings to achieve top percentiles.\nStart Free Assessment Nowarrow_forward\n\n© 2026 CSCA.SPACE. All rights reserved.\n\nPremium Adaptive CSCA Preparation Academy\n\nhelp_outlineSyllabus & Exam Governance\n\nFrequently Asked Questions: CSCA Physics Prep — Past Papers & Mechanics\n\nAuthoritative answers on CSCA PHYSICS examination scope, calculator policies, time budgeting, and grading rubrics.\n\nWhat math is needed for CSCA Physics?+\nYou need a solid grasp of algebra, geometry, and basic calculus (simple derivatives and integrals) to solve rate-of-change and kinematics questions.\n\nCSCA 物理考试需要哪些数学基础？: 考生需要具备扎实的代数、几何及基础微积分知识（能进行简单的求导和积分计算），以解决变化率及运动学方程问题。\nHow is the physics section structured?+\nIt consists of 15-20 multiple choice questions focusing on force analysis, mechanics, and electricity layouts.\n\n物理部分题型是如何设置的？: 物理部分由15-20道单项选择题组成，重点考察受力分析、力学定理以及电磁电路的计算。\nWhat is the recommended study sequence?+\nStart with mechanics, as it builds the mathematical tools and force analysis skills required to understand electromagnetism and thermodynamics.\n\n推荐的复习顺序是什么？: 建议从经典力学开始复习，因为力学能帮助您建立数学建模和受力分析的扎实功底，这是后续学习电磁学和热学的基础。\n\nCSCA Physics Prep — Past Papers & Mechanics Official Curriculum Masterclasses\n\nDirect access to all accredited syllabus nodes, lesson breakdowns, and examiner traps.\n\nView Full Curriculum Hub →\n\nCh.1.1.1Beginner\n\nKinematics & Newton's Laws of Motion\n\nDisplacement, velocity, acceleration vectors, uniform acceleration formulas, free-fall motion, and Newton's three laws.\n\nOpen Masterclass →\n\nCh.1.1.2Intermediate\n\nMomentum, Impulse & Collisions\n\nLinear momentum, impulse theorem, elastic and inelastic 1D/2D collisions, and internal explosion dynamics.\n\nOpen Masterclass →\n\nCh.1.1.3Intermediate\n\nWork, Energy & Mechanical Conservation\n\nWork done by constant and variable forces, power equations, work-energy theorem, and mechanical energy conservation.\n\nOpen Masterclass →\n\nCh.1.1.4Intermediate\n\nCircular Motion & Universal Gravitation\n\nCentripetal acceleration, angular velocity, Kepler's planetary laws, orbital speed, and escape velocity.\n\nOpen Masterclass →\n\nCh.1.1.5Intermediate\n\nSimple Harmonic Motion & Mechanical Waves\n\nRestoring force kinematics, spring-mass and pendulum periods, transverse wave propagation, and wavelength equation.\n\nOpen Masterclass →\n\nCh.2.2.1Intermediate\n\nElectrostatics & Direct Current Circuits\n\nCoulomb's law, electric field strength, electric potential, Ohm's law, and series-parallel resistance networks.\n\nOpen Masterclass →\n\nCh.2.2.2Intermediate\n\nMagnetic Fields, Ampere Force & Lorentz Force\n\nMagnetic flux density B, Ampere force on current-carrying wires, and Lorentz force on charged particles.\n\nOpen Masterclass →\n\nCh.2.2.3Advanced\n\nElectromagnetic Induction: Faraday's & Lenz's Laws\n\nMagnetic flux change, induced EMF, motional EMF for moving conductors, and direction analysis via Lenz's law.\n\nOpen Masterclass →\n\nCh.3.3.1Intermediate\n\nKinetic Theory of Gases & First Law of Thermodynamics\n\nMicroscopic molecular motion, RMS velocity, ideal gas law PV=nRT, and internal energy changes Delta U = Q + W.\n\nOpen Masterclass →\n\nCh.4.4.1Beginner\n\nGeometrical Optics: Reflection, Refraction & TIR\n\nLaws of reflection, Snell's law of refraction, refractive index, critical angle, and total internal reflection.\n\nOpen Masterclass →\n\nCh.4.4.2Intermediate\n\nPhysical Optics: Interference & Diffraction\n\nCoherent light sources, Young's double-slit fringe spacing formula, and single-slit diffraction patterns.\n\nOpen Masterclass →\n\nCh.5.5.1Intermediate\n\nPhotoelectric Effect, Atomic Structure & Nuclear Physics\n\nWork function, stopping potential, Bohr quantized energy levels, alpha/beta/gamma decays, mass defect, and binding energy.\n\nOpen Masterclass →\n\nCSCA Physics Prep — Past Papers & Mechanics Formula Permapages & Proofs (17)\n\nCanonical LaTeX definitions, SymPy-verified mathematical derivations, and misconception traps.\n\nView All 58 Formulas →\n\nKinematics Equations under Constant AccelerationMechanics\n\n匀变速直线运动规律与位移公式\n\n$\\[ v = v_0 + at, \\quad s = v_0 t + \\frac{1}{2} a t^2, \\quad v^2 - v_0^2 = 2as \\]$→\n\nNewton's Second Law of MotionMechanics\n\n牛顿第二运动定律\n\n$\\[ \\sum \\mathbf{F} = m\\mathbf{a} \\]$→\n\nMomentum, Impulse & Law of Conservation of MomentumMechanics\n\n动量定理与动量守恒定律\n\n$\\[ \\mathbf{I} = \\mathbf{F}\\Delta t = \\Delta \\mathbf{p}, \\quad m_1 \\mathbf{v}_1 + m_2 \\mathbf{v}_2 = m_1 \\mathbf{v}_1' + m_2 \\mathbf{v}_2' \\]$→\n\nWork-Energy Theorem & Conservation of Mechanical EnergyMechanics\n\n动能定理与机械能守恒定律\n\n$\\[ W_{\\text{net}} = \\Delta E_k = \\frac{1}{2}mv_2^2 - \\frac{1}{2}mv_1^2, \\quad E_{k1} + E_{p1} = E_{k2} + E_{p2} \\]$→\n\nUniform Circular Motion & Law of Universal GravitationMechanics\n\n匀速圆周运动与万有引力定律\n\n$\\[ F_c = m\\frac{v^2}{r} = m\\omega^2 r, \\quad F_g = G\\frac{Mm}{r^2} = m\\frac{v^2}{r} \\implies v = \\sqrt{\\frac{GM}{r}} \\]$→\n\nSimple Harmonic Motion & Mechanical Wave SpeedMechanics\n\n简谐运动周期与机械波传播公式\n\n$\\[ T = 2\\pi \\sqrt{\\frac{L}{g}}, \\quad v = \\frac{\\lambda}{T} = \\lambda f \\]$→\n\nCoulomb's Law & Electric Field StrengthElectromagnetism\n\n库仑定律与电场强度公式\n\n$\\[ F = k_e \\frac{|q_1 q_2|}{r^2}, \\quad E = \\frac{F}{q} = k_e \\frac{Q}{r^2}, \\quad U = Ed \\]$→\n\nOhm's Law & Closed Circuit EMF EquationElectromagnetism\n\n闭合电路欧姆定律与电功率公式\n\n$\\[ I = \\frac{E}{R + r}, \\quad U = E - Ir, \\quad P = UI = I^2 R \\]$→\n\nLorentz Force & Magnetic Ampere ForceElectromagnetism\n\n安培力与洛伦兹力公式\n\n$\\[ F_{\\text{Ampere}} = BIL\\sin\\theta, \\quad F_{\\text{Lorentz}} = qvB\\sin\\theta, \\quad r = \\frac{mv}{qB} \\]$→\n\nFaraday's Law of Induction & Motional EMFElectromagnetism\n\n法拉第电磁感应定律与动生电动势\n\n$\\[ E = n\\frac{\\Delta \\Phi}{\\Delta t}, \\quad E = BLv\\sin\\theta \\]$→\n\nAC Series RLC Circuit Impedance & PhasorElectromagnetism\n\n交变电流RLC串联电路阻抗与相量公式\n\n$\\[ Z = \\sqrt{R^2 + (X_L - X_C)^2}, \\quad \\tan\\theta = \\frac{X_L - X_C}{R} \\]$→\n\nAC Active Power & Power Factor FormulaElectromagnetism\n\n交流电路有功功率与功率因数公式\n\n$\\[ P = UI\\cos\\varphi, \\quad \\cos\\varphi = \\frac{R}{Z} = \\frac{R}{\\sqrt{R^2 + (X_L - X_C)^2}} \\]$→\n\nFirst Law of Thermodynamics & Ideal Gas LawThermodynamics\n\n热力学第一定律与理想气体状态方程\n\n$\\[ \\Delta U = Q + W, \\quad \\frac{P_1 V_1}{T_1} = \\frac{P_2 V_2}{T_2} \\]$→\n\nSnell's Law of Refraction & Total Internal ReflectionOptics\n\n光的折射定律与全反射临界角公式\n\n$\\[ n = \\frac{c}{v} = \\frac{\\sin\\theta_1}{\\sin\\theta_2}, \\quad \\sin C = \\frac{1}{n} \\]$→\n\nYoung's Double-Slit Interference Fringe SpacingOptics\n\n双缝干涉条纹间距公式\n\n$\\[ \\Delta x = \\frac{L}{d}\\lambda \\]$→\n\nEinstein's Photoelectric Effect & Photon EnergyModern Physics\n\n光电效应方程与光子能量公式\n\n$\\[ E_{\\text{photon}} = h\\nu, \\quad E_{k\\max} = h\\nu - W_0 = eU_c \\]$→\n\nBohr Hydrogen Energy Levels & Mass-Energy EquivalenceModern Physics\n\n玻尔氢原子能级跃迁与质能方程\n\n$\\[ E_n = \\frac{E_1}{n^2} \\quad (E_1 = -13.6\\text{ eV}), \\quad h\\nu = E_m - E_n, \\quad \\Delta E = \\Delta m c^2 \\]$→",
+  "links": [
+    {
+      "href": "/",
+      "text": "Click here if not redirected automatically →"
+    },
+    {
+      "href": "/",
+      "text": "CSCA SPACEBETA"
+    },
+    {
+      "href": "/login",
+      "text": "Sign In"
+    },
+    {
+      "href": "/signup",
+      "text": "Start Free Trial"
+    },
+    {
+      "href": "/signup",
+      "text": "Start Mock Exam"
+    },
+    {
+      "href": "/signup",
+      "text": "Start Free Assessment Nowarrow_forward"
+    },
+    {
+      "href": "/curriculum",
+      "text": "View Full Curriculum Hub →"
+    },
+    {
+      "href": "/curriculum/phys_kinematics_newton",
+      "text": "Ch.1.1.1BeginnerKinematics & Newton's Laws of MotionDisplacement, velocity, acceleration vectors, uniform acceleration f"
+    },
+    {
+      "href": "/curriculum/phys_momentum_impulse",
+      "text": "Ch.1.1.2IntermediateMomentum, Impulse & CollisionsLinear momentum, impulse theorem, elastic and inelastic 1D/2D collisio"
+    },
+    {
+      "href": "/curriculum/phys_work_energy",
+      "text": "Ch.1.1.3IntermediateWork, Energy & Mechanical ConservationWork done by constant and variable forces, power equations, wo"
+    },
+    {
+      "href": "/curriculum/phys_gravitation_circular",
+      "text": "Ch.1.1.4IntermediateCircular Motion & Universal GravitationCentripetal acceleration, angular velocity, Kepler's planetar"
+    },
+    {
+      "href": "/curriculum/phys_shm_waves",
+      "text": "Ch.1.1.5IntermediateSimple Harmonic Motion & Mechanical WavesRestoring force kinematics, spring-mass and pendulum period"
+    },
+    {
+      "href": "/curriculum/phys_electrostatics_circuits",
+      "text": "Ch.2.2.1IntermediateElectrostatics & Direct Current CircuitsCoulomb's law, electric field strength, electric potential, "
+    },
+    {
+      "href": "/curriculum/phys_magnetic_lorentz",
+      "text": "Ch.2.2.2IntermediateMagnetic Fields, Ampere Force & Lorentz ForceMagnetic flux density B, Ampere force on current-carryi"
+    },
+    {
+      "href": "/curriculum/phys_faraday_lenz",
+      "text": "Ch.2.2.3AdvancedElectromagnetic Induction: Faraday's & Lenz's LawsMagnetic flux change, induced EMF, motional EMF for mo"
+    },
+    {
+      "href": "/curriculum/phys_gas_kinetic_first_law",
+      "text": "Ch.3.3.1IntermediateKinetic Theory of Gases & First Law of ThermodynamicsMicroscopic molecular motion, RMS velocity, ide"
+    },
+    {
+      "href": "/curriculum/phys_geometrical_optics",
+      "text": "Ch.4.4.1BeginnerGeometrical Optics: Reflection, Refraction & TIRLaws of reflection, Snell's law of refraction, refractiv"
+    },
+    {
+      "href": "/curriculum/phys_physical_optics",
+      "text": "Ch.4.4.2IntermediatePhysical Optics: Interference & DiffractionCoherent light sources, Young's double-slit fringe spacin"
+    },
+    {
+      "href": "/curriculum/phys_photoelectric_nuclear",
+      "text": "Ch.5.5.1IntermediatePhotoelectric Effect, Atomic Structure & Nuclear PhysicsWork function, stopping potential, Bohr quan"
+    },
+    {
+      "href": "/formulas",
+      "text": "View All 58 Formulas →"
+    },
+    {
+      "href": "/formulas/physics/mechanics/uniform-acceleration-displacement",
+      "text": "Kinematics Equations under Constant AccelerationMechanics匀变速直线运动规律与位移公式$\\[ v = v_0 + at, \\quad s = v_0 t + \\frac{1}{2} a"
+    },
+    {
+      "href": "/formulas/physics/mechanics/newton-second-law",
+      "text": "Newton's Second Law of MotionMechanics牛顿第二运动定律$\\[ \\sum \\mathbf{F} = m\\mathbf{a} \\]$→"
+    },
+    {
+      "href": "/formulas/physics/mechanics/momentum-impulse-conservation",
+      "text": "Momentum, Impulse & Law of Conservation of MomentumMechanics动量定理与动量守恒定律$\\[ \\mathbf{I} = \\mathbf{F}\\Delta t = \\Delta \\mat"
+    },
+    {
+      "href": "/formulas/physics/mechanics/mechanical-energy-conservation",
+      "text": "Work-Energy Theorem & Conservation of Mechanical EnergyMechanics动能定理与机械能守恒定律$\\[ W_{\\text{net}} = \\Delta E_k = \\frac{1}{2"
+    },
+    {
+      "href": "/formulas/physics/mechanics/circular-motion-gravitation",
+      "text": "Uniform Circular Motion & Law of Universal GravitationMechanics匀速圆周运动与万有引力定律$\\[ F_c = m\\frac{v^2}{r} = m\\omega^2 r, \\qua"
+    },
+    {
+      "href": "/formulas/physics/mechanics/shm-pendulum-waves",
+      "text": "Simple Harmonic Motion & Mechanical Wave SpeedMechanics简谐运动周期与机械波传播公式$\\[ T = 2\\pi \\sqrt{\\frac{L}{g}}, \\quad v = \\frac{\\l"
+    },
+    {
+      "href": "/formulas/physics/electromagnetism/coulombs-law",
+      "text": "Coulomb's Law & Electric Field StrengthElectromagnetism库仑定律与电场强度公式$\\[ F = k_e \\frac{|q_1 q_2|}{r^2}, \\quad E = \\frac{F}{"
+    },
+    {
+      "href": "/formulas/physics/electromagnetism/ohms-law",
+      "text": "Ohm's Law & Closed Circuit EMF EquationElectromagnetism闭合电路欧姆定律与电功率公式$\\[ I = \\frac{E}{R + r}, \\quad U = E - Ir, \\quad P "
+    },
+    {
+      "href": "/formulas/physics/electromagnetism/lorentz-force-scalar",
+      "text": "Lorentz Force & Magnetic Ampere ForceElectromagnetism安培力与洛伦兹力公式$\\[ F_{\\text{Ampere}} = BIL\\sin\\theta, \\quad F_{\\text{Lor"
+    },
+    {
+      "href": "/formulas/physics/electromagnetism/faradays-law",
+      "text": "Faraday's Law of Induction & Motional EMFElectromagnetism法拉第电磁感应定律与动生电动势$\\[ E = n\\frac{\\Delta \\Phi}{\\Delta t}, \\quad E ="
+    },
+    {
+      "href": "/formulas/physics/electromagnetism/ac-impedance-rlc",
+      "text": "AC Series RLC Circuit Impedance & PhasorElectromagnetism交变电流RLC串联电路阻抗与相量公式$\\[ Z = \\sqrt{R^2 + (X_L - X_C)^2}, \\quad \\tan"
+    },
+    {
+      "href": "/formulas/physics/electromagnetism/ac-power-factor",
+      "text": "AC Active Power & Power Factor FormulaElectromagnetism交流电路有功功率与功率因数公式$\\[ P = UI\\cos\\varphi, \\quad \\cos\\varphi = \\frac{R}"
+    },
+    {
+      "href": "/formulas/physics/thermodynamics/first-law-thermodynamics",
+      "text": "First Law of Thermodynamics & Ideal Gas LawThermodynamics热力学第一定律与理想气体状态方程$\\[ \\Delta U = Q + W, \\quad \\frac{P_1 V_1}{T_1}"
+    },
+    {
+      "href": "/formulas/physics/optics/snells-law",
+      "text": "Snell's Law of Refraction & Total Internal ReflectionOptics光的折射定律与全反射临界角公式$\\[ n = \\frac{c}{v} = \\frac{\\sin\\theta_1}{\\sin"
+    },
+    {
+      "href": "/formulas/physics/optics/double-slit-interference",
+      "text": "Young's Double-Slit Interference Fringe SpacingOptics双缝干涉条纹间距公式$\\[ \\Delta x = \\frac{L}{d}\\lambda \\]$→"
+    },
+    {
+      "href": "/formulas/physics/modern-physics/photoelectric-equation",
+      "text": "Einstein's Photoelectric Effect & Photon EnergyModern Physics光电效应方程与光子能量公式$\\[ E_{\\text{photon}} = h\\nu, \\quad E_{k\\max} "
+    },
+    {
+      "href": "/formulas/physics/modern-physics/bohr-nuclear-binding",
+      "text": "Bohr Hydrogen Energy Levels & Mass-Energy EquivalenceModern Physics玻尔氢原子能级跃迁与质能方程$\\[ E_n = \\frac{E_1}{n^2} \\quad (E_1 = "
+    }
+  ],
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "EducationalOrganization",
+          "@id": "https://csca.space/#organization",
+          "name": "CSCA Space Academy",
+          "url": "https://csca.space",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://csca.space/logo.png",
+            "contentUrl": "https://csca.space/logo.png",
+            "width": 2048,
+            "height": 2048,
+            "caption": "CSCA Space Logo"
+          },
+          "image": "https://csca.space/logo.png",
+          "description": "Premier standardized preparation academy and adaptive testing simulator for the China Scholastic Competency Assessment (CSCA).",
+          "knowsAbout": [
+            "China Scholastic Competency Assessment",
+            "CSCA Exam",
+            "CSC Scholarship",
+            "Chinese Government Scholarship",
+            "STEM University Admissions in China"
+          ],
+          "sameAs": [
+            "https://github.com/cscaspace"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://csca.space/#website",
+          "url": "https://csca.space",
+          "name": "CSCA Space",
+          "inLanguage": [
+            "en",
+            "zh-Hans"
+          ],
+          "dateModified": "2026-09-04",
+          "publisher": {
+            "@id": "https://csca.space/#organization"
+          },
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://csca.space/subjects?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+          }
+        },
+        {
+          "@type": "EducationalApplication",
+          "@id": "https://csca.space/#application",
+          "name": "CSCA Space Exam Simulator & Mock Generator",
+          "url": "https://csca.space",
+          "applicationCategory": "EducationalApplication",
+          "operatingSystem": "All",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+          },
+          "description": "High-yield bilingual CSCA examination simulator powered by the v2.4 and v3.0 parametric question generation engine calibrated to 99.8% fidelity of official CSCA CBT exams, featuring deterministic SymPy proofs and FSRS-6 formula mastery.",
+          "featureList": [
+            "99.8% Official CSCA CBT Exam Fidelity Mock Generator",
+            "Dual v2.4 Consensus & v3.0 Parametric Manifold Engine",
+            "Deterministic SymPy Symbolic STEM Dual-Verification",
+            "6 Macro Cognitive Habit Distractor Autopsies",
+            "48 Questions in 60 Minutes Timed Exam Environment",
+            "Bilingual English and Chinese CSCA STEM Syllabi"
+          ],
+          "provider": {
+            "@id": "https://csca.space/#organization"
+          }
+        },
+        {
+          "@type": "SiteNavigationElement",
+          "@id": "https://csca.space/#navigation",
+          "name": "CSCA Space Main Navigation",
+          "hasPart": [
+            {
+              "@type": "WebPage",
+              "name": "CSCA Mock Tests & Simulator",
+              "url": "https://csca.space/subjects/portal",
+              "description": "Adaptive CSCA mock exam hall with official timers and real-time pacer tracking."
+            },
+            {
+              "@type": "WebPage",
+              "name": "CSCA Mathematics Past Papers",
+              "url": "https://csca.space/subjects/math",
+              "description": "Calculus, Algebra, Analytic Geometry, and Vector past questions with KaTeX derivations."
+            },
+            {
+              "@type": "WebPage",
+              "name": "CSCA Physics Syllabus & Drills",
+              "url": "https://csca.space/subjects/physics",
+              "description": "Classical mechanics, electromagnetism, and thermodynamics CSCA questions."
+            },
+            {
+              "@type": "WebPage",
+              "name": "CSCA Chemistry Complete Guide",
+              "url": "https://csca.space/subjects/chemistry",
+              "description": "Organic chemistry, stoichiometry, and chemical equilibrium practice."
+            },
+            {
+              "@type": "WebPage",
+              "name": "CSCA Academic Chinese (科技汉语)",
+              "url": "https://csca.space/subjects/chinese",
+              "description": "Scientific Chinese reading comprehension and technical STEM vocabulary."
+            },
+            {
+              "@type": "WebPage",
+              "name": "CSCA Space vs Private Tutoring",
+              "url": "https://csca.space/vs/traditional-tutoring-vs-cscaspace",
+              "description": "Transparent comparison between CSCA Space self-paced academy and traditional private agency tutoring."
+            },
+            {
+              "@type": "WebPage",
+              "name": "Diagnostic Assessment",
+              "url": "https://csca.space/diagnostic",
+              "description": "Free 15-minute diagnostic exam assessing CSCA readiness across all 4 subjects."
+            }
+          ]
+        },
+        {
+          "@type": "LearningResource",
+          "@id": "https://csca.space/#learningresource",
+          "name": "CSCA Standardized Examination Curriculum & Past Papers",
+          "description": "Complete CSCA preparation curriculum covering Mathematics, Physics, Chemistry, and Academic Chinese.",
+          "educationalLevel": "High School to Undergraduate Admissions",
+          "learningResourceType": "Practice Assessment & Exam Simulation",
+          "inLanguage": [
+            "en",
+            "zh-Hans"
+          ],
+          "isAccessibleForFree": true,
+          "provider": {
+            "@id": "https://csca.space/#organization"
+          }
+        },
+        {
+          "@type": "Course",
+          "@id": "https://csca.space/#course-math",
+          "name": "CSCA Mathematics Preparation & Past Papers",
+          "description": "Comprehensive CSCA Mathematics syllabus coverage: Calculus, Algebra, Sequences, Vectors, Probability, and Adaptive Practice.",
+          "provider": {
+            "@id": "https://csca.space/#organization"
+          },
+          "url": "https://csca.space/subjects/math",
+          "isAccessibleForFree": true
+        },
+        {
+          "@type": "Course",
+          "@id": "https://csca.space/#course-physics",
+          "name": "CSCA Physics Preparation & Past Papers",
+          "description": "Standardized CSCA Physics exam training: Classical Mechanics, Electromagnetism, Optics, Thermodynamics, and Past Questions.",
+          "provider": {
+            "@id": "https://csca.space/#organization"
+          },
+          "url": "https://csca.space/subjects/physics",
+          "isAccessibleForFree": true
+        },
+        {
+          "@type": "Course",
+          "@id": "https://csca.space/#course-chemistry",
+          "name": "CSCA Chemistry Preparation & Past Papers",
+          "description": "Complete CSCA Chemistry syllabus modules: Stoichiometry, Organic Chemistry, Chemical Equilibrium, and Laboratory Principles.",
+          "provider": {
+            "@id": "https://csca.space/#organization"
+          },
+          "url": "https://csca.space/subjects/chemistry",
+          "isAccessibleForFree": true
+        },
+        {
+          "@type": "Course",
+          "@id": "https://csca.space/#course-chinese",
+          "name": "CSCA Academic Chinese Preparation",
+          "description": "Specialized Academic Chinese for STEM admissions in China: Technical Vocabulary, Scientific Reading Comprehension, and HSK 5-6 Alignment.",
+          "provider": {
+            "@id": "https://csca.space/#organization"
+          },
+          "url": "https://csca.space/subjects/chinese",
+          "isAccessibleForFree": true
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://csca.space/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What is the CSCA (China Scholastic Competency Assessment)?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The CSCA (China Scholastic Competency Assessment) is the standardized STEM competency assessment used by top Chinese universities and CSC Government Scholarship committees to evaluate international undergraduate candidates in Mathematics, Physics, Chemistry, and Academic Chinese."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How to prepare for the CSCA exam online?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "To prepare for the CSCA exam, students should use CSCA Space (csca.space) for adaptive mock test simulations, past paper questions, bilingual terminology drills, formula sheets, and step-by-step video explainers aligned with the official CSCA syllabus."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What subjects are tested in the CSCA?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The CSCA exam tests four core disciplines: Mathematics (Algebra, Calculus, Analytical Geometry), Physics (Mechanics, Electromagnetism, Waves), Chemistry (Physical Chemistry, Organic Chemistry, Stoichiometry), and Academic Chinese."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Where can I find CSCA past papers and practice questions?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "CSCA Space provides verified CSCA mock exams, diagnostic assessments, and curated past questions with comprehensive step-by-step pedagogical walkthroughs at https://csca.space."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How does CSCA Space help international students prepare for the CSCA?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "CSCA Space provides 100% syllabus-aligned interactive practice, bilingual English and Chinese STEM explanations, full diagnostic scoring, and adaptive mock test simulations designed specifically for international university admissions in China."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is a competitive score on the CSCA for CSC scholarships?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Candidates scoring in the 80th percentile and above are highly competitive for full Chinese Government Scholarships (CSC Type A & Type B) and direct admission into top C9 league universities."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Course",
+      "name": "CSCA PHYSICS Masterclass",
+      "description": "Excel in CSCA Physics. Study mechanics, electromagnetism & thermodynamics. Diagnostic mock tests with formula explanations on CSCA Space.",
+      "provider": {
+        "@type": "EducationalOrganization",
+        "name": "CSCA Space Academy",
+        "url": "https://csca.space",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://csca.space/logo.png"
+        }
+      },
+      "hasCourseInstance": {
+        "@type": "CourseInstance",
+        "courseMode": "online",
+        "courseWorkload": "PT30H"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "384",
+        "bestRating": "5"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "CSCA Space",
+          "item": "https://csca.space"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Subjects",
+          "item": "https://csca.space/subjects"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "CSCA Physics Prep — Past Papers & Mechanics",
+          "item": "https://csca.space/subjects/physics"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Quiz",
+      "name": "CSCA Physics Prep — Past Papers & Mechanics Diagnostic Mock Quiz",
+      "educationalLevel": "Intermediate to Advanced",
+      "about": {
+        "@type": "Thing",
+        "name": "CSCA PHYSICS"
+      },
+      "hasPart": [
+        {
+          "@type": "Question",
+          "name": "A block of mass $m$ is sliding down a frictionless incline at angle $\\theta$. What is the acceleration of the block down the incline?",
+          "text": "A block of mass $m$ is sliding down a frictionless incline at angle $\\theta$. What is the acceleration of the block down the incline?",
+          "suggestedAnswer": [
+            {
+              "@type": "Answer",
+              "text": "g \\sin \\theta"
+            },
+            {
+              "@type": "Answer",
+              "text": "g \\cos \\theta"
+            },
+            {
+              "@type": "Answer",
+              "text": "g"
+            },
+            {
+              "@type": "Answer",
+              "text": "g \\tan \\theta"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What math is needed for CSCA Physics?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You need a solid grasp of algebra, geometry, and basic calculus (simple derivatives and integrals) to solve rate-of-change and kinematics questions."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How is the physics section structured?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It consists of 15-20 multiple choice questions focusing on force analysis, mechanics, and electricity layouts."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the recommended study sequence?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Start with mechanics, as it builds the mathematical tools and force analysis skills required to understand electromagnetism and thermodynamics."
+          }
+        }
+      ]
+    }
+  ],
+  "capture": "cmwe94ucs",
+  "site": "csca-space"
+}

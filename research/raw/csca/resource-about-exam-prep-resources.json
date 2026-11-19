@@ -1,0 +1,13 @@
+{
+  "source": "https://csca.cn/about/* · POST /sv/open/zyxx/list {zydm:GYKS_BKZY}",
+  "operation": "csca.resource",
+  "fetchedAt": "2026-11-13T00:34:21+00:00",
+  "code": "GYKS_BKZY",
+  "data": {
+    "code": "GYKS_BKZY",
+    "title": "备考资源",
+    "type": "pdf",
+    "published": "2026-09-13T11:06:33+08:00",
+    "version": 5
+  }
+}

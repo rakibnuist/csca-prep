@@ -1,36 +1,97 @@
 import katex from "katex";
+import "katex/dist/katex.min.css";
 import { cn } from "@/lib/utils";
 
 /**
- * Renders a string that may contain inline ($...$) or display ($$...$$)
- * LaTeX. Kept dependency-light so question text can be stored as plain
- * markdown-ish strings in the database.
+ * Renders a string that may contain LaTeX in any of the delimiter styles that
+ * appear in the question bank and in hand-written content:
+ *
+ *   $…$            inline math
+ *   $$…$$          display math
+ *   \(…\)          inline math (LaTeX style)
+ *   \[…\]          display math (LaTeX style)
+ *
+ * `inline` forces every expression into inline mode, which is what answer
+ * options need: a display block inside a one-line button drags the row height
+ * and looks nothing like the printed paper.
  */
-export function MathText({ children, className }: { children?: string | null; className?: string }) {
+const TOKEN = /(\$\$[\s\S]+?\$\$|\$[^$\n]+?\$|\\\([\s\S]+?\\\)|\\\[[\s\S]+?\\\])/g;
+
+type Delimiters = { open: string; close: string; display: boolean };
+
+function delimitersFor(part: string): Delimiters | null {
+  if (part.startsWith("$$") && part.endsWith("$$") && part.length > 4) {
+    return { open: "$$", close: "$$", display: true };
+  }
+  if (part.startsWith("\\[") && part.endsWith("\\]") && part.length > 4) {
+    return { open: "\\[", close: "\\]", display: true };
+  }
+  if (part.startsWith("\\(") && part.endsWith("\\)") && part.length > 4) {
+    return { open: "\\(", close: "\\)", display: false };
+  }
+  if (part.startsWith("$") && part.endsWith("$") && part.length > 2) {
+    return { open: "$", close: "$", display: false };
+  }
+  return null;
+}
+
+function vectorLatex(name: string): string {
+  return name.length === 1 ? `\\vec{${name}}` : `\\overrightarrow{${name}}`;
+}
+
+function normalizeVectors(text: string): string {
+  if (!text.includes("\u20d7")) return text;
+  // Sans webfonts lack a paired glyph for U+20D7 and draw a missing-glyph box;
+  // route vector labels through KaTeX whether or not they sit inside `$…$`.
+  return text
+    .split(TOKEN)
+    .map((part) => {
+      if (!part.includes("\u20d7")) return part;
+      if (delimitersFor(part)) {
+        return part.replace(/([A-Za-z]{1,2})\u20d7/g, (_, v: string) => vectorLatex(v));
+      }
+      return part.replace(/([A-Za-z]{1,2})\u20d7/g, (_, v: string) => `$${vectorLatex(v)}$`);
+    })
+    .join("");
+}
+
+export function MathText({
+  children,
+  className,
+  inline = false,
+}: {
+  children?: string | null;
+  className?: string;
+  inline?: boolean;
+}) {
   if (!children) return null;
 
-  const parts = children.split(/(\$\$[^$]+\$\$|\$[^$]+\$)/g).filter(Boolean);
+  const parts = normalizeVectors(children)
+    .split(TOKEN)
+    .filter((part) => part !== "");
 
   return (
     <span className={cn("whitespace-pre-wrap", className)}>
       {parts.map((part, index) => {
-        const display = part.startsWith("$$") && part.endsWith("$$") && part.length > 4;
-        const inline = !display && part.startsWith("$") && part.endsWith("$") && part.length > 2;
+        const delimiters = delimitersFor(part);
+        if (!delimiters) return <span key={index}>{part}</span>;
 
-        if (!display && !inline) return <span key={index}>{part}</span>;
+        const expression = part.slice(delimiters.open.length, part.length - delimiters.close.length);
+        const displayMode = delimiters.display && !inline;
 
-        const expression = part.slice(display ? 2 : 1, display ? -2 : -1);
         try {
-          const html = katex.renderToString(expression, {
-            displayMode: display,
+          const html = katex.renderToString(expression.trim(), {
+            displayMode,
             throwOnError: false,
             strict: false,
+            trust: false,
+            maxExpand: 200,
             output: "html",
           });
           return (
             <span
               key={index}
-              className={display ? "block" : undefined}
+              className={displayMode ? "block" : undefined}
               dangerouslySetInnerHTML={{ __html: html }}
             />
           );

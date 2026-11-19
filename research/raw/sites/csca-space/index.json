@@ -1,0 +1,97 @@
+{
+  "site": "csca-space",
+  "source": "https://csca.space/",
+  "pages": [
+    {
+      "slug": "home",
+      "url": "https://csca.space/",
+      "title": "CSCA Space",
+      "status": 200,
+      "chars": 7809
+    },
+    {
+      "slug": "curriculum",
+      "url": "https://csca.space/curriculum",
+      "title": "Official CSCA Syllabus & Interactive Curriculum (48 Topics) · CSCA Space",
+      "status": 200,
+      "chars": 7667
+    },
+    {
+      "slug": "formulas",
+      "url": "https://csca.space/formulas",
+      "title": "CSCA Formula Knowledge Base — 58 High-Yield STEM Formulas & Proofs",
+      "status": 200,
+      "chars": 9053
+    },
+    {
+      "slug": "subjects",
+      "url": "https://csca.space/subjects",
+      "title": "CSCA Subjects & Academy Curriculum — Math, Physics, Chemistry, Chinese",
+      "status": 200,
+      "chars": 3730
+    },
+    {
+      "slug": "compare",
+      "url": "https://csca.space/compare",
+      "title": "Best CSCA Preparation Platforms & Methods in 2026 (Compared & Ranked) · CSCA Space",
+      "status": 200,
+      "chars": 4077
+    },
+    {
+      "slug": "diagnostic",
+      "url": "https://csca.space/diagnostic",
+      "title": "CSCA Mock Test & Practice Simulator (2026 CBT Exam Format)",
+      "status": 200,
+      "chars": 587
+    },
+    {
+      "slug": "guides",
+      "url": "https://csca.space/guides",
+      "title": "CSCA Exam Preparation Guides & Strategy Center · CSCA Space",
+      "status": 200,
+      "chars": 1519
+    },
+    {
+      "slug": "subjects__math",
+      "url": "https://csca.space/subjects/math",
+      "title": "CSCA 数学 (Mathematics) — 真题解析、考试大纲与全真模考 | CSCA Space",
+      "status": 200,
+      "chars": 11535
+    },
+    {
+      "slug": "subjects__physics",
+      "url": "https://csca.space/subjects/physics",
+      "title": "CSCA 物理 (Physics) — Syllabus, Past Papers & Formula Proofs | CSCA Space",
+      "status": 200,
+      "chars": 10202
+    },
+    {
+      "slug": "subjects__chemistry",
+      "url": "https://csca.space/subjects/chemistry",
+      "title": "CSCA 化学 (Chemistry) — Periodic Trends, Reactions & Mock Tests | CSCA Space",
+      "status": 200,
+      "chars": 9684
+    },
+    {
+      "slug": "subjects__chinese",
+      "url": "https://csca.space/subjects/chinese",
+      "title": "CSCA Academic Chinese — HSK 5-6 Prep & Papers",
+      "status": 200,
+      "chars": 7398
+    },
+    {
+      "slug": "formulas__math",
+      "url": "https://csca.space/formulas/math",
+      "title": "CSCA Mathematics Formulas & Derivations — Exam Reference Guide",
+      "status": 200,
+      "chars": 8055
+    },
+    {
+      "slug": "curriculum__math_sets_operations",
+      "url": "https://csca.space/curriculum/math_sets_operations",
+      "title": "Mastering Sets, Venn Diagrams & Logical Quantifiers — CSCA Mathematics Masterclass Chapter 1",
+      "status": 200,
+      "chars": 728
+    }
+  ]
+}

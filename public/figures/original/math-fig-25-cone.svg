@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" font-family="Helvetica, Arial, sans-serif">
+  <rect width="320" height="240" fill="#fbfaf7"/>
+  <ellipse cx="150" cy="190" rx="60" ry="16" fill="#ffffff" stroke="#d31d3c" stroke-width="2"/>
+  <path d="M90 190 L150 50 L210 190" fill="#d31d3c" opacity="0.1" stroke="#d31d3c" stroke-width="2"/>
+  <line x1="150" y1="50" x2="150" y2="190" stroke="#a9791c" stroke-dasharray="4 3"/>
+  <text x="156" y="124" font-size="11" fill="#a9791c">h = 9</text>
+  <line x1="150" y1="190" x2="210" y2="190" stroke="#0a7a53"/>
+  <text x="172" y="184" font-size="11" fill="#0a7a53">r = 4</text>
+</svg>

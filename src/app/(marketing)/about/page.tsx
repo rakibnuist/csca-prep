@@ -3,21 +3,22 @@ import Link from "next/link";
 import { ArrowUpRight, BookOpenCheck, Compass, Eye, FileWarning, Scale } from "lucide-react";
 import { Eyebrow, SectionHead } from "@/components/site/section";
 import { LeadForm } from "@/components/site/lead-form";
+import { pageMetadata } from "@/lib/seo";
 import { OFFICIAL, SITE } from "@/lib/site";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "About CSCA Master",
   description:
     "Why we built an independent, exam-accurate CSCA preparation platform, how the content is sourced, and what we refuse to claim.",
-  alternates: { canonical: "/about" },
-};
+  path: "/about",
+});
 
 export default function AboutPage() {
   return (
     <>
       <section className="border-b border-line">
-        <div className="shell grid gap-10 py-14 sm:py-20 lg:grid-cols-[1.15fr_0.85fr] lg:items-end">
-          <div>
+        <div className="shell grid grid-cols-1 gap-10 py-14 sm:py-20 lg:grid-cols-[1.15fr_0.85fr] lg:items-end">
+          <div className="min-w-0">
             <Eyebrow>About</Eyebrow>
             <h1 className="display-lg mt-4 max-w-2xl text-balance">
               A preparation platform built the way an exam should be studied.
@@ -28,13 +29,13 @@ export default function AboutPage() {
               measures you honestly and tells you what to fix.
             </p>
           </div>
-          <div className="rounded-2xl border border-line bg-card p-5">
+          <div className="min-w-0 rounded-2xl border border-line bg-card p-5">
             <p className="eyebrow">Principles</p>
             <ul className="mt-3 space-y-2.5 text-[12.5px] text-ink-soft">
               {[
                 "Exam fidelity beats gamification",
                 "Estimates are labelled as estimates",
-                "No copied papers, no fake testimonials",
+                "Official papers attributed, original work labelled, no fake testimonials",
                 "Free tier must be genuinely useful",
               ].map((item) => (
                 <li key={item} className="flex gap-2">
@@ -48,8 +49,8 @@ export default function AboutPage() {
       </section>
 
       <section className="shell py-14">
-        <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr]">
-          <div>
+        <div className="grid grid-cols-1 gap-10 lg:grid-cols-[0.9fr_1.1fr]">
+          <div className="min-w-0">
             <SectionHead
               eyebrow="Method"
               title="How the question bank is built."
@@ -76,14 +77,19 @@ export default function AboutPage() {
               {
                 icon: Compass,
                 title: "Keep the interface honest",
-                body: "Timings, counts and scoring mirror the published format. When our paper is shorter than the official one, the card says so.",
+                body: "Timings, counts and scoring mirror the published format: 48 questions in 60 minutes for the fundamental subjects, 80 in 90 for Professional Chinese. Where a transcription is partial, the card says how many of the official items it contains.",
+              },
+              {
+                icon: FileWarning,
+                title: "Label the provenance",
+                body: `Official sittings are transcribed and attributed to the source sitting; reconstructed review modules are labelled as reconstructions; original papers say they are original. Nothing is passed off as official when it is not. If you hold the rights to a paper and want it removed, write to ${SITE.email} and we will take it down.`,
               },
             ].map((step, index) => (
               <div key={step.title} className="flex gap-4 rounded-xl border border-line bg-card p-4">
                 <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-paper-deep">
                   <step.icon className="h-4 w-4 text-ink" strokeWidth={1.6} />
                 </div>
-                <div>
+                <div className="min-w-0 flex-1">
                   <p className="text-[13px] font-medium text-ink">
                     <span className="mr-1.5 text-ink-faint tabular">0{index + 1}</span>
                     {step.title}
@@ -95,8 +101,8 @@ export default function AboutPage() {
           </div>
         </div>
 
-        <div className="mt-14 grid gap-4 sm:grid-cols-2">
-          <div className="rounded-2xl border border-line bg-paper-deep/50 p-6">
+        <div className="mt-14 grid grid-cols-1 gap-4 sm:grid-cols-2">
+          <div className="min-w-0 rounded-2xl border border-line bg-paper-deep/50 p-6">
             <FileWarning className="h-5 w-5 text-ink-faint" />
             <h3 className="mt-3 font-display text-xl text-ink">What we are not</h3>
             <ul className="mt-3 space-y-2 text-[12.5px] text-ink-soft">
@@ -107,7 +113,7 @@ export default function AboutPage() {
             </ul>
           </div>
 
-          <div className="rounded-2xl border border-line bg-card p-6">
+          <div className="min-w-0 rounded-2xl border border-line bg-card p-6">
             <h3 className="font-display text-xl text-ink">Official sources we rely on</h3>
             <div className="mt-3 space-y-2 text-[12.5px]">
               {[
@@ -121,25 +127,25 @@ export default function AboutPage() {
                   href={href}
                   target="_blank"
                   rel="noreferrer noopener"
-                  className="flex items-center justify-between rounded-lg border border-line px-3 py-2 text-ink-soft transition hover:border-line-strong hover:text-ink"
+                  className="flex items-center justify-between gap-2 rounded-lg border border-line px-3 py-2 text-ink-soft transition hover:border-line-strong hover:text-ink"
                 >
-                  {label}
-                  <ArrowUpRight className="h-3.5 w-3.5" />
+                  <span className="min-w-0 flex-1">{label}</span>
+                  <ArrowUpRight className="h-3.5 w-3.5 shrink-0" />
                 </a>
               ))}
             </div>
           </div>
         </div>
 
-        <div className="mt-14 grid gap-8 rounded-2xl bg-ink p-7 text-paper sm:p-10 lg:grid-cols-[1.1fr_0.9fr]">
-          <div>
-            <Eyebrow className="text-paper/40">Stay in the loop</Eyebrow>
+        <div className="mt-14 grid grid-cols-1 gap-8 rounded-2xl bg-ink p-7 text-paper sm:p-10 lg:grid-cols-[1.1fr_0.9fr]">
+          <div className="min-w-0">
+            <Eyebrow className="text-paper/70">Stay in the loop</Eyebrow>
             <h2 className="mt-3 font-display text-3xl text-balance">
               One message when something is worth your time.
             </h2>
             <p className="mt-3 max-w-md text-[13px] leading-relaxed text-paper/60">
-              New papers, syllabus changes, and the Pro launch. No weekly newsletter, no “10 tips”
-              listicles.
+              New papers, syllabus updates, and sitting calendar notices. No weekly newsletter, no
+              “10 tips” listicles.
             </p>
             <div className="mt-6 flex flex-wrap gap-3 text-[12px] text-paper/50">
               <Link href="/syllabus" className="underline decoration-paper/20 underline-offset-4 hover:text-paper">
@@ -150,8 +156,13 @@ export default function AboutPage() {
               </Link>
             </div>
           </div>
-          <div className="rounded-xl bg-paper p-4">
-            <LeadForm source="about-newsletter" cta="Notify me" />
+          <div className="min-w-0 rounded-xl bg-paper p-4">
+            <LeadForm
+              source="about-newsletter"
+              cta="Notify me"
+              successTitle="Subscribed"
+              successBody="We'll email you only when there's something genuinely useful."
+            />
           </div>
         </div>
       </section>

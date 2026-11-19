@@ -1,67 +1,25 @@
-import { ImageResponse } from "next/og";
+import { OG_CONTENT_TYPE, OG_SIZE, renderOgCard } from "@/lib/og-card";
+import { PAPER_STATS } from "@/lib/paper-stats";
 
+/**
+ * Social share card.
+ *
+ * This audience shares links on WhatsApp and Telegram, where a link without a
+ * preview is a link nobody taps. The card is rendered per request and cached at
+ * the edge, and the brand block lives in `src/lib/og-card.tsx` so the homepage,
+ * /csca, /mocks and /zh cannot drift apart.
+ */
 export const runtime = "nodejs";
-export const alt = "CSCA Master — exam-accurate CSCA preparation";
-export const size = { width: 1200, height: 630 };
-export const contentType = "image/png";
+export const alt =
+  "CSCA Master — full-length CSCA papers in the official format: 48 questions in 60 minutes, 80 in 90.";
+export const size = OG_SIZE;
+export const contentType = OG_CONTENT_TYPE;
 
 export default function OpengraphImage() {
-  return new ImageResponse(
-    (
-      <div
-        style={{
-          width: "100%",
-          height: "100%",
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "space-between",
-          background: "#fbf7f0",
-          padding: "64px 72px",
-          fontFamily: "sans-serif",
-        }}
-      >
-        <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
-          <div
-            style={{
-              width: 46,
-              height: 46,
-              borderRadius: 10,
-              background: "#c8102e",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              color: "#fff8f3",
-              fontSize: 30,
-            }}
-          >
-            C
-          </div>
-          <div style={{ display: "flex", flexDirection: "column" }}>
-            <span style={{ fontSize: 26, color: "#16120f", letterSpacing: -0.5 }}>CSCA Master</span>
-            <span style={{ fontSize: 12, color: "#8b8378", letterSpacing: 3 }}>EXAM PREPARATION</span>
-          </div>
-        </div>
-
-        <div style={{ display: "flex", flexDirection: "column" }}>
-          <span style={{ fontSize: 74, color: "#16120f", lineHeight: 1.05, letterSpacing: -2 }}>
-            Sit the CSCA
-          </span>
-          <span style={{ fontSize: 74, color: "#c8102e", lineHeight: 1.05, letterSpacing: -2 }}>
-            before you sit the CSCA.
-          </span>
-          <span style={{ marginTop: 24, fontSize: 24, color: "#5a534b" }}>
-            Full-length mocks · official timing · topic analytics
-          </span>
-        </div>
-
-        <div style={{ display: "flex", gap: 48, fontSize: 18, color: "#5a534b" }}>
-          <span>5 subjects</span>
-          <span>48 questions · 60 minutes</span>
-          <span>0–100 scale</span>
-          <span style={{ color: "#c8102e" }}>cscamaster.com</span>
-        </div>
-      </div>
-    ),
-    size,
-  );
+  return renderOgCard({
+    eyebrow: "2027 INTAKE",
+    headline: "Sit the CSCA before you sit the CSCA.",
+    subline: `${PAPER_STATS.total} full-length papers · ${PAPER_STATS.questions.toLocaleString("en-US")} questions · a test-client simulation`,
+    chips: ["48 in 60", "80 in 90", "0–100", "No card"],
+  });
 }

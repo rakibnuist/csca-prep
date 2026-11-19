@@ -32,6 +32,46 @@ export const GLOSSARY: GlossaryTerm[] = [
       "The CSCA paper that tests Chinese for academic study rather than daily conversation. It comes in two streams — Humanities and STEM — and is 80 questions in 90 minutes, scored 0–100.",
   },
   {
+    slug: "rht",
+    term: "Remote-proctored home-based test (RHT)",
+    zh: "居家网考",
+    category: "The exam",
+    definition:
+      "The CSCA's default delivery format: you sit the paper on your own Windows computer at home while a proctor watches through your webcam and a second phone or tablet positioned at roughly 45° behind you. Only available where no test centre serves your region.",
+  },
+  {
+    slug: "cbt-centre",
+    term: "Computer-based test at a centre",
+    zh: "集中机考",
+    category: "The exam",
+    definition:
+      "The alternative CSCA format: you travel to an authorised test centre and sit on equipment the centre provides. Added progressively in key source countries.",
+  },
+  {
+    slug: "admission-ticket",
+    term: "Admission Ticket",
+    zh: "准考证",
+    category: "The exam",
+    definition:
+      "The document you download from the CSCA registration system before test day. It carries your ticket number and password for login, plus your name, ID details, test date, subjects, centre and seat. Once generated, registration details can no longer be changed.",
+  },
+  {
+    slug: "scratch-tool",
+    term: "Scratch tool",
+    zh: "草稿工具",
+    category: "The exam",
+    definition:
+      "What you are allowed to do rough work on during a home-based CSCA test: a small whiteboard with an erasable marker, or one blank sheet inside a transparent file bag. Paper, sticky notes and pens or pencils are prohibited, and the tool must be shown blank to the proctor and erased on camera afterwards.",
+  },
+  {
+    slug: "item-types",
+    term: "Professional Chinese item types",
+    zh: "题型",
+    category: "The exam",
+    definition:
+      "The six question types in both Professional Chinese papers: 识解汉字 character recognition, 选词填空 word-filling, 辨析词语 word discrimination, 选词成段 paragraph completion, 补全语句 sentence completion and 阅读理解 reading comprehension.",
+  },
+  {
     slug: "humanities-chinese",
     term: "Humanities Chinese",
     zh: "文科中文",
@@ -59,7 +99,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     term: "Home-based online proctoring",
     category: "The exam",
     definition:
-      "The default CSCA delivery format: you sit the exam at home under remote supervision. Test centres are being added gradually, starting in Vietnam and Thailand.",
+      "The default CSCA delivery format when no test centre serves your region: you sit the exam at home under live dual-device supervision. Check csca.cn at registration to see whether centre-based (CBT) or paper-based testing is available in your country.",
   },
   {
     slug: "percentile",
@@ -73,7 +113,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     term: "Score report",
     category: "The exam",
     definition:
-      "The official document issued through your CSCA account after results are released — within 7 working days for online and computer-based tests, 14 for paper-based tests.",
+      "The electronic document issued through your CSCA account after results are released — within 10 working days of the test date, and valid for two years from issue.",
   },
   {
     slug: "negative-marking",
@@ -125,7 +165,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     term: "English-taught programme",
     category: "Admissions",
     definition:
-      "A degree taught entirely in English. Applicants are normally exempt from Professional Chinese but still sit Mathematics and any required science subject.",
+      "A degree taught entirely in English. Non-CGS applicants are often exempt from Professional Chinese if confirmed in writing with the university, whereas CGS applicants must still sit Humanities or STEM Chinese alongside Mathematics and any required science subject.",
   },
   {
     slug: "chinese-taught",
@@ -160,7 +200,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     term: "Syllabus",
     category: "Preparation",
     definition:
-      "The official topic list for each paper, published by CSCA as PDFs. It defines what can be examined, but not the exact questions or the weighting of each topic.",
+      "The official topic list for each paper, defined in CSC's 2025 specifications (with PDFs for Mathematics, Physics and Chemistry published on csca.cn/about/testprep). It defines what can be examined, but not the exact questions or the weighting of each topic.",
   },
   {
     slug: "topic-mastery",

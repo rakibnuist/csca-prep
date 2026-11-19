@@ -1,0 +1,15 @@
+{
+  "source": "https://csca.cn/about/* · POST /sv/open/zyxx/list {zydm:GYKS_KSXZ_JJWK_KSJJ}",
+  "operation": "csca.resource",
+  "fetchedAt": "2026-11-13T00:34:21+00:00",
+  "code": "GYKS_KSXZ_JJWK_KSJJ",
+  "data": {
+    "code": "GYKS_KSXZ_JJWK_KSJJ",
+    "title": "考试简介",
+    "type": "richtext",
+    "published": "2026-09-30T15:29:38+08:00",
+    "version": 3,
+    "content": "<p>为突破地理限制，让更多考生便捷应试，CSCA正式推出居家网考模式。考生仅需使用<b>主机位（电脑）与副机位（手机/平板）双设备协同，</b> 即可在家完成考试。全程由远程监考员实时监督，并辅以严格的防作弊技术和流程，确保持续的考试安全与公平。 居家网考在考试内容、时长与题型上，均与线下集中机考保持完全一致。</p><p style=\"margin-bottom: 12px;\"><b>【重要提示】</b>请考生务必提前认真阅读相关材料，并观看CSCA网考操作指南视频，确保熟悉设备与环境要求、考试系统及考试流程。</p><video vnode=\"true\" id=\"1789633916409_2ggydq\" name=\"CSCA网考操作指南.mp4\" size=\"28152864\" src=\"/sv/open/zyUpload/download?resource=76c35a9cf630c98b15d168d516c2e38dddd5708310881e0e8aa1014f1fc7d73fa1a87456356c34eec064348831f680b3\" width=\"1002.5\" height=\"668.3333333333334\" uploaded=\"true\" previewtype=\"video\" style=\"justify-content: center;\"></video><p></p>",
+    "contentEn": "<p>To overcome geographical limitations and make participation more accessible, CSCA officially launches the Remote-proctored Home-based Testing (RHT) mode. Candidates can complete the test at home using two synchronized devices — a primary device (computer) and a secondary device (mobile phone or tablet).</p><p style=\"margin-bottom: 12px;\">The entire process is supervised in real-time by remote proctors, supported by strict anti-cheating technologies and procedures to ensure continuous testing security and fairness.</p><p style=\"margin-bottom: 12px;\">The RHT test is fully consistent with the centralized computer-based test in content, duration, and question types.</p><p style=\"margin-bottom: 12px;\"><b>Important Reminder:</b> Candidates are required to carefully review all relevant materials and watch the CSCA Home-Based Setup Guide video in advance to ensure they are familiar with the equipment and environment requirements, the test system, and the test procedures.</p><video vnode=\"true\" id=\"1790753272117_9nv73h\" name=\"CSCA Home-based Setup Guide.mp4\" size=\"29230737\" src=\"/sv/open/zyUpload/download?resource=02ea0bd35898c502e603d61db71004ed0532baa7c84c10162963dbff675d55aba1a87456356c34eec064348831f680b3\" width=\"981.2330097087377\" height=\"673.7800000000001\" uploaded=\"true\" previewtype=\"video\" style=\"justify-content: center;\"></video><p></p>"
+  }
+}

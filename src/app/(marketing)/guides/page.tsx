@@ -3,12 +3,12 @@ import Link from "next/link";
 import { ArrowRight, ArrowUpRight, Clock3 } from "lucide-react";
 import { Eyebrow, Pill } from "@/components/site/section";
 import { JsonLd } from "@/components/seo/jsonld";
-import { itemListLd, pageMetadata } from "@/lib/seo";
+import { breadcrumbLd, itemListLd, pageMetadata } from "@/lib/seo";
 import { GUIDES } from "@/lib/guides";
 import { formatDate } from "@/lib/utils";
 
 export const metadata: Metadata = pageMetadata({
-  title: "CSCA guides — requirements, planning and scoring, explained",
+  title: "CSCA guides — planning, scoring, requirements",
   description:
     "Practical CSCA guides: CSCA vs HSK, an eight-week study plan, which subjects your major needs, registration step by step, and how scoring and percentiles work.",
   path: "/guides",
@@ -23,6 +23,7 @@ export default function GuidesPage() {
       <JsonLd
         data={itemListLd(GUIDES.map((guide) => ({ name: guide.title, path: `/guides/${guide.slug}` })))}
       />
+      <JsonLd data={breadcrumbLd([{ name: "Guides", path: "/guides" }])} />
 
       <section className="border-b border-line">
         <div className="shell py-12 sm:py-16">
@@ -41,9 +42,9 @@ export default function GuidesPage() {
       <section className="shell py-12">
         <Link
           href={`/guides/${featured.slug}`}
-          className="group grid overflow-hidden rounded-2xl border border-line bg-card transition hover:shadow-[var(--shadow-lift)] lg:grid-cols-[1.1fr_0.9fr]"
+          className="group grid grid-cols-1 overflow-hidden rounded-2xl border border-line bg-card transition hover:shadow-[var(--shadow-lift)] lg:grid-cols-[1.1fr_0.9fr]"
         >
-          <div className="p-6 sm:p-8">
+          <div className="min-w-0 p-6 sm:p-8">
             <div className="flex flex-wrap items-center gap-2">
               <Pill tone="red">Start here</Pill>
               <Pill>{featured.eyebrow}</Pill>
@@ -60,23 +61,23 @@ export default function GuidesPage() {
               </span>
               <span>{formatDate(featured.modified, true)}</span>
             </div>
-            <span className="mt-6 inline-flex items-center gap-1.5 text-[12.5px] font-medium text-vermillion">
+            <span className="mt-6 inline-flex items-center gap-1.5 text-[12.5px] font-medium text-indigo">
               Read the guide <ArrowRight className="h-3.5 w-3.5 transition group-hover:translate-x-0.5" />
             </span>
           </div>
           <div className="relative hidden overflow-hidden border-l border-line bg-ink lg:block">
             <div className="absolute inset-0 bg-[radial-gradient(70%_70%_at_100%_0%,rgba(200,16,46,0.35),transparent_65%)]" />
             <div className="relative flex h-full flex-col justify-between p-8 text-paper">
-              <p className="eyebrow text-paper/40">The short answer</p>
+              <p className="eyebrow text-paper/70">The short answer</p>
               <p className="font-display text-2xl leading-snug text-balance text-paper/90">
                 {featured.takeaway}
               </p>
-              <p className="text-[10.5px] text-paper/40">CSCA Master · guides</p>
+              <p className="text-[10.5px] text-paper/70">CSCA Master · guides</p>
             </div>
           </div>
         </Link>
 
-        <div className="mt-4 grid gap-4 sm:grid-cols-2">
+        <div className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2">
           {rest.map((guide) => (
             <Link
               key={guide.slug}
@@ -85,7 +86,7 @@ export default function GuidesPage() {
             >
               <div className="flex items-center justify-between">
                 <Pill>{guide.eyebrow}</Pill>
-                <ArrowUpRight className="h-4 w-4 text-ink-faint transition group-hover:text-vermillion" />
+                <ArrowUpRight className="h-4 w-4 text-ink-faint transition group-hover:text-indigo" />
               </div>
               <h2 className="mt-3 font-display text-2xl leading-tight text-ink">{guide.title}</h2>
               <p className="mt-2 text-[12.5px] leading-relaxed text-ink-soft">{guide.description}</p>
@@ -96,11 +97,11 @@ export default function GuidesPage() {
           ))}
         </div>
 
-        <div className="mt-10 grid gap-3 sm:grid-cols-3">
+        <div className="mt-10 grid grid-cols-1 gap-3 sm:grid-cols-3">
           {[
             {
               title: "Sample questions",
-              body: "25 free items with worked explanations.",
+              body: "50 free items with worked explanations.",
               href: "/sample-questions",
             },
             {
@@ -121,7 +122,7 @@ export default function GuidesPage() {
             >
               <p className="text-[12.5px] font-medium text-ink">{tool.title}</p>
               <p className="mt-1 text-[11.5px] text-ink-soft">{tool.body}</p>
-              <span className="mt-2 inline-flex items-center gap-1 text-[11px] font-medium text-vermillion">
+              <span className="mt-2 inline-flex items-center gap-1 text-[11px] font-medium text-indigo">
                 Open <ArrowRight className="h-3 w-3" />
               </span>
             </Link>

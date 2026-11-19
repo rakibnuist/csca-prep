@@ -6,7 +6,7 @@ import { JsonLd } from "@/components/seo/jsonld";
 import { articleLd, breadcrumbLd, pageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = pageMetadata({
-  title: "CSCA tips & tricks — strategy for a better score in the same time",
+  title: "CSCA tips — strategy for a better score",
   description:
     "Practical CSCA exam strategy: the 75-second time budget, flag-and-skip, why you should never leave a blank, per-subject techniques, the error-log method and the last-24-hours routine.",
   path: "/tips",
@@ -68,6 +68,29 @@ const STAGES = [
   { icon: ListChecks, title: "Taper the last three days", body: "No new topics. Re-read the error log, fix sleep to exam-day hours, and check your ID and connection the day before." },
 ];
 
+const FAQ = [
+  {
+    q: "Is there negative marking on the CSCA?",
+    a: "No. A wrong answer scores the same as a blank, so never leave a question unanswered.",
+  },
+  {
+    q: "How long should I spend per question?",
+    a: "75 seconds on a 48-in-60 paper (Mathematics, Physics, Chemistry) and about 67 seconds on the 80-in-90 Professional Chinese paper. Keep the last five minutes for flagged items.",
+  },
+  {
+    q: "Should I guess when I don't know?",
+    a: "Yes. Eliminate the options you can rule out, commit to one, and move on. Randomly revisiting later usually costs more time than the guess saves.",
+  },
+  {
+    q: "What if I run out of time?",
+    a: "In the last two minutes, fill every remaining blank with your best elimination. A guess is never worse than a blank.",
+  },
+  {
+    q: "Should I study the day before?",
+    a: "No. The last day is for logistics — confirm the time in your timezone, test the proctoring setup, lay out your ID and sleep at exam-day hours.",
+  },
+];
+
 export default function TipsPage() {
   return (
     <>
@@ -81,6 +104,17 @@ export default function TipsPage() {
           published: "2026-10-27",
           modified: "2026-10-27",
         })}
+      />
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: FAQ.map((item) => ({
+            "@type": "Question",
+            name: item.q,
+            acceptedAnswer: { "@type": "Answer", text: item.a },
+          })),
+        }}
       />
 
       <section className="border-b border-line">
@@ -108,7 +142,7 @@ export default function TipsPage() {
           body="They are simple on purpose — a strategy only works under time pressure if you can remember it."
         />
 
-        <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {STAGES.map((stage) => (
             <div key={stage.title} className="panel p-5">
               <stage.icon className="h-5 w-5 text-vermillion" strokeWidth={1.6} />
@@ -126,7 +160,7 @@ export default function TipsPage() {
             title="The technique that pays off in each paper."
             body="Four papers, four different traps. Know the one your paper is built around."
           />
-          <div className="mt-8 grid gap-4 sm:grid-cols-2">
+          <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2">
             {SUBJECT_TIPS.map((group) => (
               <div key={group.subject} className="panel p-5">
                 <div className="flex items-baseline justify-between">
@@ -148,8 +182,8 @@ export default function TipsPage() {
       </section>
 
       <section className="shell py-14">
-        <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr]">
-          <div>
+        <div className="grid grid-cols-1 gap-8 lg:grid-cols-[0.9fr_1.1fr]">
+          <div className="min-w-0">
             <Eyebrow>The traps</Eyebrow>
             <h2 className="display-md mt-3">The mistakes that repeat every sitting.</h2>
             <p className="mt-3 text-[13px] leading-relaxed text-ink-soft">
@@ -166,7 +200,7 @@ export default function TipsPage() {
             </div>
           </div>
 
-          <ul className="grid gap-2 sm:grid-cols-2">
+          <ul className="grid grid-cols-1 gap-2 sm:grid-cols-2">
             {[
               ["Sign errors", "A dropped minus changes everything. Circle negatives as you copy them."],
               ["Factor of 2", "½at², ½mv², 2OH⁻ — the ½ and 2 are the first things to forget."],
@@ -184,10 +218,100 @@ export default function TipsPage() {
         </div>
       </section>
 
+      <section className="border-t border-line">
+        <div className="shell py-14">
+          <SectionHead
+            eyebrow="The clock"
+            title="How the minutes should divide."
+            body="Two paper lengths, two budgets. The arithmetic is simple; remembering it under pressure is the work."
+          />
+          <div className="mt-6 overflow-x-auto rounded-xl border border-line">
+            <table className="w-full text-[12.5px]">
+              <thead>
+                <tr className="bg-paper-deep/70 text-left text-[10.5px] tracking-[0.1em] text-ink-faint uppercase">
+                  <th className="px-3 py-2.5">Paper</th>
+                  <th className="px-3 py-2.5">Questions</th>
+                  <th className="px-3 py-2.5">Minutes</th>
+                  <th className="px-3 py-2.5">Per question</th>
+                  <th className="px-3 py-2.5">Keep for review</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-line bg-card">
+                {[
+                  ["Mathematics / Physics / Chemistry", "48", "60", "75 s", "5 min"],
+                  ["Professional Chinese", "80", "90", "~67 s", "5 min"],
+                ].map((row) => (
+                  <tr key={row[0]}>
+                    {row.map((cell, cellIndex) => (
+                      <td
+                        key={cell}
+                        className={
+                          cellIndex === 0
+                            ? "px-3 py-3 font-medium text-ink"
+                            : "px-3 py-3 text-ink-soft"
+                        }
+                      >
+                        {cell}
+                      </td>
+                    ))}
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section className="border-t border-line bg-card/60 py-14">
+        <div className="shell">
+          <div className="grid grid-cols-1 gap-8 lg:grid-cols-[0.9fr_1.1fr]">
+            <div className="min-w-0">
+              <Eyebrow>Guessing</Eyebrow>
+              <h2 className="display-md mt-3">When you don&apos;t know, eliminate before you commit.</h2>
+              <p className="mt-3 text-[13px] leading-relaxed text-ink-soft">
+                There is no negative marking, so a blank is the only losing move — but a blind guess is
+                still worse than a good elimination. Four filters, then commit.
+              </p>
+            </div>
+            <ol className="space-y-2">
+              {[
+                "Eliminate on units — an answer with the wrong unit is wrong, whatever the arithmetic.",
+                "Eliminate on magnitude — a walking speed of 4,000 m/s is a trap, not a result.",
+                "Eliminate on sign — if the stem implies a positive quantity, drop the negative options.",
+                "If two remain, prefer the one that matches the stem's form (whole vs decimal, range vs point).",
+                "Commit and move on. Do not return to a guess you have no new information about.",
+              ].map((step, stepIndex) => (
+                <li
+                  key={step}
+                  className="flex gap-3 rounded-lg border border-line bg-card px-3 py-2.5 text-[12.5px] leading-relaxed text-ink-soft"
+                >
+                  <span className="font-mono text-[11px] text-ink-faint">{stepIndex + 1}</span>
+                  {step}
+                </li>
+              ))}
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <section className="border-t border-line">
+        <div className="shell py-14">
+          <h2 className="font-display text-2xl text-ink">Strategy FAQ</h2>
+          <dl className="mt-4 divide-y divide-line/70">
+            {FAQ.map((item) => (
+              <div key={item.q} className="py-3">
+                <dt className="text-[13px] font-medium text-ink">{item.q}</dt>
+                <dd className="mt-1 text-[12.5px] leading-relaxed text-ink-soft">{item.a}</dd>
+              </div>
+            ))}
+          </dl>
+        </div>
+      </section>
+
       <section className="border-t border-line bg-ink py-14 text-paper">
-        <div className="shell grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
-          <div>
-            <Eyebrow className="text-paper/40">The last 24 hours</Eyebrow>
+        <div className="shell grid grid-cols-1 gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
+          <div className="min-w-0">
+            <Eyebrow className="text-paper/70">The last 24 hours</Eyebrow>
             <h2 className="display-md mt-3 text-paper">Stop studying. Start protecting.</h2>
             <p className="mt-3 max-w-xl text-[13.5px] leading-relaxed text-paper/65">
               The day before the CSCA is about logistics, not learning: confirm your start time in
@@ -198,7 +322,7 @@ export default function TipsPage() {
               <Clock3 className="h-4 w-4" /> Beijing time, converted to yours — double-check it.
             </div>
           </div>
-          <div className="rounded-xl bg-paper p-5">
+          <div className="min-w-0 rounded-xl bg-paper p-5">
             <Lightbulb className="h-4 w-4 text-gold" />
             <p className="mt-2 text-[13px] leading-relaxed text-ink-soft">
               <span className="font-medium text-ink">One line to remember:</span> a full paper taken

@@ -2,6 +2,17 @@ import { readFileSync } from "node:fs";
 import path from "node:path";
 import type { SeedQuestion } from "./types";
 
+/** stem -> Chinese explanation for the templated drill bank. */
+const LEGACY_ZH: Record<string, string> = (() => {
+  try {
+    return JSON.parse(
+      readFileSync(path.join(process.cwd(), "prisma/seeds/legacy-zh.json"), "utf8"),
+    );
+  } catch {
+    return {};
+  }
+})();
+
 /**
  * Legacy drill bank.
  *
@@ -117,6 +128,7 @@ function toSeed(
       explanation:
         (raw.explanation ?? "").trim() ||
         "Practise this topic and check the reasoning against the syllabus notes.",
+      explanationZh: LEGACY_ZH[stem],
       tags: [raw.topic || "drill"],
     });
   }

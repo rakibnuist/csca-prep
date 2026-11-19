@@ -1,0 +1,570 @@
+{
+  "url": "https://csca.space/formulas/math",
+  "finalUrl": "https://csca.space/formulas/math",
+  "status": 200,
+  "title": "CSCA Mathematics Formulas & Derivations — Exam Reference Guide",
+  "description": "Complete reference for all 24 CSCA Math formulas: quadratic inequalities, logarithms, trigonometry, progressions, differential calculus, and analytic conics.",
+  "headings": [
+    {
+      "level": 1,
+      "text": "CSCA Mathematics Formula Catalog"
+    },
+    {
+      "level": 2,
+      "text": "Sets & Inequalities"
+    },
+    {
+      "level": 3,
+      "text": "Quadratic Formula"
+    },
+    {
+      "level": 3,
+      "text": "Union of Sets"
+    },
+    {
+      "level": 3,
+      "text": "Intersection of Sets"
+    },
+    {
+      "level": 3,
+      "text": "Complement of a Set"
+    },
+    {
+      "level": 3,
+      "text": "Rational Inequality Equivalence"
+    },
+    {
+      "level": 3,
+      "text": "AM-GM Inequality"
+    },
+    {
+      "level": 2,
+      "text": "Functions"
+    },
+    {
+      "level": 3,
+      "text": "Change of Base Formula"
+    },
+    {
+      "level": 3,
+      "text": "Logarithmic Properties"
+    },
+    {
+      "level": 3,
+      "text": "Trigonometric Pythagorean Identity"
+    },
+    {
+      "level": 3,
+      "text": "Double-Angle Formula (Sine)"
+    },
+    {
+      "level": 3,
+      "text": "Double-Angle Formula (Cosine)"
+    },
+    {
+      "level": 3,
+      "text": "Function Parity (Odd & Even)"
+    },
+    {
+      "level": 2,
+      "text": "Sequences"
+    },
+    {
+      "level": 3,
+      "text": "Arithmetic Sequence Nth Term"
+    },
+    {
+      "level": 3,
+      "text": "Arithmetic Sequence Sum"
+    },
+    {
+      "level": 3,
+      "text": "Geometric Sequence Nth Term"
+    },
+    {
+      "level": 3,
+      "text": "Geometric Sequence Sum"
+    },
+    {
+      "level": 2,
+      "text": "Derivatives"
+    },
+    {
+      "level": 3,
+      "text": "Power Rule for Derivatives"
+    },
+    {
+      "level": 3,
+      "text": "Tangent Line Equation"
+    },
+    {
+      "level": 2,
+      "text": "Plane Analytic Geometry"
+    },
+    {
+      "level": 3,
+      "text": "Distance Formula"
+    },
+    {
+      "level": 3,
+      "text": "Equation of a Circle"
+    },
+    {
+      "level": 3,
+      "text": "Equation of an Ellipse"
+    },
+    {
+      "level": 3,
+      "text": "Equation of a Hyperbola"
+    },
+    {
+      "level": 3,
+      "text": "Equation of a Parabola"
+    },
+    {
+      "level": 3,
+      "text": "Equation of a Line (Slope-Intercept & General Form)"
+    },
+    {
+      "level": 2,
+      "text": "Vectors & Complex Numbers"
+    },
+    {
+      "level": 3,
+      "text": "Vector Dot Product"
+    },
+    {
+      "level": 3,
+      "text": "Modulus of a Complex Number"
+    },
+    {
+      "level": 2,
+      "text": "Solid Geometry"
+    },
+    {
+      "level": 3,
+      "text": "Volume and Surface Area of a Sphere"
+    },
+    {
+      "level": 2,
+      "text": "Probability & Statistics"
+    },
+    {
+      "level": 3,
+      "text": "Classical Probability Formula"
+    },
+    {
+      "level": 3,
+      "text": "Variance and Standard Deviation"
+    },
+    {
+      "level": 3,
+      "text": "Normal Distribution (3-Sigma Rule)"
+    }
+  ],
+  "text": "CSCA.space\n\nMathematics Syllabus →\n\nHome/Formulas/Mathematics\n\n30 Verified Equations\n\nCSCA Mathematics Formula Catalog\n\nCSCA 数学核心公式与定理库\n\nComplete reference for all 24 CSCA Math formulas: quadratic inequalities, logarithms, trigonometry, progressions, differential calculus, and analytic conics.\n\nSets & Inequalities\n6 Formulas\n\nQuadratic Formula\n\n一元二次方程求根公式\n\nSolves quadratic equations of the form ax² + bx + c = 0. Here, 'x' represents the roots, 'a', 'b', and 'c' are coefficients, and the term under the square root (b² - 4ac) is the discriminant.\n\n$\\[ x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a} \\]$\nProof\n\nUnion of Sets\n\n集合的并集\n\nThe union of two sets A and B contains all elements that are in A, in B, or in both. Denoted by 'A ∪ B'.\n\n$\\[ A \\cup B = \\{ x \\mid x \\in A \\text{ or } x \\in B \\} \\]$\nProof\n\nIntersection of Sets\n\n集合的交集\n\nThe intersection of two sets A and B contains all elements that belong to both A and B. Denoted by 'A ∩ B'.\n\n$\\[ A \\cap B = \\{ x \\mid x \\in A \\text{ and } x \\in B \\} \\]$\nProof\n\nComplement of a Set\n\n集合的补集\n\nThe complement of a subset A with respect to a universal set U contains all elements in U that do not belong to A. Denoted by ∁_U A.\n\n$\\[ \\complement_{U} A = \\{ x \\in U \\mid x \\notin A \\} \\]$\nProof\n\nRational Inequality Equivalence\n\n分式不等式的等价转化\n\nSolves fractional inequalities by converting the division into multiplication. It maintains sign properties while ensuring the denominator 'cx + d' is non-zero.\n\n$\\[ \\frac{ax + b}{cx + d} \\le 0 \\iff (ax + b)(cx + d) \\le 0 \\quad \\text{and} \\quad cx + d \\ne 0 \\]$\nProof\n\nAM-GM Inequality\n\n基本均值不等式\n\nThe Arithmetic Mean-Geometric Mean inequality states that for any non-negative real numbers 'a' and 'b', their arithmetic mean is greater than or equal to their geometric mean. Equality holds if and only if a = b.\n\n$\\[ \\frac{a + b}{2} \\ge \\sqrt{ab} \\quad (a, b \\ge 0) \\]$\nProof\n\nFunctions\n6 Formulas\n\nChange of Base Formula\n\n对数的换底公式\n\nAllows logarithm evaluation in any desired base 'c' (usually base e or base 10) by expressing it as the ratio of two logarithms in that base.\n\n$\\[ \\log_a b = \\frac{\\log_c b}{\\log_c a} \\quad (a, b, c > 0, \\, a, c \\ne 1) \\]$\nProof\n\nLogarithmic Properties\n\n对数的基本运算性质\n\nCore operational laws of logarithmic functions: the log of a product is the sum of the logs, and the log of a quotient is the difference of the logs.\n\n$\\[ \\log_a (xy) = \\log_a x + \\log_a y \\quad \\text{and} \\quad \\log_a \\left(\\frac{x}{y}\\right) = \\log_a x - \\log_a y \\]$\nProof\n\nTrigonometric Pythagorean Identity\n\n同角三角关系（平方关系）\n\nThe fundamental relation expressing the Pythagorean theorem in terms of trigonometric functions. Useful for finding sine if cosine is known, or vice versa.\n\n$\\[ \\sin^2 \\theta + \\cos^2 \\theta = 1 \\]$\nProof\n\nDouble-Angle Formula (Sine)\n\n正弦的二倍角公式\n\nExpresses the sine of double an angle in terms of the sine and cosine of the single angle.\n\n$\\[ \\sin 2\\theta = 2 \\sin \\theta \\cos \\theta \\]$\nProof\n\nDouble-Angle Formula (Cosine)\n\n余弦的二倍角公式\n\nExpresses the cosine of double an angle in terms of the single angle's cosine and sine.\n\n$\\[ \\cos 2\\theta = \\cos^2 \\theta - \\sin^2 \\theta \\]$\nProof\n\nFunction Parity (Odd & Even)\n\n函数的奇偶性\n\nAn even function is symmetric about the y-axis, satisfying f(-x) = f(x). An odd function is symmetric about the origin, satisfying f(-x) = -f(x). Both require a domain symmetric about x = 0.\n\n$\\[ \\text{Even: } f(-x) = f(x), \\quad \\text{Odd: } f(-x) = -f(x) \\]$\nProof\n\nSequences\n4 Formulas\n\nArithmetic Sequence Nth Term\n\n等差数列通项公式\n\nCalculates the general term of an arithmetic sequence. Here, 'a₁' is the first term, 'd' is the common difference, and 'n' is the index.\n\n$\\[ a_n = a_1 + (n - 1)d \\]$\nProof\n\nArithmetic Sequence Sum\n\n等差数列前n项和公式\n\nFinds the sum of the first n terms of an arithmetic sequence. Represents the sum of terms multiplied by their average.\n\n$\\[ S_n = \\frac{n(a_1 + a_n)}{2} \\]$\nProof\n\nGeometric Sequence Nth Term\n\n等比数列通项公式\n\nCalculates the general term of a geometric sequence. Here, 'a₁' is the first term, 'q' is the common ratio, and 'n' is the term index.\n\n$\\[ a_n = a_1 q^{n-1} \\]$\nProof\n\nGeometric Sequence Sum\n\n等比数列前n项和公式\n\nComputes the sum of the first n terms of a geometric sequence when the common ratio 'q' is not equal to 1. If q = 1, Sn = n * a₁.\n\n$\\[ S_n = \\frac{a_1(1 - q^n)}{1 - q} \\quad (q \\ne 1) \\]$\nProof\n\nDerivatives\n2 Formulas\n\nPower Rule for Derivatives\n\n导数的幂函数求导法则\n\nThe fundamental derivative rule for power functions. It states that the derivative of x^n with respect to x is n multiplied by x^(n-1).\n\n$\\[ \\frac{d}{dx} x^n = n x^{n-1} \\]$\nProof\n\nTangent Line Equation\n\n曲线切线方程公式\n\nDefines the equation of the line tangent to the curve y = f(x) at point (x₀, y₀). The derivative value f'(x₀) represents the slope of the tangent line.\n\n$\\[ y - y_0 = f'(x_0)(x - x_0) \\]$\nProof\n\nPlane Analytic Geometry\n6 Formulas\n\nDistance Formula\n\n两点间距离公式\n\nCalculates the Euclidean distance 'd' between two coordinates (x₁, y₁) and (x₂, y₂) in a two-dimensional Cartesian coordinate system.\n\n$\\[ d = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2} \\]$\nProof\n\nEquation of a Circle\n\n圆的标准方程\n\nThe standard equation of a circle centered at (a, b) with a radius of 'R'. Here, 'R' represents the radius and (a, b) is the center.\n\n$\\[ (x - a)^2 + (y - b)^2 = R^2 \\]$\nProof\n\nEquation of an Ellipse\n\n椭圆的标准方程\n\nThe standard equation of an ellipse centered at the origin with foci on the x-axis. Satisfies the focal relation c² = a² - b², where 'c' is the focal coordinate and 'e = c/a' is the eccentricity.\n\n$\\[ \\frac{x^2}{a^2} + \\frac{y^2}{b^2} = 1 \\quad (a > b > 0) \\]$\nProof\n\nEquation of a Hyperbola\n\n双曲线的标准方程\n\nThe standard equation of a hyperbola centered at the origin with foci on the x-axis. Satisfies the relation c² = a² + b² and has eccentricity e = c/a (where e > 1).\n\n$\\[ \\frac{x^2}{a^2} - \\frac{y^2}{b^2} = 1 \\quad (a > 0, \\, b > 0) \\]$\nProof\n\nEquation of a Parabola\n\n抛物线的标准方程\n\nThe standard equation of a parabola opening to the right. It has a focus at (p/2, 0) and a directrix equation x = -p/2.\n\n$\\[ y^2 = 2px \\quad (p > 0) \\]$\nProof\n\nEquation of a Line (Slope-Intercept & General Form)\n\n直线的方程（斜截式与一般式）\n\nSlope-intercept form (y = kx + b) uses slope 'k' and y-intercept 'b'. General form (Ax + By + C = 0) can represent any straight line in a 2D plane.\n\n$\\[ y = kx + b \\quad \\text{and} \\quad Ax + By + C = 0 \\]$\nProof\n\nVectors & Complex Numbers\n2 Formulas\n\nVector Dot Product\n\n平面向量的数量积（点积）\n\nCalculates the algebraic dot product of two 2D vectors. It relates the geometric lengths of vectors and the cosine of the angle between them.\n\n$\\[ \\mathbf{a} \\cdot \\mathbf{b} = a_x b_x + a_y b_y = |\\mathbf{a}| |\\mathbf{b}| \\cos \\theta \\]$\nProof\n\nModulus of a Complex Number\n\n复数的模\n\nCalculates the modulus or absolute value of a complex number z = a + bi, representing its geometric distance from the origin in the complex plane.\n\n$\\[ |z| = \\sqrt{a^2 + b^2} \\quad (z = a + bi) \\]$\nProof\n\nSolid Geometry\n1 Formula\n\nVolume and Surface Area of a Sphere\n\n球的体积与表面积公式\n\nVolume 'V' and Surface Area 'S' of a sphere with radius 'R' in 3D space.\n\n$\\[ V = \\frac{4}{3}\\pi R^3 \\quad \\text{and} \\quad S = 4\\pi R^2 \\]$\nProof\n\nProbability & Statistics\n3 Formulas\n\nClassical Probability Formula\n\n古典概型概率计算公式\n\nCalculates the probability of an event 'A' in a classical probability model. 'N(A)' is the number of outcomes favorable to event 'A', and 'N' is the total number of equally likely outcomes in the sample space.\n\n$\\[ P(A) = \\frac{N(A)}{N} \\]$\nProof\n\nVariance and Standard Deviation\n\n样本方差与标准差公式\n\nVariance (s²) measures the dispersion of a data set. It is the average of squared differences from the mean. Standard deviation (s) is the square root of variance.\n\n$\\[ s^2 = \\frac{1}{n} \\sum_{i=1}^{n} (x_i - \\bar{x})^2 \\]$\nProof\n\nNormal Distribution (3-Sigma Rule)\n\n正态分布（3σ原则 / 68-95-99.7准则）\n\nThe 3-Sigma (68-95-99.7) rule for a normal distribution with mean 'μ' and standard deviation 'σ'. It describes the percentage of data falling within one, two, and three standard deviations from the mean.\n\n$\\[ P(\\mu - \\sigma \\le X \\le \\mu + \\sigma) \\approx 0.6826 \\quad \\text{and} \\quad P(\\mu - 2\\sigma \\le X \\le \\mu + 2\\sigma) \\approx 0.9544 \\]$\nProof",
+  "links": [
+    {
+      "href": "/",
+      "text": "CSCA.space"
+    },
+    {
+      "href": "/subjects/math",
+      "text": "Mathematics Syllabus →"
+    },
+    {
+      "href": "/",
+      "text": "Home"
+    },
+    {
+      "href": "/formulas",
+      "text": "Formulas"
+    },
+    {
+      "href": "/formulas/math/sets-and-inequalities/quadratic-formula",
+      "text": "Quadratic Formula一元二次方程求根公式Solves quadratic equations of the form ax² + bx + c = 0. Here, 'x' represents the roots, 'a',"
+    },
+    {
+      "href": "/formulas/math/sets-and-inequalities/set-union",
+      "text": "Union of Sets集合的并集The union of two sets A and B contains all elements that are in A, in B, or in both. Denoted by 'A ∪ B"
+    },
+    {
+      "href": "/formulas/math/sets-and-inequalities/set-intersection",
+      "text": "Intersection of Sets集合的交集The intersection of two sets A and B contains all elements that belong to both A and B. Denoted"
+    },
+    {
+      "href": "/formulas/math/sets-and-inequalities/set-complement",
+      "text": "Complement of a Set集合的补集The complement of a subset A with respect to a universal set U contains all elements in U that d"
+    },
+    {
+      "href": "/formulas/math/sets-and-inequalities/rational-inequality",
+      "text": "Rational Inequality Equivalence分式不等式的等价转化Solves fractional inequalities by converting the division into multiplication. "
+    },
+    {
+      "href": "/formulas/math/sets-and-inequalities/am-gm-inequality",
+      "text": "AM-GM Inequality基本均值不等式The Arithmetic Mean-Geometric Mean inequality states that for any non-negative real numbers 'a' a"
+    },
+    {
+      "href": "/formulas/math/functions/log-change-of-base",
+      "text": "Change of Base Formula对数的换底公式Allows logarithm evaluation in any desired base 'c' (usually base e or base 10) by expressi"
+    },
+    {
+      "href": "/formulas/math/functions/log-properties",
+      "text": "Logarithmic Properties对数的基本运算性质Core operational laws of logarithmic functions: the log of a product is the sum of the lo"
+    },
+    {
+      "href": "/formulas/math/functions/trig-pythagorean-identity",
+      "text": "Trigonometric Pythagorean Identity同角三角关系（平方关系）The fundamental relation expressing the Pythagorean theorem in terms of tr"
+    },
+    {
+      "href": "/formulas/math/functions/trig-double-angle-sine",
+      "text": "Double-Angle Formula (Sine)正弦的二倍角公式Expresses the sine of double an angle in terms of the sine and cosine of the single a"
+    },
+    {
+      "href": "/formulas/math/functions/trig-double-angle-cosine",
+      "text": "Double-Angle Formula (Cosine)余弦的二倍角公式Expresses the cosine of double an angle in terms of the single angle's cosine and s"
+    },
+    {
+      "href": "/formulas/math/functions/function-parity",
+      "text": "Function Parity (Odd & Even)函数的奇偶性An even function is symmetric about the y-axis, satisfying f(-x) = f(x). An odd functi"
+    },
+    {
+      "href": "/formulas/math/sequences/arithmetic-sequence-nth-term",
+      "text": "Arithmetic Sequence Nth Term等差数列通项公式Calculates the general term of an arithmetic sequence. Here, 'a₁' is the first term,"
+    },
+    {
+      "href": "/formulas/math/sequences/arithmetic-sequence-sum",
+      "text": "Arithmetic Sequence Sum等差数列前n项和公式Finds the sum of the first n terms of an arithmetic sequence. Represents the sum of ter"
+    },
+    {
+      "href": "/formulas/math/sequences/geometric-sequence-nth-term",
+      "text": "Geometric Sequence Nth Term等比数列通项公式Calculates the general term of a geometric sequence. Here, 'a₁' is the first term, 'q"
+    },
+    {
+      "href": "/formulas/math/sequences/geometric-sequence-sum",
+      "text": "Geometric Sequence Sum等比数列前n项和公式Computes the sum of the first n terms of a geometric sequence when the common ratio 'q' "
+    },
+    {
+      "href": "/formulas/math/derivatives/derivative-power-rule",
+      "text": "Power Rule for Derivatives导数的幂函数求导法则The fundamental derivative rule for power functions. It states that the derivative o"
+    },
+    {
+      "href": "/formulas/math/derivatives/tangent-line-equation",
+      "text": "Tangent Line Equation曲线切线方程公式Defines the equation of the line tangent to the curve y = f(x) at point (x₀, y₀). The deriv"
+    },
+    {
+      "href": "/formulas/math/plane-analytic-geometry/distance-formula",
+      "text": "Distance Formula两点间距离公式Calculates the Euclidean distance 'd' between two coordinates (x₁, y₁) and (x₂, y₂) in a two-dime"
+    },
+    {
+      "href": "/formulas/math/plane-analytic-geometry/circle-equation",
+      "text": "Equation of a Circle圆的标准方程The standard equation of a circle centered at (a, b) with a radius of 'R'. Here, 'R' represent"
+    },
+    {
+      "href": "/formulas/math/plane-analytic-geometry/ellipse-equation",
+      "text": "Equation of an Ellipse椭圆的标准方程The standard equation of an ellipse centered at the origin with foci on the x-axis. Satisfi"
+    },
+    {
+      "href": "/formulas/math/plane-analytic-geometry/hyperbola-equation",
+      "text": "Equation of a Hyperbola双曲线的标准方程The standard equation of a hyperbola centered at the origin with foci on the x-axis. Sati"
+    },
+    {
+      "href": "/formulas/math/plane-analytic-geometry/parabola-equation",
+      "text": "Equation of a Parabola抛物线的标准方程The standard equation of a parabola opening to the right. It has a focus at (p/2, 0) and a"
+    },
+    {
+      "href": "/formulas/math/plane-analytic-geometry/line-equations",
+      "text": "Equation of a Line (Slope-Intercept & General Form)直线的方程（斜截式与一般式）Slope-intercept form (y = kx + b) uses slope 'k' and y-"
+    },
+    {
+      "href": "/formulas/math/vectors-and-complex-numbers/vector-dot-product",
+      "text": "Vector Dot Product平面向量的数量积（点积）Calculates the algebraic dot product of two 2D vectors. It relates the geometric lengths o"
+    },
+    {
+      "href": "/formulas/math/vectors-and-complex-numbers/complex-modulus",
+      "text": "Modulus of a Complex Number复数的模Calculates the modulus or absolute value of a complex number z = a + bi, representing its"
+    },
+    {
+      "href": "/formulas/math/solid-geometry/sphere-properties",
+      "text": "Volume and Surface Area of a Sphere球的体积与表面积公式Volume 'V' and Surface Area 'S' of a sphere with radius 'R' in 3D space.$\\["
+    },
+    {
+      "href": "/formulas/math/probability-and-statistics/classical-probability",
+      "text": "Classical Probability Formula古典概型概率计算公式Calculates the probability of an event 'A' in a classical probability model. 'N(A"
+    },
+    {
+      "href": "/formulas/math/probability-and-statistics/variance-standard-deviation",
+      "text": "Variance and Standard Deviation样本方差与标准差公式Variance (s²) measures the dispersion of a data set. It is the average of squar"
+    },
+    {
+      "href": "/formulas/math/probability-and-statistics/normal-distribution",
+      "text": "Normal Distribution (3-Sigma Rule)正态分布（3σ原则 / 68-95-99.7准则）The 3-Sigma (68-95-99.7) rule for a normal distribution with "
+    }
+  ],
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "EducationalOrganization",
+          "@id": "https://csca.space/#organization",
+          "name": "CSCA Space Academy",
+          "url": "https://csca.space",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://csca.space/logo.png",
+            "contentUrl": "https://csca.space/logo.png",
+            "width": 2048,
+            "height": 2048,
+            "caption": "CSCA Space Logo"
+          },
+          "image": "https://csca.space/logo.png",
+          "description": "Premier standardized preparation academy and adaptive testing simulator for the China Scholastic Competency Assessment (CSCA).",
+          "knowsAbout": [
+            "China Scholastic Competency Assessment",
+            "CSCA Exam",
+            "CSC Scholarship",
+            "Chinese Government Scholarship",
+            "STEM University Admissions in China"
+          ],
+          "sameAs": [
+            "https://github.com/cscaspace"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://csca.space/#website",
+          "url": "https://csca.space",
+          "name": "CSCA Space",
+          "inLanguage": [
+            "en",
+            "zh-Hans"
+          ],
+          "dateModified": "2026-09-04",
+          "publisher": {
+            "@id": "https://csca.space/#organization"
+          },
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://csca.space/subjects?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+          }
+        },
+        {
+          "@type": "EducationalApplication",
+          "@id": "https://csca.space/#application",
+          "name": "CSCA Space Exam Simulator & Mock Generator",
+          "url": "https://csca.space",
+          "applicationCategory": "EducationalApplication",
+          "operatingSystem": "All",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+          },
+          "description": "High-yield bilingual CSCA examination simulator powered by the v2.4 and v3.0 parametric question generation engine calibrated to 99.8% fidelity of official CSCA CBT exams, featuring deterministic SymPy proofs and FSRS-6 formula mastery.",
+          "featureList": [
+            "99.8% Official CSCA CBT Exam Fidelity Mock Generator",
+            "Dual v2.4 Consensus & v3.0 Parametric Manifold Engine",
+            "Deterministic SymPy Symbolic STEM Dual-Verification",
+            "6 Macro Cognitive Habit Distractor Autopsies",
+            "48 Questions in 60 Minutes Timed Exam Environment",
+            "Bilingual English and Chinese CSCA STEM Syllabi"
+          ],
+          "provider": {
+            "@id": "https://csca.space/#organization"
+          }
+        },
+        {
+          "@type": "SiteNavigationElement",
+          "@id": "https://csca.space/#navigation",
+          "name": "CSCA Space Main Navigation",
+          "hasPart": [
+            {
+              "@type": "WebPage",
+              "name": "CSCA Mock Tests & Simulator",
+              "url": "https://csca.space/subjects/portal",
+              "description": "Adaptive CSCA mock exam hall with official timers and real-time pacer tracking."
+            },
+            {
+              "@type": "WebPage",
+              "name": "CSCA Mathematics Past Papers",
+              "url": "https://csca.space/subjects/math",
+              "description": "Calculus, Algebra, Analytic Geometry, and Vector past questions with KaTeX derivations."
+            },
+            {
+              "@type": "WebPage",
+              "name": "CSCA Physics Syllabus & Drills",
+              "url": "https://csca.space/subjects/physics",
+              "description": "Classical mechanics, electromagnetism, and thermodynamics CSCA questions."
+            },
+            {
+              "@type": "WebPage",
+              "name": "CSCA Chemistry Complete Guide",
+              "url": "https://csca.space/subjects/chemistry",
+              "description": "Organic chemistry, stoichiometry, and chemical equilibrium practice."
+            },
+            {
+              "@type": "WebPage",
+              "name": "CSCA Academic Chinese (科技汉语)",
+              "url": "https://csca.space/subjects/chinese",
+              "description": "Scientific Chinese reading comprehension and technical STEM vocabulary."
+            },
+            {
+              "@type": "WebPage",
+              "name": "CSCA Space vs Private Tutoring",
+              "url": "https://csca.space/vs/traditional-tutoring-vs-cscaspace",
+              "description": "Transparent comparison between CSCA Space self-paced academy and traditional private agency tutoring."
+            },
+            {
+              "@type": "WebPage",
+              "name": "Diagnostic Assessment",
+              "url": "https://csca.space/diagnostic",
+              "description": "Free 15-minute diagnostic exam assessing CSCA readiness across all 4 subjects."
+            }
+          ]
+        },
+        {
+          "@type": "LearningResource",
+          "@id": "https://csca.space/#learningresource",
+          "name": "CSCA Standardized Examination Curriculum & Past Papers",
+          "description": "Complete CSCA preparation curriculum covering Mathematics, Physics, Chemistry, and Academic Chinese.",
+          "educationalLevel": "High School to Undergraduate Admissions",
+          "learningResourceType": "Practice Assessment & Exam Simulation",
+          "inLanguage": [
+            "en",
+            "zh-Hans"
+          ],
+          "isAccessibleForFree": true,
+          "provider": {
+            "@id": "https://csca.space/#organization"
+          }
+        },
+        {
+          "@type": "Course",
+          "@id": "https://csca.space/#course-math",
+          "name": "CSCA Mathematics Preparation & Past Papers",
+          "description": "Comprehensive CSCA Mathematics syllabus coverage: Calculus, Algebra, Sequences, Vectors, Probability, and Adaptive Practice.",
+          "provider": {
+            "@id": "https://csca.space/#organization"
+          },
+          "url": "https://csca.space/subjects/math",
+          "isAccessibleForFree": true
+        },
+        {
+          "@type": "Course",
+          "@id": "https://csca.space/#course-physics",
+          "name": "CSCA Physics Preparation & Past Papers",
+          "description": "Standardized CSCA Physics exam training: Classical Mechanics, Electromagnetism, Optics, Thermodynamics, and Past Questions.",
+          "provider": {
+            "@id": "https://csca.space/#organization"
+          },
+          "url": "https://csca.space/subjects/physics",
+          "isAccessibleForFree": true
+        },
+        {
+          "@type": "Course",
+          "@id": "https://csca.space/#course-chemistry",
+          "name": "CSCA Chemistry Preparation & Past Papers",
+          "description": "Complete CSCA Chemistry syllabus modules: Stoichiometry, Organic Chemistry, Chemical Equilibrium, and Laboratory Principles.",
+          "provider": {
+            "@id": "https://csca.space/#organization"
+          },
+          "url": "https://csca.space/subjects/chemistry",
+          "isAccessibleForFree": true
+        },
+        {
+          "@type": "Course",
+          "@id": "https://csca.space/#course-chinese",
+          "name": "CSCA Academic Chinese Preparation",
+          "description": "Specialized Academic Chinese for STEM admissions in China: Technical Vocabulary, Scientific Reading Comprehension, and HSK 5-6 Alignment.",
+          "provider": {
+            "@id": "https://csca.space/#organization"
+          },
+          "url": "https://csca.space/subjects/chinese",
+          "isAccessibleForFree": true
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://csca.space/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What is the CSCA (China Scholastic Competency Assessment)?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The CSCA (China Scholastic Competency Assessment) is the standardized STEM competency assessment used by top Chinese universities and CSC Government Scholarship committees to evaluate international undergraduate candidates in Mathematics, Physics, Chemistry, and Academic Chinese."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How to prepare for the CSCA exam online?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "To prepare for the CSCA exam, students should use CSCA Space (csca.space) for adaptive mock test simulations, past paper questions, bilingual terminology drills, formula sheets, and step-by-step video explainers aligned with the official CSCA syllabus."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What subjects are tested in the CSCA?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The CSCA exam tests four core disciplines: Mathematics (Algebra, Calculus, Analytical Geometry), Physics (Mechanics, Electromagnetism, Waves), Chemistry (Physical Chemistry, Organic Chemistry, Stoichiometry), and Academic Chinese."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Where can I find CSCA past papers and practice questions?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "CSCA Space provides verified CSCA mock exams, diagnostic assessments, and curated past questions with comprehensive step-by-step pedagogical walkthroughs at https://csca.space."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How does CSCA Space help international students prepare for the CSCA?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "CSCA Space provides 100% syllabus-aligned interactive practice, bilingual English and Chinese STEM explanations, full diagnostic scoring, and adaptive mock test simulations designed specifically for international university admissions in China."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is a competitive score on the CSCA for CSC scholarships?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Candidates scoring in the 80th percentile and above are highly competitive for full Chinese Government Scholarships (CSC Type A & Type B) and direct admission into top C9 league universities."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://csca.space"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Formulas",
+          "item": "https://csca.space/formulas"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Mathematics",
+          "item": "https://csca.space/formulas/math"
+        }
+      ]
+    }
+  ],
+  "capture": "cmwe958y4",
+  "site": "csca-space"
+}

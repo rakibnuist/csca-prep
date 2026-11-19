@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220" font-family="Helvetica, Arial, sans-serif">
+  <rect width="320" height="220" fill="#fbfaf7"/>
+  <line x1="20" y1="110" x2="300" y2="110" stroke="#d4d8dd" stroke-dasharray="4 3"/>
+  <path d="M150 40 Q185 110 150 180 Q115 110 150 40 Z" fill="#d31d3c" opacity="0.12" stroke="#d31d3c" stroke-width="2"/>
+  <line x1="60" y1="80" x2="60" y2="140" stroke="#101418" stroke-width="2" marker-end="url(#l)"/>
+  <text x="30" y="70" font-size="10" fill="#101418">object</text>
+  <line x1="135" y1="70" x2="165" y2="70" stroke="#0a7a53" stroke-width="2"/>
+  <text x="168" y="60" font-size="10" fill="#0a7a53">F</text>
+  <text x="40" y="160" font-size="10" fill="#4d555d">30 cm</text>
+  <line x1="60" y1="150" x2="150" y2="150" stroke="#a9791c"/>
+  <text x="90" y="166" font-size="9" fill="#a9791c">f = 10 cm</text>
+  <defs><marker id="l" markerWidth="8" markerHeight="8" refX="4" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#101418"/></marker></defs>
+</svg>

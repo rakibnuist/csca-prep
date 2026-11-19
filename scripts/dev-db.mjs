@@ -21,7 +21,21 @@ const DATA_DIR = process.env.PGLITE_DIR ?? path.join(process.cwd(), '.pglite');
 mkdirSync(DATA_DIR, { recursive: true });
 
 const db = await PGlite.create(DATA_DIR);
-const server = new PGLiteSocketServer({ db, port: PORT, host: HOST });
+
+/**
+ * PGlite serves one engine, but many clients can share it: the socket server
+ * queues each statement and keeps a transaction pinned to the handler that
+ * opened it. The default of 1 connection makes the dev server fight with any
+ * second client (Prisma CLI, `prisma db push`, a seed script, psql), and the
+ * loser sees "Connection terminated unexpectedly". Allow a small pool instead.
+ */
+const MAX_CONNECTIONS = Number(process.env.PGLITE_MAX_CONNECTIONS ?? 20);
+const server = new PGLiteSocketServer({
+  db,
+  port: PORT,
+  host: HOST,
+  maxConnections: MAX_CONNECTIONS,
+});
 
 await server.start();
 console.log(`[db] Postgres-compatible server ready on postgresql://postgres@${HOST}:${PORT}/postgres`);

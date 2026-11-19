@@ -107,6 +107,7 @@ export const officialPhysicsQuestions: SeedQuestion[] = [
     stemZh: "摩天轮的半径为 R，座舱随摩天轮转动一周，其通过的路程和位移分别为：",
     options: ["2πR, 2R", "2R, 2πR", "2R, 0", "2πR, 0"],
     optionsZh: ["2πR, 2R", "2R, 2πR", "2R, 0", "2πR, 0"],
+    figure: "/figures/official/phy-q7.png",
     correct: 3,
     explanation:
       "One full turn: distance = circumference = 2πR; displacement = 0 because initial and final positions coincide.",
@@ -235,6 +236,7 @@ export const officialPhysicsQuestions: SeedQuestion[] = [
     stemZh: "一个质量为 1 kg 的物体沿水平地面向右滑动，受到的滑动摩擦力为 3 N，g = 10 m/s²，则物体与地面间的动摩擦因数为：",
     options: ["0.2", "0.3", "1", "0.4"],
     optionsZh: ["0.2", "0.3", "1", "0.4"],
+    figure: "/figures/official/phy-q14.png",
     correct: 1,
     explanation: "f = μN = μmg → μ = f/(mg) = 3/(1×10) = 0.3.",
     explanationZh: "f = μN = μmg，故 μ = f/(mg) = 3/(1×10) = 0.3。",
@@ -662,6 +664,7 @@ export const officialPhysicsQuestions: SeedQuestion[] = [
       "A's angular velocity is smaller than B's",
     ],
     optionsZh: ["A 的角速度与 B 的角速度相等", "A 的线速度与 B 的线速度相等", "A 的角速度大于 B 的角速度", "A 的角速度小于 B 的角速度"],
+    figure: "/figures/official/phy-q40.png",
     correct: 0,
     explanation:
       "Coaxial rotation gives equal angular velocity for all points on the disk. Linear velocity v = ωr differs if their distances from the axis differ.",

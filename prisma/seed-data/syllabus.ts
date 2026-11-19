@@ -78,11 +78,6 @@ export const subjects: SeedSubject[] = [
   },
 ];
 
-const M = "MATHEMATICS";
-const P = "PHYSICS";
-const C = "CHEMISTRY";
-const H = "CHINESE";
-
 export const topics: SeedTopic[] = [
   /* ── Mathematics ─────────────────────────────────────────────── */
   {
@@ -710,10 +705,10 @@ export const topics: SeedTopic[] = [
     titleEn: "Gap filling with word selection",
     titleZh: "选词填空",
     summaryEn:
-      "Recognise characters and choose the word that completes a sentence naturally and correctly.",
-    summaryZh: "识汉字，选择最恰当的词语完成句子。",
-    weight: 0.35,
-    order: 1,
+      "Choose the word that completes an academic sentence naturally and correctly.",
+    summaryZh: "选择最恰当的词语完成学术句子。",
+    weight: 0.2,
+    order: 2,
   },
   {
     code: "H2",
@@ -725,8 +720,8 @@ export const topics: SeedTopic[] = [
     summaryEn:
       "Discriminate between near-synonyms and choose the set of words that fits a short academic paragraph.",
     summaryZh: "辨析词语，为段落选出最恰当的一组词语。",
-    weight: 0.25,
-    order: 2,
+    weight: 0.15,
+    order: 4,
   },
   {
     code: "H3",
@@ -738,8 +733,47 @@ export const topics: SeedTopic[] = [
     summaryEn:
       "Read humanities texts on literature, philosophy, history, law, education and the arts, then answer inference and detail questions.",
     summaryZh: "阅读文学、哲学、历史、法学、教育学与艺术类文章并作答。",
-    weight: 0.4,
+    weight: 0.2,
+    order: 6,
+  },
+  {
+    code: "H4",
+    subjectCode: "CH_HUM",
+    unitEn: "Language Items",
+    unitZh: "语言题",
+    titleEn: "Character recognition",
+    titleZh: "识解汉字",
+    summaryEn:
+      "Read characters and technical/humanities vocabulary accurately: pronunciation, correct form and meaning in context.",
+    summaryZh: "准确认读汉字与专业词语：读音、正确写法与语境义。",
+    weight: 0.15,
+    order: 1,
+  },
+  {
+    code: "H5",
+    subjectCode: "CH_HUM",
+    unitEn: "Language Items",
+    unitZh: "语言题",
+    titleEn: "Word discrimination",
+    titleZh: "辨析词语",
+    summaryEn:
+      "Choose between near-synonyms by register, collocation and the precise shade of meaning an academic sentence needs.",
+    summaryZh: "依据语体、搭配与词义轻重，辨析近义词语。",
+    weight: 0.15,
     order: 3,
+  },
+  {
+    code: "H6",
+    subjectCode: "CH_HUM",
+    unitEn: "Language Items",
+    unitZh: "语言题",
+    titleEn: "Sentence completion",
+    titleZh: "补全语句",
+    summaryEn:
+      "Complete an academic sentence with the clause that fits: logical connectors, paired structures and argument flow.",
+    summaryZh: "用恰当的关联与分句补全学术语句，考查逻辑衔接。",
+    weight: 0.15,
+    order: 5,
   },
 
   /* ── Professional Chinese — STEM ─────────────────────────────── */
@@ -753,8 +787,8 @@ export const topics: SeedTopic[] = [
     summaryEn:
       "Mathematical symbols, formula language, physical laws and laboratory terminology in context.",
     summaryZh: "数学符号、公式表达、物理规律与实验术语的语境运用。",
-    weight: 0.35,
-    order: 1,
+    weight: 0.2,
+    order: 2,
   },
   {
     code: "S2",
@@ -766,8 +800,8 @@ export const topics: SeedTopic[] = [
     summaryEn:
       "Complete short scientific paragraphs on experiments, data and mechanisms with the right terms.",
     summaryZh: "为实验、数据与机理类科学段落选择恰当术语。",
-    weight: 0.25,
-    order: 2,
+    weight: 0.15,
+    order: 4,
   },
   {
     code: "S3",
@@ -779,7 +813,46 @@ export const topics: SeedTopic[] = [
     summaryEn:
       "Read STEM passages, interpret data descriptions and answer questions the way first-year courses require.",
     summaryZh: "阅读理工科文章、解读数据描述并回答问题。",
-    weight: 0.4,
+    weight: 0.2,
+    order: 6,
+  },
+  {
+    code: "S4",
+    subjectCode: "CH_SCI",
+    unitEn: "Language Items",
+    unitZh: "语言题",
+    titleEn: "Character recognition",
+    titleZh: "识解汉字",
+    summaryEn:
+      "Read technical characters correctly: pinyin, standard written forms and the meaning a term carries in a science context.",
+    summaryZh: "准确认读专业汉字：读音、规范写法与科学语境中的词义。",
+    weight: 0.15,
+    order: 1,
+  },
+  {
+    code: "S5",
+    subjectCode: "CH_SCI",
+    unitEn: "Language Items",
+    unitZh: "语言题",
+    titleEn: "Word discrimination",
+    titleZh: "辨析词语",
+    summaryEn:
+      "Distinguish everyday Chinese from scientific usage: measurement, method and data-reporting vocabulary.",
+    summaryZh: "区分日常用语与科技语体，辨析测量、方法与数据表述用词。",
+    weight: 0.15,
     order: 3,
+  },
+  {
+    code: "S6",
+    subjectCode: "CH_SCI",
+    unitEn: "Language Items",
+    unitZh: "语言题",
+    titleEn: "Sentence completion",
+    titleZh: "补全语句",
+    summaryEn:
+      "Complete scientific statements with the right connector or clause: cause, condition, concession and conclusion.",
+    summaryZh: "用恰当的关联与分句补全科技语句：因果、条件、让步与结论。",
+    weight: 0.15,
+    order: 5,
   },
 ];

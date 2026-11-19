@@ -1,0 +1,125 @@
+{
+  "site": "cscaprep-academy",
+  "source": "https://cscaprep.academy/",
+  "pages": [
+    {
+      "slug": "home",
+      "url": "https://cscaprep.academy/",
+      "title": "CSCA Prep: Free CSCA Exam Practice & Mock Tests",
+      "status": 200,
+      "chars": 5492
+    },
+    {
+      "slug": "about",
+      "url": "https://cscaprep.academy/about",
+      "title": "About CSCA Prep Academy: Independent Exam Practice",
+      "status": 200,
+      "chars": 4811
+    },
+    {
+      "slug": "china-scholarships",
+      "url": "https://cscaprep.academy/china-scholarships",
+      "title": "China Scholarships: CSC, University & Provincial Awards",
+      "status": 200,
+      "chars": 9569
+    },
+    {
+      "slug": "csca__2027-essentials",
+      "url": "https://cscaprep.academy/csca/2027-essentials",
+      "title": "CSCA 2027: Syllabus, Subjects, Dates & Scores",
+      "status": 200,
+      "chars": 5626
+    },
+    {
+      "slug": "csca__how-to-register",
+      "url": "https://cscaprep.academy/csca/how-to-register",
+      "title": "CSCA Registration: How to Apply on csca.cn",
+      "status": 200,
+      "chars": 5213
+    },
+    {
+      "slug": "csca__mock-test",
+      "url": "https://cscaprep.academy/csca/mock-test",
+      "title": "Free CSCA Mock Tests: Timed Subject Practice",
+      "status": 200,
+      "chars": 5340
+    },
+    {
+      "slug": "csca__scoring-and-cutoffs",
+      "url": "https://cscaprep.academy/csca/scoring-and-cutoffs",
+      "title": "CSCA Scores & Cutoffs: Check Program Requirements",
+      "status": 200,
+      "chars": 6032
+    },
+    {
+      "slug": "csca__study-plan-12-week",
+      "url": "https://cscaprep.academy/csca/study-plan-12-week",
+      "title": "CSCA 12-Week Study Plan: Topics, Practice & Mocks",
+      "status": 200,
+      "chars": 10893
+    },
+    {
+      "slug": "csca__syllabus",
+      "url": "https://cscaprep.academy/csca/syllabus",
+      "title": "CSCA Syllabus: Mathematics, Physics & Chemistry",
+      "status": 200,
+      "chars": 5827
+    },
+    {
+      "slug": "csca__test-centres",
+      "url": "https://cscaprep.academy/csca/test-centres",
+      "title": "CSCA Test Centres & Home-Based Exam Options",
+      "status": 200,
+      "chars": 4827
+    },
+    {
+      "slug": "csca__tutor",
+      "url": "https://cscaprep.academy/csca/tutor",
+      "title": "Free CSCA Study Help & Mentor Requests",
+      "status": 200,
+      "chars": 4567
+    },
+    {
+      "slug": "csca__what-is",
+      "url": "https://cscaprep.academy/csca/what-is",
+      "title": "What Is the CSCA Exam? Subjects, Format & Fees",
+      "status": 200,
+      "chars": 5250
+    },
+    {
+      "slug": "exam-dates",
+      "url": "https://cscaprep.academy/exam-dates",
+      "title": "CSCA Exam Dates 2026-27: Nov, Dec & Jan Sittings",
+      "status": 200,
+      "chars": 4377
+    },
+    {
+      "slug": "faq",
+      "url": "https://cscaprep.academy/faq",
+      "title": "CSCA Exam FAQ: Subjects, Fees, Scores & Free Practice",
+      "status": 200,
+      "chars": 5293
+    },
+    {
+      "slug": "guides",
+      "url": "https://cscaprep.academy/guides",
+      "title": "CSCA syllabus guides · CSCA Prep Academy",
+      "status": 200,
+      "chars": 7609
+    },
+    {
+      "slug": "guides__mathematics",
+      "url": "https://cscaprep.academy/guides/mathematics",
+      "title": "CSCA Mathematics Syllabus & Study Guide",
+      "status": 200,
+      "chars": 8092
+    },
+    {
+      "slug": "how-to-use",
+      "url": "https://cscaprep.academy/how-to-use",
+      "title": "How to Use CSCA Prep: Practice, Review & Mock Exams",
+      "status": 200,
+      "chars": 5164
+    }
+  ]
+}

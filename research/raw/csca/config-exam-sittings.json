@@ -1,0 +1,80 @@
+{
+  "source": "https://csca.cn/home · GET /sv/open/getConfByCode?confCode=SY_KSRQ",
+  "operation": "csca.config",
+  "fetchedAt": "2026-11-13T00:34:21+00:00",
+  "code": "SY_KSRQ",
+  "sittings": [
+    {
+      "id": 1789441543920,
+      "examDate": "2026-11-14",
+      "status": {
+        "zt": 2,
+        "zh": "报名已结束",
+        "en": "Registration Closed"
+      },
+      "url": "",
+      "signupTime": "2026.10.15 15:00-2026.10.21 23:59",
+      "examDateEnd": "2026-11-15"
+    },
+    {
+      "id": 1789441558816,
+      "examDate": "2026-12-19",
+      "status": {
+        "zt": 0,
+        "zh": "报名未开始",
+        "en": "Registration Not Yet Open"
+      },
+      "url": "",
+      "signupTime": "",
+      "examDateEnd": "2026-12-20"
+    },
+    {
+      "id": 1789441581698,
+      "examDate": "2027-01-23",
+      "status": {
+        "zt": 0,
+        "zh": "报名未开始",
+        "en": "Registration Not Yet Open"
+      },
+      "url": "",
+      "signupTime": "",
+      "examDateEnd": "2027-01-24"
+    },
+    {
+      "id": 1791508719839,
+      "examDate": "2027-03-13",
+      "examDateEnd": "2027-03-14",
+      "signupTime": "",
+      "status": {
+        "zt": 0,
+        "zh": "报名未开始",
+        "en": "Registration Not Yet Open"
+      },
+      "url": ""
+    },
+    {
+      "id": 1791511111510,
+      "examDate": "2027-04-24",
+      "examDateEnd": "2027-04-25",
+      "signupTime": "",
+      "status": {
+        "zt": 0,
+        "zh": "报名未开始",
+        "en": "Registration Not Yet Open"
+      },
+      "url": ""
+    },
+    {
+      "id": 1791511112630,
+      "examDate": "2027-06-26",
+      "examDateEnd": "2027-06-27",
+      "signupTime": "",
+      "status": {
+        "zt": 0,
+        "zh": "报名未开始",
+        "en": "Registration Not Yet Open"
+      },
+      "url": ""
+    }
+  ]
+}

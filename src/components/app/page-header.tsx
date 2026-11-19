@@ -18,7 +18,7 @@ export function PageHeader({
   className?: string;
 }) {
   return (
-    <div className={cn("border-b border-line bg-paper-deep/30", className)}>
+    <div className={cn("border-b border-line/70 bg-white", className)}>
       <div className="mx-auto max-w-[1120px] px-5 py-8 sm:px-8 sm:py-10">
         {backHref && (
           <Link
@@ -29,7 +29,7 @@ export function PageHeader({
           </Link>
         )}
         <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
-          <div>
+          <div className="min-w-0 flex-1">
             {eyebrow && <p className="eyebrow">{eyebrow}</p>}
             <h1 className="display-md mt-2 text-balance text-ink">{title}</h1>
             {body && <p className="mt-2 max-w-2xl text-[13.5px] leading-relaxed text-ink-soft">{body}</p>}

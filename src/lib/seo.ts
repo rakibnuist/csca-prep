@@ -9,6 +9,12 @@ type MetaInput = {
   type?: "website" | "article";
   publishedTime?: string;
   modifiedTime?: string;
+  /**
+   * Social image URL. Defaults to the root `opengraph-image` file, which every
+   * page shares. Pass `null` when the route has its own `opengraph-image.tsx`:
+   * an explicit image would override that file-based image.
+   */
+  image?: string | null;
 };
 
 /** One place for canonical URLs, OpenGraph and Twitter cards. */
@@ -20,8 +26,11 @@ export function pageMetadata({
   type = "website",
   publishedTime,
   modifiedTime,
+  image,
 }: MetaInput): Metadata {
   const url = `${SITE.url}${path}`;
+  const imageUrl = image === undefined ? "/opengraph-image" : image;
+  const images = imageUrl ? [imageUrl] : undefined;
   return {
     title,
     description,
@@ -34,6 +43,7 @@ export function pageMetadata({
       siteName: SITE.name,
       type,
       locale: "en_US",
+      ...(images ? { images } : {}),
       ...(publishedTime ? { publishedTime } : {}),
       ...(modifiedTime ? { modifiedTime } : {}),
     },
@@ -41,6 +51,7 @@ export function pageMetadata({
       card: "summary_large_image",
       title,
       description,
+      ...(images ? { images } : {}),
     },
   };
 }

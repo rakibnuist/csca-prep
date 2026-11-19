@@ -18,7 +18,7 @@ export const mathQuestions: SeedQuestion[] = [
     explanation:
       "A ∪ B = {1, 2, 3, 4, 5, 6}. The shared elements 3, 4, 5 are counted once, so |A ∪ B| = 5 + 4 − 3 = 6.",
     explanationZh:
-      "A ∪ B = {1, 2, 3, 4, 5, 6}。公共元素 3、4、5 只计一次，因此 |A ∪ B| = 5 + 3 − 3 = 6。",
+      "A ∪ B = {1, 2, 3, 4, 5, 6}。公共元素 3、4、5 只计一次，因此 |A ∪ B| = 5 + 4 − 3 = 6。",
     tags: ["sets", "union"],
   },
   {

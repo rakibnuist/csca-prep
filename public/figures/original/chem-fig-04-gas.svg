@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220" font-family="Helvetica, Arial, sans-serif">
+  <rect width="320" height="220" fill="#fbfaf7"/>
+  <rect x="90" y="50" width="120" height="130" fill="#fff" stroke="#101418" stroke-width="2"/>
+  <rect x="90" y="120" width="120" height="60" fill="#d31d3c" opacity="0.12"/>
+  <g fill="#8a857b"><circle cx="120" cy="140" r="3"/><circle cx="150" cy="155" r="3"/><circle cx="180" cy="135" r="3"/><circle cx="135" cy="170" r="3"/><circle cx="175" cy="165" r="3"/></g>
+  <rect x="92" y="48" width="116" height="6" fill="#4d555d"/>
+  <line x1="150" y1="48" x2="150" y2="20" stroke="#4d555d" stroke-width="2"/>
+  <rect x="115" y="8" width="70" height="14" fill="#a9791c" opacity="0.7"/>
+  <text x="150" y="19" font-size="9" fill="#fff" text-anchor="middle">weight</text>
+  <text x="215" y="150" font-size="10" fill="#4d555d">volume</text>
+</svg>

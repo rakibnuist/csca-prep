@@ -3,19 +3,20 @@ import Link from "next/link";
 import { Mail, MessageSquare, Clock3, ArrowUpRight } from "lucide-react";
 import { Eyebrow } from "@/components/site/section";
 import { LeadForm } from "@/components/site/lead-form";
+import { pageMetadata } from "@/lib/seo";
 import { OFFICIAL, SITE } from "@/lib/site";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Contact",
   description:
     "Contact CSCA Master about preparation content, content corrections, partnerships or account issues.",
-  alternates: { canonical: "/contact" },
-};
+  path: "/contact",
+});
 
 export default function ContactPage() {
   return (
-    <section className="shell grid gap-12 py-14 sm:py-20 lg:grid-cols-[0.9fr_1.1fr]">
-      <div>
+    <section className="shell grid grid-cols-1 gap-12 py-14 sm:py-20 lg:grid-cols-[0.9fr_1.1fr]">
+      <div className="min-w-0">
         <Eyebrow>Contact</Eyebrow>
         <h1 className="display-lg mt-4 max-w-md text-balance">
           Tell us what is broken, missing, or wrong.
@@ -76,12 +77,18 @@ export default function ContactPage() {
         </div>
       </div>
 
-      <div className="panel p-6 sm:p-8">
+      <div className="panel min-w-0 p-6 sm:p-8">
         <h2 className="font-display text-2xl text-ink">Send a message</h2>
         <p className="mt-1 mb-5 text-[12.5px] text-ink-soft">
           If you are reporting a wrong answer, include the topic code and the paper name.
         </p>
-        <LeadForm source="contact" cta="Send message" includeMessage />
+        <LeadForm
+          source="contact"
+          cta="Send message"
+          includeMessage
+          successTitle="Message sent"
+          successBody="We'll reply to your email shortly — usually within a day."
+        />
         <p className="mt-5 text-[11px] text-ink-faint">
           We never ask for your CSCA password or payment details. Read the{" "}
           <Link href="/about" className="underline underline-offset-2 hover:text-ink">

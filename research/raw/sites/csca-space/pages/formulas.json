@@ -1,0 +1,933 @@
+{
+  "url": "https://csca.space/formulas",
+  "finalUrl": "https://csca.space/formulas",
+  "status": 200,
+  "title": "CSCA Formula Knowledge Base — 58 High-Yield STEM Formulas & Proofs",
+  "description": "Comprehensive academic index of all 58 high-yield formulas tested on the China Scholastic Competency Assessment (CSCA). Step-by-step mathematical proofs, examiner traps, and interactive parameters.",
+  "headings": [
+    {
+      "level": 1,
+      "text": "CSCA STEM Formula Knowledge Base"
+    },
+    {
+      "level": 2,
+      "text": "Mathematics"
+    },
+    {
+      "level": 2,
+      "text": "Physics"
+    },
+    {
+      "level": 2,
+      "text": "Chemistry"
+    },
+    {
+      "level": 2,
+      "text": "Complete Formula Index (58)"
+    },
+    {
+      "level": 3,
+      "text": "Mathematics (30)"
+    },
+    {
+      "level": 3,
+      "text": "Physics (17)"
+    },
+    {
+      "level": 3,
+      "text": "Chemistry (11)"
+    }
+  ],
+  "text": "CSCA SPACEBETA\n\nPrintable PDF SheetCurriculumDiagnostic\n\nOfficial Examination STEM Repository\n\nCSCA STEM Formula Knowledge Base\n\nAll 58 core equations required for the China Scholastic Competency Assessment. Every entry includes symbolic derivations, examiner trap alerts, and CBT question mappings.\n\n24 Formulas\n\nMathematics\n\n数学公式库\n\nSets, inequalities, differential calculus, analytic geometry, vectors, and combinatorics.\n\nExplore Mathematics Permapages\n\n17 Formulas\n\nPhysics\n\n物理公式库\n\nNewtonian mechanics, momentum, thermodynamics, electromagnetism, optics, and quantum physics.\n\nExplore Physics Permapages\n\n17 Formulas\n\nChemistry\n\n化学定律与公式\n\nStoichiometry, gas laws, chemical equilibrium, electrochemistry, and reaction kinetics.\n\nExplore Chemistry Permapages\n\nComplete Formula Index (58)\nVerified LaTeX & SymPy Proofs\n\nMathematics (30)\nView Mathematics Hub →\n\nQuadratic FormulaSets & Inequalities\n\n一元二次方程求根公式\n\n$\\[ x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a} \\]$\n\nUnion of SetsSets & Inequalities\n\n集合的并集\n\n$\\[ A \\cup B = \\{ x \\mid x \\in A \\text{ or } x \\in B \\} \\]$\n\nIntersection of SetsSets & Inequalities\n\n集合的交集\n\n$\\[ A \\cap B = \\{ x \\mid x \\in A \\text{ and } x \\in B \\} \\]$\n\nComplement of a SetSets & Inequalities\n\n集合的补集\n\n$\\[ \\complement_{U} A = \\{ x \\in U \\mid x \\notin A \\} \\]$\n\nRational Inequality EquivalenceSets & Inequalities\n\n分式不等式的等价转化\n\n$\\[ \\frac{ax + b}{cx + d} \\le 0 \\iff (ax + b)(cx + d) \\le 0 \\quad \\text{and} \\quad cx + d \\ne 0 \\]$\n\nAM-GM InequalitySets & Inequalities\n\n基本均值不等式\n\n$\\[ \\frac{a + b}{2} \\ge \\sqrt{ab} \\quad (a, b \\ge 0) \\]$\n\nChange of Base FormulaFunctions\n\n对数的换底公式\n\n$\\[ \\log_a b = \\frac{\\log_c b}{\\log_c a} \\quad (a, b, c > 0, \\, a, c \\ne 1) \\]$\n\nLogarithmic PropertiesFunctions\n\n对数的基本运算性质\n\n$\\[ \\log_a (xy) = \\log_a x + \\log_a y \\quad \\text{and} \\quad \\log_a \\left(\\frac{x}{y}\\right) = \\log_a x - \\log_a y \\]$\n\nTrigonometric Pythagorean IdentityFunctions\n\n同角三角关系（平方关系）\n\n$\\[ \\sin^2 \\theta + \\cos^2 \\theta = 1 \\]$\n\nDouble-Angle Formula (Sine)Functions\n\n正弦的二倍角公式\n\n$\\[ \\sin 2\\theta = 2 \\sin \\theta \\cos \\theta \\]$\n\nDouble-Angle Formula (Cosine)Functions\n\n余弦的二倍角公式\n\n$\\[ \\cos 2\\theta = \\cos^2 \\theta - \\sin^2 \\theta \\]$\n\nFunction Parity (Odd & Even)Functions\n\n函数的奇偶性\n\n$\\[ \\text{Even: } f(-x) = f(x), \\quad \\text{Odd: } f(-x) = -f(x) \\]$\n\nArithmetic Sequence Nth TermSequences\n\n等差数列通项公式\n\n$\\[ a_n = a_1 + (n - 1)d \\]$\n\nArithmetic Sequence SumSequences\n\n等差数列前n项和公式\n\n$\\[ S_n = \\frac{n(a_1 + a_n)}{2} \\]$\n\nGeometric Sequence Nth TermSequences\n\n等比数列通项公式\n\n$\\[ a_n = a_1 q^{n-1} \\]$\n\nGeometric Sequence SumSequences\n\n等比数列前n项和公式\n\n$\\[ S_n = \\frac{a_1(1 - q^n)}{1 - q} \\quad (q \\ne 1) \\]$\n\nPower Rule for DerivativesDerivatives\n\n导数的幂函数求导法则\n\n$\\[ \\frac{d}{dx} x^n = n x^{n-1} \\]$\n\nTangent Line EquationDerivatives\n\n曲线切线方程公式\n\n$\\[ y - y_0 = f'(x_0)(x - x_0) \\]$\n\nDistance FormulaPlane Analytic Geometry\n\n两点间距离公式\n\n$\\[ d = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2} \\]$\n\nEquation of a CirclePlane Analytic Geometry\n\n圆的标准方程\n\n$\\[ (x - a)^2 + (y - b)^2 = R^2 \\]$\n\nEquation of an EllipsePlane Analytic Geometry\n\n椭圆的标准方程\n\n$\\[ \\frac{x^2}{a^2} + \\frac{y^2}{b^2} = 1 \\quad (a > b > 0) \\]$\n\nEquation of a HyperbolaPlane Analytic Geometry\n\n双曲线的标准方程\n\n$\\[ \\frac{x^2}{a^2} - \\frac{y^2}{b^2} = 1 \\quad (a > 0, \\, b > 0) \\]$\n\nEquation of a ParabolaPlane Analytic Geometry\n\n抛物线的标准方程\n\n$\\[ y^2 = 2px \\quad (p > 0) \\]$\n\nEquation of a Line (Slope-Intercept & General Form)Plane Analytic Geometry\n\n直线的方程（斜截式与一般式）\n\n$\\[ y = kx + b \\quad \\text{and} \\quad Ax + By + C = 0 \\]$\n\nVector Dot ProductVectors & Complex Numbers\n\n平面向量的数量积（点积）\n\n$\\[ \\mathbf{a} \\cdot \\mathbf{b} = a_x b_x + a_y b_y = |\\mathbf{a}| |\\mathbf{b}| \\cos \\theta \\]$\n\nModulus of a Complex NumberVectors & Complex Numbers\n\n复数的模\n\n$\\[ |z| = \\sqrt{a^2 + b^2} \\quad (z = a + bi) \\]$\n\nVolume and Surface Area of a SphereSolid Geometry\n\n球的体积与表面积公式\n\n$\\[ V = \\frac{4}{3}\\pi R^3 \\quad \\text{and} \\quad S = 4\\pi R^2 \\]$\n\nClassical Probability FormulaProbability & Statistics\n\n古典概型概率计算公式\n\n$\\[ P(A) = \\frac{N(A)}{N} \\]$\n\nVariance and Standard DeviationProbability & Statistics\n\n样本方差与标准差公式\n\n$\\[ s^2 = \\frac{1}{n} \\sum_{i=1}^{n} (x_i - \\bar{x})^2 \\]$\n\nNormal Distribution (3-Sigma Rule)Probability & Statistics\n\n正态分布（3σ原则 / 68-95-99.7准则）\n\n$\\[ P(\\mu - \\sigma \\le X \\le \\mu + \\sigma) \\approx 0.6826 \\quad \\text{and} \\quad P(\\mu - 2\\sigma \\le X \\le \\mu + 2\\sigma) \\approx 0.9544 \\]$\n\nPhysics (17)\nView Physics Hub →\n\nKinematics Equations under Constant AccelerationMechanics\n\n匀变速直线运动规律与位移公式\n\n$\\[ v = v_0 + at, \\quad s = v_0 t + \\frac{1}{2} a t^2, \\quad v^2 - v_0^2 = 2as \\]$\n\nNewton's Second Law of MotionMechanics\n\n牛顿第二运动定律\n\n$\\[ \\sum \\mathbf{F} = m\\mathbf{a} \\]$\n\nMomentum, Impulse & Law of Conservation of MomentumMechanics\n\n动量定理与动量守恒定律\n\n$\\[ \\mathbf{I} = \\mathbf{F}\\Delta t = \\Delta \\mathbf{p}, \\quad m_1 \\mathbf{v}_1 + m_2 \\mathbf{v}_2 = m_1 \\mathbf{v}_1' + m_2 \\mathbf{v}_2' \\]$\n\nWork-Energy Theorem & Conservation of Mechanical EnergyMechanics\n\n动能定理与机械能守恒定律\n\n$\\[ W_{\\text{net}} = \\Delta E_k = \\frac{1}{2}mv_2^2 - \\frac{1}{2}mv_1^2, \\quad E_{k1} + E_{p1} = E_{k2} + E_{p2} \\]$\n\nUniform Circular Motion & Law of Universal GravitationMechanics\n\n匀速圆周运动与万有引力定律\n\n$\\[ F_c = m\\frac{v^2}{r} = m\\omega^2 r, \\quad F_g = G\\frac{Mm}{r^2} = m\\frac{v^2}{r} \\implies v = \\sqrt{\\frac{GM}{r}} \\]$\n\nSimple Harmonic Motion & Mechanical Wave SpeedMechanics\n\n简谐运动周期与机械波传播公式\n\n$\\[ T = 2\\pi \\sqrt{\\frac{L}{g}}, \\quad v = \\frac{\\lambda}{T} = \\lambda f \\]$\n\nCoulomb's Law & Electric Field StrengthElectromagnetism\n\n库仑定律与电场强度公式\n\n$\\[ F = k_e \\frac{|q_1 q_2|}{r^2}, \\quad E = \\frac{F}{q} = k_e \\frac{Q}{r^2}, \\quad U = Ed \\]$\n\nOhm's Law & Closed Circuit EMF EquationElectromagnetism\n\n闭合电路欧姆定律与电功率公式\n\n$\\[ I = \\frac{E}{R + r}, \\quad U = E - Ir, \\quad P = UI = I^2 R \\]$\n\nLorentz Force & Magnetic Ampere ForceElectromagnetism\n\n安培力与洛伦兹力公式\n\n$\\[ F_{\\text{Ampere}} = BIL\\sin\\theta, \\quad F_{\\text{Lorentz}} = qvB\\sin\\theta, \\quad r = \\frac{mv}{qB} \\]$\n\nFaraday's Law of Induction & Motional EMFElectromagnetism\n\n法拉第电磁感应定律与动生电动势\n\n$\\[ E = n\\frac{\\Delta \\Phi}{\\Delta t}, \\quad E = BLv\\sin\\theta \\]$\n\nAC Series RLC Circuit Impedance & PhasorElectromagnetism\n\n交变电流RLC串联电路阻抗与相量公式\n\n$\\[ Z = \\sqrt{R^2 + (X_L - X_C)^2}, \\quad \\tan\\theta = \\frac{X_L - X_C}{R} \\]$\n\nAC Active Power & Power Factor FormulaElectromagnetism\n\n交流电路有功功率与功率因数公式\n\n$\\[ P = UI\\cos\\varphi, \\quad \\cos\\varphi = \\frac{R}{Z} = \\frac{R}{\\sqrt{R^2 + (X_L - X_C)^2}} \\]$\n\nFirst Law of Thermodynamics & Ideal Gas LawThermodynamics\n\n热力学第一定律与理想气体状态方程\n\n$\\[ \\Delta U = Q + W, \\quad \\frac{P_1 V_1}{T_1} = \\frac{P_2 V_2}{T_2} \\]$\n\nSnell's Law of Refraction & Total Internal ReflectionOptics\n\n光的折射定律与全反射临界角公式\n\n$\\[ n = \\frac{c}{v} = \\frac{\\sin\\theta_1}{\\sin\\theta_2}, \\quad \\sin C = \\frac{1}{n} \\]$\n\nYoung's Double-Slit Interference Fringe SpacingOptics\n\n双缝干涉条纹间距公式\n\n$\\[ \\Delta x = \\frac{L}{d}\\lambda \\]$\n\nEinstein's Photoelectric Effect & Photon EnergyModern Physics\n\n光电效应方程与光子能量公式\n\n$\\[ E_{\\text{photon}} = h\\nu, \\quad E_{k\\max} = h\\nu - W_0 = eU_c \\]$\n\nBohr Hydrogen Energy Levels & Mass-Energy EquivalenceModern Physics\n\n玻尔氢原子能级跃迁与质能方程\n\n$\\[ E_n = \\frac{E_1}{n^2} \\quad (E_1 = -13.6\\text{ eV}), \\quad h\\nu = E_m - E_n, \\quad \\Delta E = \\Delta m c^2 \\]$\n\nChemistry (11)\nView Chemistry Hub →\n\nAmount of Substance, Mass & Particle Count RelationsBasic Chemical Concepts and Calculations\n\n物质的量、微粒数与质量换算公式\n\n$\\[ n = \\frac{m}{M} = \\frac{N}{N_A} \\]$\n\nGas Volume and Moles at STPBasic Chemical Concepts and Calculations\n\n气体摩尔体积与标况状态公式\n\n$\\[ n = \\frac{V}{V_m} \\quad (V_m = 22.4\\text{ L/mol at } 0^\\circ\\text{C, } 101.3\\text{ kPa}) \\]$\n\nMolar Concentration of Solution & Dilution LawBasic Chemical Concepts and Calculations\n\n物质的量浓度公式与稀释定律\n\n$\\[ c = \\frac{n}{V}, \\quad c_1 V_1 = c_2 V_2 \\]$\n\nConversion between Mass Fraction and Molar ConcentrationBasic Chemical Concepts and Calculations\n\n质量分数与物质的量浓度的换算公式\n\n$\\[ c = \\frac{1000 \\rho w}{M} \\]$\n\nIdeal Gas Law Equation of StateBasic Chemical Concepts and Calculations\n\n理想气体状态方程（克拉珀龙方程）\n\n$\\[ PV = nRT = \\frac{m}{M}RT \\implies PM = \\rho RT \\]$\n\nChemical Reaction Rate & Rate Ratio LawChemical Theories and Laws\n\n化学反应速率与化学计量数比值规律\n\n$\\[ v = \\frac{\\Delta c}{\\Delta t}, \\quad \\frac{v(\\text{A})}{a} = \\frac{v(\\text{B})}{b} = \\frac{v(\\text{C})}{c} \\]$\n\nChemical Equilibrium Constant ExpressionChemical Theories and Laws\n\n化学平衡常数表达式与转化率公式\n\n$\\[ K = \\frac{[\\text{C}]^c [\\text{D}]^d}{[\\text{A}]^a [\\text{B}]^b}, \\quad \\alpha = \\frac{\\Delta n}{n_0} \\times 100\\% \\]$\n\npH, pOH & Water Ion Product EquilibriumChemical Theories and Laws\n\npH定义式与水的离子积常数\n\n$\\[ \\text{pH} = -\\log_{10}[\\text{H}^+], \\quad K_w = [\\text{H}^+][\\text{OH}^-] = 1.0 \\times 10^{-14} \\text{ at } 25^\\circ\\text{C} \\]$\n\nArrhenius Activation Energy EquationChemical Theories and Laws\n\n阿伦尼乌斯公式与活化能\n\n$\\[ k = A e^{-\\frac{E_a}{RT}} \\implies \\ln k = -\\frac{E_a}{R}\\frac{1}{T} + \\ln A \\]$\n\nGibbs Free Energy Spontaneity CriterionChemical Theories and Laws\n\n吉布斯自由能判据与反应自发性\n\n$\\[ \\Delta G = \\Delta H - T\\Delta S \\quad (\\Delta G < 0 \\implies \\text{Spontaneous}) \\]$\n\nGalvanic & Electrolytic Cell Electrode ReactionsChemical Theories and Laws\n\n原电池与电解池电极反应规律\n\n$\\[ \\text{Anode: Oxidation (loss of } e^-), \\quad \\text{Cathode: Reduction (gain of } e^-) \\]$",
+  "links": [
+    {
+      "href": "/",
+      "text": "CSCA SPACEBETA"
+    },
+    {
+      "href": "/formulas/printable",
+      "text": "Printable PDF Sheet"
+    },
+    {
+      "href": "/curriculum",
+      "text": "Curriculum"
+    },
+    {
+      "href": "/diagnostic",
+      "text": "Diagnostic"
+    },
+    {
+      "href": "/formulas/math",
+      "text": "24 FormulasMathematics数学公式库Sets, inequalities, differential calculus, analytic geometry, vectors, and combinatorics.Expl"
+    },
+    {
+      "href": "/formulas/physics",
+      "text": "17 FormulasPhysics物理公式库Newtonian mechanics, momentum, thermodynamics, electromagnetism, optics, and quantum physics.Expl"
+    },
+    {
+      "href": "/formulas/chemistry",
+      "text": "17 FormulasChemistry化学定律与公式Stoichiometry, gas laws, chemical equilibrium, electrochemistry, and reaction kinetics.Explor"
+    },
+    {
+      "href": "/formulas/math",
+      "text": "View Mathematics Hub →"
+    },
+    {
+      "href": "/formulas/math/sets-and-inequalities/quadratic-formula",
+      "text": "Quadratic FormulaSets & Inequalities一元二次方程求根公式$\\[ x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a} \\]$"
+    },
+    {
+      "href": "/formulas/math/sets-and-inequalities/set-union",
+      "text": "Union of SetsSets & Inequalities集合的并集$\\[ A \\cup B = \\{ x \\mid x \\in A \\text{ or } x \\in B \\} \\]$"
+    },
+    {
+      "href": "/formulas/math/sets-and-inequalities/set-intersection",
+      "text": "Intersection of SetsSets & Inequalities集合的交集$\\[ A \\cap B = \\{ x \\mid x \\in A \\text{ and } x \\in B \\} \\]$"
+    },
+    {
+      "href": "/formulas/math/sets-and-inequalities/set-complement",
+      "text": "Complement of a SetSets & Inequalities集合的补集$\\[ \\complement_{U} A = \\{ x \\in U \\mid x \\notin A \\} \\]$"
+    },
+    {
+      "href": "/formulas/math/sets-and-inequalities/rational-inequality",
+      "text": "Rational Inequality EquivalenceSets & Inequalities分式不等式的等价转化$\\[ \\frac{ax + b}{cx + d} \\le 0 \\iff (ax + b)(cx + d) \\le 0 "
+    },
+    {
+      "href": "/formulas/math/sets-and-inequalities/am-gm-inequality",
+      "text": "AM-GM InequalitySets & Inequalities基本均值不等式$\\[ \\frac{a + b}{2} \\ge \\sqrt{ab} \\quad (a, b \\ge 0) \\]$"
+    },
+    {
+      "href": "/formulas/math/functions/log-change-of-base",
+      "text": "Change of Base FormulaFunctions对数的换底公式$\\[ \\log_a b = \\frac{\\log_c b}{\\log_c a} \\quad (a, b, c > 0, \\, a, c \\ne 1) \\]$"
+    },
+    {
+      "href": "/formulas/math/functions/log-properties",
+      "text": "Logarithmic PropertiesFunctions对数的基本运算性质$\\[ \\log_a (xy) = \\log_a x + \\log_a y \\quad \\text{and} \\quad \\log_a \\left(\\frac{"
+    },
+    {
+      "href": "/formulas/math/functions/trig-pythagorean-identity",
+      "text": "Trigonometric Pythagorean IdentityFunctions同角三角关系（平方关系）$\\[ \\sin^2 \\theta + \\cos^2 \\theta = 1 \\]$"
+    },
+    {
+      "href": "/formulas/math/functions/trig-double-angle-sine",
+      "text": "Double-Angle Formula (Sine)Functions正弦的二倍角公式$\\[ \\sin 2\\theta = 2 \\sin \\theta \\cos \\theta \\]$"
+    },
+    {
+      "href": "/formulas/math/functions/trig-double-angle-cosine",
+      "text": "Double-Angle Formula (Cosine)Functions余弦的二倍角公式$\\[ \\cos 2\\theta = \\cos^2 \\theta - \\sin^2 \\theta \\]$"
+    },
+    {
+      "href": "/formulas/math/functions/function-parity",
+      "text": "Function Parity (Odd & Even)Functions函数的奇偶性$\\[ \\text{Even: } f(-x) = f(x), \\quad \\text{Odd: } f(-x) = -f(x) \\]$"
+    },
+    {
+      "href": "/formulas/math/sequences/arithmetic-sequence-nth-term",
+      "text": "Arithmetic Sequence Nth TermSequences等差数列通项公式$\\[ a_n = a_1 + (n - 1)d \\]$"
+    },
+    {
+      "href": "/formulas/math/sequences/arithmetic-sequence-sum",
+      "text": "Arithmetic Sequence SumSequences等差数列前n项和公式$\\[ S_n = \\frac{n(a_1 + a_n)}{2} \\]$"
+    },
+    {
+      "href": "/formulas/math/sequences/geometric-sequence-nth-term",
+      "text": "Geometric Sequence Nth TermSequences等比数列通项公式$\\[ a_n = a_1 q^{n-1} \\]$"
+    },
+    {
+      "href": "/formulas/math/sequences/geometric-sequence-sum",
+      "text": "Geometric Sequence SumSequences等比数列前n项和公式$\\[ S_n = \\frac{a_1(1 - q^n)}{1 - q} \\quad (q \\ne 1) \\]$"
+    },
+    {
+      "href": "/formulas/math/derivatives/derivative-power-rule",
+      "text": "Power Rule for DerivativesDerivatives导数的幂函数求导法则$\\[ \\frac{d}{dx} x^n = n x^{n-1} \\]$"
+    },
+    {
+      "href": "/formulas/math/derivatives/tangent-line-equation",
+      "text": "Tangent Line EquationDerivatives曲线切线方程公式$\\[ y - y_0 = f'(x_0)(x - x_0) \\]$"
+    },
+    {
+      "href": "/formulas/math/plane-analytic-geometry/distance-formula",
+      "text": "Distance FormulaPlane Analytic Geometry两点间距离公式$\\[ d = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2} \\]$"
+    },
+    {
+      "href": "/formulas/math/plane-analytic-geometry/circle-equation",
+      "text": "Equation of a CirclePlane Analytic Geometry圆的标准方程$\\[ (x - a)^2 + (y - b)^2 = R^2 \\]$"
+    },
+    {
+      "href": "/formulas/math/plane-analytic-geometry/ellipse-equation",
+      "text": "Equation of an EllipsePlane Analytic Geometry椭圆的标准方程$\\[ \\frac{x^2}{a^2} + \\frac{y^2}{b^2} = 1 \\quad (a > b > 0) \\]$"
+    },
+    {
+      "href": "/formulas/math/plane-analytic-geometry/hyperbola-equation",
+      "text": "Equation of a HyperbolaPlane Analytic Geometry双曲线的标准方程$\\[ \\frac{x^2}{a^2} - \\frac{y^2}{b^2} = 1 \\quad (a > 0, \\, b > 0) "
+    },
+    {
+      "href": "/formulas/math/plane-analytic-geometry/parabola-equation",
+      "text": "Equation of a ParabolaPlane Analytic Geometry抛物线的标准方程$\\[ y^2 = 2px \\quad (p > 0) \\]$"
+    },
+    {
+      "href": "/formulas/math/plane-analytic-geometry/line-equations",
+      "text": "Equation of a Line (Slope-Intercept & General Form)Plane Analytic Geometry直线的方程（斜截式与一般式）$\\[ y = kx + b \\quad \\text{and} "
+    },
+    {
+      "href": "/formulas/math/vectors-and-complex-numbers/vector-dot-product",
+      "text": "Vector Dot ProductVectors & Complex Numbers平面向量的数量积（点积）$\\[ \\mathbf{a} \\cdot \\mathbf{b} = a_x b_x + a_y b_y = |\\mathbf{a}"
+    },
+    {
+      "href": "/formulas/math/vectors-and-complex-numbers/complex-modulus",
+      "text": "Modulus of a Complex NumberVectors & Complex Numbers复数的模$\\[ |z| = \\sqrt{a^2 + b^2} \\quad (z = a + bi) \\]$"
+    },
+    {
+      "href": "/formulas/math/solid-geometry/sphere-properties",
+      "text": "Volume and Surface Area of a SphereSolid Geometry球的体积与表面积公式$\\[ V = \\frac{4}{3}\\pi R^3 \\quad \\text{and} \\quad S = 4\\pi R^"
+    },
+    {
+      "href": "/formulas/math/probability-and-statistics/classical-probability",
+      "text": "Classical Probability FormulaProbability & Statistics古典概型概率计算公式$\\[ P(A) = \\frac{N(A)}{N} \\]$"
+    },
+    {
+      "href": "/formulas/math/probability-and-statistics/variance-standard-deviation",
+      "text": "Variance and Standard DeviationProbability & Statistics样本方差与标准差公式$\\[ s^2 = \\frac{1}{n} \\sum_{i=1}^{n} (x_i - \\bar{x})^2 "
+    },
+    {
+      "href": "/formulas/math/probability-and-statistics/normal-distribution",
+      "text": "Normal Distribution (3-Sigma Rule)Probability & Statistics正态分布（3σ原则 / 68-95-99.7准则）$\\[ P(\\mu - \\sigma \\le X \\le \\mu + \\s"
+    },
+    {
+      "href": "/formulas/physics",
+      "text": "View Physics Hub →"
+    },
+    {
+      "href": "/formulas/physics/mechanics/uniform-acceleration-displacement",
+      "text": "Kinematics Equations under Constant AccelerationMechanics匀变速直线运动规律与位移公式$\\[ v = v_0 + at, \\quad s = v_0 t + \\frac{1}{2} a"
+    },
+    {
+      "href": "/formulas/physics/mechanics/newton-second-law",
+      "text": "Newton's Second Law of MotionMechanics牛顿第二运动定律$\\[ \\sum \\mathbf{F} = m\\mathbf{a} \\]$"
+    },
+    {
+      "href": "/formulas/physics/mechanics/momentum-impulse-conservation",
+      "text": "Momentum, Impulse & Law of Conservation of MomentumMechanics动量定理与动量守恒定律$\\[ \\mathbf{I} = \\mathbf{F}\\Delta t = \\Delta \\mat"
+    },
+    {
+      "href": "/formulas/physics/mechanics/mechanical-energy-conservation",
+      "text": "Work-Energy Theorem & Conservation of Mechanical EnergyMechanics动能定理与机械能守恒定律$\\[ W_{\\text{net}} = \\Delta E_k = \\frac{1}{2"
+    },
+    {
+      "href": "/formulas/physics/mechanics/circular-motion-gravitation",
+      "text": "Uniform Circular Motion & Law of Universal GravitationMechanics匀速圆周运动与万有引力定律$\\[ F_c = m\\frac{v^2}{r} = m\\omega^2 r, \\qua"
+    },
+    {
+      "href": "/formulas/physics/mechanics/shm-pendulum-waves",
+      "text": "Simple Harmonic Motion & Mechanical Wave SpeedMechanics简谐运动周期与机械波传播公式$\\[ T = 2\\pi \\sqrt{\\frac{L}{g}}, \\quad v = \\frac{\\l"
+    },
+    {
+      "href": "/formulas/physics/electromagnetism/coulombs-law",
+      "text": "Coulomb's Law & Electric Field StrengthElectromagnetism库仑定律与电场强度公式$\\[ F = k_e \\frac{|q_1 q_2|}{r^2}, \\quad E = \\frac{F}{"
+    },
+    {
+      "href": "/formulas/physics/electromagnetism/ohms-law",
+      "text": "Ohm's Law & Closed Circuit EMF EquationElectromagnetism闭合电路欧姆定律与电功率公式$\\[ I = \\frac{E}{R + r}, \\quad U = E - Ir, \\quad P "
+    },
+    {
+      "href": "/formulas/physics/electromagnetism/lorentz-force-scalar",
+      "text": "Lorentz Force & Magnetic Ampere ForceElectromagnetism安培力与洛伦兹力公式$\\[ F_{\\text{Ampere}} = BIL\\sin\\theta, \\quad F_{\\text{Lor"
+    },
+    {
+      "href": "/formulas/physics/electromagnetism/faradays-law",
+      "text": "Faraday's Law of Induction & Motional EMFElectromagnetism法拉第电磁感应定律与动生电动势$\\[ E = n\\frac{\\Delta \\Phi}{\\Delta t}, \\quad E ="
+    },
+    {
+      "href": "/formulas/physics/electromagnetism/ac-impedance-rlc",
+      "text": "AC Series RLC Circuit Impedance & PhasorElectromagnetism交变电流RLC串联电路阻抗与相量公式$\\[ Z = \\sqrt{R^2 + (X_L - X_C)^2}, \\quad \\tan"
+    },
+    {
+      "href": "/formulas/physics/electromagnetism/ac-power-factor",
+      "text": "AC Active Power & Power Factor FormulaElectromagnetism交流电路有功功率与功率因数公式$\\[ P = UI\\cos\\varphi, \\quad \\cos\\varphi = \\frac{R}"
+    },
+    {
+      "href": "/formulas/physics/thermodynamics/first-law-thermodynamics",
+      "text": "First Law of Thermodynamics & Ideal Gas LawThermodynamics热力学第一定律与理想气体状态方程$\\[ \\Delta U = Q + W, \\quad \\frac{P_1 V_1}{T_1}"
+    },
+    {
+      "href": "/formulas/physics/optics/snells-law",
+      "text": "Snell's Law of Refraction & Total Internal ReflectionOptics光的折射定律与全反射临界角公式$\\[ n = \\frac{c}{v} = \\frac{\\sin\\theta_1}{\\sin"
+    },
+    {
+      "href": "/formulas/physics/optics/double-slit-interference",
+      "text": "Young's Double-Slit Interference Fringe SpacingOptics双缝干涉条纹间距公式$\\[ \\Delta x = \\frac{L}{d}\\lambda \\]$"
+    },
+    {
+      "href": "/formulas/physics/modern-physics/photoelectric-equation",
+      "text": "Einstein's Photoelectric Effect & Photon EnergyModern Physics光电效应方程与光子能量公式$\\[ E_{\\text{photon}} = h\\nu, \\quad E_{k\\max} "
+    },
+    {
+      "href": "/formulas/physics/modern-physics/bohr-nuclear-binding",
+      "text": "Bohr Hydrogen Energy Levels & Mass-Energy EquivalenceModern Physics玻尔氢原子能级跃迁与质能方程$\\[ E_n = \\frac{E_1}{n^2} \\quad (E_1 = "
+    },
+    {
+      "href": "/formulas/chemistry",
+      "text": "View Chemistry Hub →"
+    },
+    {
+      "href": "/formulas/chemistry/basic-chemical-concepts-and-calculations/moles-mass-relation",
+      "text": "Amount of Substance, Mass & Particle Count RelationsBasic Chemical Concepts and Calculations物质的量、微粒数与质量换算公式$\\[ n = \\frac"
+    },
+    {
+      "href": "/formulas/chemistry/basic-chemical-concepts-and-calculations/moles-gas-volume",
+      "text": "Gas Volume and Moles at STPBasic Chemical Concepts and Calculations气体摩尔体积与标况状态公式$\\[ n = \\frac{V}{V_m} \\quad (V_m = 22.4\\"
+    },
+    {
+      "href": "/formulas/chemistry/basic-chemical-concepts-and-calculations/molar-concentration",
+      "text": "Molar Concentration of Solution & Dilution LawBasic Chemical Concepts and Calculations物质的量浓度公式与稀释定律$\\[ c = \\frac{n}{V}, "
+    },
+    {
+      "href": "/formulas/chemistry/basic-chemical-concepts-and-calculations/concentration-conversion",
+      "text": "Conversion between Mass Fraction and Molar ConcentrationBasic Chemical Concepts and Calculations质量分数与物质的量浓度的换算公式$\\[ c = "
+    },
+    {
+      "href": "/formulas/chemistry/basic-chemical-concepts-and-calculations/ideal-gas-law",
+      "text": "Ideal Gas Law Equation of StateBasic Chemical Concepts and Calculations理想气体状态方程（克拉珀龙方程）$\\[ PV = nRT = \\frac{m}{M}RT \\imp"
+    },
+    {
+      "href": "/formulas/chemistry/chemical-theories-and-laws/chemical-reaction-rate",
+      "text": "Chemical Reaction Rate & Rate Ratio LawChemical Theories and Laws化学反应速率与化学计量数比值规律$\\[ v = \\frac{\\Delta c}{\\Delta t}, \\qua"
+    },
+    {
+      "href": "/formulas/chemistry/chemical-theories-and-laws/equilibrium-constant",
+      "text": "Chemical Equilibrium Constant ExpressionChemical Theories and Laws化学平衡常数表达式与转化率公式$\\[ K = \\frac{[\\text{C}]^c [\\text{D}]^d"
+    },
+    {
+      "href": "/formulas/chemistry/chemical-theories-and-laws/ph-definition",
+      "text": "pH, pOH & Water Ion Product EquilibriumChemical Theories and LawspH定义式与水的离子积常数$\\[ \\text{pH} = -\\log_{10}[\\text{H}^+], \\q"
+    },
+    {
+      "href": "/formulas/chemistry/chemical-theories-and-laws/arrhenius-equation",
+      "text": "Arrhenius Activation Energy EquationChemical Theories and Laws阿伦尼乌斯公式与活化能$\\[ k = A e^{-\\frac{E_a}{RT}} \\implies \\ln k = "
+    },
+    {
+      "href": "/formulas/chemistry/chemical-theories-and-laws/gibbs-free-energy",
+      "text": "Gibbs Free Energy Spontaneity CriterionChemical Theories and Laws吉布斯自由能判据与反应自发性$\\[ \\Delta G = \\Delta H - T\\Delta S \\quad"
+    },
+    {
+      "href": "/formulas/chemistry/chemical-theories-and-laws/galvanic-cell-potential",
+      "text": "Galvanic & Electrolytic Cell Electrode ReactionsChemical Theories and Laws原电池与电解池电极反应规律$\\[ \\text{Anode: Oxidation (loss "
+    }
+  ],
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "EducationalOrganization",
+          "@id": "https://csca.space/#organization",
+          "name": "CSCA Space Academy",
+          "url": "https://csca.space",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://csca.space/logo.png",
+            "contentUrl": "https://csca.space/logo.png",
+            "width": 2048,
+            "height": 2048,
+            "caption": "CSCA Space Logo"
+          },
+          "image": "https://csca.space/logo.png",
+          "description": "Premier standardized preparation academy and adaptive testing simulator for the China Scholastic Competency Assessment (CSCA).",
+          "knowsAbout": [
+            "China Scholastic Competency Assessment",
+            "CSCA Exam",
+            "CSC Scholarship",
+            "Chinese Government Scholarship",
+            "STEM University Admissions in China"
+          ],
+          "sameAs": [
+            "https://github.com/cscaspace"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://csca.space/#website",
+          "url": "https://csca.space",
+          "name": "CSCA Space",
+          "inLanguage": [
+            "en",
+            "zh-Hans"
+          ],
+          "dateModified": "2026-09-04",
+          "publisher": {
+            "@id": "https://csca.space/#organization"
+          },
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://csca.space/subjects?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+          }
+        },
+        {
+          "@type": "EducationalApplication",
+          "@id": "https://csca.space/#application",
+          "name": "CSCA Space Exam Simulator & Mock Generator",
+          "url": "https://csca.space",
+          "applicationCategory": "EducationalApplication",
+          "operatingSystem": "All",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+          },
+          "description": "High-yield bilingual CSCA examination simulator powered by the v2.4 and v3.0 parametric question generation engine calibrated to 99.8% fidelity of official CSCA CBT exams, featuring deterministic SymPy proofs and FSRS-6 formula mastery.",
+          "featureList": [
+            "99.8% Official CSCA CBT Exam Fidelity Mock Generator",
+            "Dual v2.4 Consensus & v3.0 Parametric Manifold Engine",
+            "Deterministic SymPy Symbolic STEM Dual-Verification",
+            "6 Macro Cognitive Habit Distractor Autopsies",
+            "48 Questions in 60 Minutes Timed Exam Environment",
+            "Bilingual English and Chinese CSCA STEM Syllabi"
+          ],
+          "provider": {
+            "@id": "https://csca.space/#organization"
+          }
+        },
+        {
+          "@type": "SiteNavigationElement",
+          "@id": "https://csca.space/#navigation",
+          "name": "CSCA Space Main Navigation",
+          "hasPart": [
+            {
+              "@type": "WebPage",
+              "name": "CSCA Mock Tests & Simulator",
+              "url": "https://csca.space/subjects/portal",
+              "description": "Adaptive CSCA mock exam hall with official timers and real-time pacer tracking."
+            },
+            {
+              "@type": "WebPage",
+              "name": "CSCA Mathematics Past Papers",
+              "url": "https://csca.space/subjects/math",
+              "description": "Calculus, Algebra, Analytic Geometry, and Vector past questions with KaTeX derivations."
+            },
+            {
+              "@type": "WebPage",
+              "name": "CSCA Physics Syllabus & Drills",
+              "url": "https://csca.space/subjects/physics",
+              "description": "Classical mechanics, electromagnetism, and thermodynamics CSCA questions."
+            },
+            {
+              "@type": "WebPage",
+              "name": "CSCA Chemistry Complete Guide",
+              "url": "https://csca.space/subjects/chemistry",
+              "description": "Organic chemistry, stoichiometry, and chemical equilibrium practice."
+            },
+            {
+              "@type": "WebPage",
+              "name": "CSCA Academic Chinese (科技汉语)",
+              "url": "https://csca.space/subjects/chinese",
+              "description": "Scientific Chinese reading comprehension and technical STEM vocabulary."
+            },
+            {
+              "@type": "WebPage",
+              "name": "CSCA Space vs Private Tutoring",
+              "url": "https://csca.space/vs/traditional-tutoring-vs-cscaspace",
+              "description": "Transparent comparison between CSCA Space self-paced academy and traditional private agency tutoring."
+            },
+            {
+              "@type": "WebPage",
+              "name": "Diagnostic Assessment",
+              "url": "https://csca.space/diagnostic",
+              "description": "Free 15-minute diagnostic exam assessing CSCA readiness across all 4 subjects."
+            }
+          ]
+        },
+        {
+          "@type": "LearningResource",
+          "@id": "https://csca.space/#learningresource",
+          "name": "CSCA Standardized Examination Curriculum & Past Papers",
+          "description": "Complete CSCA preparation curriculum covering Mathematics, Physics, Chemistry, and Academic Chinese.",
+          "educationalLevel": "High School to Undergraduate Admissions",
+          "learningResourceType": "Practice Assessment & Exam Simulation",
+          "inLanguage": [
+            "en",
+            "zh-Hans"
+          ],
+          "isAccessibleForFree": true,
+          "provider": {
+            "@id": "https://csca.space/#organization"
+          }
+        },
+        {
+          "@type": "Course",
+          "@id": "https://csca.space/#course-math",
+          "name": "CSCA Mathematics Preparation & Past Papers",
+          "description": "Comprehensive CSCA Mathematics syllabus coverage: Calculus, Algebra, Sequences, Vectors, Probability, and Adaptive Practice.",
+          "provider": {
+            "@id": "https://csca.space/#organization"
+          },
+          "url": "https://csca.space/subjects/math",
+          "isAccessibleForFree": true
+        },
+        {
+          "@type": "Course",
+          "@id": "https://csca.space/#course-physics",
+          "name": "CSCA Physics Preparation & Past Papers",
+          "description": "Standardized CSCA Physics exam training: Classical Mechanics, Electromagnetism, Optics, Thermodynamics, and Past Questions.",
+          "provider": {
+            "@id": "https://csca.space/#organization"
+          },
+          "url": "https://csca.space/subjects/physics",
+          "isAccessibleForFree": true
+        },
+        {
+          "@type": "Course",
+          "@id": "https://csca.space/#course-chemistry",
+          "name": "CSCA Chemistry Preparation & Past Papers",
+          "description": "Complete CSCA Chemistry syllabus modules: Stoichiometry, Organic Chemistry, Chemical Equilibrium, and Laboratory Principles.",
+          "provider": {
+            "@id": "https://csca.space/#organization"
+          },
+          "url": "https://csca.space/subjects/chemistry",
+          "isAccessibleForFree": true
+        },
+        {
+          "@type": "Course",
+          "@id": "https://csca.space/#course-chinese",
+          "name": "CSCA Academic Chinese Preparation",
+          "description": "Specialized Academic Chinese for STEM admissions in China: Technical Vocabulary, Scientific Reading Comprehension, and HSK 5-6 Alignment.",
+          "provider": {
+            "@id": "https://csca.space/#organization"
+          },
+          "url": "https://csca.space/subjects/chinese",
+          "isAccessibleForFree": true
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://csca.space/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What is the CSCA (China Scholastic Competency Assessment)?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The CSCA (China Scholastic Competency Assessment) is the standardized STEM competency assessment used by top Chinese universities and CSC Government Scholarship committees to evaluate international undergraduate candidates in Mathematics, Physics, Chemistry, and Academic Chinese."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How to prepare for the CSCA exam online?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "To prepare for the CSCA exam, students should use CSCA Space (csca.space) for adaptive mock test simulations, past paper questions, bilingual terminology drills, formula sheets, and step-by-step video explainers aligned with the official CSCA syllabus."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What subjects are tested in the CSCA?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The CSCA exam tests four core disciplines: Mathematics (Algebra, Calculus, Analytical Geometry), Physics (Mechanics, Electromagnetism, Waves), Chemistry (Physical Chemistry, Organic Chemistry, Stoichiometry), and Academic Chinese."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Where can I find CSCA past papers and practice questions?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "CSCA Space provides verified CSCA mock exams, diagnostic assessments, and curated past questions with comprehensive step-by-step pedagogical walkthroughs at https://csca.space."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How does CSCA Space help international students prepare for the CSCA?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "CSCA Space provides 100% syllabus-aligned interactive practice, bilingual English and Chinese STEM explanations, full diagnostic scoring, and adaptive mock test simulations designed specifically for international university admissions in China."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is a competitive score on the CSCA for CSC scholarships?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Candidates scoring in the 80th percentile and above are highly competitive for full Chinese Government Scholarships (CSC Type A & Type B) and direct admission into top C9 league universities."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "CSCA Formula Knowledge Base",
+      "description": "Authoritative catalog of 58 core mathematical, physical, and chemical formulas for the CSCA exam.",
+      "url": "https://csca.space/formulas",
+      "hasPart": [
+        {
+          "@type": "CreativeWork",
+          "name": "Quadratic Formula",
+          "headline": "Quadratic Formula (一元二次方程求根公式)",
+          "url": "https://csca.space/formulas/math/sets-and-inequalities/quadratic-formula"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Union of Sets",
+          "headline": "Union of Sets (集合的并集)",
+          "url": "https://csca.space/formulas/math/sets-and-inequalities/set-union"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Intersection of Sets",
+          "headline": "Intersection of Sets (集合的交集)",
+          "url": "https://csca.space/formulas/math/sets-and-inequalities/set-intersection"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Complement of a Set",
+          "headline": "Complement of a Set (集合的补集)",
+          "url": "https://csca.space/formulas/math/sets-and-inequalities/set-complement"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Rational Inequality Equivalence",
+          "headline": "Rational Inequality Equivalence (分式不等式的等价转化)",
+          "url": "https://csca.space/formulas/math/sets-and-inequalities/rational-inequality"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "AM-GM Inequality",
+          "headline": "AM-GM Inequality (基本均值不等式)",
+          "url": "https://csca.space/formulas/math/sets-and-inequalities/am-gm-inequality"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Change of Base Formula",
+          "headline": "Change of Base Formula (对数的换底公式)",
+          "url": "https://csca.space/formulas/math/functions/log-change-of-base"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Logarithmic Properties",
+          "headline": "Logarithmic Properties (对数的基本运算性质)",
+          "url": "https://csca.space/formulas/math/functions/log-properties"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Trigonometric Pythagorean Identity",
+          "headline": "Trigonometric Pythagorean Identity (同角三角关系（平方关系）)",
+          "url": "https://csca.space/formulas/math/functions/trig-pythagorean-identity"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Double-Angle Formula (Sine)",
+          "headline": "Double-Angle Formula (Sine) (正弦的二倍角公式)",
+          "url": "https://csca.space/formulas/math/functions/trig-double-angle-sine"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Double-Angle Formula (Cosine)",
+          "headline": "Double-Angle Formula (Cosine) (余弦的二倍角公式)",
+          "url": "https://csca.space/formulas/math/functions/trig-double-angle-cosine"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Function Parity (Odd & Even)",
+          "headline": "Function Parity (Odd & Even) (函数的奇偶性)",
+          "url": "https://csca.space/formulas/math/functions/function-parity"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Arithmetic Sequence Nth Term",
+          "headline": "Arithmetic Sequence Nth Term (等差数列通项公式)",
+          "url": "https://csca.space/formulas/math/sequences/arithmetic-sequence-nth-term"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Arithmetic Sequence Sum",
+          "headline": "Arithmetic Sequence Sum (等差数列前n项和公式)",
+          "url": "https://csca.space/formulas/math/sequences/arithmetic-sequence-sum"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Geometric Sequence Nth Term",
+          "headline": "Geometric Sequence Nth Term (等比数列通项公式)",
+          "url": "https://csca.space/formulas/math/sequences/geometric-sequence-nth-term"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Geometric Sequence Sum",
+          "headline": "Geometric Sequence Sum (等比数列前n项和公式)",
+          "url": "https://csca.space/formulas/math/sequences/geometric-sequence-sum"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Power Rule for Derivatives",
+          "headline": "Power Rule for Derivatives (导数的幂函数求导法则)",
+          "url": "https://csca.space/formulas/math/derivatives/derivative-power-rule"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Tangent Line Equation",
+          "headline": "Tangent Line Equation (曲线切线方程公式)",
+          "url": "https://csca.space/formulas/math/derivatives/tangent-line-equation"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Distance Formula",
+          "headline": "Distance Formula (两点间距离公式)",
+          "url": "https://csca.space/formulas/math/plane-analytic-geometry/distance-formula"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Equation of a Circle",
+          "headline": "Equation of a Circle (圆的标准方程)",
+          "url": "https://csca.space/formulas/math/plane-analytic-geometry/circle-equation"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Equation of an Ellipse",
+          "headline": "Equation of an Ellipse (椭圆的标准方程)",
+          "url": "https://csca.space/formulas/math/plane-analytic-geometry/ellipse-equation"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Equation of a Hyperbola",
+          "headline": "Equation of a Hyperbola (双曲线的标准方程)",
+          "url": "https://csca.space/formulas/math/plane-analytic-geometry/hyperbola-equation"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Equation of a Parabola",
+          "headline": "Equation of a Parabola (抛物线的标准方程)",
+          "url": "https://csca.space/formulas/math/plane-analytic-geometry/parabola-equation"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Equation of a Line (Slope-Intercept & General Form)",
+          "headline": "Equation of a Line (Slope-Intercept & General Form) (直线的方程（斜截式与一般式）)",
+          "url": "https://csca.space/formulas/math/plane-analytic-geometry/line-equations"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Vector Dot Product",
+          "headline": "Vector Dot Product (平面向量的数量积（点积）)",
+          "url": "https://csca.space/formulas/math/vectors-and-complex-numbers/vector-dot-product"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Modulus of a Complex Number",
+          "headline": "Modulus of a Complex Number (复数的模)",
+          "url": "https://csca.space/formulas/math/vectors-and-complex-numbers/complex-modulus"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Volume and Surface Area of a Sphere",
+          "headline": "Volume and Surface Area of a Sphere (球的体积与表面积公式)",
+          "url": "https://csca.space/formulas/math/solid-geometry/sphere-properties"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Classical Probability Formula",
+          "headline": "Classical Probability Formula (古典概型概率计算公式)",
+          "url": "https://csca.space/formulas/math/probability-and-statistics/classical-probability"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Variance and Standard Deviation",
+          "headline": "Variance and Standard Deviation (样本方差与标准差公式)",
+          "url": "https://csca.space/formulas/math/probability-and-statistics/variance-standard-deviation"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Normal Distribution (3-Sigma Rule)",
+          "headline": "Normal Distribution (3-Sigma Rule) (正态分布（3σ原则 / 68-95-99.7准则）)",
+          "url": "https://csca.space/formulas/math/probability-and-statistics/normal-distribution"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Kinematics Equations under Constant Acceleration",
+          "headline": "Kinematics Equations under Constant Acceleration (匀变速直线运动规律与位移公式)",
+          "url": "https://csca.space/formulas/physics/mechanics/uniform-acceleration-displacement"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Newton's Second Law of Motion",
+          "headline": "Newton's Second Law of Motion (牛顿第二运动定律)",
+          "url": "https://csca.space/formulas/physics/mechanics/newton-second-law"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Momentum, Impulse & Law of Conservation of Momentum",
+          "headline": "Momentum, Impulse & Law of Conservation of Momentum (动量定理与动量守恒定律)",
+          "url": "https://csca.space/formulas/physics/mechanics/momentum-impulse-conservation"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Work-Energy Theorem & Conservation of Mechanical Energy",
+          "headline": "Work-Energy Theorem & Conservation of Mechanical Energy (动能定理与机械能守恒定律)",
+          "url": "https://csca.space/formulas/physics/mechanics/mechanical-energy-conservation"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Uniform Circular Motion & Law of Universal Gravitation",
+          "headline": "Uniform Circular Motion & Law of Universal Gravitation (匀速圆周运动与万有引力定律)",
+          "url": "https://csca.space/formulas/physics/mechanics/circular-motion-gravitation"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Simple Harmonic Motion & Mechanical Wave Speed",
+          "headline": "Simple Harmonic Motion & Mechanical Wave Speed (简谐运动周期与机械波传播公式)",
+          "url": "https://csca.space/formulas/physics/mechanics/shm-pendulum-waves"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Coulomb's Law & Electric Field Strength",
+          "headline": "Coulomb's Law & Electric Field Strength (库仑定律与电场强度公式)",
+          "url": "https://csca.space/formulas/physics/electromagnetism/coulombs-law"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Ohm's Law & Closed Circuit EMF Equation",
+          "headline": "Ohm's Law & Closed Circuit EMF Equation (闭合电路欧姆定律与电功率公式)",
+          "url": "https://csca.space/formulas/physics/electromagnetism/ohms-law"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Lorentz Force & Magnetic Ampere Force",
+          "headline": "Lorentz Force & Magnetic Ampere Force (安培力与洛伦兹力公式)",
+          "url": "https://csca.space/formulas/physics/electromagnetism/lorentz-force-scalar"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Faraday's Law of Induction & Motional EMF",
+          "headline": "Faraday's Law of Induction & Motional EMF (法拉第电磁感应定律与动生电动势)",
+          "url": "https://csca.space/formulas/physics/electromagnetism/faradays-law"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "AC Series RLC Circuit Impedance & Phasor",
+          "headline": "AC Series RLC Circuit Impedance & Phasor (交变电流RLC串联电路阻抗与相量公式)",
+          "url": "https://csca.space/formulas/physics/electromagnetism/ac-impedance-rlc"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "AC Active Power & Power Factor Formula",
+          "headline": "AC Active Power & Power Factor Formula (交流电路有功功率与功率因数公式)",
+          "url": "https://csca.space/formulas/physics/electromagnetism/ac-power-factor"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "First Law of Thermodynamics & Ideal Gas Law",
+          "headline": "First Law of Thermodynamics & Ideal Gas Law (热力学第一定律与理想气体状态方程)",
+          "url": "https://csca.space/formulas/physics/thermodynamics/first-law-thermodynamics"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Snell's Law of Refraction & Total Internal Reflection",
+          "headline": "Snell's Law of Refraction & Total Internal Reflection (光的折射定律与全反射临界角公式)",
+          "url": "https://csca.space/formulas/physics/optics/snells-law"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Young's Double-Slit Interference Fringe Spacing",
+          "headline": "Young's Double-Slit Interference Fringe Spacing (双缝干涉条纹间距公式)",
+          "url": "https://csca.space/formulas/physics/optics/double-slit-interference"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Einstein's Photoelectric Effect & Photon Energy",
+          "headline": "Einstein's Photoelectric Effect & Photon Energy (光电效应方程与光子能量公式)",
+          "url": "https://csca.space/formulas/physics/modern-physics/photoelectric-equation"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Bohr Hydrogen Energy Levels & Mass-Energy Equivalence",
+          "headline": "Bohr Hydrogen Energy Levels & Mass-Energy Equivalence (玻尔氢原子能级跃迁与质能方程)",
+          "url": "https://csca.space/formulas/physics/modern-physics/bohr-nuclear-binding"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Amount of Substance, Mass & Particle Count Relations",
+          "headline": "Amount of Substance, Mass & Particle Count Relations (物质的量、微粒数与质量换算公式)",
+          "url": "https://csca.space/formulas/chemistry/basic-chemical-concepts-and-calculations/moles-mass-relation"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Gas Volume and Moles at STP",
+          "headline": "Gas Volume and Moles at STP (气体摩尔体积与标况状态公式)",
+          "url": "https://csca.space/formulas/chemistry/basic-chemical-concepts-and-calculations/moles-gas-volume"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Molar Concentration of Solution & Dilution Law",
+          "headline": "Molar Concentration of Solution & Dilution Law (物质的量浓度公式与稀释定律)",
+          "url": "https://csca.space/formulas/chemistry/basic-chemical-concepts-and-calculations/molar-concentration"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Conversion between Mass Fraction and Molar Concentration",
+          "headline": "Conversion between Mass Fraction and Molar Concentration (质量分数与物质的量浓度的换算公式)",
+          "url": "https://csca.space/formulas/chemistry/basic-chemical-concepts-and-calculations/concentration-conversion"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Ideal Gas Law Equation of State",
+          "headline": "Ideal Gas Law Equation of State (理想气体状态方程（克拉珀龙方程）)",
+          "url": "https://csca.space/formulas/chemistry/basic-chemical-concepts-and-calculations/ideal-gas-law"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Chemical Reaction Rate & Rate Ratio Law",
+          "headline": "Chemical Reaction Rate & Rate Ratio Law (化学反应速率与化学计量数比值规律)",
+          "url": "https://csca.space/formulas/chemistry/chemical-theories-and-laws/chemical-reaction-rate"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Chemical Equilibrium Constant Expression",
+          "headline": "Chemical Equilibrium Constant Expression (化学平衡常数表达式与转化率公式)",
+          "url": "https://csca.space/formulas/chemistry/chemical-theories-and-laws/equilibrium-constant"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "pH, pOH & Water Ion Product Equilibrium",
+          "headline": "pH, pOH & Water Ion Product Equilibrium (pH定义式与水的离子积常数)",
+          "url": "https://csca.space/formulas/chemistry/chemical-theories-and-laws/ph-definition"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Arrhenius Activation Energy Equation",
+          "headline": "Arrhenius Activation Energy Equation (阿伦尼乌斯公式与活化能)",
+          "url": "https://csca.space/formulas/chemistry/chemical-theories-and-laws/arrhenius-equation"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Gibbs Free Energy Spontaneity Criterion",
+          "headline": "Gibbs Free Energy Spontaneity Criterion (吉布斯自由能判据与反应自发性)",
+          "url": "https://csca.space/formulas/chemistry/chemical-theories-and-laws/gibbs-free-energy"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Galvanic & Electrolytic Cell Electrode Reactions",
+          "headline": "Galvanic & Electrolytic Cell Electrode Reactions (原电池与电解池电极反应规律)",
+          "url": "https://csca.space/formulas/chemistry/chemical-theories-and-laws/galvanic-cell-potential"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://csca.space"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Formulas",
+          "item": "https://csca.space/formulas"
+        }
+      ]
+    }
+  ],
+  "capture": "cmwe93yhq",
+  "site": "csca-space"
+}

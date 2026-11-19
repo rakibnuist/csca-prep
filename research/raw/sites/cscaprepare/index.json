@@ -1,0 +1,125 @@
+{
+  "site": "cscaprepare",
+  "source": "https://www.cscaprepare.com/",
+  "pages": [
+    {
+      "slug": "home",
+      "url": "https://www.cscaprepare.com/",
+      "title": "CSCA Exam Preparation",
+      "status": 200,
+      "chars": 2037
+    },
+    {
+      "slug": "csca-exam",
+      "url": "https://www.cscaprepare.com/csca-exam",
+      "title": "CSCA Exam: What It Is and How to Prepare for Undergraduate Study in China | CSCA Preparation",
+      "status": 200,
+      "chars": 7295
+    },
+    {
+      "slug": "what-is-csca",
+      "url": "https://www.cscaprepare.com/what-is-csca",
+      "title": "What is the CSCA exam? | CSCA Preparation",
+      "status": 200,
+      "chars": 3362
+    },
+    {
+      "slug": "syllabus",
+      "url": "https://www.cscaprepare.com/syllabus",
+      "title": "CSCA Syllabus | CSCA Preparation",
+      "status": 200,
+      "chars": 5056
+    },
+    {
+      "slug": "exam-calendar",
+      "url": "https://www.cscaprepare.com/exam-calendar",
+      "title": "2026 CSCA Exam Calendar | CSCA Preparation",
+      "status": 200,
+      "chars": 3264
+    },
+    {
+      "slug": "subjects",
+      "url": "https://www.cscaprepare.com/subjects",
+      "title": "CSCA Subjects | CSCA Preparation",
+      "status": 200,
+      "chars": 3203
+    },
+    {
+      "slug": "mock-test",
+      "url": "https://www.cscaprepare.com/mock-test",
+      "title": "CSCA Mock Tests | CSCA Preparation",
+      "status": 200,
+      "chars": 5308
+    },
+    {
+      "slug": "practice",
+      "url": "https://www.cscaprepare.com/practice",
+      "title": "CSCA Practice Tests | CSCA Preparation",
+      "status": 200,
+      "chars": 1419
+    },
+    {
+      "slug": "ai-assistant",
+      "url": "https://www.cscaprepare.com/ai-assistant",
+      "title": "CSCA AI Assistant | CSCA Preparation",
+      "status": 200,
+      "chars": 4300
+    },
+    {
+      "slug": "csca-fees",
+      "url": "https://www.cscaprepare.com/csca-fees",
+      "title": "CSCA fees and payment basics | CSCA Preparation",
+      "status": 200,
+      "chars": 2993
+    },
+    {
+      "slug": "csca-results",
+      "url": "https://www.cscaprepare.com/csca-results",
+      "title": "Result timing and score use | CSCA Preparation",
+      "status": 200,
+      "chars": 4942
+    },
+    {
+      "slug": "csca-technical-requirements",
+      "url": "https://www.cscaprepare.com/csca-technical-requirements",
+      "title": "Technical readiness for the CSCA exam | CSCA Preparation",
+      "status": 200,
+      "chars": 2518
+    },
+    {
+      "slug": "shop",
+      "url": "https://www.cscaprepare.com/shop",
+      "title": "CSCA Shop | CSCA Preparation",
+      "status": 200,
+      "chars": 5392
+    },
+    {
+      "slug": "shop__mock-packs",
+      "url": "https://www.cscaprepare.com/shop/mock-packs",
+      "title": "CSCA Mock Test Papers and Mock Packs | CSCA Preparation",
+      "status": 200,
+      "chars": 5118
+    },
+    {
+      "slug": "shop__past-paper-bundles",
+      "url": "https://www.cscaprepare.com/shop/past-paper-bundles",
+      "title": "CSCA Recent Exam Packs and Past Paper Bundles | CSCA Preparation",
+      "status": 200,
+      "chars": 3393
+    },
+    {
+      "slug": "resources__past-papers-reference-library",
+      "url": "https://www.cscaprepare.com/resources/past-papers-reference-library",
+      "title": "Past Papers for CSCA | CSCA Preparation",
+      "status": 200,
+      "chars": 4266
+    },
+    {
+      "slug": "faq",
+      "url": "https://www.cscaprepare.com/faq",
+      "title": "CSCA FAQ | CSCA Preparation",
+      "status": 200,
+      "chars": 5006
+    }
+  ]
+}

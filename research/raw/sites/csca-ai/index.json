@@ -1,0 +1,97 @@
+{
+  "site": "csca-ai",
+  "source": "https://csca.ai/csca-preparation",
+  "pages": [
+    {
+      "slug": "csca-preparation",
+      "url": "https://csca.ai/csca-preparation",
+      "title": "CSCA Exam Preparation: Study Plans & Free Practice | CSCA.ai",
+      "status": 200,
+      "chars": 14581
+    },
+    {
+      "slug": "about-csca",
+      "url": "https://csca.ai/about-csca",
+      "title": "What Is the CSCA Exam? Subjects, Format & Dates | CSCA.ai",
+      "status": 200,
+      "chars": 11553
+    },
+    {
+      "slug": "csca-syllabus",
+      "url": "https://csca.ai/csca-syllabus",
+      "title": "CSCA Exam Syllabus: Official PDFs and Subject Topics | CSCA.ai",
+      "status": 200,
+      "chars": 5631
+    },
+    {
+      "slug": "practice",
+      "url": "https://csca.ai/practice",
+      "title": "Free CSCA Practice Tests: Maths, Physics & Chemistry | CSCA.ai",
+      "status": 200,
+      "chars": 5354
+    },
+    {
+      "slug": "mock-test",
+      "url": "https://csca.ai/mock-test",
+      "title": "CSCA Mock Test: 30 Full-Length Timed Exams | CSCA.ai",
+      "status": 200,
+      "chars": 5668
+    },
+    {
+      "slug": "live-classes",
+      "url": "https://csca.ai/live-classes",
+      "title": "CSCA Live Classes: Mathematics, Physics & Chemistry | CSCA.ai",
+      "status": 200,
+      "chars": 4750
+    },
+    {
+      "slug": "resources",
+      "url": "https://csca.ai/resources",
+      "title": "CSCA Guides: Registration, Exam Format & Study Tips | CSCA.ai",
+      "status": 200,
+      "chars": 2882
+    },
+    {
+      "slug": "blogs",
+      "url": "https://csca.ai/blogs",
+      "title": "CSCA Exam Guides and Study Advice | CSCA.ai",
+      "status": 200,
+      "chars": 3243
+    },
+    {
+      "slug": "subjects__mathematics",
+      "url": "https://csca.ai/subjects/mathematics",
+      "title": "CSCA Math Exam: Format & Free Practice | CSCA.ai",
+      "status": 200,
+      "chars": 4172
+    },
+    {
+      "slug": "blogs__csca-exam-format-and-scoring",
+      "url": "https://csca.ai/blogs/csca-exam-format-and-scoring",
+      "title": "CSCA Exam Format 2026–27: Questions, Timing and Scoring",
+      "status": 200,
+      "chars": 15817
+    },
+    {
+      "slug": "blogs__is-csca-mandatory-for-china",
+      "url": "https://csca.ai/blogs/is-csca-mandatory-for-china",
+      "title": "Is CSCA Mandatory? Who Needs the CSCA Exam in 2026–27",
+      "status": 200,
+      "chars": 13484
+    },
+    {
+      "slug": "blogs__csca-mock-tests-sample-questions-practice-method",
+      "url": "https://csca.ai/blogs/csca-mock-tests-sample-questions-practice-method",
+      "title": "CSCA Mock Tests and Sample Questions: A Smarter Practice Method",
+      "status": 200,
+      "chars": 9904
+    },
+    {
+      "slug": "blogs__csca-home-based-exam-checklist",
+      "url": "https://csca.ai/blogs/csca-home-based-exam-checklist",
+      "title": "CSCA Home-Based Exam Checklist: Devices, Room and Practice",
+      "status": 200,
+      "chars": 8679
+    }
+  ]
+}

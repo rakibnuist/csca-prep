@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 150" font-family="Helvetica, Arial, sans-serif">
+  <rect width="360" height="150" fill="#fbfaf7"/>
+  <g stroke="#d4d8dd" fill="#fff">
+    <rect x="20" y="30" width="50" height="34"/><rect x="70" y="30" width="50" height="34"/><rect x="120" y="30" width="50" height="34"/><rect x="170" y="30" width="50" height="34"/><rect x="220" y="30" width="50" height="34"/><rect x="270" y="30" width="50" height="34"/>
+    <rect x="20" y="90" width="50" height="34"/><rect x="70" y="90" width="50" height="34"/><rect x="120" y="90" width="50" height="34"/><rect x="170" y="90" width="50" height="34"/><rect x="220" y="90" width="50" height="34"/><rect x="270" y="90" width="50" height="34"/>
+  </g>
+  <g font-size="11" fill="#101418" text-anchor="middle">
+    <text x="45" y="52">H</text><text x="95" y="52">Be</text><text x="145" y="52">?</text><text x="195" y="52">Mg</text><text x="245" y="52">?</text><text x="295" y="52">?</text>
+    <text x="45" y="112">Li</text><text x="95" y="112">Na</text><text x="145" y="112">K</text><text x="195" y="112">Ca</text><text x="245" y="112">?</text><text x="295" y="112">?</text>
+  </g>
+  <text x="170" y="84" font-size="9" fill="#4d555d" text-anchor="middle">← Group 2 →</text>
+</svg>

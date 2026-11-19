@@ -1,0 +1,411 @@
+{
+  "url": "https://cscaprep.academy/guides/mathematics",
+  "finalUrl": "https://cscaprep.academy/guides/mathematics",
+  "status": 200,
+  "title": "CSCA Mathematics Syllabus & Study Guide",
+  "description": "Study CSCA Mathematics: sets, inequalities, functions, geometry, algebra, probability and statistics, with topic guidance and practice links.",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Mathematics — the CSCA syllabus, topic by topic."
+    },
+    {
+      "level": 2,
+      "text": "The syllabus, topic by topic"
+    },
+    {
+      "level": 3,
+      "text": "Sets and Inequalities"
+    },
+    {
+      "level": 3,
+      "text": "Functions"
+    },
+    {
+      "level": 3,
+      "text": "Geometry and Algebra"
+    },
+    {
+      "level": 3,
+      "text": "Probability and Statistics"
+    },
+    {
+      "level": 2,
+      "text": "A few clarifications"
+    },
+    {
+      "level": 2,
+      "text": "What the platform gives you for this subject"
+    },
+    {
+      "level": 3,
+      "text": "Topic-tagged practice questions"
+    },
+    {
+      "level": 3,
+      "text": "48-question mock exam"
+    },
+    {
+      "level": 3,
+      "text": "Spaced-repetition review"
+    },
+    {
+      "level": 3,
+      "text": "Per-topic performance breakdown"
+    },
+    {
+      "level": 2,
+      "text": "Where mathematics takes you"
+    },
+    {
+      "level": 3,
+      "text": "Engineering programs that use this syllabus"
+    },
+    {
+      "level": 3,
+      "text": "Pure and applied mathematics"
+    },
+    {
+      "level": 3,
+      "text": "Economics, finance, and business"
+    },
+    {
+      "level": 3,
+      "text": "Subject requirements by program"
+    }
+  ],
+  "text": "Skip to main content\n\nLoading\n\nAbout the examSyllabus guidesExam datesQuestions\n\nSign inWhatsAppChat with us→\n\nHome\n\nSyllabus guides\n\nMathematics\n\nSyllabus · Mathematics\n\nMathematics — the CSCA syllabus, topic by topic.\n\nForty-eight questions in sixty minutes. The CSCA Mathematics section is the most content-heavy of the three — four modules, each pulling roughly a quarter of the marks. The good news: the syllabus is short, the patterns are repeatable, and the traps are predictable once you know them.\n\nThe syllabus, topic by topic\n\n4 modules. Four of them carry the bulk of the marks; the rest round out the picture. Read in order — each topic assumes the previous one.\n\n01\n\nSets and Inequalities\n\nWhat to study\n\nSet notation and operations (union, intersection, complement), Venn diagrams, the empty set, subsets, and the cardinality axioms. Linear, quadratic, and absolute-value inequalities; interval notation; solution sets on the real line. Systems of inequalities and the graphical method for finding the feasible region.\n\nWhat the exam tests\n\nSet-builder notation in problem statements, three-set Venn diagram problems, and the boundaries of quadratic inequalities (including the sign of the leading coefficient). The CSCA likes asking for the cardinality of a complement or a difference.\n\nCommon traps\n\nConfusing the solution of x² < 4 (|x| < 2) with x < 2 (half-open interval, not symmetric).\n\nForgetting that |x| < 4 has an interior, not a single point, and writing the answer as a single value.\n\nMixing up union and intersection when a Venn diagram has three overlapping sets.\n\nPopular programsEngineeringComputer ScienceEconomics\n\n02\n\nFunctions\n\nWhat to study\n\nDefinition, domain, codomain, range, and graph reading. Linear, quadratic, polynomial, rational, exponential, and logarithmic functions — their properties, transformations, and inverses. Composition, piecewise functions, and the behaviour of f(x) as x → ±∞. Trigonometric functions as a separate block: identities, graphs, and the unit circle.\n\nWhat the exam tests\n\nIdentifying a function from its graph, reading the domain and range, and applying transformations. The exponential / logarithm block is the second-largest within Functions; expect at least one problem that requires using ln or log to linearise a relationship.\n\nCommon traps\n\nConfusing the graph of y = log(x) (defined only for x > 0) with y = √x (also defined only for x ≥ 0) — different domains.\n\nThinking f(g(x)) = g(f(x)) — composition is not commutative.\n\nForgetting that sin²x + cos²x = 1 is a Pythagorean identity, not an angle-addition identity.\n\nPopular programsMathematicsStatisticsData Science\n\n03\n\nGeometry and Algebra\n\nWhat to study\n\nCoordinate geometry (lines, circles, conic sections, distance and midpoint formulas), vectors (operations, dot product, projection, angle between vectors), and matrices (operations, determinants, inverse, solving linear systems). Analytic geometry of the plane; basic three-dimensional geometry. The sequence-and-series block sits here: arithmetic and geometric progressions, sums, and limits.\n\nWhat the exam tests\n\nVector problems almost always involve the dot product or angle computation; matrix problems almost always ask for the inverse or the determinant. The conic section is usually a single problem — circle or ellipse, identifying the centre and the radius / semi-axes.\n\nCommon traps\n\nSign errors in the 2×2 determinant (the ad − bc order, not ad + bc).\n\nForgetting that a parallel projection of a vector onto another vector requires the unit vector in the direction of the target.\n\nConfusing arithmetic (constant difference) with geometric (constant ratio) progressions — the sum formulas are different.\n\nPopular programsEngineeringArchitecturePhysics\n\n04\n\nProbability and Statistics\n\nWhat to study\n\nCounting (permutations, combinations, the multiplication principle). Classical probability, conditional probability, Bayes’ theorem, and independence. Random variables (discrete and continuous), expected value, variance, and the binomial / normal distributions. Descriptive statistics: mean, median, mode, variance, standard deviation, and reading a box plot.\n\nWhat the exam tests\n\nBayes’ theorem shows up at least once per paper, almost always in a two-stage conditional form. The binomial coefficient C(n, k) and the standard normal table are the two tools the CSCA expects you to have at hand without prompting.\n\nCommon traps\n\nReversing the conditional: P(A|B) is not P(B|A). Bayes’ theorem swaps them, with a multiplication by P(B) / P(B).\n\nFor binomial, the variance is np(1−p), not np — easy to forget the (1−p) term.\n\nTreating events as independent when they are actually mutually exclusive (or vice versa).\n\nPopular programsStatisticsFinancePublic Health\n\nA few clarifications\n\nA note on trigonometry\n\nTrigonometric functions live inside the Functions module in the CSCA syllabus, not in a separate \"Trigonometry\" block. You will see sin, cos, and tan on graphs, in identities, and in the geometry questions; you will not see a pure trig identities drill.\n\nCalculus is not on the syllabus\n\nLimits and derivatives appear only in the context of the sequence-and-series block (limits of sequences) and the function behaviour (as x → ±∞). Do not spend time on differentiation or integration as standalone topics — they will not appear.\n\nWhat the platform gives you for this subject\n\nEvery topic above is wired into the question bank, the spaced-repetition system, and the per-topic weakness report. Sign up, pick this subject, and the platform does the rest.\n\nTopic-tagged practice questions\n\nFilter the question bank to a single topic and a difficulty. Each session ends with a per-topic score so you can see exactly which sub-area to revisit.\n\n48-question mock exam\n\nTimed, single-correct, exactly the real CSCA format. Take one when you've covered two or three topics; the report will tell you whether the drilling stuck.\n\nSpaced-repetition review\n\nEvery wrong answer (and every guess you flagged as unsure) gets re-scheduled on an SM-2 cadence. Read the explanation, rate the question, move on.\n\nPer-topic performance breakdown\n\nThe dashboard tells you which topics cost you marks, week over week. Stop guessing what to study next; the platform tells you.\n\nStart mathematics practice — freeChat with us on WhatsApp→\n\nWhere mathematics takes you\n\nThe CSCA is one half of the puzzle. The other half is choosing a program, a university, and an application file that gets you the offer.\n\nEngineering programs that use this syllabus\n\nMechanical, civil, electrical, chemical — the engineering faculties are the largest consumers of a strong CSCA Math score.\nOpen on SICA\nPure and applied mathematics\n\nDirect-admit math degrees at the 985-tier; some are taught in English if your Chinese is not yet at HSK 5.\nOpen on SICA\nEconomics, finance, and business\n\nFunctions, sequences, and the probability block map cleanly onto first-year econometrics coursework.\nOpen on SICA\nSubject requirements by program\n\nSome programs only require Mathematics; others pair it with Physics or Chemistry. Confirm before you register for the exam.\nOpen on SICA\n\nSICA is an independent admissions partner — separate from CSCA Prep. They cover the application side; we cover the exam side. Cross-link not an endorsement.\n\nA study for the China Scholastic Competency Assessment — built for international undergraduates applying to Chinese universities.\n\nBeijing · Hong Kong · online\n\nJoin our WhatsApp group→\n\nThe exam\n\nAbout the CSCA\n\nWhat is the CSCA?\n\nUpcoming dates\n\nHow to register\n\nTest centres\n\nExam day checklist\n\nSyllabus guides\n\nStudent guide\n\nChina scholarships\n\nPractice\n\nFree CSCA mock test\n\nCSCA syllabus\n\nHow hard is the CSCA?\n\n12-week study plan\n\nCommon mistakes\n\nRetake policy\n\nResult day\n\nScoring & cutoffs\n\nCSCA tutor\n\nBy region\n\n2027 essentials\n\nAfrica\n\nASEAN\n\nCentral Asia\n\nvs other exams\n\nThe academy\n\nSign in\n\nFrequently asked\n\nContact us\n\nHow to use\n\nTerms of use\n\nPrivacy\n\nPayments and billing\n\nRefunds\n\n© 2026 CSCA Prep Academy · All rights reserved.CSCA · 2026–2027 intake · edition v.4",
+  "links": [
+    {
+      "href": "#main",
+      "text": "Skip to main content"
+    },
+    {
+      "href": "/about",
+      "text": "About the exam"
+    },
+    {
+      "href": "/guides",
+      "text": "Syllabus guides"
+    },
+    {
+      "href": "/exam-dates",
+      "text": "Exam dates"
+    },
+    {
+      "href": "/faq",
+      "text": "Questions"
+    },
+    {
+      "href": "/login",
+      "text": "Sign in"
+    },
+    {
+      "href": "https://wa.me/8617325764171?text=Hi!%20I%20have%20a%20question%20about%20CSCA%20Prep.",
+      "text": "WhatsAppChat with us→"
+    },
+    {
+      "href": "/",
+      "text": "Home"
+    },
+    {
+      "href": "/guides",
+      "text": "Syllabus guides"
+    },
+    {
+      "href": "https://studyinchina.academy/programs?subject=engineering",
+      "text": "Engineering"
+    },
+    {
+      "href": "https://studyinchina.academy/programs?subject=cs",
+      "text": "Computer Science"
+    },
+    {
+      "href": "https://studyinchina.academy/programs?subject=economics",
+      "text": "Economics"
+    },
+    {
+      "href": "https://studyinchina.academy/programs?subject=mathematics",
+      "text": "Mathematics"
+    },
+    {
+      "href": "https://studyinchina.academy/programs?subject=statistics",
+      "text": "Statistics"
+    },
+    {
+      "href": "https://studyinchina.academy/programs?subject=data-science",
+      "text": "Data Science"
+    },
+    {
+      "href": "https://studyinchina.academy/programs?subject=engineering",
+      "text": "Engineering"
+    },
+    {
+      "href": "https://studyinchina.academy/programs?subject=architecture",
+      "text": "Architecture"
+    },
+    {
+      "href": "https://studyinchina.academy/programs?subject=physics",
+      "text": "Physics"
+    },
+    {
+      "href": "https://studyinchina.academy/programs?subject=statistics",
+      "text": "Statistics"
+    },
+    {
+      "href": "https://studyinchina.academy/programs?subject=finance",
+      "text": "Finance"
+    },
+    {
+      "href": "https://studyinchina.academy/programs?subject=public-health",
+      "text": "Public Health"
+    },
+    {
+      "href": "/signup",
+      "text": "Start mathematics practice — free"
+    },
+    {
+      "href": "https://wa.me/8617325764171?text=Hi!%20I%20have%20a%20question%20about%20CSCA%20Prep.",
+      "text": "Chat with us on WhatsApp→"
+    },
+    {
+      "href": "https://studyinchina.academy/programs?subject=engineering",
+      "text": "Engineering programs that use this syllabusMechanical, civil, electrical, chemical — the engineering faculties are the l"
+    },
+    {
+      "href": "https://studyinchina.academy/programs?subject=mathematics",
+      "text": "Pure and applied mathematicsDirect-admit math degrees at the 985-tier; some are taught in English if your Chinese is not"
+    },
+    {
+      "href": "https://studyinchina.academy/programs?subject=economics",
+      "text": "Economics, finance, and businessFunctions, sequences, and the probability block map cleanly onto first-year econometrics"
+    },
+    {
+      "href": "https://studyinchina.academy/china-university-admission-requirements",
+      "text": "Subject requirements by programSome programs only require Mathematics; others pair it with Physics or Chemistry. Confirm"
+    },
+    {
+      "href": "https://chat.whatsapp.com/HCgeJ6Di9D20kpyiMUHfRO?s=cl&p=i&mlu=4",
+      "text": "Join our WhatsApp group→"
+    },
+    {
+      "href": "/about",
+      "text": "About the CSCA"
+    },
+    {
+      "href": "/csca/what-is",
+      "text": "What is the CSCA?"
+    },
+    {
+      "href": "/exam-dates",
+      "text": "Upcoming dates"
+    },
+    {
+      "href": "/csca/how-to-register",
+      "text": "How to register"
+    },
+    {
+      "href": "/csca/test-centres",
+      "text": "Test centres"
+    },
+    {
+      "href": "/csca/exam-day-checklist",
+      "text": "Exam day checklist"
+    },
+    {
+      "href": "/guides",
+      "text": "Syllabus guides"
+    },
+    {
+      "href": "/guides/csca-exam-2027-complete-guide",
+      "text": "Student guide"
+    },
+    {
+      "href": "/china-scholarships",
+      "text": "China scholarships"
+    },
+    {
+      "href": "/csca/mock-test",
+      "text": "Free CSCA mock test"
+    },
+    {
+      "href": "/csca/syllabus",
+      "text": "CSCA syllabus"
+    },
+    {
+      "href": "/csca/how-hard-is-the-csca",
+      "text": "How hard is the CSCA?"
+    },
+    {
+      "href": "/csca/study-plan-12-week",
+      "text": "12-week study plan"
+    },
+    {
+      "href": "/csca/common-mistakes",
+      "text": "Common mistakes"
+    },
+    {
+      "href": "/csca/retake-policy",
+      "text": "Retake policy"
+    },
+    {
+      "href": "/csca/result-day",
+      "text": "Result day"
+    },
+    {
+      "href": "/csca/scoring-and-cutoffs",
+      "text": "Scoring & cutoffs"
+    },
+    {
+      "href": "/csca/tutor",
+      "text": "CSCA tutor"
+    },
+    {
+      "href": "/csca/2027-essentials",
+      "text": "2027 essentials"
+    },
+    {
+      "href": "/csca/africa",
+      "text": "Africa"
+    },
+    {
+      "href": "/csca/asean",
+      "text": "ASEAN"
+    },
+    {
+      "href": "/csca/central-asia",
+      "text": "Central Asia"
+    },
+    {
+      "href": "/csca/vs-other-exams",
+      "text": "vs other exams"
+    },
+    {
+      "href": "/login",
+      "text": "Sign in"
+    },
+    {
+      "href": "/faq",
+      "text": "Frequently asked"
+    },
+    {
+      "href": "/contact",
+      "text": "Contact us"
+    },
+    {
+      "href": "/how-to-use",
+      "text": "How to use"
+    },
+    {
+      "href": "/legal/terms",
+      "text": "Terms of use"
+    },
+    {
+      "href": "/legal/privacy",
+      "text": "Privacy"
+    },
+    {
+      "href": "/legal/payments",
+      "text": "Payments and billing"
+    },
+    {
+      "href": "/legal/refund",
+      "text": "Refunds"
+    }
+  ],
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "@id": "https://cscaprep.academy/#website",
+      "name": "CSCA Prep Academy",
+      "url": "https://cscaprep.academy"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "@id": "https://cscaprep.academy#organization",
+      "name": "CSCA Prep Academy",
+      "url": "https://cscaprep.academy",
+      "logo": "https://cscaprep.academy/logo.png",
+      "description": "An independent free CSCA practice platform and WhatsApp study community for international undergraduate applicants.",
+      "alternateName": [
+        "CSCA Prep",
+        "cscaprep.academy"
+      ],
+      "sameAs": [
+        "https://github.com/mlsjahidcn-sudo/CSCA-2027-Updated"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer support",
+        "url": "https://cscaprep.academy/contact"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "SpeakableSpecification",
+      "cssSelector": [
+        "[data-speakable]"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://cscaprep.academy/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Syllabus guides",
+          "item": "https://cscaprep.academy/guides"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Mathematics",
+          "item": "https://cscaprep.academy/guides/mathematics"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Course",
+      "name": "CSCA Mathematics — full syllabus guide",
+      "description": "The CSCA Mathematics syllabus, topic by topic. Sets and inequalities, functions, geometry and algebra, and probability and statistics — what each one covers, what the exam tests, and the misconceptions it tries to catch.",
+      "provider": {
+        "@type": "Organization",
+        "name": "CSCA Prep Academy",
+        "url": "https://cscaprep.academy"
+      },
+      "url": "https://cscaprep.academy/guides/mathematics",
+      "inLanguage": "en",
+      "timeRequired": "PT60M",
+      "educationalLevel": "Undergraduate admission",
+      "coursePrerequisites": "High-school level familiarity with mathematics."
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://cscaprep.academy/guides/mathematics#webpage",
+      "name": "Mathematics — the CSCA syllabus, topic by topic.",
+      "description": "The CSCA Mathematics syllabus, topic by topic. Sets and inequalities, functions, geometry and algebra, and probability and statistics — what each one covers, what the exam tests, and the misconceptions it tries to catch.",
+      "url": "https://cscaprep.academy/guides/mathematics",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cscaprep.academy/#website"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "contentUrl": "https://cscaprep.academy/opengraph-image"
+      }
+    }
+  ],
+  "capture": "cmwe8z6nv",
+  "site": "cscaprep-academy"
+}

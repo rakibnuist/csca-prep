@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220" font-family="Helvetica, Arial, sans-serif">
+  <rect width="320" height="220" fill="#fbfaf7"/>
+  <circle cx="160" cy="110" r="70" fill="none" stroke="#d4d8dd" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <circle cx="160" cy="110" r="8" fill="#101418"/>
+  <circle cx="230" cy="110" r="7" fill="#d31d3c"/>
+  <line x1="160" y1="110" x2="230" y2="110" stroke="#0a7a53" stroke-width="2"/>
+  <text x="192" y="104" font-size="10" fill="#0a7a53">r = 1000 m</text>
+  <line x1="230" y1="103" x2="230" y2="60" stroke="#a9791c" stroke-width="2" marker-end="url(#o)"/>
+  <text x="236" y="72" font-size="10" fill="#a9791c">v = 200 m/s</text>
+  <defs><marker id="o" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#a9791c"/></marker></defs>
+</svg>

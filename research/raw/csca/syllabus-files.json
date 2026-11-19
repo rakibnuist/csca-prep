@@ -1,0 +1,30 @@
+{
+  "source": "https://csca.cn/about/testprep",
+  "fetchedAt": "2026-11-13",
+  "files": [
+    {
+      "fileName": "CSCA考试大纲-物理-2025版.pdf",
+      "fileUrl": "01a95997c25d577fd79e53c158a774982dbe9166f412b2cfed9a2c3ebf441b7525b5ee468b959316e92789f9d6b7cdf8",
+      "fileSize": "0.15",
+      "fileType": "pdf"
+    },
+    {
+      "fileName": "CSCA考试大纲-化学-2025版.pdf",
+      "fileUrl": "01a95997c25d577fd79e53c158a77498672ee751efbc82e83cf6540e83d69c9325b5ee468b959316e92789f9d6b7cdf8",
+      "fileSize": "0.14",
+      "fileType": "pdf"
+    },
+    {
+      "fileName": "CSCA考试大纲-数学-2025版.pdf",
+      "fileUrl": "01a95997c25d577fd79e53c158a774988bf07ee92d4a3d6fb62f81123b271a7025b5ee468b959316e92789f9d6b7cdf8",
+      "fileSize": "0.12",
+      "fileType": "pdf"
+    },
+    {
+      "fileName": "CSCA Mathematics Examination Syllabus-2025.pdf",
+      "fileUrl": "01a95997c25d577fd79e53c158a77498ac6c542ba74129b82f9762d98f2d8dae25b5ee468b959316e92789f9d6b7cdf8",
+      "fileSize": "0.12",
+      "fileType": "pdf"
+    }
+  ]
+}

@@ -1,13 +1,16 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { EXAM_SITTINGS } from "@/lib/site";
+import { EXAM_SITTINGS, nextSitting as fallbackNextSitting } from "@/lib/site";
 
-function nextSitting() {
-  const now = Date.now();
+function sittingStartMs(sitting: (typeof EXAM_SITTINGS)[number]) {
+  return new Date(`${sitting.date}T${sitting.block}:00+08:00`).getTime();
+}
+
+function nextSitting(referenceNow: number | null) {
+  if (referenceNow === null) return fallbackNextSitting();
   const upcoming = EXAM_SITTINGS.filter(
-    (sitting) =>
-      sitting.status !== "closed" && new Date(`${sitting.date}T09:00:00+08:00`).getTime() > now,
+    (sitting) => sitting.status !== "closed" && sittingStartMs(sitting) > referenceNow,
   ).sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
 
   return upcoming.length > 0 ? upcoming[0] : EXAM_SITTINGS[EXAM_SITTINGS.length - 1];
@@ -23,17 +26,28 @@ function split(ms: number) {
   };
 }
 
-export function ExamCountdown({ compact = false }: { compact?: boolean }) {
+export function ExamCountdown({
+  compact = false,
+  minimal = false,
+}: {
+  compact?: boolean;
+  minimal?: boolean;
+}) {
   const [now, setNow] = useState<number | null>(null);
-  const sitting = nextSitting();
+  const sitting = nextSitting(now);
 
   useEffect(() => {
-    setNow(Date.now());
+    // The first tick is deferred by a tick so the effect body never sets
+    // state synchronously (React Compiler "set-state-in-effect" rule).
+    const start = setTimeout(() => setNow(Date.now()), 0);
     const id = setInterval(() => setNow(Date.now()), 1000);
-    return () => clearInterval(id);
+    return () => {
+      clearTimeout(start);
+      clearInterval(id);
+    };
   }, []);
 
-  const target = new Date(`${sitting.date}T09:00:00+08:00`).getTime();
+  const target = sittingStartMs(sitting);
   const parts = now === null ? null : split(target - now);
 
   const cells = [
@@ -42,6 +56,18 @@ export function ExamCountdown({ compact = false }: { compact?: boolean }) {
     { value: parts?.minutes, label: "min" },
     { value: parts?.seconds, label: "sec" },
   ];
+
+  if (minimal) {
+    return (
+      <span
+        className="inline-flex items-center gap-1.5 text-[11px] font-medium whitespace-nowrap text-ink-soft"
+        title={`Next sitting: ${sitting.label}`}
+      >
+        <span className="inline-block h-1.5 w-1.5 rounded-full bg-jade" />
+        {parts ? `${parts.days}d ${parts.hours}h` : "—"}
+      </span>
+    );
+  }
 
   if (compact) {
     return (
@@ -58,18 +84,23 @@ export function ExamCountdown({ compact = false }: { compact?: boolean }) {
   }
 
   return (
-    <div className="rounded-xl border border-line bg-card/70 p-3 backdrop-blur">
-      <div className="flex flex-col gap-0.5">
-        <span className="eyebrow">Next sitting</span>
-        <span className="text-[12.5px] font-medium text-ink">{sitting.label}</span>
+    <div className="rounded-2xl border border-line bg-white p-3.5 shadow-sm">
+      <div className="flex items-center justify-between gap-2">
+        <div className="flex items-center gap-1.5">
+          <span className="h-2 w-2 animate-pulse rounded-full bg-jade" />
+          <span className="text-[10.5px] font-semibold tracking-[0.1em] text-indigo uppercase">
+            Next sitting
+          </span>
+        </div>
+        <span className="text-[12px] font-semibold text-ink">{sitting.label}</span>
       </div>
-      <div className="mt-2 grid grid-cols-4 gap-1.5">
+      <div className="mt-2.5 grid grid-cols-4 gap-1.5">
         {cells.map((cell) => (
-          <div key={cell.label} className="rounded-lg bg-paper-deep/70 px-1 py-2 text-center">
-            <p className="font-display text-xl leading-none text-ink tabular">
+          <div key={cell.label} className="rounded-xl border border-line/70 bg-paper px-1 py-2 text-center">
+            <p className="font-display text-lg font-bold leading-none text-ink tabular">
               {cell.value === undefined ? "—" : String(cell.value).padStart(2, "0")}
             </p>
-            <p className="mt-1 text-[9.5px] tracking-[0.12em] text-ink-faint uppercase">
+            <p className="mt-1 text-[9px] font-medium tracking-[0.1em] text-ink-faint uppercase">
               {cell.label}
             </p>
           </div>

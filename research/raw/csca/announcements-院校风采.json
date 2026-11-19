@@ -1,0 +1,36 @@
+{
+  "source": "https://csca.cn/home · GET /sv/open/getGGXX?xxlx=院校风采",
+  "operation": "csca.announcements",
+  "fetchedAt": "2026-11-13T00:34:21+00:00",
+  "category": "院校风采",
+  "count": 3,
+  "items": [
+    {
+      "id": "2100053176048492545",
+      "type": "院校风采",
+      "title": "天津大学",
+      "titleEn": "Tianjin University",
+      "date": "2026-09-16T10:44:28+08:00",
+      "content": "化学工程与工艺、计算机科学与技术、建筑学、药学、工商管理、软件工程、汉语言专业等",
+      "contentEn": "Chemical Eng., Computer Science & Software Eng., Architecture, Pharmacy, Business Admin., Chinese Lang., etc."
+    },
+    {
+      "id": "2102277397801725954",
+      "type": "院校风采",
+      "title": "南京师范大学",
+      "titleEn": "Nanjing Normal University",
+      "date": "2026-09-22T14:02:44+08:00",
+      "content": "地理学、地理信息科学、中国语言文学、英语、美术学、思想政治教育、应用心理学、教育学",
+      "contentEn": "Geography, Geographic Information Science, Chinese Language & Literature, English, Fine Arts, Ideological & Political Education, Applied Psychology, Education"
+    },
+    {
+      "id": "5842744191484428352",
+      "type": "院校风采",
+      "title": "同济大学",
+      "titleEn": "Tongji University",
+      "date": "2026-07-26T00:17:58+08:00",
+      "content": "土木工程、建筑学、城乡规划、环境科学与工程、交通运输、机械工程、测绘科学与技术、人工智能、智能建造、临床医学",
+      "contentEn": "Civil/Mechanical/Transportation Eng., Architecture & Urban Planning, Env. Sci. & Eng., Geomatics, AI, Intelligent Construction, Clinical Med."
+    }
+  ]
+}

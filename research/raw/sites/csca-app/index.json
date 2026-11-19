@@ -1,0 +1,13 @@
+{
+  "site": "csca-app",
+  "source": "https://csca.app/en",
+  "pages": [
+    {
+      "slug": "en",
+      "url": "https://csca.app/en",
+      "title": "CSCA Exam 2026 — Put Study Time Where It Raises Your Score · Free Mocks | CSCA Academy",
+      "status": 200,
+      "chars": 3978
+    }
+  ]
+}

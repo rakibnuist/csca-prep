@@ -7,26 +7,122 @@ datasource db {
 }
 
 // ─────────────────────────── People ───────────────────────────
-
 model User {
   id           String   @id @default(cuid())
   email        String   @unique
   password     String
   name         String?
   role         String   @default("STUDENT") // STUDENT | ADMIN
+  status       String   @default("APPROVED") // PENDING | APPROVED | REJECTED
+  reviewedAt   DateTime?
+  reviewedBy   String?
+  emailVerifiedAt       DateTime?
+  whatsappVerifiedAt    DateTime?
   country      String?
   whatsapp     String?
-  track        String? // HUMANITIES | STEM
+  track        String? // HUMANITIES | STEM (CN sub-track)
   targetYear   Int      @default(2027)
-  testLanguage String   @default("en") // interface language: en | zh
+  testLanguage String   @default("en") // legacy interface language (deprecated → uiLocale)
+  uiLocale     String   @default("en") // interface language: en | zh
+  teachingTrack String  @default("EN") // EN | CN — which exams this student sits
+  plan         String   @default("FREE") // FREE | PRO | LIFETIME
+  proExpiresAt DateTime?
+  // Bumped to invalidate every issued session (password change, forced
+  // logout). The value is embedded in the JWT and checked on every request.
+  tokenVersion Int      @default(0)
   createdAt    DateTime @default(now())
   updatedAt    DateTime @updatedAt
 
-  attempts  Attempt[]
-  reviews   ReviewItem[]
-  planTasks PlanTask[]
+  attempts    Attempt[]
+  reviews     ReviewItem[]
+  planTasks   PlanTask[]
+  redemptions Redemption[]
+  conceptProgress ConceptProgress[]
+  dailyQuizCompletions DailyQuizCompletion[]
+  practiceActivities   PracticeActivity[]
+
+  // Engagement / leaderboard (opt-in)
+  leaderboardOptIn Boolean @default(false)
+  leaderboardName  String?
 
   @@index([createdAt])
+  @@index([plan])
+  @@index([status])
+}
+
+// ─────────────────────────── Learning ───────────────────────────
+
+model ConceptProgress {
+  id          String   @id @default(cuid())
+  userId      String
+  topicCode   String
+  completedAt DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, topicCode])
+  @@index([userId])
+}
+
+// ─────────────────────────── Rate limiting ───────────────────────────
+
+/// Fixed-window counters for abuse controls (sign-in, OTP, lead capture).
+/// Backed by Postgres so a restart or a second container does not reset a
+/// throttle. Rows are tiny and are overwritten in place.
+model RateLimit {
+  key       String   @id // e.g. "signin:203.0.113.7" or "signin:203.0.113.7:user@x.com"
+  count     Int      @default(0)
+  resetAt   DateTime
+  updatedAt DateTime @updatedAt
+
+  @@index([resetAt])
+}
+
+// ─────────────────────────── Verification codes ───────────────────────────
+
+model VerificationCode {
+  id         String    @id @default(cuid())
+  purpose    String    // SIGNUP | RESET
+  target     String    // lowercased email the code was sent to
+  codeHash   String
+  payload    Json?     // SIGNUP: the hashed signup payload awaiting verification
+  expiresAt  DateTime
+  attempts   Int       @default(0)
+  consumedAt DateTime?
+  createdAt  DateTime  @default(now())
+
+  @@index([target, purpose])
+}
+
+// ─────────────────────────── Coupons ───────────────────────────
+
+model Coupon {
+  id          String   @id @default(cuid())
+  code        String   @unique
+  kind        String   @default("PRO_MONTHS") // PRO_MONTHS | LIFETIME | PERCENT
+  value       Int      @default(1) // months for PRO_MONTHS, 0 for LIFETIME, percent for PERCENT
+  maxUses     Int      @default(100)
+  usedCount   Int      @default(0)
+  active      Boolean  @default(true)
+  expiresAt   DateTime?
+  note        String?
+  createdAt   DateTime @default(now())
+
+  redemptions Redemption[]
+
+  @@index([active])
+}
+
+model Redemption {
+  id         String   @id @default(cuid())
+  couponId   String
+  userId     String
+  createdAt  DateTime @default(now())
+
+  coupon Coupon @relation(fields: [couponId], references: [id], onDelete: Cascade)
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([couponId, userId])
 }
 
 // ─────────────────────────── Curriculum ───────────────────────────
@@ -105,7 +201,9 @@ model Mock {
   slug          String   @unique
   subjectCode   String
   title         String
+  titleZh       String?
   subtitle      String?
+  subtitleZh    String?
   year          Int      @default(2027)
   paper         String?
   durationMin   Int
@@ -140,6 +238,8 @@ model Attempt {
   id              String    @id @default(cuid())
   userId          String
   mockId          String
+  /** Teaching section the paper was started from: EN | ZH. */
+  track           String    @default("EN")
   status          String    @default("IN_PROGRESS") // IN_PROGRESS | SUBMITTED
   answers         Json      @default("{}")
   flagged         String[]  @default([])
@@ -168,6 +268,8 @@ model ReviewItem {
   correctCount Int      @default(0)
   wrongCount   Int      @default(0)
   streak       Int      @default(0)
+  bookmarked   Boolean  @default(false)
+  note         String?
   lastSeenAt   DateTime @default(now())
   nextReviewAt DateTime @default(now())
 
@@ -176,6 +278,7 @@ model ReviewItem {
 
   @@unique([userId, questionId])
   @@index([userId, nextReviewAt])
+  @@index([userId, bookmarked])
 }
 
 // ─────────────────────────── Study plan ───────────────────────────
@@ -194,6 +297,47 @@ model PlanTask {
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   @@index([userId, phase, order])
+}
+
+// ─────────────────────────── Engagement ───────────────────────────
+
+/// One row per user per day when they complete the daily quiz. Drives streaks
+/// and feeds the leaderboard. The quiz itself is deterministic (date-seeded)
+/// so we don't store the question set.
+model DailyQuizCompletion {
+  id          String   @id @default(cuid())
+  userId      String
+  /// Canonical UTC date key, YYYY-MM-DD.
+  date        String
+  /// null = mixed subjects
+  subjectCode String?
+  correct     Int
+  total       Int
+  score       Int      // 0-100 scaled
+  completedAt DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, date])
+  @@index([date])
+  @@index([userId, completedAt])
+}
+
+/// Daily rollup of practice activity (drills, quick, review, daily quiz) for
+/// time-windowed leaderboards. Upserted per user per day.
+model PracticeActivity {
+  id                String   @id @default(cuid())
+  userId            String
+  date              String   // YYYY-MM-DD (UTC)
+  questionsAnswered Int      @default(0)
+  correct           Int      @default(0)
+  updatedAt         DateTime @updatedAt
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, date])
+  @@index([date, questionsAnswered])
+  @@index([userId, date])
 }
 
 // ─────────────────────────── Exam calendar ───────────────────────────
@@ -218,5 +362,14 @@ model Lead {
   goal      String?
   message   String?
   source    String   @default("site")
+  status    String   @default("NEW") // NEW | CONTACTED | CONVERTED | CLOSED
+  priority  String   @default("P3") // P1 | P2 | P3
+  tags      String[] @default([])
+  assignedTo String?
+  note      String?
+  updatedAt DateTime @default(now()) @updatedAt
   createdAt DateTime @default(now())
+
+  @@index([status])
+  @@index([createdAt])
 }

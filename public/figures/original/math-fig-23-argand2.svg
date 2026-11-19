@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" font-family="Helvetica, Arial, sans-serif">
+  <rect width="320" height="240" fill="#fbfaf7"/>
+  <g stroke="#d4d8dd"><line x1="20" y1="120" x2="300" y2="120"/><line x1="160" y1="20" x2="160" y2="220"/></g>
+  <line x1="160" y1="120" x2="220" y2="60" stroke="#d31d3c" stroke-width="2.2"/>
+  <line x1="160" y1="120" x2="220" y2="180" stroke="#0a7a53" stroke-width="2.2" stroke-dasharray="4 3"/>
+  <circle cx="220" cy="60" r="4" fill="#d31d3c"/><circle cx="220" cy="180" r="4" fill="#0a7a53"/>
+  <text x="226" y="56" font-size="10" fill="#d31d3c">z = 2 + 3i</text>
+  <text x="226" y="196" font-size="10" fill="#0a7a53">z̄</text>
+  <text x="306" y="123" font-size="10" fill="#6b737c">Re</text>
+  <text x="165" y="28" font-size="10" fill="#6b737c">Im</text>
+</svg>

@@ -1,33 +1,65 @@
 import type { Metadata, Viewport } from "next";
-import { Inter, Instrument_Serif, Geist_Mono } from "next/font/google";
-import "katex/dist/katex.min.css";
+import localFont from "next/font/local";
+import Script from "next/script";
 import "./globals.css";
 import { SITE } from "@/lib/site";
 
-const inter = Inter({
+/**
+ * Fonts are vendored under `src/fonts/` and loaded with `next/font/local`
+ * rather than `next/font/google`.
+ *
+ * `next/font/google` downloads the font files from fonts.googleapis.com at
+ * build time. That made `next build` fail outright whenever the build host
+ * could not reach Google — including the Docker build that runs on the
+ * Hostinger VPS. Vendoring the binaries removes that dependency entirely and
+ * keeps the fonts self-hosted (no third-party request, no GDPR surface).
+ */
+const inter = localFont({
+  src: "../fonts/Inter-Variable.woff2",
   variable: "--font-inter",
-  subsets: ["latin"],
+  weight: "100 900",
+  style: "normal",
   display: "swap",
 });
 
-const display = Instrument_Serif({
+const display = localFont({
+  src: [
+    { path: "../fonts/Sora-400.woff2", weight: "400", style: "normal" },
+    { path: "../fonts/Sora-500.woff2", weight: "500", style: "normal" },
+    { path: "../fonts/Sora-600.woff2", weight: "600", style: "normal" },
+    { path: "../fonts/Sora-700.woff2", weight: "700", style: "normal" },
+  ],
   variable: "--font-display",
-  subsets: ["latin"],
-  weight: "400",
-  style: ["normal", "italic"],
   display: "swap",
 });
 
-const mono = Geist_Mono({
+/**
+ * Editorial display face. Sora is the interface voice; the serif is the
+ * editorial voice — used for the biggest statements only (hero headline,
+ * section openers). One weight, italic included, 21 kB each: cheaper than a
+ * second sans family and far more distinctive.
+ */
+const serif = localFont({
+  src: [
+    { path: "../fonts/InstrumentSerif-400.woff2", weight: "400", style: "normal" },
+    { path: "../fonts/InstrumentSerif-400-italic.woff2", weight: "400", style: "italic" },
+  ],
+  variable: "--font-serif-editorial",
+  display: "swap",
+});
+
+const mono = localFont({
+  src: "../fonts/GeistMono-Variable.woff2",
   variable: "--font-mono",
-  subsets: ["latin"],
+  weight: "100 900",
+  style: "normal",
   display: "swap",
 });
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
   title: {
-    default: "CSCA Master — Full-length CSCA mock exams & syllabus-aligned practice",
+    default: "CSCA Exam Preparation 2026–27 — Free Mock Tests & Question Papers",
     template: "%s · CSCA Master",
   },
   description: SITE.description,
@@ -35,9 +67,12 @@ export const metadata: Metadata = {
   keywords: [
     "CSCA",
     "CSCA exam",
-    "CSCA mock test",
-    "China Scholastic Competency Assessment",
+    "CSCA exam preparation",
     "CSCA preparation",
+    "CSCA question paper",
+    "CSCA mock test",
+    "CSCA free exam",
+    "China Scholastic Competency Assessment",
     "study in China",
     "CSC scholarship",
     "CSCA mathematics",
@@ -47,18 +82,28 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "CSCA Master" }],
   creator: "CSCA Master",
-  alternates: { canonical: "/" },
+  // No global canonical: each page declares its own. A root-level "/" would
+  // make every page that forgets one — auth, admin, the student app — claim to
+  // be the homepage.
+  // Machine-readable index for AI answer engines. Without this link an AI
+  // crawler that lands on the homepage has no way to discover /llms.txt —
+  // Cloudflare's AI Crawl Control showed crawlers arriving on "/" but never
+  // on the structured file.
+  other: {
+    "llms-txt": `${SITE.url}/llms.txt`,
+    "llms-full-txt": `${SITE.url}/llms-full.txt`,
+  },
   openGraph: {
     type: "website",
     locale: "en_US",
     url: SITE.url,
     siteName: SITE.name,
-    title: "CSCA Master — the exam-accurate CSCA preparation platform",
+    title: "CSCA Exam Preparation 2026–27 — Free Mock Tests & Question Papers",
     description: SITE.description,
   },
   twitter: {
     card: "summary_large_image",
-    title: "CSCA Master — the exam-accurate CSCA preparation platform",
+    title: "CSCA Exam Preparation 2026–27 — Free Mock Tests & Question Papers",
     description: SITE.description,
   },
   robots: {
@@ -67,45 +112,55 @@ export const metadata: Metadata = {
     googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1 },
   },
   category: "education",
+  /**
+   * Search-engine ownership proofs.
+   *
+   * Set the value in the environment (Vercel/Hostinger env vars or .env.local)
+   * and the meta tag appears in <head> on every page — no code change, no
+   * secret in the repository. Empty values are omitted entirely so an
+   * unconfigured deployment does not emit an empty tag.
+   */
+  verification: {
+    google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || undefined,
+    other: {
+      ...(process.env.NEXT_PUBLIC_BING_SITE_VERIFICATION
+        ? { "msvalidate.01": process.env.NEXT_PUBLIC_BING_SITE_VERIFICATION }
+        : {}),
+      ...(process.env.NEXT_PUBLIC_YANDEX_VERIFICATION
+        ? { "yandex-verification": process.env.NEXT_PUBLIC_YANDEX_VERIFICATION }
+        : {}),
+    },
+  },
 };
 
 export const viewport: Viewport = {
-  themeColor: "#fbf7f0",
+  themeColor: "#faf8f3",
   width: "device-width",
   initialScale: 1,
 };
 
-const ORGANISATION_JSONLD = {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Organization",
-      "@id": `${SITE.url}/#organization`,
-      name: SITE.name,
-      url: SITE.url,
-      description: SITE.description,
-      email: SITE.email,
-    },
-    {
-      "@type": "WebSite",
-      "@id": `${SITE.url}/#website`,
-      url: SITE.url,
-      name: SITE.name,
-      description: SITE.description,
-      publisher: { "@id": `${SITE.url}/#organization` },
-      inLanguage: "en",
-    },
-  ],
-};
-
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={`${inter.variable} ${display.variable} ${mono.variable} font-sans`}>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(ORGANISATION_JSONLD) }}
-        />
+    <html lang="en" data-scroll-behavior="smooth" suppressHydrationWarning>
+      <head>
+        {/*
+          Machine-readable index for AI answer engines. Without this link an
+          AI crawler that lands on the homepage has no way to discover
+          /llms.txt — Cloudflare's AI Crawl Control showed crawlers arriving
+          on "/" but never on the structured file.
+        */}
+        <link rel="alternate" type="text/plain" title="llms.txt" href="/llms.txt" />
+        <link rel="alternate" type="text/plain" title="llms-full.txt" href="/llms-full.txt" />
+      </head>
+      <body className={`${inter.variable} ${display.variable} ${serif.variable} ${mono.variable} font-sans`}>
+        {/*
+          Marks JavaScript as available before hydration. Scroll-reveal animations
+          only hide themselves behind `html.js`, so crawlers and no-JS visitors
+          still receive the complete content.
+        */}
+        <Script id="csca-js-flag" strategy="beforeInteractive">
+          {'document.documentElement.classList.add("js")'}
+        </Script>
         {children}
       </body>
     </html>

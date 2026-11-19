@@ -1,0 +1,281 @@
+{
+  "url": "https://www.cscaprepare.com/subjects",
+  "finalUrl": "https://www.cscaprepare.com/subjects",
+  "status": 200,
+  "title": "CSCA Subjects | CSCA Preparation",
+  "description": "Explore the five CSCA subject pathways and understand how major, language, and application route shape subject selection.",
+  "headings": [
+    {
+      "level": 1,
+      "text": "The five CSCA subject pathways"
+    },
+    {
+      "level": 2,
+      "text": "Browse the five subject pathways"
+    },
+    {
+      "level": 3,
+      "text": "Math"
+    },
+    {
+      "level": 3,
+      "text": "Physics"
+    },
+    {
+      "level": 3,
+      "text": "Chemistry"
+    },
+    {
+      "level": 3,
+      "text": "Humanities Chinese"
+    },
+    {
+      "level": 3,
+      "text": "STEM Chinese"
+    },
+    {
+      "level": 2,
+      "text": "How subject selection usually works"
+    },
+    {
+      "level": 2,
+      "text": "Where to go next"
+    },
+    {
+      "level": 3,
+      "text": "Syllabus"
+    },
+    {
+      "level": 3,
+      "text": "Practice"
+    },
+    {
+      "level": 3,
+      "text": "Mock Tests"
+    },
+    {
+      "level": 3,
+      "text": "Choose Subjects"
+    },
+    {
+      "level": 3,
+      "text": "Exam Info"
+    },
+    {
+      "level": 3,
+      "text": "Subjects"
+    },
+    {
+      "level": 3,
+      "text": "Platform"
+    },
+    {
+      "level": 3,
+      "text": "Legal"
+    }
+  ],
+  "text": "csca prepare\nPracticeMock TestsSyllabusSubject RouteUniversities\n\nSelect language\nENIDVIRU▾\n\nHome/Subjects\n\nSubjects\n\nThe five CSCA subject pathways\n\nUse the subject overview to understand the structure of the exam before moving into syllabus reading, practice, mock tests, and route-specific decisions.\n\nBrowse the five subject pathways\n\nThese subject cards are the main entrance. Go straight into the subject that matches your route, then continue into syllabus pages, mock tests, and route-specific decisions.\n\nSubject\n\nMath\n\nCore subject for most applicants, with a strong focus on foundational quantitative ability.\n\n60 min · 48 questions · CN/EN\n\nSubject\n\nPhysics\n\nOften required for engineering, computer science, and many STEM pathways.\n\n60 min · 48 questions · CN/EN\n\nSubject\n\nChemistry\n\nImportant for medicine, biological sciences, and chemistry-related programs.\n\n60 min · 48 questions · CN/EN\n\nSubject\n\nHumanities Chinese\n\nFor government-scholarship or Chinese-taught humanities, arts, law, education, and social science routes.\n\n90 min · objective questions · CN\n\nSubject\n\nSTEM Chinese\n\nFor government-scholarship or Chinese-taught STEM, engineering, science, and medicine pathways.\n\n90 min · objective questions · CN\n\nCore Structure\n\n5 subject pathways\n\nGeneral Logic\n\nMajor + language + route shape subject needs\n\nBest Use\n\nStart here before route-specific planning\n\nHow subject selection usually works\n\nMath is one of the strongest anchor subjects across many routes.\n\nScience-heavy routes usually make physics or chemistry more relevant.\n\nChinese Government Scholarship undergraduate applicants take Professional Chinese regardless of teaching language; other Chinese-taught routes often add it as an academic requirement.\n\nWhere to go next\n\nOnce a user understands the subject structure, the next move should usually be syllabus reading, practice, or mock-test preparation. Route tools still matter, but they should not overpower the prep path.\n\nSyllabus\n\nRead the official syllabus structure first if you want to understand exactly what each CSCA subject is designed to test.\nExplore →\nPractice\n\nMove into browser-based practice when you want a lighter repetition layer before full timed mock papers.\nExplore →\nMock Tests\n\nUse subject mock tests when your route is already clear and you want a more exam-like paper experience.\nExplore →\nChoose Subjects\n\nMove into decision logic only when your major, language, or scholarship route is still unclear.\nExplore →\n\nA clearer path to CSCA subjects, exam logistics, technical readiness, and preparation planning for international students.\n\nCustomer support: Contact page\n\nExam Info\n\nWhat Is CSCA\n\nSyllabus\n\nUniversities\n\nScholarships\n\nExam Calendar\n\nRegistration\n\nExam Formats\n\nExam Dates\n\nFees\n\nSubjects\n\nMath\n\nPhysics\n\nChemistry\n\nHumanities Chinese\n\nPlatform\n\nAbout\n\nContact\n\nChoose Subjects\n\nMock Tests\n\nPractice\n\nAI Assistant\n\nUniversities\n\nScholarships\n\nResources\n\nLegal\n\nPrivacy Policy\n\nTerms\n\nShop\n\nThis is an independent preparation platform. It is not affiliated with, authorized by, endorsed by, or sponsored by CSCA, CSC, or China’s Ministry of Education. Verify registration and policy information on the official CSCA website.",
+  "links": [
+    {
+      "href": "/",
+      "text": "csca prepare"
+    },
+    {
+      "href": "/practice",
+      "text": "Practice"
+    },
+    {
+      "href": "/mock-test",
+      "text": "Mock Tests"
+    },
+    {
+      "href": "/syllabus",
+      "text": "Syllabus"
+    },
+    {
+      "href": "/tools/subject-picker",
+      "text": "Subject Route"
+    },
+    {
+      "href": "/universities",
+      "text": "Universities"
+    },
+    {
+      "href": "/",
+      "text": "Home"
+    },
+    {
+      "href": "/subjects/math",
+      "text": "SubjectMathCore subject for most applicants, with a strong focus on foundational quantitative ability.60 min · 48 questi"
+    },
+    {
+      "href": "/subjects/physics",
+      "text": "SubjectPhysicsOften required for engineering, computer science, and many STEM pathways.60 min · 48 questions · CN/EN"
+    },
+    {
+      "href": "/subjects/chemistry",
+      "text": "SubjectChemistryImportant for medicine, biological sciences, and chemistry-related programs.60 min · 48 questions · CN/E"
+    },
+    {
+      "href": "/subjects/humanities-chinese",
+      "text": "SubjectHumanities ChineseFor government-scholarship or Chinese-taught humanities, arts, law, education, and social scien"
+    },
+    {
+      "href": "/subjects/stem-chinese",
+      "text": "SubjectSTEM ChineseFor government-scholarship or Chinese-taught STEM, engineering, science, and medicine pathways.90 min"
+    },
+    {
+      "href": "/syllabus",
+      "text": "SyllabusRead the official syllabus structure first if you want to understand exactly what each CSCA subject is designed "
+    },
+    {
+      "href": "/practice",
+      "text": "PracticeMove into browser-based practice when you want a lighter repetition layer before full timed mock papers.Explore "
+    },
+    {
+      "href": "/mock-test",
+      "text": "Mock TestsUse subject mock tests when your route is already clear and you want a more exam-like paper experience.Explore"
+    },
+    {
+      "href": "/choose-subjects",
+      "text": "Choose SubjectsMove into decision logic only when your major, language, or scholarship route is still unclear.Explore →"
+    },
+    {
+      "href": "/contact",
+      "text": "Contact page"
+    },
+    {
+      "href": "/what-is-csca",
+      "text": "What Is CSCA"
+    },
+    {
+      "href": "/syllabus",
+      "text": "Syllabus"
+    },
+    {
+      "href": "/universities",
+      "text": "Universities"
+    },
+    {
+      "href": "/scholarships",
+      "text": "Scholarships"
+    },
+    {
+      "href": "/exam-calendar",
+      "text": "Exam Calendar"
+    },
+    {
+      "href": "/csca-registration",
+      "text": "Registration"
+    },
+    {
+      "href": "/csca-exam-formats",
+      "text": "Exam Formats"
+    },
+    {
+      "href": "/csca-exam-dates",
+      "text": "Exam Dates"
+    },
+    {
+      "href": "/csca-fees",
+      "text": "Fees"
+    },
+    {
+      "href": "/subjects/math",
+      "text": "Math"
+    },
+    {
+      "href": "/subjects/physics",
+      "text": "Physics"
+    },
+    {
+      "href": "/subjects/chemistry",
+      "text": "Chemistry"
+    },
+    {
+      "href": "/subjects/humanities-chinese",
+      "text": "Humanities Chinese"
+    },
+    {
+      "href": "/about",
+      "text": "About"
+    },
+    {
+      "href": "/contact",
+      "text": "Contact"
+    },
+    {
+      "href": "/choose-subjects",
+      "text": "Choose Subjects"
+    },
+    {
+      "href": "/mock-test",
+      "text": "Mock Tests"
+    },
+    {
+      "href": "/practice",
+      "text": "Practice"
+    },
+    {
+      "href": "/ai-assistant",
+      "text": "AI Assistant"
+    },
+    {
+      "href": "/universities",
+      "text": "Universities"
+    },
+    {
+      "href": "/scholarships",
+      "text": "Scholarships"
+    },
+    {
+      "href": "/resources",
+      "text": "Resources"
+    },
+    {
+      "href": "/privacy",
+      "text": "Privacy Policy"
+    },
+    {
+      "href": "/terms",
+      "text": "Terms"
+    },
+    {
+      "href": "/shop",
+      "text": "Shop"
+    },
+    {
+      "href": "https://csca.cn/home",
+      "text": "the official CSCA website"
+    }
+  ],
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "CSCA Subjects",
+      "description": "Explore the five CSCA subject pathways and understand how major, language, and application route shape subject selection.",
+      "url": "https://www.cscaprepare.com/subjects"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.cscaprepare.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Subjects",
+          "item": "https://www.cscaprepare.com/subjects"
+        }
+      ]
+    }
+  ],
+  "capture": "cmwe910yq",
+  "site": "cscaprepare"
+}

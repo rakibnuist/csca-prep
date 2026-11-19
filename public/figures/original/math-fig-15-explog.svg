@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" font-family="Helvetica, Arial, sans-serif">
+  <rect width="320" height="240" fill="#fbfaf7"/>
+  <g stroke="#d4d8dd"><line x1="30" y1="40" x2="30" y2="200"/><line x1="30" y1="200" x2="300" y2="200"/></g>
+  <path d="M34 196 Q150 190 195 45" fill="none" stroke="#d31d3c" stroke-width="2.6"/>
+  <path d="M70 45 Q150 120 290 195" fill="none" stroke="#0a7a53" stroke-width="2.6" stroke-dasharray="5 4"/>
+  <circle cx="34" cy="196" r="3" fill="#d31d3c"/>
+  <text x="200" y="60" font-size="10" fill="#d31d3c">y = 2ˣ</text>
+  <text x="210" y="150" font-size="10" fill="#0a7a53">y = log₂x</text>
+  <text x="306" y="203" font-size="10" fill="#6b737c">x</text>
+</svg>

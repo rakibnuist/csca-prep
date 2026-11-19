@@ -3,9 +3,10 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { CheckCircle2, Eye, EyeOff, ArrowRight } from "lucide-react";
+import { ArrowRight, CheckCircle2, Eye, EyeOff, RotateCcw, XCircle } from "lucide-react";
 import { MathText } from "@/components/math-text";
 import { cn } from "@/lib/utils";
+import { t } from "@/lib/i18n";
 
 export type OfficialQaQuestion = {
   id: string;
@@ -30,44 +31,111 @@ export function OfficialQaBrowser({
   title,
   subjectName,
   paperNote,
+  language = "en",
+  mocksHref = "/app/mocks",
 }: {
   questions: OfficialQaQuestion[];
   title: string;
   subjectName: string;
   paperNote: string;
+  /** Fixed by the teaching track: only one language is shown. */
+  language?: "en" | "zh";
+  /** Keeps the timed-mock link inside the same teaching section. */
+  mocksHref?: string;
 }) {
-  const [reveal, setReveal] = useState(true);
+  const [revealAll, setRevealAll] = useState(false);
+  const [picked, setPicked] = useState<Record<string, number>>({});
+  const [revealedIds, setRevealedIds] = useState<Record<string, boolean>>({});
+  const showZh = language === "zh";
+
+  const checkedCount = Object.keys(picked).length;
+  const correctCount = questions.filter((q) => picked[q.id] === q.correctIndex).length;
+
+  const choose = (questionId: string, optionIndex: number) => {
+    setPicked((previous) => ({ ...previous, [questionId]: optionIndex }));
+  };
+
+  const toggleQuestionReveal = (questionId: string) => {
+    const isCurrentlyShown = Boolean(revealedIds[questionId]) || picked[questionId] !== undefined;
+    if (isCurrentlyShown) {
+      setRevealedIds((previous) => {
+        const next = { ...previous };
+        delete next[questionId];
+        return next;
+      });
+      setPicked((previous) => {
+        if (previous[questionId] === undefined) return previous;
+        const next = { ...previous };
+        delete next[questionId];
+        return next;
+      });
+    } else {
+      setRevealedIds((previous) => ({ ...previous, [questionId]: true }));
+    }
+  };
+
+  const resetSelfTest = () => {
+    setPicked({});
+    setRevealedIds({});
+  };
+
+  const toggleRevealAll = () => {
+    setRevealAll((current) => {
+      if (current) setRevealedIds({});
+      return !current;
+    });
+  };
 
   return (
-    <div className="grid gap-6 lg:grid-cols-[1fr_260px]">
-      <div>
+    <div className="grid grid-cols-1 gap-6 lg:grid-cols-[minmax(0,1fr)_260px]">
+      <div className="min-w-0">
         <div className="flex flex-wrap items-center justify-between gap-3">
-          <div>
+          <div className="min-w-0 flex-1">
             <p className="text-[12.5px] font-medium text-ink">{title}</p>
             <p className="text-[11px] text-ink-faint">
-              {subjectName} · {questions.length} questions · answer key &amp; analysis
+              {subjectName} · {questions.length} {t(language, "questions")} ·{" "}
+              {showZh ? "中文题目与解析（点击选项可自测）" : "English paper text · click an option to self-test"}
             </p>
           </div>
-          <button
-            type="button"
-            onClick={() => setReveal((value) => !value)}
-            className={cn(
-              "inline-flex h-9 items-center gap-1.5 rounded-lg border px-3 text-[12px] font-medium transition",
-              reveal
-                ? "border-line-strong bg-card text-ink hover:border-ink/30"
-                : "border-vermillion bg-vermillion text-paper",
-            )}
-          >
-            {reveal ? (
+          <div className="flex flex-wrap items-center gap-2">
+            {checkedCount > 0 && (
               <>
-                <EyeOff className="h-3.5 w-3.5" /> Hide answers
-              </>
-            ) : (
-              <>
-                <Eye className="h-3.5 w-3.5" /> Show answers
+                <span className="inline-flex h-9 items-center rounded-lg border border-jade/30 bg-jade-soft/70 px-3 text-[11.5px] font-medium text-jade tabular">
+                  {showZh
+                    ? `已自测 ${checkedCount}/${questions.length} · 答对 ${correctCount}`
+                    : `Self-tested ${checkedCount}/${questions.length} · ${correctCount} correct`}
+                </span>
+                <button
+                  type="button"
+                  onClick={resetSelfTest}
+                  className="inline-flex h-9 items-center gap-1 rounded-lg border border-line-strong bg-card px-2.5 text-[11.5px] font-medium text-ink-soft transition hover:border-ink/30 hover:text-ink"
+                >
+                  <RotateCcw className="h-3.5 w-3.5" />
+                  {showZh ? "重置" : "Reset"}
+                </button>
               </>
             )}
-          </button>
+            <button
+              type="button"
+              onClick={toggleRevealAll}
+              className={cn(
+                "inline-flex h-9 shrink-0 items-center gap-1.5 rounded-lg border px-3 text-[12px] font-medium transition",
+                revealAll
+                  ? "border-line-strong bg-card text-ink hover:border-ink/30"
+                  : "border-vermillion bg-vermillion text-paper hover:bg-vermillion-deep",
+              )}
+            >
+              {revealAll ? (
+                <>
+                  <EyeOff className="h-3.5 w-3.5" /> {t(language, "Hide answers")}
+                </>
+              ) : (
+                <>
+                  <Eye className="h-3.5 w-3.5" /> {t(language, "Show answers")}
+                </>
+              )}
+            </button>
+          </div>
         </div>
 
         <p className="mt-2 rounded-lg border border-gold/30 bg-gold-soft/50 px-3 py-2 text-[11px] leading-relaxed text-ink-soft">
@@ -75,133 +143,205 @@ export function OfficialQaBrowser({
         </p>
 
         <div className="mt-4 space-y-3">
-          {questions.map((question) => (
-            <article key={question.id} id={`q-${question.index}`} className="panel scroll-mt-24 overflow-hidden">
-              <div className="flex flex-wrap items-center gap-2 border-b border-line bg-paper-deep/40 px-4 py-2">
-                <span className="w-8 shrink-0 text-[11px] font-medium text-ink tabular">
-                  Q{question.index}
-                </span>
-                <span className="rounded bg-paper px-1.5 py-0.5 text-[10px] font-medium text-ink-faint">
-                  {question.topicCode}
-                </span>
-                <span className="text-[10px] text-ink-faint">{question.topicTitle}</span>
-                <span className="ml-auto text-[9.5px] text-ink-faint uppercase">
-                  {question.difficulty}
-                </span>
-              </div>
-
-              <div className="p-4">
-                <div className="text-[14px] leading-relaxed text-ink">
-                  <MathText>{question.stem}</MathText>
-                </div>
-                {question.stemZh && (
-                  <p className="mt-1.5 font-chinese text-[12.5px] leading-relaxed text-ink-faint">
-                    <MathText>{question.stemZh}</MathText>
-                  </p>
-                )}
-
-                {question.figure && (
-                  <div className="mt-3 overflow-hidden rounded-lg border border-line bg-white p-2">
-                    <img
-                      src={question.figure}
-                      alt="Official exam diagram"
-                      className="mx-auto max-h-[320px] w-auto"
-                    />
-                  </div>
-                )}
-
-                <div className="mt-3 space-y-1.5">
-                  {question.options.map((option, optionIndex) => {
-                    const isCorrect = optionIndex === question.correctIndex;
-                    const zh = question.optionsZh[optionIndex];
-                    return (
-                      <div
-                        key={optionIndex}
-                        className={cn(
-                          "flex items-start gap-2.5 rounded-lg border px-3 py-2 text-[13px]",
-                          reveal && isCorrect
-                            ? "border-jade/40 bg-jade-soft/60"
-                            : "border-line text-ink-soft",
-                        )}
+          {questions.map((question) => {
+            const given = picked[question.id];
+            const isShown = revealAll || Boolean(revealedIds[question.id]) || given !== undefined;
+            return (
+              <article key={question.id} id={`q-${question.index}`} className="panel scroll-mt-24 overflow-hidden">
+                <div className="flex flex-wrap items-center gap-2 border-b border-line bg-paper-deep/40 px-4 py-2">
+                  <span className="min-w-[2.75rem] shrink-0 whitespace-nowrap text-[11px] font-medium text-ink tabular">
+                    {showZh ? `第${question.index}题` : `Q${question.index}`}
+                  </span>
+                  <span className="rounded bg-paper px-1.5 py-0.5 text-[10px] font-medium text-ink-faint">
+                    {question.topicCode}
+                  </span>
+                  <span className="text-[10px] text-ink-faint">{question.topicTitle}</span>
+                  <div className="ml-auto flex items-center gap-2.5">
+                    <span className="text-[9.5px] text-ink-faint uppercase">
+                      {showZh
+                        ? question.difficulty === "EASY"
+                          ? "简单"
+                          : question.difficulty === "HARD"
+                            ? "困难"
+                            : "中等"
+                        : question.difficulty}
+                    </span>
+                    {!revealAll && (
+                      <button
+                        type="button"
+                        onClick={() => toggleQuestionReveal(question.id)}
+                        className="inline-flex items-center gap-1 rounded border border-line bg-card px-2 py-0.5 text-[10.5px] font-medium text-ink-soft transition hover:border-line-strong hover:text-ink"
                       >
-                        <span
-                          className={cn(
-                            "mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full border text-[10px] font-semibold",
-                            reveal && isCorrect
-                              ? "border-jade bg-jade text-paper"
-                              : "border-line-strong text-ink-faint",
-                          )}
-                        >
-                          {reveal && isCorrect ? <CheckCircle2 className="h-3.5 w-3.5" /> : LETTERS[optionIndex]}
-                        </span>
-                        <span className="flex-1">
-                          <span className="text-ink">
-                            <MathText>{option}</MathText>
-                          </span>
-                          {zh && (
-                            <span className="ml-2 font-chinese text-[11.5px] text-ink-faint">
-                              <MathText>{zh}</MathText>
-                            </span>
-                          )}
-                        </span>
-                        {reveal && isCorrect && (
-                          <span className="shrink-0 text-[9px] font-medium tracking-wide text-jade uppercase">
-                            Answer
-                          </span>
+                        {isShown ? (
+                          <>
+                            <EyeOff className="h-3 w-3" />
+                            {showZh ? "隐藏本题解析" : "Hide answer"}
+                          </>
+                        ) : (
+                          <>
+                            <Eye className="h-3 w-3" />
+                            {showZh ? "查看本题答案" : "Check answer"}
+                          </>
                         )}
-                      </div>
-                    );
-                  })}
-                </div>
-
-                {reveal && (
-                  <div className="mt-3 rounded-lg bg-paper-deep/60 px-3 py-2.5">
-                    <p className="text-[9.5px] font-medium tracking-[0.12em] text-ink-faint uppercase">
-                      Analysis
-                    </p>
-                    <p className="mt-1 text-[12.5px] leading-relaxed text-ink-soft">
-                      <MathText>{question.explanation}</MathText>
-                    </p>
-                    {question.explanationZh && (
-                      <p className="mt-1 font-chinese text-[11.5px] leading-relaxed text-ink-faint">
-                        <MathText>{question.explanationZh}</MathText>
-                      </p>
+                      </button>
                     )}
                   </div>
-                )}
-              </div>
-            </article>
-          ))}
+                </div>
+
+                <div className="p-4">
+                  <div className={cn("text-[14px] leading-relaxed text-ink", showZh && "font-chinese")}>
+                    <MathText>
+                      {showZh && question.stemZh ? question.stemZh : question.stem}
+                    </MathText>
+                  </div>
+
+                  {question.figure && (
+                    <div className="mt-3 overflow-hidden rounded-lg border border-line bg-white p-2">
+                      <img
+                        src={question.figure}
+                        alt={showZh ? "真题配图" : "Official exam diagram"}
+                        className="mx-auto max-h-[320px] w-auto"
+                      />
+                    </div>
+                  )}
+
+                  <div className="mt-3 space-y-1.5">
+                    {question.options.map((option, optionIndex) => {
+                      const isCorrect = optionIndex === question.correctIndex;
+                      const isGiven = optionIndex === given;
+                      const translated =
+                        showZh &&
+                        question.optionsZh.length === question.options.length &&
+                        question.optionsZh[optionIndex];
+                      const optionText = translated || option;
+                      return (
+                        <button
+                          key={optionIndex}
+                          type="button"
+                          onClick={() => choose(question.id, optionIndex)}
+                          className={cn(
+                            "flex w-full items-start gap-2.5 rounded-lg border px-3 py-2 text-left text-[13px] transition",
+                            !isShown &&
+                              "border-line bg-card text-ink-soft hover:border-line-strong hover:bg-paper-deep/30",
+                            isShown && isCorrect && "border-jade/40 bg-jade-soft/60",
+                            isShown && !isCorrect && isGiven && "border-rose-500/40 bg-rose-500/8",
+                            isShown && !isCorrect && !isGiven && "border-line text-ink-soft",
+                          )}
+                        >
+                          <span
+                            className={cn(
+                              "mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full border text-[10px] font-semibold",
+                              isShown && isCorrect
+                                ? "border-jade bg-jade text-paper"
+                                : isShown && isGiven
+                                  ? "border-rose-600 bg-rose-600 text-white"
+                                  : "border-line-strong text-ink-faint",
+                            )}
+                          >
+                            {isShown && isCorrect ? (
+                              <CheckCircle2 className="h-3.5 w-3.5" />
+                            ) : isShown && isGiven ? (
+                              <XCircle className="h-3.5 w-3.5" />
+                            ) : (
+                              LETTERS[optionIndex]
+                            )}
+                          </span>
+                          <span className="min-w-0 flex-1">
+                            <span className={cn("text-ink", translated && "font-chinese")}>
+                              <MathText inline>{optionText}</MathText>
+                            </span>
+                          </span>
+                          {isShown && isCorrect && (
+                            <span className="shrink-0 text-[9px] font-medium tracking-wide text-jade uppercase">
+                              {t(language, "Answer")}
+                            </span>
+                          )}
+                          {isShown && !isCorrect && isGiven && (
+                            <span className="shrink-0 text-[9px] font-medium tracking-wide text-rose-600 uppercase">
+                              {showZh ? "你的选择" : "Yours"}
+                            </span>
+                          )}
+                        </button>
+                      );
+                    })}
+                  </div>
+
+                  {isShown && (
+                    <div className="mt-3 rounded-lg bg-paper-deep/60 px-3 py-2.5">
+                      <p className="text-[9.5px] font-medium tracking-[0.12em] text-ink-faint uppercase">
+                        {t(language, "Analysis")}
+                      </p>
+                      <div
+                        className={cn(
+                          "mt-1 text-[12.5px] leading-relaxed text-ink-soft",
+                          showZh && question.explanationZh && "font-chinese",
+                        )}
+                      >
+                        <MathText>
+                          {showZh && question.explanationZh
+                            ? question.explanationZh
+                            : question.explanation}
+                        </MathText>
+                      </div>
+                    </div>
+                  )}
+                </div>
+              </article>
+            );
+          })}
         </div>
       </div>
 
-      <aside className="space-y-4 lg:sticky lg:top-8 lg:self-start">
+      <aside className="min-w-0 space-y-4 lg:sticky lg:top-8 lg:self-start">
         <div className="panel p-4">
-          <p className="eyebrow">Question index</p>
+          <div className="flex items-baseline justify-between gap-2">
+            <p className="eyebrow">{t(language, "Question index")}</p>
+            {checkedCount > 0 && (
+              <span className="text-[10.5px] font-medium text-jade tabular">
+                {correctCount}/{checkedCount}
+              </span>
+            )}
+          </div>
           <div className="mt-3 grid grid-cols-6 gap-1.5">
-            {questions.map((question) => (
-              <a
-                key={question.id}
-                href={`#q-${question.index}`}
-                className="flex h-7 items-center justify-center rounded-md border border-line text-[10.5px] font-medium text-ink-faint tabular transition hover:border-vermillion/40 hover:text-vermillion"
-              >
-                {question.index}
-              </a>
-            ))}
+            {questions.map((question) => {
+              const given = picked[question.id];
+              const isCorrect = given !== undefined && given === question.correctIndex;
+              const isWrong = given !== undefined && given !== question.correctIndex;
+              const isRevealed = Boolean(revealedIds[question.id]);
+              return (
+                <a
+                  key={question.id}
+                  href={`#q-${question.index}`}
+                  className={cn(
+                    "flex h-7 items-center justify-center rounded-md border text-[10.5px] font-medium tabular transition",
+                    isCorrect
+                      ? "border-jade/40 bg-jade-soft font-semibold text-jade"
+                      : isWrong
+                        ? "border-rose-500/40 bg-rose-500/10 font-semibold text-rose-600"
+                        : isRevealed
+                          ? "border-gold/40 bg-gold-soft text-gold-deep"
+                          : "border-line text-ink-faint hover:border-vermillion/40 hover:text-vermillion",
+                  )}
+                >
+                  {question.index}
+                </a>
+              );
+            })}
           </div>
         </div>
 
         <div className="panel p-4">
-          <p className="eyebrow">Study tip</p>
+          <p className="eyebrow">{t(language, "Study tip")}</p>
           <p className="mt-2 text-[11.5px] leading-relaxed text-ink-soft">
-            Hide the answers, work each question, then reveal to check. Then take the timed version
-            to see your real speed.
+            {showZh
+              ? "先点击选项逐题自测，或先隐藏答案自行演算再核对。然后用计时模式检验真实速度。"
+              : "Click any option to self-test question by question, or reveal the working when stuck. Then take the timed version to check your speed."}
           </p>
           <Link
-            href="/app/mocks"
+            href={mocksHref}
             className="mt-3 inline-flex h-9 w-full items-center justify-center gap-1.5 rounded-lg bg-ink text-[12px] font-medium text-paper"
           >
-            Take a timed mock <ArrowRight className="h-3.5 w-3.5" />
+            {t(language, "Take a timed mock")} <ArrowRight className="h-3.5 w-3.5" />
           </Link>
         </div>
       </aside>
