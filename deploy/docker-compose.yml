@@ -66,6 +66,16 @@ services:
       # Required when seeding production: the seed refuses to create or reset
       # the demo admin account without it.
       SEED_ADMIN_PASSWORD: ${SEED_ADMIN_PASSWORD:-}
+      # Optional EPay fallback env vars (DB PaymentMethod rows in /admin/payments take precedence).
+      EPAY_URL: ${EPAY_URL:-}
+      EPAY_PID: ${EPAY_PID:-}
+      EPAY_KEY: ${EPAY_KEY:-}
+      EPAY_TYPE: ${EPAY_TYPE:-}
+      EPAY_NAME: ${EPAY_NAME:-}
+      EPAY_ICON: ${EPAY_ICON:-}
+      EPAY_NOTIFY_DOMAIN: ${EPAY_NOTIFY_DOMAIN:-}
+      EPAY_FEE_PERCENT: ${EPAY_FEE_PERCENT:-0}
+      EPAY_FEE_FIXED_CENTS: ${EPAY_FEE_FIXED_CENTS:-0}
     healthcheck:
       test:
         - CMD

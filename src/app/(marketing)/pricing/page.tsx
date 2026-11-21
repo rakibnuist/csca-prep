@@ -149,7 +149,9 @@ export default function PricingPage() {
             <p className="mt-3 font-display text-4xl text-ink">
               ¥99 <span className="text-base text-ink-faint">/ intake</span>
             </p>
-            <p className="mt-1 text-[12px] text-ink-soft">One payment per admission cycle.</p>
+            <p className="mt-1 text-[12px] text-ink-soft">
+              12 months · or ¥199 Lifetime (no expiry).
+            </p>
 
             <ul className="mt-5 space-y-2 text-[12.5px] text-ink-soft">
               {[
@@ -168,8 +170,8 @@ export default function PricingPage() {
 
             <ProCta className="mt-6" />
             <p className="mt-3 text-center text-[11px] leading-relaxed text-ink-soft">
-              Pro is activated with a code, so there is no checkout to lose your place in. If you
-              already have one, redeem it on the Billing page.
+              Pay instantly online on the Billing page (Alipay / EPay), or redeem an activation
+              code if you already have one.
             </p>
           </div>
 

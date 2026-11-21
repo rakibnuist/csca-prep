@@ -404,7 +404,7 @@ export default function MocksProductPage() {
                 See pricing <ArrowRight className="h-3.5 w-3.5" />
               </Link>
               <p className="mt-3 text-center text-[11px] text-ink-soft">
-                Pro is activated with a code. If you have one, redeem it on the Billing page.
+                Pay online on the Billing page, or redeem an activation code if you already have one.
               </p>
             </div>
           </div>

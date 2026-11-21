@@ -304,6 +304,12 @@ export default async function AdminOverviewPage() {
             </Link>
           ) : null}
           <Link
+            href="/admin/payments"
+            className="inline-flex items-center gap-1.5 rounded-lg border border-line bg-white px-3 py-1.5 text-[12px] font-medium text-ink transition hover:border-ink/25"
+          >
+            Payments
+          </Link>
+          <Link
             href="/admin/content"
             className="inline-flex items-center gap-1.5 rounded-lg border border-line bg-white px-3 py-1.5 text-[12px] font-medium text-ink transition hover:border-ink/25"
           >

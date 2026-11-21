@@ -4,6 +4,11 @@ import { prisma } from "@/lib/db";
 import { requireUser } from "@/lib/auth";
 import { getAccess } from "@/lib/access";
 import { AppBody, PageHeader } from "@/components/app/page-header";
+import {
+  EpayCheckout,
+  OrderStatusBanner,
+  type StudentOrderItem,
+} from "@/components/app/epay-checkout";
 import { ProRequestForm } from "@/components/app/pro-request-form";
 import { RedeemForm } from "@/components/app/redeem-form";
 import { formatDate } from "@/lib/utils";
@@ -13,6 +18,7 @@ import {
   FREE_SETS_PER_SUBJECT,
 } from "@/lib/entitlements";
 import { PAPER_STATS, SITTABLE_PAPERS } from "@/lib/paper-stats";
+import { getPublicPaymentMethods } from "@/lib/payments/epay";
 import { trackLink, trackMetaTitle } from "@/lib/tracks";
 import { getSectionTrack } from "@/lib/section";
 
@@ -27,18 +33,81 @@ const PLAN_LABEL: Record<string, { en: string; zh: string }> = {
   LIFETIME: { en: "Lifetime", zh: "终身版" },
 };
 
-export default async function BillingPage() {
+export default async function BillingPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ order?: string }>;
+}) {
   const session = await requireUser();
-  const [access, profile] = await Promise.all([
+  const { order: orderQuery } = await searchParams;
+  const orderTradeNo = typeof orderQuery === "string" ? orderQuery.trim() : "";
+
+  const [access, profile, paymentMethods, recentOrderRows, highlightedOrderRow] = await Promise.all([
     getAccess(session.id),
     prisma.user.findUnique({
       where: { id: session.id },
       select: { name: true, email: true, whatsapp: true, country: true },
     }),
+    getPublicPaymentMethods(),
+    prisma.order.findMany({
+      where: { userId: session.id },
+      orderBy: { createdAt: "desc" },
+      take: 8,
+      select: {
+        tradeNo: true,
+        plan: true,
+        status: true,
+        totalAmountCents: true,
+        paymentMethodName: true,
+        payUrl: true,
+        paidAt: true,
+        createdAt: true,
+      },
+    }),
+    orderTradeNo
+      ? prisma.order.findFirst({
+          where: { tradeNo: orderTradeNo, userId: session.id },
+          select: {
+            tradeNo: true,
+            plan: true,
+            status: true,
+            totalAmountCents: true,
+            paymentMethodName: true,
+            payUrl: true,
+            paidAt: true,
+            createdAt: true,
+          },
+        })
+      : Promise.resolve(null),
   ]);
+
   const track = await getSectionTrack(session.teachingTrack);
   const zh = track === "CN";
   const planName = (PLAN_LABEL[access.plan] ?? PLAN_LABEL.FREE)[zh ? "zh" : "en"];
+
+  const recentOrders: StudentOrderItem[] = recentOrderRows.map((o) => ({
+    tradeNo: o.tradeNo,
+    plan: o.plan,
+    status: o.status,
+    totalAmountCents: o.totalAmountCents,
+    paymentMethodName: o.paymentMethodName,
+    payUrl: o.payUrl,
+    paidAt: o.paidAt ? o.paidAt.toISOString() : null,
+    createdAt: o.createdAt.toISOString(),
+  }));
+
+  const highlightedOrder: StudentOrderItem | null = highlightedOrderRow
+    ? {
+        tradeNo: highlightedOrderRow.tradeNo,
+        plan: highlightedOrderRow.plan,
+        status: highlightedOrderRow.status,
+        totalAmountCents: highlightedOrderRow.totalAmountCents,
+        paymentMethodName: highlightedOrderRow.paymentMethodName,
+        payUrl: highlightedOrderRow.payUrl,
+        paidAt: highlightedOrderRow.paidAt ? highlightedOrderRow.paidAt.toISOString() : null,
+        createdAt: highlightedOrderRow.createdAt.toISOString(),
+      }
+    : null;
 
   return (
     <>
@@ -50,8 +119,8 @@ export default async function BillingPage() {
               ? "专业版已开通。"
               : "Your Pro access is active."
             : zh
-              ? "使用兑换码开通专业版。"
-              : "Get Pro with a code."
+              ? "开通专业版。"
+              : "Upgrade to Pro."
         }
         body={
           access.isPro
@@ -59,13 +128,17 @@ export default async function BillingPage() {
               ? "所有模拟卷与官方真题不限次数，并包含自适应学习计划。"
               : "Unlimited attempts on every mock and official paper, plus the adaptive study plan."
             : zh
-              ? "专业版通过兑换码开通，无需结账。在下方兑换后立即生效。"
-              : "Pro is activated with a coupon code — no checkout. Redeem yours below and it applies instantly."
+              ? "支持在线支付即时开通，也可以在下方输入兑换码激活专业版。"
+              : "Pay online for instant activation, or redeem a Pro code below."
         }
       />
 
-      <AppBody className="max-w-[860px]">
-        <div className="grid grid-cols-1 gap-4 lg:grid-cols-[1.1fr_0.9fr]">
+      <AppBody className="max-w-[920px]">
+        {highlightedOrder ? (
+          <OrderStatusBanner initialOrder={highlightedOrder} track={track} />
+        ) : null}
+
+        <div className="grid grid-cols-1 gap-4 lg:grid-cols-[1.05fr_0.95fr]">
           {/* Current plan */}
           <div className="panel min-w-0 p-6">
             <div className="flex items-center justify-between">
@@ -172,13 +245,13 @@ export default async function BillingPage() {
             )}
           </div>
 
-          {/* Redeem / upgrade */}
+          {/* Redeem */}
           <div
             id="redeem"
             className={
               access.isPro
                 ? "panel min-w-0 p-6"
-                : "min-w-0 rounded-2xl border border-vermillion/25 bg-vermillion/5 p-6 scroll-mt-24"
+                : "min-w-0 scroll-mt-24 rounded-2xl border border-vermillion/25 bg-vermillion/5 p-6"
             }
           >
             <div className="flex items-center gap-2">
@@ -220,19 +293,19 @@ export default async function BillingPage() {
               <p className="mt-4 text-[11px] leading-relaxed text-ink-faint">
                 {zh ? (
                   <>
-                    还没有兑换码？{" "}
+                    还没有兑换码？可在下方在线支付开通，或{" "}
                     <Link href="/pricing" className="font-medium text-vermillion underline underline-offset-2">
-                      查看专业版内容与获取方式
+                      查看专业版权益说明
                     </Link>
                     。
                   </>
                 ) : (
                   <>
-                    Don&apos;t have a code yet?{" "}
+                    Don&apos;t have a code? Pay online below or{" "}
                     <Link href="/pricing" className="font-medium text-vermillion underline underline-offset-2">
-                      See what&apos;s included
-                    </Link>{" "}
-                    and how to get one.
+                      see what&apos;s included
+                    </Link>
+                    .
                   </>
                 )}
               </p>
@@ -240,11 +313,21 @@ export default async function BillingPage() {
           </div>
         </div>
 
+        {/* EPay Checkout + Order History */}
+        <div className="mt-6">
+          <EpayCheckout
+            track={track}
+            currentPlan={access.plan}
+            methods={paymentMethods}
+            recentOrders={recentOrders}
+          />
+        </div>
+
         {!access.isPro && (
           <div className="mt-6 grid gap-6 lg:grid-cols-[1.05fr_0.95fr]">
             <div className="rounded-xl border border-line bg-card p-6">
               <p className="text-[11px] font-medium tracking-[0.14em] text-vermillion uppercase">
-                {zh ? "没有兑换码？" : "Need a Pro code?"}
+                {zh ? "需要人工协助或机构对公？" : "Need manual billing or an invoice?"}
               </p>
               <h2 className="mt-1 font-display text-xl text-ink">
                 {zh ? "直接申请开通专业版" : "Request direct Pro activation"}

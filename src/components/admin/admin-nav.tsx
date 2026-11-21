@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import {
   BookOpen,
+  CreditCard,
   FileStack,
   LayoutDashboard,
   Mail,
@@ -26,6 +27,7 @@ export function AdminNav({ pendingStudents, newLeads }: AdminNavProps) {
     { href: "/admin/mocks", label: "Mock builder", icon: FileStack, badge: 0 },
     { href: "/admin/leads", label: "Leads", icon: Mail, badge: newLeads },
     { href: "/admin/coupons", label: "Coupons", icon: Ticket, badge: 0 },
+    { href: "/admin/payments", label: "Payments", icon: CreditCard, badge: 0 },
   ];
 
   return (
