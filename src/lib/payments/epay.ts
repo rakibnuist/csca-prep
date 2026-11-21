@@ -9,7 +9,9 @@ import { SITE } from "@/lib/site";
 import { revalidateTrackPath } from "@/lib/section";
 import {
   PURCHASABLE_PLANS,
+  buildProPlan,
   computeOrderPricing,
+  type PurchasablePlan,
   type PurchasablePlanId,
 } from "@/lib/plans";
 
@@ -418,6 +420,11 @@ export async function validateCheckoutCoupon(
   };
 }
 
+export async function getProPlanConfig(): Promise<PurchasablePlan> {
+  const row = await prisma.billingConfig.findUnique({ where: { id: "default" } });
+  return buildProPlan(row?.proPriceCents ?? 9900, row?.proDurationMonths ?? 12);
+}
+
 export async function calculateCheckoutQuote(input: {
   planId: PurchasablePlanId;
   userId: string;
@@ -425,7 +432,7 @@ export async function calculateCheckoutQuote(input: {
   couponCode?: string | null;
   zh?: boolean;
 }) {
-  const plan = PURCHASABLE_PLANS[input.planId];
+  const plan = await getProPlanConfig();
   let coupon: { id: string; code: string; percent: number } | null = null;
   let couponError: string | null = null;
 

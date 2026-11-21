@@ -20,6 +20,7 @@ import {
   adminMarkOrderPaidAction,
   deletePaymentMethodAction,
   importEnvPaymentMethodAction,
+  saveBillingConfigAction,
   savePaymentMethodAction,
   togglePaymentMethodAction,
   type PaymentAdminState,
@@ -85,6 +86,7 @@ export function PaymentsManager({
   methods,
   orders,
   stats,
+  billingConfig,
   envFallback,
   defaultOrigin,
 }: {
@@ -96,6 +98,10 @@ export function PaymentsManager({
     pendingCount: number;
     totalRevenueCents: number;
   };
+  billingConfig: {
+    proPriceCents: number;
+    proDurationMonths: number;
+  };
   envFallback: EnvFallbackPreview;
   defaultOrigin: string;
 }) {
@@ -103,6 +109,10 @@ export function PaymentsManager({
     savePaymentMethodAction,
     null,
   );
+  const [billingState, billingFormAction, billingPending] = useActionState<
+    PaymentAdminState,
+    FormData
+  >(saveBillingConfigAction, null);
   const [editing, setEditing] = useState<AdminPaymentMethodRow | null>(null);
   const [showSecret, setShowSecret] = useState(false);
   const [copiedId, setCopiedId] = useState<string | null>(null);
@@ -156,6 +166,72 @@ export function PaymentsManager({
           </p>
         </div>
       </div>
+
+      {/* Pro Plan Checkout Pricing */}
+      <section className="rounded-2xl border border-line bg-white p-5 shadow-xs">
+        <div className="flex flex-wrap items-center justify-between gap-3">
+          <div>
+            <h2 className="font-display text-lg font-semibold text-ink">
+              Pro Plan Checkout Pricing
+            </h2>
+            <p className="text-xs text-ink-soft">
+              Base price and access duration charged to students on Billing checkout (before any
+              discount coupon or gateway surcharge).
+            </p>
+          </div>
+        </div>
+
+        <form
+          key={`${billingConfig.proPriceCents}-${billingConfig.proDurationMonths}`}
+          action={billingFormAction}
+          className="mt-4 grid gap-4 sm:grid-cols-3 sm:items-end"
+        >
+          <div>
+            <label className="block text-[11px] font-semibold text-ink-faint uppercase">
+              Pro Plan Price (¥) *
+            </label>
+            <input
+              type="number"
+              step="0.01"
+              min="0.01"
+              max="10000"
+              required
+              name="proPriceYuan"
+              defaultValue={(billingConfig.proPriceCents / 100).toFixed(2)}
+              className="mt-1 h-9 w-full rounded-xl border border-line bg-white px-3 text-sm tabular-nums text-ink focus:border-vermillion focus:outline-none"
+            />
+          </div>
+          <div>
+            <label className="block text-[11px] font-semibold text-ink-faint uppercase">
+              Duration (Months) *
+            </label>
+            <input
+              type="number"
+              min={1}
+              max={60}
+              required
+              name="proDurationMonths"
+              defaultValue={billingConfig.proDurationMonths}
+              className="mt-1 h-9 w-full rounded-xl border border-line bg-white px-3 text-sm tabular-nums text-ink focus:border-vermillion focus:outline-none"
+            />
+          </div>
+          <div>
+            <button
+              type="submit"
+              disabled={billingPending}
+              className="h-9 rounded-xl bg-ink px-5 text-xs font-semibold text-paper transition hover:bg-ink/85 disabled:opacity-60"
+            >
+              {billingPending ? "Saving…" : "Save Plan Price"}
+            </button>
+          </div>
+        </form>
+        {billingState?.error ? (
+          <p className="mt-2.5 text-xs font-medium text-rose-700">{billingState.error}</p>
+        ) : null}
+        {billingState?.ok ? (
+          <p className="mt-2.5 text-xs font-medium text-jade">{billingState.message}</p>
+        ) : null}
+      </section>
 
       {/* Env fallback banner if DB has 0 rows */}
       {methods.length === 0 && envFallback ? (
@@ -268,7 +344,7 @@ export function PaymentsManager({
 
             <div>
               <label className="block text-[11px] font-semibold text-ink-faint uppercase">
-                Percentage Fee (%)
+                Gateway Handling Fee (%)
               </label>
               <input
                 type="number"
@@ -279,11 +355,14 @@ export function PaymentsManager({
                 defaultValue={editing ? editing.feePercent.toFixed(2) : "0.00"}
                 className="mt-1 h-9 w-full rounded-xl border border-line bg-white px-3 text-sm tabular-nums text-ink focus:border-vermillion focus:outline-none"
               />
+              <p className="mt-1 text-[11px] text-ink-faint">
+                Extra % surcharge added on top of plan price
+              </p>
             </div>
 
             <div>
               <label className="block text-[11px] font-semibold text-ink-faint uppercase">
-                Fixed Fee (¥)
+                Gateway Extra Fixed Fee (¥)
               </label>
               <input
                 type="number"
@@ -294,6 +373,9 @@ export function PaymentsManager({
                 defaultValue={editing ? (editing.feeFixedCents / 100).toFixed(2) : "0.00"}
                 className="mt-1 h-9 w-full rounded-xl border border-line bg-white px-3 text-sm tabular-nums text-ink focus:border-vermillion focus:outline-none"
               />
+              <p className="mt-1 text-[11px] text-ink-faint">
+                Extra surcharge added on top of the plan price (leave 0.00 for no extra fee)
+              </p>
             </div>
 
             <div className="grid grid-cols-2 gap-3">

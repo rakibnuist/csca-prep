@@ -5,7 +5,7 @@
  * and server payment handlers so displayed prices and charged amounts never drift.
  */
 
-export type PurchasablePlanId = "PRO" | "LIFETIME";
+export type PurchasablePlanId = "PRO";
 
 export type PurchasablePlan = {
   id: PurchasablePlanId;
@@ -20,42 +20,34 @@ export type PurchasablePlan = {
   summaryZh: string;
 };
 
-export const PURCHASABLE_PLANS: Record<PurchasablePlanId, PurchasablePlan> = {
-  PRO: {
+export function buildProPlan(priceCents = 9900, durationMonths = 12): PurchasablePlan {
+  const safePriceCents = Math.max(1, Math.round(priceCents));
+  const safeMonths = Math.min(60, Math.max(1, Math.round(durationMonths)));
+  const durationDays = safeMonths === 12 ? 365 : safeMonths * 30;
+  return {
     id: "PRO",
-    priceCents: 9900,
-    durationMonths: 12,
-    durationDays: 365,
+    priceCents: safePriceCents,
+    durationMonths: safeMonths,
+    durationDays,
     nameEn: "Pro",
     nameZh: "专业版",
-    periodEn: "12 months (1 admission cycle)",
-    periodZh: "12 个月（一个申请季）",
-    summaryEn: "Unlimited attempts on all mock papers, timed official sittings, and adaptive study plan.",
+    periodEn: safeMonths === 12 ? "12 months (1 admission cycle)" : `${safeMonths} months`,
+    periodZh: safeMonths === 12 ? "12 个月（一个申请季）" : `${safeMonths} 个月`,
+    summaryEn:
+      "Unlimited attempts on all mock papers, timed official sittings, and adaptive study plan.",
     summaryZh: "全部模拟卷不限次作答、官方真题计时作答与自适应学习计划。",
-  },
-  LIFETIME: {
-    id: "LIFETIME",
-    priceCents: 19900,
-    durationMonths: 0,
-    durationDays: 0,
-    nameEn: "Lifetime",
-    nameZh: "终身版",
-    periodEn: "One-time · never expires",
-    periodZh: "一次购买 · 永久有效",
-    summaryEn: "Full Pro access across every future intake and update, with no expiry.",
-    summaryZh: "包含专业版全部功能及未来所有考季更新，永久有效。",
-  },
+  };
+}
+
+export const PURCHASABLE_PLANS: Record<PurchasablePlanId, PurchasablePlan> = {
+  PRO: buildProPlan(),
 };
 
-export const PURCHASABLE_PLAN_LIST: PurchasablePlan[] = [
-  PURCHASABLE_PLANS.PRO,
-  PURCHASABLE_PLANS.LIFETIME,
-];
+export const PURCHASABLE_PLAN_LIST: PurchasablePlan[] = [PURCHASABLE_PLANS.PRO];
 
 export function parsePurchasablePlan(value: unknown): PurchasablePlanId | null {
   const normalized = String(value ?? "").trim().toUpperCase();
   if (normalized === "PRO") return "PRO";
-  if (normalized === "LIFETIME") return "LIFETIME";
   return null;
 }
 

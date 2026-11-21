@@ -3,6 +3,7 @@ import { requireAdmin } from "@/lib/auth";
 import {
   buildNotifyUrl,
   getEnvEpayMethod,
+  getProPlanConfig,
   getPublicOrigin,
   maskSecret,
 } from "@/lib/payments/epay";
@@ -18,8 +19,9 @@ export const dynamic = "force-dynamic";
 export default async function AdminPaymentsPage() {
   await requireAdmin();
 
-  const [origin, dbMethods, recentOrders, paidAgg, pendingCount] = await Promise.all([
+  const [origin, proPlan, dbMethods, recentOrders, paidAgg, pendingCount] = await Promise.all([
     getPublicOrigin(),
+    getProPlanConfig(),
     prisma.paymentMethod.findMany({
       orderBy: [{ sort: "asc" }, { createdAt: "asc" }],
       include: {
@@ -110,8 +112,8 @@ export default async function AdminPaymentsPage() {
           Payment Gateways (EPay) &amp; Orders
         </h1>
         <p className="mt-1 text-sm text-ink-soft">
-          Configure Xboard-compatible EPay gateways (Alipay, WeChat Pay, QQ Pay), notify domains,
-          fees, and monitor live Pro / Lifetime checkout orders.
+          Configure Xboard-compatible EPay gateways (Alipay, WeChat Pay, QQ Pay), Pro plan checkout
+          pricing, notify domains, fees, and monitor live Pro checkout orders.
         </p>
       </div>
 
@@ -123,6 +125,10 @@ export default async function AdminPaymentsPage() {
           paidCount: paidAgg._count._all,
           pendingCount,
           totalRevenueCents: paidAgg._sum.totalAmountCents ?? 0,
+        }}
+        billingConfig={{
+          proPriceCents: proPlan.priceCents,
+          proDurationMonths: proPlan.durationMonths,
         }}
         envFallback={envFallback}
         defaultOrigin={origin}

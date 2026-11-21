@@ -152,6 +152,44 @@ export async function importEnvPaymentMethodAction(): Promise<void> {
   revalidateBillingAndAdmin();
 }
 
+export async function saveBillingConfigAction(
+  _prev: PaymentAdminState,
+  formData: FormData,
+): Promise<PaymentAdminState> {
+  await requireAdmin();
+
+  const priceYuan = Number(str(formData, "proPriceYuan"));
+  const durationMonths = Number.parseInt(str(formData, "proDurationMonths"), 10);
+
+  if (!Number.isFinite(priceYuan) || priceYuan < 0.01 || priceYuan > 10_000) {
+    return { error: "Pro price must be between ¥0.01 and ¥10,000." };
+  }
+  if (Number.isNaN(durationMonths) || durationMonths < 1 || durationMonths > 60) {
+    return { error: "Duration must be between 1 and 60 months." };
+  }
+
+  const proPriceCents = Math.round(priceYuan * 100);
+
+  await prisma.billingConfig.upsert({
+    where: { id: "default" },
+    create: {
+      id: "default",
+      proPriceCents,
+      proDurationMonths: durationMonths,
+    },
+    update: {
+      proPriceCents,
+      proDurationMonths: durationMonths,
+    },
+  });
+
+  revalidateBillingAndAdmin();
+  return {
+    ok: true,
+    message: `Saved Pro plan: ¥${(proPriceCents / 100).toFixed(2)} for ${durationMonths} months.`,
+  };
+}
+
 export async function adminCancelOrderAction(formData: FormData) {
   await requireAdmin();
   const tradeNo = str(formData, "tradeNo");

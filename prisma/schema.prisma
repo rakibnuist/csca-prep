@@ -434,3 +434,10 @@ model Order {
   @@index([status, createdAt])
   @@index([paymentMethodId])
 }
+
+model BillingConfig {
+  id                String   @id @default("default")
+  proPriceCents     Int      @default(9900)
+  proDurationMonths Int      @default(12)
+  updatedAt         DateTime @updatedAt
+}

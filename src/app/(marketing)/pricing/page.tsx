@@ -149,9 +149,7 @@ export default function PricingPage() {
             <p className="mt-3 font-display text-4xl text-ink">
               ¥99 <span className="text-base text-ink-faint">/ intake</span>
             </p>
-            <p className="mt-1 text-[12px] text-ink-soft">
-              12 months · or ¥199 Lifetime (no expiry).
-            </p>
+            <p className="mt-1 text-[12px] text-ink-soft">One payment per admission cycle.</p>
 
             <ul className="mt-5 space-y-2 text-[12.5px] text-ink-soft">
               {[

@@ -18,7 +18,7 @@ import {
   FREE_SETS_PER_SUBJECT,
 } from "@/lib/entitlements";
 import { PAPER_STATS, SITTABLE_PAPERS } from "@/lib/paper-stats";
-import { getPublicPaymentMethods } from "@/lib/payments/epay";
+import { getProPlanConfig, getPublicPaymentMethods } from "@/lib/payments/epay";
 import { trackLink, trackMetaTitle } from "@/lib/tracks";
 import { getSectionTrack } from "@/lib/section";
 
@@ -42,13 +42,15 @@ export default async function BillingPage({
   const { order: orderQuery } = await searchParams;
   const orderTradeNo = typeof orderQuery === "string" ? orderQuery.trim() : "";
 
-  const [access, profile, paymentMethods, recentOrderRows, highlightedOrderRow] = await Promise.all([
-    getAccess(session.id),
-    prisma.user.findUnique({
-      where: { id: session.id },
-      select: { name: true, email: true, whatsapp: true, country: true },
-    }),
-    getPublicPaymentMethods(),
+  const [access, profile, proPlan, paymentMethods, recentOrderRows, highlightedOrderRow] =
+    await Promise.all([
+      getAccess(session.id),
+      prisma.user.findUnique({
+        where: { id: session.id },
+        select: { name: true, email: true, whatsapp: true, country: true },
+      }),
+      getProPlanConfig(),
+      getPublicPaymentMethods(),
     prisma.order.findMany({
       where: { userId: session.id },
       orderBy: { createdAt: "desc" },
@@ -318,6 +320,7 @@ export default async function BillingPage({
           <EpayCheckout
             track={track}
             currentPlan={access.plan}
+            proPlan={proPlan}
             methods={paymentMethods}
             recentOrders={recentOrders}
           />

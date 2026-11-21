@@ -17,12 +17,10 @@ import {
   X,
 } from "lucide-react";
 import {
-  PURCHASABLE_PLAN_LIST,
-  PURCHASABLE_PLANS,
   computeOrderPricing,
   formatCny,
   formatCnyFixed,
-  type PurchasablePlanId,
+  type PurchasablePlan,
 } from "@/lib/plans";
 import { trackLink, type TaughtTrack } from "@/lib/tracks";
 
@@ -231,20 +229,19 @@ export function OrderStatusBanner({
 export function EpayCheckout({
   track,
   currentPlan,
+  proPlan,
   methods,
   recentOrders,
 }: {
   track: TaughtTrack;
   currentPlan: "FREE" | "PRO" | "LIFETIME";
+  proPlan: PurchasablePlan;
   methods: CheckoutPaymentMethod[];
   recentOrders: StudentOrderItem[];
 }) {
   const router = useRouter();
   const zh = track === "CN";
 
-  const [selectedPlan, setSelectedPlan] = useState<PurchasablePlanId>(
-    currentPlan === "PRO" ? "LIFETIME" : "PRO",
-  );
   const [selectedMethodId, setSelectedMethodId] = useState<string>(methods[0]?.id ?? "");
   const [couponInput, setCouponInput] = useState("");
   const [appliedCoupon, setAppliedCoupon] = useState<{
@@ -259,9 +256,8 @@ export function EpayCheckout({
 
   const selectedMethod =
     methods.find((m) => m.id === selectedMethodId) ?? methods[0] ?? null;
-  const planSpec = PURCHASABLE_PLANS[selectedPlan];
   const pricing = computeOrderPricing({
-    baseAmountCents: planSpec.priceCents,
+    baseAmountCents: proPlan.priceCents,
     discountPercent: appliedCoupon?.percent ?? 0,
     feePercent: selectedMethod?.feePercent ?? 0,
     feeFixedCents: selectedMethod?.feeFixedCents ?? 0,
@@ -280,7 +276,7 @@ export function EpayCheckout({
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          planId: selectedPlan,
+          planId: "PRO",
           paymentMethodId: selectedMethod?.id ?? null,
           couponCode: trimmed,
           lang: zh ? "zh" : "en",
@@ -317,7 +313,7 @@ export function EpayCheckout({
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          planId: selectedPlan,
+          planId: "PRO",
           paymentMethodId: selectedMethod?.id ?? null,
           couponCode: appliedCoupon?.code ?? null,
           lang: zh ? "zh" : "en",
@@ -383,55 +379,39 @@ export function EpayCheckout({
               <h2 className="mt-1 font-display text-xl text-ink">
                 {currentPlan === "PRO"
                   ? zh
-                    ? "续期专业版或升级终身版"
-                    : "Extend Pro or upgrade to Lifetime"
+                    ? "续期专业版"
+                    : "Extend Pro access"
                   : zh
-                    ? "选择方案并立即支付"
-                    : "Choose a plan & pay online"}
+                    ? "开通专业版并立即支付"
+                    : "Unlock Pro & pay online"}
               </h2>
             </div>
             <Sparkles className="h-4 w-4 text-gold" />
           </div>
 
-          {/* Plan Cards */}
-          <div className="mt-4 grid gap-3 sm:grid-cols-2">
-            {PURCHASABLE_PLAN_LIST.map((plan) => {
-              const active = selectedPlan === plan.id;
-              return (
-                <button
-                  key={plan.id}
-                  type="button"
-                  onClick={() => setSelectedPlan(plan.id)}
-                  className={`rounded-xl border p-4 text-left transition ${
-                    active
-                      ? "border-vermillion bg-vermillion/5 ring-1 ring-vermillion/25"
-                      : "border-line bg-paper hover:border-ink/25"
-                  }`}
-                >
-                  <div className="flex items-center justify-between gap-2">
-                    <span className="font-display text-base font-semibold text-ink">
-                      {zh ? plan.nameZh : plan.nameEn}
-                    </span>
-                    <span className="font-display text-lg font-semibold tabular-nums text-vermillion">
-                      {formatCny(plan.priceCents)}
-                    </span>
-                  </div>
-                  <p className="mt-0.5 text-[11.5px] font-medium text-ink-soft">
-                    {zh ? plan.periodZh : plan.periodEn}
-                  </p>
-                  <p className="mt-2 text-[11.5px] leading-relaxed text-ink-soft">
-                    {zh ? plan.summaryZh : plan.summaryEn}
-                  </p>
-                </button>
-              );
-            })}
+          {/* Selected Pro Plan Summary */}
+          <div className="mt-4 rounded-xl border border-vermillion/35 bg-vermillion/5 p-4">
+            <div className="flex items-center justify-between gap-2">
+              <span className="font-display text-base font-semibold text-ink">
+                {zh ? proPlan.nameZh : proPlan.nameEn}
+              </span>
+              <span className="font-display text-lg font-semibold tabular-nums text-vermillion">
+                {formatCny(proPlan.priceCents)}
+              </span>
+            </div>
+            <p className="mt-0.5 text-[11.5px] font-medium text-ink-soft">
+              {zh ? proPlan.periodZh : proPlan.periodEn}
+            </p>
+            <p className="mt-2 text-[11.5px] leading-relaxed text-ink-soft">
+              {zh ? proPlan.summaryZh : proPlan.summaryEn}
+            </p>
           </div>
 
-          {currentPlan === "PRO" && selectedPlan === "PRO" ? (
+          {currentPlan === "PRO" ? (
             <p className="mt-2.5 text-[11.5px] text-ink-soft">
               {zh
-                ? "你当前已是专业版，再次购买将在现有有效期基础上自动顺延 12 个月。"
-                : "Purchasing Pro while active automatically adds 12 months onto your current expiry date."}
+                ? `你当前已是专业版，再次购买将在现有有效期基础上自动顺延 ${proPlan.durationMonths} 个月。`
+                : `Purchasing Pro while active automatically adds ${proPlan.durationMonths} months onto your current expiry date.`}
             </p>
           ) : null}
 
